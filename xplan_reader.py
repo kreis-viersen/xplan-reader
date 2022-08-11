@@ -156,7 +156,7 @@ class XplanReader:
                         else:
                             QgsProject.instance().addMapLayer(vlayer, False)
 
-                            style = self.style_dir + '\\' + layername + '_' + gtype + '.qml'
+                            style = os.path.join(self.style_dir, layername + '_' + gtype + '.qml')
                             if os.path.isfile(style):
                                 vlayer.loadNamedStyle(style)
                                 self.logMessage('Style verwendet: ' + style)
