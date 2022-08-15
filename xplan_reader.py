@@ -20,10 +20,10 @@ QGIS plugin
 """
 
 import os
+import sys
 
 from lxml import etree
 from osgeo import ogr
-from packaging import version
 from pathlib import Path
 
 from qgis.core import Qgis, QgsMessageLog, QgsProject, QgsVectorLayer
@@ -45,14 +45,18 @@ class XplanReader:
         # QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
         # https://github.com/qgis/QGIS/pull/48556
         # https://github.com/qgis/QGIS/pull/48572
-        qgis_version = version.parse(Qgis.QGIS_VERSION.split('-')[0])
-        if qgis_version < version.parse('3.26.0') \
-        and not version.parse('3.22.8') < qgis_version < version.parse('3.23.0'):
-            message = 'Das Plugin \"XPlan-Reader\" benötigt mindestens QGIS Version \
-            3.26.0 (LR) oder 3.22.9 (LTR), sonst werden manche Layer womöglich nicht \
-            richtig geladen!'
-            self.iface.messageBar().pushMessage('Achtung', message, level=1, duration=30)
-            self.logMessage(message, 1)
+        # Python module "packaging" is not distributed e.g. with Debian
+        # Python-Modul "packaging" ist z.B. für Debian nicht standardmäßig enthalten
+        if sys.platform.startswith("win"):
+            from packaging import version
+            qgis_version = version.parse(Qgis.QGIS_VERSION.split('-')[0])
+            if qgis_version < version.parse('3.26.0') \
+            and not version.parse('3.22.8') < qgis_version < version.parse('3.23.0'):
+                message = 'Das Plugin \"XPlan-Reader\" benötigt mindestens QGIS Version \
+                3.26.0 (LR) oder 3.22.9 (LTR), sonst werden manche Layer womöglich nicht \
+                richtig geladen!'
+                self.iface.messageBar().pushMessage('Achtung', message, level=1, duration=30)
+                self.logMessage(message, 1)
 
         self.plugin_dir = os.path.dirname(os.path.abspath(__file__))
 
