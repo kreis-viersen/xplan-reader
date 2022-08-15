@@ -8,7 +8,7 @@ about=Remark:
 tags=xplan,xplanung,bplan,bebauungsplan
 version=0.1
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
-qgisMinimumVersion=3.22
+qgisMinimumVersion=3.26
 author=Kreis Viersen
 email=open@kreis-viersen.de
 icon=xplan_reader_icon.png
