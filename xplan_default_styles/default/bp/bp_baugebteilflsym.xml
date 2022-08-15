@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xplan="http://www.deegree.org/xplanung/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:BP_BaugebietsTeilFlaeche</FeatureTypeName>
+  <!-- XP_AllgArtDerBaulNutzung -->
+  <Rule>
+    <Name>bp_baugebteilfl</Name>
+    <Description>
+      <Title>BP: Allgemeine Art der baulichen Nutzung</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:Not>
+          <ogc:PropertyIsNull>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+          </ogc:PropertyIsNull>
+        </ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:And>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1000</Data>
+            <Value>W</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2000</Data>
+            <Value>M</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3000</Data>
+            <Value>G</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4000</Data>
+            <Value>S</Value>
+          </MapItem>
+        </Recode>
+        <ogc:Literal> </ogc:Literal>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Z</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+        </Recode>
+        <ogc:Literal> </ogc:Literal>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:bauweiseCode</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1000</Data>
+            <Value>o</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2000</Data>
+            <Value>g</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">bold</SvgParameter>
+        <SvgParameter name="font-size">4</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <AnchorPoint>
+            <AnchorPointX>0</AnchorPointX>
+            <AnchorPointY>0</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>1</DisplacementX>
+            <DisplacementY>1</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>0.5</Radius>
+        <Fill>
+          <SvgParameter name="fill">
+            <Recode fallbackValue="">
+              <LookupValue>
+                <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+              </LookupValue>
+              <MapItem>
+                <Data>1000</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2000</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>3000</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>4000</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+            </Recode>
+          </SvgParameter>
+          <SvgParameter name="fill-opacity">1</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+  <!-- XP_BesondereArtDerBaulNutzung -->
+  <Rule>
+    <Name>bp_baugebteilfl</Name>
+    <Description>
+      <Title>BP: Besondere Art der baulichen Nutzung</Title>
+    </Description>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1000</Data>
+            <Value>WS</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1100</Data>
+            <Value>WR</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1200</Data>
+            <Value>WA</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1300</Data>
+            <Value>WB</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1400</Data>
+            <Value>MD</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1500</Data>
+            <Value>MI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1600</Data>
+            <Value>MK</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1700</Data>
+            <Value>GE</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1800</Data>
+            <Value>GI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2000</Data>
+            <Value>SO</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2100</Data>
+            <Value>SO</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9999</Data>
+            <Value>Sonstige</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">bold</SvgParameter>
+        <SvgParameter name="font-size">4</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <AnchorPoint>
+            <AnchorPointX>0</AnchorPointX>
+            <AnchorPointY>0</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>0</DisplacementX>
+            <DisplacementY>7</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>0.5</Radius>
+        <Fill>
+          <SvgParameter name="fill">#FFFFFF</SvgParameter>
+          <SvgParameter name="fill-opacity">0.8</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+  <!-- XP_BesondereArtDerBaulNutzung für XPlanGML 4.1-->
+  <Rule>
+    <Name>bp_baugebteilfl</Name>
+    <Description>
+      <Title>BP: Besondere Art der baulichen Nutzung</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1000</Data>
+            <Value>WS</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1100</Data>
+            <Value>WR</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1200</Data>
+            <Value>WA</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1300</Data>
+            <Value>WB</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1400</Data>
+            <Value>MD</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1450</Data>
+            <Value>MDW</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1500</Data>
+            <Value>MI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1550</Data>
+            <Value>MU</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1600</Data>
+            <Value>MK</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1700</Data>
+            <Value>GE</Value>
+          </MapItem>
+          <MapItem>
+            <Data>1800</Data>
+            <Value>GI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2000</Data>
+            <Value>SO</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2100</Data>
+            <Value>SO</Value>
+          </MapItem>
+        </Recode>
+        <ogc:Literal> </ogc:Literal>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Z</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+        </Recode>
+        <ogc:Literal> </ogc:Literal>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:bauweiseCode</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1000</Data>
+            <Value>o</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2000</Data>
+            <Value>g</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">bold</SvgParameter>
+        <SvgParameter name="font-size">4</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <AnchorPoint>
+            <AnchorPointX>0</AnchorPointX>
+            <AnchorPointY>0</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>1</DisplacementX>
+            <DisplacementY>1</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>0.5</Radius>
+        <Fill>
+          <SvgParameter name="fill">
+            <Recode fallbackValue="">
+              <LookupValue>
+                <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+              </LookupValue>
+              <MapItem>
+                <Data>1000</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1100</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1200</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1300</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1400</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1450</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1500</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1550</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1600</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1700</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1800</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2000</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2100</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+            </Recode>
+          </SvgParameter>
+          <SvgParameter name="fill-opacity">1</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Name>bp_baugebteilfl</Name>
+    <Description>
+      <Title>BP: GRZ</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:GRZ</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <ogc:Literal>GRZ </ogc:Literal>
+        <FormatNumber fallbackValue="" decimalPoint=",">
+          <NumericValue>
+            <ogc:PropertyName>xplan:GRZ</ogc:PropertyName>
+          </NumericValue>
+          <Pattern>0.0</Pattern>
+        </FormatNumber>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">normal</SvgParameter>
+        <SvgParameter name="font-size">3</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <AnchorPoint>
+            <AnchorPointX>0</AnchorPointX>
+            <AnchorPointY>0</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>1</DisplacementX>
+            <DisplacementY>-2.5</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>0.5</Radius>
+        <Fill>
+          <SvgParameter name="fill">
+            <Recode fallbackValue="">
+              <LookupValue>
+                <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+              </LookupValue>
+              <MapItem>
+                <Data>1000</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1100</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1200</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1300</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1400</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1450</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1500</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1550</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1600</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1700</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1800</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2000</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2100</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+            </Recode>
+          </SvgParameter>
+          <SvgParameter name="fill-opacity">1</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+  <!--Rule>
+    <Name>bp_baugebteilfl</Name>
+    <Description>
+      <Title>BP: Bauweise</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:bauweiseCode</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:bauweiseCode</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1000</Data>
+            <Value>o</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2000</Data>
+            <Value>g</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">bold</SvgParameter>
+        <SvgParameter name="font-size">3</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <AnchorPoint>
+            <AnchorPointX>0</AnchorPointX>
+            <AnchorPointY>0</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>2</DisplacementX>
+            <DisplacementY>-3</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>0.5</Radius>
+        <Fill>
+          <SvgParameter name="fill">
+            <Recode fallbackValue="">
+              <LookupValue>
+                <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+              </LookupValue>
+              <MapItem>
+                <Data>1000</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1100</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1200</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1300</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1400</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1450</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1500</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1550</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1600</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1700</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1800</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2000</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2100</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+            </Recode>          
+          </SvgParameter>
+          <SvgParameter name="fill-opacity">1</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Name>bp_baugebteilfl</Name>
+    <Description>
+      <Title>BP: Z</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:Z</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Z</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">bold</SvgParameter>
+        <SvgParameter name="font-size">3</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <AnchorPoint>
+            <AnchorPointX>1</AnchorPointX>
+            <AnchorPointY>1</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>-2</DisplacementX>
+            <DisplacementY>0</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Halo>
+        <Radius>0.5</Radius>
+        <Fill>
+          <SvgParameter name="fill">
+            <Recode fallbackValue="">
+              <LookupValue>
+                <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+              </LookupValue>
+              <MapItem>
+                <Data>1000</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1100</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1200</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1300</Data>
+                <Value>#CF9377</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1400</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1450</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1500</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1550</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1600</Data>
+                <Value>#D5A744</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1700</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>1800</Data>
+                <Value>#A6A596</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2000</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+              <MapItem>
+                <Data>2100</Data>
+                <Value>#FE7F26</Value>
+              </MapItem>
+            </Recode>
+          </SvgParameter>
+          <SvgParameter name="fill-opacity">1</SvgParameter>
+        </Fill>
+      </Halo>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule-->
+</FeatureTypeStyle>

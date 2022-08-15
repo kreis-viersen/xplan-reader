@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sed="http://www.deegree.org/se" xmlns:xplan="http://www.deegree.org/xplanung/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:BP_UeberbaubareGrundstuecksFlaeche</FeatureTypeName>
+  <Rule>
+    <Name>bp_ueberbaubgrundstsflsym</Name>
+    <Description>
+      <Title>BP: Überbaubare Grundstücksfläche Symbol</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:Zzwingend</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Zzwingend</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+                    <MapItem>
+            <Data>12</Data>
+            <Value>XII</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">normal</SvgParameter>
+        <SvgParameter name="font-size">3</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+          <Displacement>
+            <DisplacementX>-0.2</DisplacementX>
+            <DisplacementY>0</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill-opacity">0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-width">0.2</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>5</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <Rule>
+    <Name>bp_ueberbaubgrundstsflsym</Name>
+    <Description>
+      <Title>BP: Überbaubare Grundstücksfläche Symbol</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:Z</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Z</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+                    <MapItem>
+            <Data>12</Data>
+            <Value>XII</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">normal</SvgParameter>
+        <SvgParameter name="font-size">3</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+                          <AnchorPoint>
+            <AnchorPointX>1</AnchorPointX>
+            <AnchorPointY>0.5</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>-1</DisplacementX>
+            <DisplacementY>0</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+  <Rule>
+    <Name>bp_ueberbaubgrundstsflsym</Name>
+    <Description>
+      <Title>BP: Überbaubare Grundstücksfläche Symbol</Title>
+    </Description>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:Zmin</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Not>
+    </ogc:Filter>
+    <TextSymbolizer uom="meter">
+      <Geometry>
+        <ogc:Function name="InteriorPoint">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+      </Geometry>
+      <Label>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Zmin</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+        </Recode>
+        <ogc:Literal>-</ogc:Literal>
+        <Recode fallbackValue="">
+          <LookupValue>
+            <ogc:PropertyName>xplan:Zmax</ogc:PropertyName>
+          </LookupValue>
+          <MapItem>
+            <Data>1</Data>
+            <Value>I</Value>
+          </MapItem>
+          <MapItem>
+            <Data>2</Data>
+            <Value>II</Value>
+          </MapItem>
+          <MapItem>
+            <Data>3</Data>
+            <Value>III</Value>
+          </MapItem>
+          <MapItem>
+            <Data>4</Data>
+            <Value>IV</Value>
+          </MapItem>
+          <MapItem>
+            <Data>5</Data>
+            <Value>V</Value>
+          </MapItem>
+          <MapItem>
+            <Data>6</Data>
+            <Value>VI</Value>
+          </MapItem>
+          <MapItem>
+            <Data>7</Data>
+            <Value>VII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>8</Data>
+            <Value>VIII</Value>
+          </MapItem>
+          <MapItem>
+            <Data>9</Data>
+            <Value>IX</Value>
+          </MapItem>
+          <MapItem>
+            <Data>10</Data>
+            <Value>X</Value>
+          </MapItem>
+          <MapItem>
+            <Data>11</Data>
+            <Value>XI</Value>
+          </MapItem>
+                    <MapItem>
+            <Data>12</Data>
+            <Value>XII</Value>
+          </MapItem>
+        </Recode>
+      </Label>
+      <Font>
+        <SvgParameter name="font-family">Arial</SvgParameter>
+        <SvgParameter name="font-family">Sans-Serif</SvgParameter>
+        <SvgParameter name="font-weight">normal</SvgParameter>
+        <SvgParameter name="font-size">3</SvgParameter>
+      </Font>
+      <LabelPlacement>
+        <PointPlacement>
+                          <AnchorPoint>
+            <AnchorPointX>1</AnchorPointX>
+            <AnchorPointY>0.5</AnchorPointY>
+          </AnchorPoint>
+          <Displacement>
+            <DisplacementX>-1</DisplacementX>
+            <DisplacementY>0</DisplacementY>
+          </Displacement>
+        </PointPlacement>
+      </LabelPlacement>
+      <Fill>
+        <SvgParameter name="fill">#000000</SvgParameter>
+      </Fill>
+    </TextSymbolizer>
+  </Rule>
+</FeatureTypeStyle>

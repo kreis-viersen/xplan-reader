@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="177.16534"
+   height="177.16534"
+   viewBox="0 0 50 50"
+   id="svg2"
+   xml:space="preserve"><defs
+   id="defs11" />
+ 
+ 
+   
+   
+   <path   
+   d="M42.8585 25.0975c0,-2.4678 -0.4654,-4.7893 -1.3963,-6.9648 -0.9307,-2.1755 -2.197,-4.0804 -3.7989,-5.7147 -1.6019,-1.6343 -3.4851,-2.9223 -5.6498,-3.8639 -2.1646,-0.9417 -4.4808,-1.4125 -6.9485,-1.4125 -2.511,0 -4.8597,0.4708 -7.046,1.4125 -2.1863,0.9416 -4.0858,2.2296 -5.6985,3.8639 -1.6126,1.6343 -2.879,3.5392 -3.7989,5.7147 -0.92,2.1755 -1.38,4.497 -1.38,6.9648 0,2.4894 0.46,4.811 1.38,6.9648 0.9199,2.1538 2.1863,4.0317 3.7989,5.6335 1.6127,1.6018 3.5122,2.8628 5.6985,3.7827 2.1863,0.92 4.535,1.38 7.046,1.38 2.4677,0 4.7839,-0.46 6.9485,-1.38 2.1647,-0.9199 4.0479,-2.1809 5.6498,-3.7827 1.6019,-1.6018 2.8682,-3.4797 3.7989,-5.6335 0.9309,-2.1538 1.3963,-4.4754 1.3963,-6.9648zm-2.5002 -0.0649c0,2.1213 -0.3951,4.1074 -1.1852,5.9581 -0.7901,1.8509 -1.8778,3.4743 -3.2632,4.8705 -1.3854,1.3963 -3.0035,2.4948 -4.8542,3.2957 -1.8508,0.801 -3.8369,1.2014 -5.9582,1.2014 -2.1647,0 -4.1833,-0.395 -6.0557,-1.1851 -1.8725,-0.7901 -3.5067,-1.8724 -4.9029,-3.247 -1.3963,-1.3746 -2.4948,-2.9927 -3.2957,-4.8542 -0.801,-1.8617 -1.2014,-3.8531 -1.2014,-5.9745 0,-2.0998 0.4004,-4.0912 1.2014,-5.9745 0.8009,-1.8832 1.8994,-3.523 3.2957,-4.9192 1.3962,-1.3961 3.0304,-2.5056 4.9029,-3.3281 1.8724,-0.8226 3.891,-1.2339 6.0557,-1.2339 2.1213,0 4.1074,0.4005 5.9582,1.2014 1.8507,0.8009 3.4688,1.8995 4.8542,3.2957 1.3854,1.3962 2.4731,3.0305 3.2632,4.903 0.7901,1.8724 1.1852,3.8693 1.1852,5.9907z"  
+   id="path3605"
+   style="fill:#666666;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    
+    
+
+   
+   </svg>

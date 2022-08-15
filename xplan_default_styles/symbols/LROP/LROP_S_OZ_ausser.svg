@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="177.16534"
+   height="177.16534"
+   viewBox="0 0 50 50"
+   id="svg2"
+   xml:space="preserve"><defs
+   id="defs11" />
+ 
+<path
+   d="M25.0552 2.4414c-3.1024,0 -6.0213,0.5921 -8.7567,1.7763 -2.7354,1.1842 -5.1205,2.7938 -7.1554,4.8287 -2.0349,2.0348 -3.6444,4.42 -4.8287,7.1554 -1.1842,2.7354 -1.7763,5.6543 -1.7763,8.7566 0,3.1024 0.5921,6.0212 1.7763,8.7566 1.1843,2.7354 2.7938,5.1206 4.8287,7.1555 2.0349,2.0348 4.42,3.6444 7.1554,4.8286 2.7354,1.1842 5.6543,1.7764 8.7567,1.7764 3.1023,0 6.0212,-0.5922 8.7566,-1.7764 2.7354,-1.1842 5.1205,-2.7938 7.1554,-4.8286 2.0349,-2.0349 3.6444,-4.4201 4.8287,-7.1555 1.1842,-2.7354 1.7763,-5.6542 1.7763,-8.7566 0,-3.1023 -0.5921,-6.0212 -1.7763,-8.7566 -1.1843,-2.7354 -2.7938,-5.1206 -4.8287,-7.1554 -2.0349,-2.0349 -4.42,-3.6445 -7.1554,-4.8287 -2.7354,-1.1842 -5.6543,-1.7763 -8.7566,-1.7763z"
+     
+   id="path3603"
+   style="fill:#B2B2B2;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+   
+   
+   
+   
+   </svg>

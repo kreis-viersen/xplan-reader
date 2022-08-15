@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-5 -5 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolWasser"
+       style="overflow:visible">
+      <circle
+         cx="0"
+         cy="0"
+         r="4.5"
+         id="circle9"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.5" />
+      <path
+         d="M -4.125,1.875 C -2.7496667,1.125 -1.3746667,1.125 0,1.875 C 1.3746667,2.5416667 2.7496667,2.5416667 4.125,1.875 C 3.4096542,3.5157589 1.7899188,4.5765632 2.7553643e-16,4.5765632 C -1.7899188,4.5765632 -3.4096542,3.5157589 -4.125,1.875"
+         id="path11"
+         style="fill:#000000;stroke:none" />
+    </symbol>
+  </defs>
+  <path
+     d="M 67.36416,74.643409 C 61.545972,74.008168 55.742026,72.261328 49.503134,69.267688 C 43.433765,66.355393 39.605822,65.046118 34.671852,64.194933 C 31.528451,63.65265 24.912117,63.699705 21.684941,64.287298 C 17.826374,64.98985 12.78534,66.577356 10.250415,67.888217 C 9.9066215,68.065998 9.5515101,68.135387 9.4612814,68.042411 C 9.1548563,67.726652 8.0177429,64.643537 7.3457854,62.306561 C 6.1589069,58.178743 5.6232692,54.356763 5.6232692,50.015729 C 5.6232692,40.33749 8.7034069,31.157719 14.608235,23.237735 C 16.459621,20.754516 20.781599,16.429626 23.234605,14.605543 C 37.004822,4.3658585 54.693798,2.7410225 69.894524,10.319561 C 87.700492,19.19698 97.452059,38.948225 93.662577,58.460407 C 92.86998,62.541518 91.368571,66.919846 89.674615,70.089893 L 88.922864,71.496701 L 87.303431,72.080527 C 85.016605,72.904939 80.811658,73.952284 78.194119,74.349419 C 75.549474,74.75067 69.78083,74.907261 67.36416,74.643405 L 67.36416,74.643409 z"
+     transform="translate(-5,-5)"
+     id="path2393"
+     style="opacity:1;fill:#050201;fill-opacity:0.990625" />
+  <path
+     d="M 45,89.331984 L 45,88.319838"
+     id="path2395"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>

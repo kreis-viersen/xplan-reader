@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-5 -5 100 100"
+   id="svg2"
+   sodipodi:docname="gelaendemorphologie-rinne.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2500"
+     inkscape:window-height="1376"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="6.675088"
+     inkscape:cx="46.70813"
+     inkscape:cy="48.700084"
+     inkscape:window-x="60"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolAbfall"
+       style="overflow:visible">
+      <circle
+         cx="0"
+         cy="0"
+         r="4.5"
+         id="circle9"
+         style="fill:#000000;stroke:none" />
+      <path
+         d="M -3.5,2.5 L 0,-4.25 L 3.5,2.5 L -3.5,2.5 z"
+         id="path11"
+         style="fill:#ffffff;stroke:none" />
+    </symbol>
+  </defs>
+  <path
+     d="M -3.8437271,20 C -3.6448695,20 92.014007,44.805411 92.287799,44.927975 92.44839,44.999867 -3.4497977,70 -3.8861543,70 -3.9487696,70 -4,58.75 -4,45 -4,31.25 -3.929681,20 -3.8437332,20 Z"
+     id="path2391"
+     style="opacity:1;fill:#050201;fill-opacity:0.990625;stroke-width:0.70964897"
+     inkscape:connector-curvature="0" />
+</svg>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="177.16534"
+   height="177.16534"
+   viewBox="0 0 50 50"
+   id="svg2"
+   xml:space="preserve"><defs
+   id="defs11" />
+ 
+   
+   <polygon   
+   points="42.7492,42.6525 42.7492,7.2644 7.3611,7.2644 7.3611,42.6525 "   
+   id="path3604"
+   style="fill:#FF0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     
+   
+   <path   
+   d="M42.7906 42.7147l-35.471 0 0 -35.5125 35.471 0 0 35.5125zm-2.4892 -2.3647l0 -30.6586 -30.4926 0 0 30.6586 30.4926 0z"   
+   id="path3605"
+   style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+   
+   
+   <path   
+   d="M20.2297 32.702l-3.3534 -15.4039 1.7143 0 1.9224 10.0959c0.2044,1.0401 0.3837,2.0909 0.5344,3.1525l0.5702 -2.8476 2.4065 -10.4008 2.0156 0 1.8076 7.797c0.4412,1.8972 0.7711,3.7155 0.9863,5.4514 0.1614,-1.0006 0.3694,-2.116 0.6205,-3.3498l1.9869 -9.8986 1.6821 0 -3.4682 15.4039 -1.6067 0 -2.6684 -11.735 -0.4016 -1.8076c-0.1184,0.6707 -0.2403,1.2732 -0.3659,1.8076l-2.6791 11.735 -1.7035 0z"  
+   id="path3605"
+   style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    
+    
+	
+   
+   </svg>

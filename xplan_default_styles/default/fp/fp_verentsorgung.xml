@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:FP_VerEntsorgung</FeatureTypeName>
+  <!-- surface -->
+  <Rule>
+    <Name>fp_verentsorgung</Name>
+    <Description>
+      <Title>FP: Ver– und Entsorgung</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsSurface">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:Or>
+          <ogc:PropertyIsNull>
+            <ogc:PropertyName>xplan:vonGenehmigungAusgenommen</ogc:PropertyName>
+          </ogc:PropertyIsNull>
+          <ogc:Not>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>xplan:vonGenehmigungAusgenommen</ogc:PropertyName>
+              <ogc:Literal>true</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Not>
+        </ogc:Or>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#ffec99</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">1.0</SvgParameter>
+        <SvgParameter name="stroke-dasharray">1</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!-- VerEntsorgungsleitungLinie unterirdisch-->
+  <!--
+  <Rule>
+      <Name>fp_verentsorgung</Name>
+      <Description>
+          <Title>FP: Ver- und Entsorgung</Title>
+      </Description>
+      <ogc:Filter>
+          <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>xplan:unterirdisch</ogc:PropertyName>
+                  <ogc:Literal>true</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                  <ogc:Function name="IsCurve">
+                      <ogc:PropertyName>xplan:position</ogc:PropertyName>
+                  </ogc:Function>
+                  <ogc:Literal>true</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:And>
+      </ogc:Filter>
+  <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <LineSymbolizer uom="meter">
+          <Geometry>
+              <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </Geometry>
+          <Stroke>
+              <SvgParameter name="stroke">#000000</SvgParameter>
+              <SvgParameter name="stroke-width">0.75</SvgParameter>
+          </Stroke>
+      </LineSymbolizer>
+      <LineSymbolizer uom="meter">
+          <Geometry>
+              <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </Geometry>
+          <Stroke>
+              <GraphicStroke>
+                  <Graphic>
+                      <Mark>
+                          <WellKnownName>square</WellKnownName>
+                          <Fill>
+                              <SvgParameter name="fill">#FFFFFF</SvgParameter>
+                              <SvgParameter name="fill-opacity">1</SvgParameter>
+                          </Fill>
+                          <Stroke>
+                              <SvgParameter name="stroke">#000000</SvgParameter>
+                              <SvgParameter name="stroke-width">0.5</SvgParameter>
+                          </Stroke>
+                      </Mark>
+                      <Size>3</Size>
+                      <Rotation>45</Rotation>
+                  </Graphic>
+                  <Gap>10</Gap>
+              </GraphicStroke>
+          </Stroke>
+      </LineSymbolizer>
+  </Rule>
+  -->
+  <!-- VerEntsorgungsleitungLinie oberirdisch -->
+  <!--
+  <Rule>
+      <Name>fp_verentsorgung</Name>
+      <Description>
+          <Title>FP: Ver- und Entsorgung</Title>
+      </Description>
+      <ogc:Filter>
+          <ogc:And>
+              <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>xplan:unterirdisch</ogc:PropertyName>
+                  <ogc:Literal>false</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                  <ogc:Function name="IsCurve">
+                      <ogc:PropertyName>xplan:position</ogc:PropertyName>
+                  </ogc:Function>
+                  <ogc:Literal>true</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+          </ogc:And>
+      </ogc:Filter>
+  <MaxScaleDenominator>100000</MaxScaleDenominator>
+      <LineSymbolizer uom="meter">
+          <Geometry>
+              <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </Geometry>
+          <Stroke>
+              <SvgParameter name="stroke">#000000</SvgParameter>
+              <SvgParameter name="stroke-width">0.75</SvgParameter>
+          </Stroke>
+      </LineSymbolizer>
+      <LineSymbolizer uom="meter">
+          <Geometry>
+              <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </Geometry>
+          <Stroke>
+              <GraphicStroke>
+                  <Graphic>
+                      <Mark>
+                          <WellKnownName>square</WellKnownName>
+                          <Fill>
+                              <SvgParameter name="fill">#000000</SvgParameter>
+                              <SvgParameter name="fill-opacity">1</SvgParameter>
+                          </Fill>
+                          <Stroke>
+                              <SvgParameter name="stroke">#000000</SvgParameter>
+                              <SvgParameter name="stroke-width">0.5</SvgParameter>
+                          </Stroke>
+                      </Mark>
+                      <Size>3</Size>
+                      <Rotation>45</Rotation>
+                  </Graphic>
+                  <Gap>10</Gap>
+              </GraphicStroke>
+          </Stroke>
+      </LineSymbolizer>
+  </Rule>
+  -->
+
+
+  <Rule>
+    <Name>fp_verentsorgung</Name>
+    <Description>
+      <Title>FP: Ver- und Entsorgung</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:Function name="IsCurve">
+          <ogc:PropertyName>xplan:position</ogc:PropertyName>
+        </ogc:Function>
+        <ogc:Literal>true</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.75</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <GraphicStroke>
+          <Graphic>
+            <Mark>
+              <WellKnownName>square</WellKnownName>
+              <Fill>
+                <SvgParameter name="fill">#000000</SvgParameter>
+                <SvgParameter name="fill-opacity">1</SvgParameter>
+              </Fill>
+              <Stroke>
+                <SvgParameter name="stroke">#000000</SvgParameter>
+                <SvgParameter name="stroke-width">0.5</SvgParameter>
+              </Stroke>
+            </Mark>
+            <Size>3</Size>
+            <Rotation>45</Rotation>
+          </Graphic>
+          <Gap>10</Gap>
+        </GraphicStroke>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+  <!-- Elektrizitaet Punkt -->
+  <Rule>
+    <Name>Elektrizitaet</Name>
+    <Description>
+      <Title>FP: Elektrizität</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>1000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/verentsorgelektr_sym.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#FFFFFF</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">0</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>60</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Gas -->
+  <Rule>
+    <Name>Gas</Name>
+    <Description>
+      <Title>FP: Gas</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>1200</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/verentsorggas_sym.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#FFFFFF</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">0</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>60</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Waermeversorgung -->
+  <Rule>
+    <Name>Waermeversorgung</Name>
+    <Description>
+      <Title>FP: Wärmeversorgung</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>1400</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/todo.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-width">0.3</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Trinkwasser -->
+  <Rule>
+    <Name>Trinkwasser</Name>
+    <Description>
+      <Title>FP: Trinkwasser</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>1600</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/todo.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-width">0.3</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Abwasser -->
+  <Rule>
+    <Name>Abwasser</Name>
+    <Description>
+      <Title>FP: Abwasser</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>1800</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/verentsorgabwa_sym.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#FFFFFF</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">0</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>60</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Regenwasser -->
+  <Rule>
+    <Name>Regenwasser</Name>
+    <Description>
+      <Title>FP: Regenwasser</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>2000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/todo.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-width">0.3</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Abfallentsorgung -->
+  <Rule>
+    <Name>Abfallentsorgung</Name>
+    <Description>
+      <Title>FP: Abfallentsorgung</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>2200</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/verentsorgabfall_sym.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#FFFFFF</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">0</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>50</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Ablagerungen -->
+  <Rule>
+    <Name>Ablagerungen</Name>
+    <Description>
+      <Title>FP: Ablagerungen</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>2400</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/verentsorgablag_sym.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#FFFFFF</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">0</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>75</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Telekommunikation -->
+  <Rule>
+    <Name>Telekommunikation</Name>
+    <Description>
+      <Title>FP: Telekommunikation</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>2600</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/todo.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-width">0.3</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Sonstiges -->
+  <Rule>
+    <Name>Sonstiges</Name>
+    <Description>
+      <Title>FP: Sonstiges</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>9999</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/todo.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-width">0.3</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- Wasser -->
+  <Rule>
+    <Name>Wasser</Name>
+    <Description>
+      <Title>FP: Wasser</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:zweckbestimmungCode</ogc:PropertyName>
+          <ogc:Literal>XP_1300</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+        </Mark>
+        <Size>70</Size>
+      </Graphic>
+    </PointSymbolizer>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+            xlink:href="../../symbols/verentsorgwasser_sym.svg" />
+          <Format>svg</Format>
+          <Fill>
+            <SvgParameter name="fill">#FFFFFF</SvgParameter>
+            <SvgParameter name="fill-opacity">1.0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">0</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>60</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+  <!-- vonGenehmigungAusgenommen -->
+  <Rule>
+    <Name>VonGenehmigungAusgenommen</Name>
+    <Description>
+      <Title>FP: VonGenehmigungAusgenommen</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsSurface">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:vonGenehmigungAusgenommen</ogc:PropertyName>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#FFFFFF</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">1.0</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+</FeatureTypeStyle>

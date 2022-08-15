@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:ogc="http://www.opengis.net/ogc"
+                  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:RP_Erholung</FeatureTypeName>
+
+  <!--Erholung-->
+  <Rule>
+    <Name>vb_Erholung</Name>
+    <Description>
+      <Title>Vorbehaltsgebiet Erholung</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>xplan:gebietsTypCode</ogc:PropertyName>
+        <ogc:Literal>1100</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <PolygonSymbolizer>
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <GraphicFill>
+          <Graphic>
+            <ExternalGraphic>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                              xlink:href="../../symbols/RROP/RROP_Erholung_vb.svg"/>
+              <Format>image/svg</Format>
+            </ExternalGraphic>
+            <Size>22</Size>
+            <Rotation>0</Rotation>
+          </Graphic>
+        </GraphicFill>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#64C800</SvgParameter>
+        <SvgParameter name="stroke-width">1.</SvgParameter>
+        <SvgParameter name="stroke-opacity">1</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+
+  <Rule>
+    <Name>VR_Erholung</Name>
+    <Description>
+      <Title>Vorranggebiet Erholung</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>xplan:gebietsTypCode</ogc:PropertyName>
+        <ogc:Literal>1000</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <PolygonSymbolizer>
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <GraphicFill>
+          <Graphic>
+            <ExternalGraphic>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                              xlink:href="../../symbols/RROP/RROP_Erholung_VR.svg"/>
+              <Format>image/svg</Format>
+            </ExternalGraphic>
+            <Size>22</Size>
+            <Rotation>0</Rotation>
+          </Graphic>
+        </GraphicFill>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#64C800</SvgParameter>
+        <SvgParameter name="stroke-width">1.5</SvgParameter>
+        <SvgParameter name="stroke-opacity">1</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+
+</FeatureTypeStyle>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-4.5 -3 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolSpielanlage"
+       style="overflow:visible">
+      <rect
+         width="9"
+         height="6"
+         x="-4.5"
+         y="-3"
+         id="rect9"
+         style="fill:#000000;stroke:none" />
+      <path
+         d="M -0.875,2 L -1.75,-0.875 L 2,-0.875 L 1.125,2 L -0.875,2 z"
+         id="path11"
+         style="fill:#ffffff;stroke:none" />
+      <path
+         d="M -1.75,-1.125 C -0.58333333,-2.375 0.66666667,-2.375 2,-1.125 L -1.75,-1.125 z"
+         id="path13"
+         style="fill:#ffffff;stroke:none" />
+    </symbol>
+  </defs>
+  <path
+     d="M 26.066802,34.246964 L 67.362348,34.449393 C 64.628012,31.773607 61.97223,29.071637 57.665286,26.920054 C 54.232201,24.850025 50.4847,24.037658 46.512146,24.125506 C 42.798622,24.524799 39.039442,24.83278 35.847966,26.27617 C 31.904725,28.933101 28.39861,31.590033 26.066802,34.246964 z"
+     id="path2395"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="M 26.066802,37.080972 L 67.767206,37.080972 L 58.050607,69.267206 L 35.783401,69.267206 L 26.066802,37.080972 z"
+     id="path2397"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>

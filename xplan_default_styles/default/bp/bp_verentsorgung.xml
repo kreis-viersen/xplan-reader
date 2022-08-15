@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:sed="http://www.deegree.org/se"
+  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:BP_VerEntsorgung</FeatureTypeName>
+  <!-- Fläche Standard -->
+  <Rule>
+    <Name>bp_verentsorgung</Name>
+    <Description>
+      <Title>BP: Ver– und Entsorgung</Title>
+    </Description>
+    <ogc:Filter>
+	  <ogc:And>
+		  <ogc:PropertyIsEqualTo>
+			<ogc:Function name="IsSurface">
+			  <ogc:PropertyName>xplan:position</ogc:PropertyName>
+			</ogc:Function>
+			<ogc:Literal>true</ogc:Literal>
+		  </ogc:PropertyIsEqualTo>
+      <ogc:Or>
+  		  <ogc:PropertyIsEqualTo>
+  			  <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+  			  <ogc:Literal>0</ogc:Literal>
+  		  </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+      </ogc:Or>
+	  </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#FFFF1A</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!-- Fläche unterirdisch -->
+  <Rule>
+    <Name>bp_verentsorgung</Name>
+    <Description>
+      <Title>BP: Ver– und Entsorgung</Title>
+    </Description>
+    <ogc:Filter>
+	  <ogc:And>
+		  <ogc:PropertyIsEqualTo>
+			<ogc:Function name="IsSurface">
+			  <ogc:PropertyName>xplan:position</ogc:PropertyName>
+			</ogc:Function>
+			<ogc:Literal>true</ogc:Literal>
+		  </ogc:PropertyIsEqualTo>
+		  <ogc:PropertyIsEqualTo>
+			  <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+			  <ogc:Literal>-1</ogc:Literal>
+		  </ogc:PropertyIsEqualTo>
+	  </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+	<PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">2</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">mitre</SvgParameter>
+		<SvgParameter name="stroke-dasharray">6 3</SvgParameter>
+		<SvgParameter name="stroke-dashoffset">0.1</SvgParameter>
+	  </Stroke>
+	  <sed:PerpendicularOffset type="Standard">-1</sed:PerpendicularOffset>
+    </PolygonSymbolizer>
+	<PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#FFFF1A</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">1.6</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">mitre</SvgParameter>
+		<SvgParameter name="stroke-dasharray">5.7 3.3</SvgParameter>
+      </Stroke>
+	  <sed:PerpendicularOffset type="Standard">-1</sed:PerpendicularOffset>
+    </PolygonSymbolizer>
+	<PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">mitre</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <Rule>
+    <Name>bp_verentsorgung</Name>
+    <Description>
+      <Title>BP: Ver– und Entsorgung</Title>
+    </Description>
+    <ogc:Filter>
+	  <ogc:And>
+		  <ogc:PropertyIsEqualTo>
+			<ogc:Function name="IsSurface">
+			  <ogc:PropertyName>xplan:position</ogc:PropertyName>
+			</ogc:Function>
+			<ogc:Literal>true</ogc:Literal>
+		  </ogc:PropertyIsEqualTo>
+		  <ogc:PropertyIsEqualTo>
+			  <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+			  <ogc:Literal>-1</ogc:Literal>
+		  </ogc:PropertyIsEqualTo>
+	  </ogc:And>
+    </ogc:Filter>
+	<MinScaleDenominator>2501</MinScaleDenominator>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#FFFF1A</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!-- VerEntsorgungsleitungLinie unterirdisch-->
+  <Rule>
+    <Name>bp_verentsorgungsleitlin</Name>
+    <Description>
+      <Title>BP: Ver- und Entsorgungsleitung unterirdisch</Title>
+    </Description>
+    <ogc:Filter>
+           <ogc:And>
+               <ogc:PropertyIsEqualTo>
+                   <ogc:Function name="IsCurve">
+                       <ogc:PropertyName>xplan:position</ogc:PropertyName>
+                   </ogc:Function>
+                   <ogc:Literal>true</ogc:Literal>
+               </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                   <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+                   <ogc:Literal>-1</ogc:Literal>
+               </ogc:PropertyIsEqualTo>
+           </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+		<SvgParameter name="stroke-dasharray">7 5</SvgParameter>
+		<SvgParameter name="stroke-dashoffset">9.5</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <GraphicStroke>
+          <Graphic>
+            <Mark>
+              <WellKnownName>square</WellKnownName>
+              <Fill>
+                <SvgParameter name="fill-opacity">0</SvgParameter>
+              </Fill>
+              <Stroke>
+                <SvgParameter name="stroke">#000000</SvgParameter>
+                <SvgParameter name="stroke-width">0.2</SvgParameter>
+              </Stroke>
+            </Mark>
+            <Size>2</Size>
+            <Rotation>45</Rotation>
+          </Graphic>
+          <Gap>10</Gap>
+        </GraphicStroke>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+  <!-- VerEntsorgungsleitungLinie oberirdisch -->
+  <Rule>
+    <Name>bp_verentsorgungsleitlin</Name>
+    <Description>
+      <Title>BP: Ver- und Entsorgungsleitung oberirdisch</Title>
+    </Description>
+    <ogc:Filter>
+           <ogc:And>
+			  <ogc:Or>
+				<ogc:PropertyIsNull>
+					<ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+				</ogc:PropertyIsNull>
+				<ogc:PropertyIsEqualTo>
+					<ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+					<ogc:Literal>1</ogc:Literal>
+				</ogc:PropertyIsEqualTo>
+				<ogc:PropertyIsEqualTo>
+					<ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+					<ogc:Literal>0</ogc:Literal>
+				</ogc:PropertyIsEqualTo>
+			   </ogc:Or>
+               <ogc:PropertyIsEqualTo>
+                   <ogc:Function name="IsCurve">
+                       <ogc:PropertyName>xplan:position</ogc:PropertyName>
+                   </ogc:Function>
+                   <ogc:Literal>true</ogc:Literal>
+               </ogc:PropertyIsEqualTo>
+           </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <GraphicStroke>
+          <Graphic>
+            <Mark>
+              <WellKnownName>square</WellKnownName>
+              <Fill>
+			    <SvgParameter name="fill">#000000</SvgParameter>
+                <SvgParameter name="fill-opacity">1.0</SvgParameter>
+              </Fill>
+              <Stroke>
+                <SvgParameter name="stroke">#000000</SvgParameter>
+                <SvgParameter name="stroke-width">0.2</SvgParameter>
+              </Stroke>
+            </Mark>
+            <Size>2</Size>
+            <Rotation>45</Rotation>
+          </Graphic>
+          <Gap>10</Gap>
+        </GraphicStroke>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+</FeatureTypeStyle>

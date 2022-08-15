@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc"
+  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:BP_GruenFlaeche</FeatureTypeName>
+  <!-- XP_ZweckbestimmungGruen -->
+  <!-- Park -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Dauerkleingarten -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Sportplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Spielplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Zeltplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Badeplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- FreizeitErholung -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- SpezGruenflaeche -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Friedhof -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Sonstiges -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Skateanlage -->
+  <!-- Rule wg. symbolPosition entfernt -->
+
+  <!-- XP_BesondereZweckbestimmungGruen -->
+  <!-- ParkanlageHistorisch -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- ParkanlageNaturnah -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- ParkanlageWaldcharakter -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- NaturnaheUferParkanlage -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- ErholungsGaerten -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Reitsportanlage -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Hundesportanlage -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Wassersportanlage -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Schiessstand -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Golfplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Skisport -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Tennisanlage -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- SonstigerSportplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Bolzplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Abenteuerspielplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Campingplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Kleintierhaltung -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Festplatz -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- StrassenbegleitGruen -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Boeschungsflaeche -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- FeldWaldWiese -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Uferschutzstreifen -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Abschirmgruen -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- UmweltbildungsparkSchaugatter -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- RuhenderVerkehr -->
+  <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Gaertnerei -->
+   <!-- Rule wg. symbolPosition entfernt -->
+  <!-- Detaillierte Zweckbestimmung -->
+  <!-- Rule wg. symbolPosition entfernt -->
+</FeatureTypeStyle>

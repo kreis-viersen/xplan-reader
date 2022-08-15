@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="177.16534"
+   height="177.16534"
+   viewBox="0 0 50 50"
+   id="svg2"
+   xml:space="preserve"><defs
+   id="defs11" />
+ 
+ 
+    
+	<polygon   
+  points="37.2598,28.3443 37.2598,21.5727 12.8505,21.5727 12.8505,28.3443 " 
+   id="path3604"
+   style="fill:#FF0000;fill-opacity:1;fill-rule:nonzero;stroke:none" />	
+   
+   <path   
+  d="M49.7794 34.0136l0 -18.1102 -49.4486 0 0 18.1102 49.4486 0zm-13.3858 -6.496l-22.7951 0 0 -5.1181 22.7951 0 0 5.1181z"  
+   id="path3605"
+   style="fill:#823CB4;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+   
+   
+ 
+    
+    
+
+   
+
+   
+   </svg>

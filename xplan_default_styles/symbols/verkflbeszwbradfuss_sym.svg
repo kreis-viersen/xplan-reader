@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-4.5 -4.5 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolRadFussweg"
+       style="overflow:visible">
+      <rect
+         width="9"
+         height="9"
+         x="-4.5"
+         y="-4.5"
+         id="rect9"
+         style="fill:#000000;stroke:none" />
+      <text
+         x="0"
+         y="3"
+         id="text11"
+         style="font-size:7px;font-weight:100;text-anchor:middle;fill:#ffffff;stroke:none">RF</text>
+    </symbol>
+  </defs>
+  <path
+     d="M 0.76923077,54.965384 L 0.76923077,26.711514 L 14.382591,26.794479 C 29.104966,26.884214 29.943198,26.938981 33.931601,28.071748 C 36.903543,28.915823 38.907771,30.022254 40.654585,31.783151 C 42.37796,33.520424 43.236443,34.989534 43.922895,37.376167 C 44.320789,38.759574 44.386109,39.448354 44.382925,42.22736 C 44.378729,45.889234 44.137897,47.116777 42.94664,49.548139 C 41.583119,52.331088 38.855951,54.699252 35.376213,56.121991 C 34.489623,56.484487 33.832769,56.839101 33.916532,56.910028 C 34.000294,56.980955 34.49549,57.195914 35.01697,57.387714 C 37.41413,58.269394 39.368407,60.041704 41.514229,63.279991 C 42.423536,64.652242 51.578947,82.719738 51.578947,83.141939 C 51.578947,83.184463 48.128626,83.219263 43.911567,83.219263 L 36.244188,83.219263 L 35.825872,82.246864 C 35.595798,81.71204 33.806889,78.045542 31.850516,74.099086 C 28.11569,66.56508 26.968506,64.702479 25.319071,63.494451 C 23.606943,62.240507 22.365656,61.933297 18.532389,61.814803 L 15.1417,61.709991 L 15.1417,72.464627 L 15.1417,83.219263 L 7.9554656,83.219263 L 0.76923077,83.219263 L 0.76923077,54.965384 z M 24.931897,51.54135 C 28.210737,50.846667 29.714397,49.053627 30.042966,45.446651 C 30.308265,42.534254 29.397075,39.78806 27.80116,38.690169 C 26.094107,37.515823 25.400941,37.392477 20.050607,37.310987 L 15.1417,37.236222 L 15.1417,44.539481 L 15.1417,51.842744 L 19.342105,51.83923 C 22.232727,51.836811 23.975753,51.743924 24.931897,51.541348 L 24.931897,51.54135 z"
+     transform="translate(-4.5,-4.5)"
+     id="path2391"
+     style="opacity:1;fill:#050201;fill-opacity:0.990625" />
+  <path
+     d="M 60.48583,54.980396 L 60.48583,26.74153 L 80.121457,26.74153 L 99.757085,26.74153 L 99.757085,32.207117 L 99.757085,37.672704 L 87.408907,37.672704 L 75.060729,37.672704 L 75.060729,43.037076 L 75.060729,48.401449 L 86.700405,48.401449 L 98.340081,48.401449 L 98.340081,53.765821 L 98.340081,59.130194 L 86.700405,59.130194 L 75.060729,59.130194 L 75.060729,71.174728 L 75.060729,83.219263 L 67.773279,83.219263 L 60.48583,83.219263 L 60.48583,54.980396 z"
+     transform="translate(-4.5,-4.5)"
+     id="path2393"
+     style="opacity:1;fill:#050201;fill-opacity:0.990625" />
+</svg>

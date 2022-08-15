@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-5 -5 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolAbWasser"
+       style="overflow:visible">
+      <circle
+         cx="0"
+         cy="0"
+         r="4.5"
+         id="circle9"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.5" />
+      <path
+         d="M 4.125,-2 L -4.125,-2 C -3.8088031,-2.3941307 -3.4284839,-2.7321922 -3,-3 L 3,-3 C 3.4259712,-2.7332968 3.8061392,-2.3953696 4.125,-2"
+         id="path11"
+         style="fill:#000000;stroke:none" />
+    </symbol>
+  </defs>
+  <path
+     d="M 19.623747,17.6429 C 25.148575,12.627404 31.060041,9.2679687 37.741156,7.3469323 C 51.682037,3.3384849 66.641109,6.3690497 77.923342,15.487463 C 79.036703,16.387293 80.261557,17.451199 80.645239,17.851699 L 81.342842,18.579882 L 49.977223,18.570813 L 18.611601,18.561738 L 19.623747,17.6429 z"
+     transform="translate(-5,-5)"
+     id="path2391"
+     style="opacity:1;fill:#050201;fill-opacity:0.990625" />
+  <path
+     d="M 45.534678,94.284888 C 30.204943,92.575582 16.945871,83.345262 10.209526,69.693242 C 4.2462734,57.607979 4.0810345,43.329011 9.7649961,31.279017 L 10.789909,29.106197 L 50.04168,29.106197 L 89.29345,29.106197 L 90.129954,30.877453 C 92.188061,35.235408 93.535203,39.823635 94.126954,44.490813 C 94.553901,47.858171 94.44685,54.248704 93.913322,57.243849 C 93.046373,62.110805 91.566454,66.515382 89.428929,70.590479 C 82.86333,83.107507 70.703968,91.814398 56.765638,93.979499 C 54.267196,94.36759 47.843053,94.542274 45.534678,94.284884 L 45.534678,94.284888 z"
+     transform="translate(-5,-5)"
+     id="path2393"
+     style="opacity:1;fill:#050201;fill-opacity:0.990625" />
+</svg>

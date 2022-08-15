@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se"
+                  xmlns:ogc="http://www.opengis.net/ogc"
+                  xmlns:sed="http://www.deegree.org/se"
+                  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:SO_Gelaendemorphologie</FeatureTypeName>
+  <!-- Terrassenkante -->
+  <Rule>
+    <Name>so_gelaendemorphologie</Name>
+    <Description>
+      <Title>SO: Gelaendemorphologie - Terrassenkante</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+        <ogc:Literal>1000</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <GraphicStroke>
+          <Graphic>
+            <Mark>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                              xlink:href="../../symbols/gelaendemorphologie-terrassenkanten.svg" />
+              <Format>svg</Format>
+              <Fill>
+                <SvgParameter name="fill">#ff3333</SvgParameter>
+              </Fill>
+              <Stroke>
+                <SvgParameter name="stroke">#ff3333</SvgParameter>
+                <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+                <SvgParameter name="stroke-width">0.10</SvgParameter>
+              </Stroke>
+            </Mark>
+            <Size>3</Size>
+          </Graphic>
+          <Gap>1</Gap>
+        </GraphicStroke>
+      </Stroke>
+      <sed:PerpendicularOffset type="Standard">-1.6</sed:PerpendicularOffset>
+    </LineSymbolizer>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#ff3333</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.25</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">round</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+  <!-- Rinne -->
+  <Rule>
+    <Name>so_gelaendemorphologie</Name>
+    <Description>
+      <Title>SO: Gelaendemorphologie - Rinne</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+        <ogc:Literal>1100</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <GraphicStroke>
+          <Graphic>
+            <Mark>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                              xlink:href="../../symbols/gelaendemorphologie-rinne.svg" />
+              <Format>svg</Format>
+              <Fill>
+                <SvgParameter name="fill">#b85b00</SvgParameter>
+              </Fill>
+              <Stroke>
+                <SvgParameter name="stroke">#b85b00</SvgParameter>
+                <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+                <SvgParameter name="stroke-width">1</SvgParameter>
+              </Stroke>
+            </Mark>
+            <Size>4</Size>
+          </Graphic>
+          <Gap>5</Gap>
+        </GraphicStroke>
+      </Stroke>
+    </LineSymbolizer>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#b85b00</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.25</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">round</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+  <!-- EhemMaeander -->
+  <Rule>
+    <Name>so_gelaendemorphologie</Name>
+    <Description>
+      <Title>SO: Gelaendemorphologie - Ehemalige Maeander</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+        <ogc:Literal>1200</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <GraphicStroke>
+          <Graphic>
+            <Mark>
+              <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple"
+                              xlink:href="../../symbols/verentsorgabfall_sym.svg" />
+              <Format>svg</Format>
+              <Fill>
+                <SvgParameter name="fill">#b85b00</SvgParameter>
+              </Fill>
+              <Stroke>
+                <SvgParameter name="stroke">#b85b00</SvgParameter>
+                <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+                <SvgParameter name="stroke-width">0.25</SvgParameter>
+              </Stroke>
+            </Mark>
+            <Size>1</Size>
+          </Graphic>
+          <Gap>0.25</Gap>
+        </GraphicStroke>
+      </Stroke>
+      <sed:PerpendicularOffset type="Standard">-0.50</sed:PerpendicularOffset>
+    </LineSymbolizer>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#b85b00</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.25</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">round</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+  <!-- Andere -->
+  <Rule>
+    <Name>so_gelaendemorphologie</Name>
+    <Description>
+      <Title>SO: Gelaendemorphologie - Andere</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:Or>
+        <ogc:PropertyIsNull>
+          <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+        </ogc:PropertyIsNull>
+        <ogc:Not>
+          <ogc:Or>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+              <ogc:Literal>1100</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>xplan:artDerFestlegungCode</ogc:PropertyName>
+              <ogc:Literal>1200</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Or>
+        </ogc:Not>
+      </ogc:Or>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <LineSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#ff3333</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.25</SvgParameter>
+        <SvgParameter name="stroke-linecap">butt</SvgParameter>
+        <SvgParameter name="stroke-linejoin">round</SvgParameter>
+      </Stroke>
+    </LineSymbolizer>
+  </Rule>
+</FeatureTypeStyle>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-4.5 -4.5 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolSegelfluggelaende"
+       style="overflow:visible">
+      <path
+         d="M -3.5,0 C -2.4542128,-0.75106855 -1.0457872,-0.75106855 0,3.3306691e-16 C 1.0457872,-0.75106855 2.4542128,-0.75106855 3.5,3.3306691e-16"
+         id="path9"
+         style="fill:none;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round" />
+      <path
+         d="M -3.5,0 C -2.1396174,-0.2339192 -0.76880513,0.35357178 0,1.5 C 0.76880513,0.35357178 2.1396174,-0.2339192 3.5,0"
+         id="path11"
+         style="fill:none;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round" />
+      <circle
+         cx="0"
+         cy="0"
+         r="4"
+         id="circle13"
+         style="fill:none;stroke:#000000;stroke-width:0.30000001;stroke-linecap:round" />
+    </symbol>
+  </defs>
+  <use
+     transform="matrix(11.999463,0,0,11.999463,45.647773,45.647773)"
+     id="use15"
+     x="0"
+     y="0"
+     width="9"
+     height="9"
+     xlink:href="#SymbolSegelfluggelaende" />
+</svg>

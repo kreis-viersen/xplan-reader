@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.opengis.net/se"
+  xmlns:ogc="http://www.opengis.net/ogc" xmlns:sed="http://www.deegree.org/se"
+  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:XP_PPO</FeatureTypeName>
+  <Rule>
+    <Name>bp_xp_ppo</Name>
+    <Description>
+      <Title>BP: Punkthaftes Präsentationobjekt</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:PropertyIsEqualTo>
+        <ogc:PropertyName>xplan:xpPlanType</ogc:PropertyName>
+        <ogc:Literal>BP_Plan</ogc:Literal>
+      </ogc:PropertyIsEqualTo>
+    </ogc:Filter>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <PointSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Graphic>
+        <Mark>
+          <WellKnownName>circle</WellKnownName>
+          <Fill>
+            <SvgParameter name="fill">#000000</SvgParameter>
+            <SvgParameter name="fill-opacity">0</SvgParameter>
+          </Fill>
+          <Stroke>
+            <SvgParameter name="stroke">#000000</SvgParameter>
+            <SvgParameter name="stroke-opacity">1</SvgParameter>
+            <SvgParameter name="stroke-width">0.1</SvgParameter>
+          </Stroke>
+        </Mark>
+        <Size>3</Size>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+</FeatureTypeStyle>

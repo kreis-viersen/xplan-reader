@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se"
+                  xmlns:ogc="http://www.opengis.net/ogc"
+                  xmlns:xplan="http://www.deegree.org/xplanung/1/0"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:RP_Sportanlage</FeatureTypeName>
+
+  <!--Wassersport-->
+
+  <Rule>
+    <Name>Wassersport</Name>
+    <Description>
+      <Title>Wassersport</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:typCode</ogc:PropertyName>
+          <ogc:Literal>2000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <PointSymbolizer>
+      <Graphic>
+        <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="../../symbols/RROP/RROP_S_Wassersport.svg"/>
+          <Format>image/svg</Format>
+        </ExternalGraphic>
+        <Size>
+          <ogc:Literal>52</ogc:Literal>
+        </Size>
+        <Rotation>0</Rotation>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+
+
+  <!--Motorsport-->
+
+  <Rule>
+    <Name>Motorsportsport</Name>
+    <Description>
+      <Title>Motorsportsport</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:typCode</ogc:PropertyName>
+          <ogc:Literal>3000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <PointSymbolizer>
+      <Graphic>
+        <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="../../symbols/RROP/RROP_S_Motorsport.svg"/>
+          <Format>image/svg</Format>
+        </ExternalGraphic>
+        <Size>
+          <ogc:Literal>52</ogc:Literal>
+        </Size>
+        <Rotation>0</Rotation>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+
+
+  <!--Flugsport-->
+
+  <Rule>
+    <Name>Flugsport</Name>
+    <Description>
+      <Title>Flugsport</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:typCode</ogc:PropertyName>
+          <ogc:Literal>4000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <PointSymbolizer>
+      <Graphic>
+        <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="../../symbols/RROP/RROP_S_Flugsport.svg"/>
+          <Format>image/svg</Format>
+        </ExternalGraphic>
+        <Size>
+          <ogc:Literal>52</ogc:Literal>
+        </Size>
+        <Rotation>0</Rotation>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+
+
+  <!--Reitsport-->
+
+  <Rule>
+    <Name>Reitsport</Name>
+    <Description>
+      <Title>Reitsport</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:typCode</ogc:PropertyName>
+          <ogc:Literal>5000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <PointSymbolizer>
+      <Graphic>
+        <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="../../symbols/RROP/RROP_S_Reitsport.svg"/>
+          <Format>image/svg</Format>
+        </ExternalGraphic>
+        <Size>
+          <ogc:Literal>52</ogc:Literal>
+        </Size>
+        <Rotation>0</Rotation>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+
+
+  <!--Golfsport-->
+  <Rule>
+    <Name>Golfsport</Name>
+    <Description>
+      <Title>Golfsport</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:PropertyIsEqualTo>
+          <ogc:Function name="IsPoint">
+            <ogc:PropertyName>xplan:position</ogc:PropertyName>
+          </ogc:Function>
+          <ogc:Literal>true</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:typCode</ogc:PropertyName>
+          <ogc:Literal>6000</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <PointSymbolizer>
+      <Graphic>
+        <ExternalGraphic>
+          <OnlineResource xlink:type="simple" xlink:href="../../symbols/RROP/RROP_S_Golfsport.svg"/>
+          <Format>image/svg</Format>
+        </ExternalGraphic>
+        <Size>
+          <ogc:Literal>52</ogc:Literal>
+        </Size>
+        <Rotation>0</Rotation>
+      </Graphic>
+    </PointSymbolizer>
+  </Rule>
+
+</FeatureTypeStyle>

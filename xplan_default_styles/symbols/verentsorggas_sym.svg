@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-5 -5 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolGas"
+       style="overflow:visible">
+      <circle
+         cx="0"
+         cy="0"
+         r="4.5"
+         id="circle9"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.5" />
+      <path
+         d="M 4.125,-2 L -4.125,-2 C -3.4096542,-3.6407589 -1.7899188,-4.7015632 2.7553643e-16,-4.7015632 C 1.7899188,-4.7015632 3.4096542,-3.6407589 4.125,-2"
+         id="path11"
+         style="fill:#000000;stroke:none" />
+      <path
+         d="M -4.125,2 L 4.125,2 C 3.4096542,3.6407589 1.7899188,4.7015632 2.7553643e-16,4.7015632 C -1.7899188,4.7015632 -3.4096542,3.6407589 -4.125,2"
+         id="path13"
+         style="fill:#000000;stroke:none" />
+    </symbol>
+  </defs>
+  <path
+     d="M 5.9311741,24.149798 L 84.473684,24.149798 C 87.500708,31.49531 89.045053,36.953285 89.534413,44.595142 C 89.50676,51.204731 87.399121,59.643252 84.473684,66.052632 L 5.9311741,66.052632 C 2.5464816,59.592744 1.1668297,52.330839 0.46558704,44.797571 C 0.97948001,39.036097 1.7092817,33.089558 5.9311741,24.149798 z"
+     id="path2393"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>

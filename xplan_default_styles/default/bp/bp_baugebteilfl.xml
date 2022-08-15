@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<FeatureTypeStyle xmlns="http://www.opengis.net/se"  xmlns:ogc="http://www.opengis.net/ogc"  xmlns:xplan="http://www.deegree.org/xplanung/1/0"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+  <Name>vollflaechig</Name>
+  <FeatureTypeName>xplan:BP_BaugebietsTeilFlaeche</FeatureTypeName>
+  <Description>
+    <Abstract>Darstellung auf Grundlage der (besonderen) Art der baulichen Nutzung</Abstract>
+  </Description>
+  <!-- WohnBauflaeche -->
+  <Rule>
+    <Name>Wohnen0</Name>
+    <Description>
+      <Title>Allg./Bes./Reines Wohngebiet, Kleinsiedlungsgebiet</Title>
+    </Description>
+    <ogc:Filter>
+      <!--ogc:And-->
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>1000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1300</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1300</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <!--ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+            <ogc:Literal>0</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsNull>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          </ogc:PropertyIsNull>
+        </ogc:Or>
+      </ogc:And-->
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#CF9377</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!--Rule>
+    <Name>Wohnen1</Name>
+    <Description>
+      <Title>Allg./Bes./Reines Wohngebiet, Kleinsiedlungsgebiet (Ebene 1)</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>1000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1300</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1300</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          <ogc:Literal>1</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-2</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#CF9377</SvgParameter>
+        <SvgParameter name="stroke-width">2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-1</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule-->
+  <!-- GemischteBauflaeche -->
+  <Rule>
+    <Name>Misch0</Name>
+    <Description>
+      <Title>Dorf-/Misch-/Kern-/Urbanes Gebiet</Title>
+    </Description>
+    <ogc:Filter>
+      <!--ogc:And-->
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>2000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1400</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1600</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1400</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1600</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <!--ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+            <ogc:Literal>0</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsNull>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          </ogc:PropertyIsNull>
+        </ogc:Or>
+      </ogc:And-->
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#D5A744</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!--Rule>
+    <Name>Misch1</Name>
+    <Description>
+      <Title>Dorf-/Misch-/Kern-/Urbanes Gebiet (Ebene 1)</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>2000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1400</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1600</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1400</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1600</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          <ogc:Literal>1</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-2</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#D5A744</SvgParameter>
+        <SvgParameter name="stroke-width">2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-1</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule-->
+  <!-- GewerblicheBauflaeche -->
+  <Rule>
+    <Name>Gewerbe0</Name>
+    <Description>
+      <Title>Gewerbe-/Industriegebiet</Title>
+    </Description>
+    <ogc:Filter>
+      <!--ogc:And-->
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>3000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1700</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1800</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1700</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1800</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <!--ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+            <ogc:Literal>0</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsNull>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          </ogc:PropertyIsNull>
+        </ogc:Or>
+      </ogc:And-->
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#A6A596</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!--Rule>
+    <Name>Gewerbe1</Name>
+    <Description>
+      <Title>Gewerbe-/Industriegebiet (Ebene 1)</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>3000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1700</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1800</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>1700</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>1800</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          <ogc:Literal>1</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-2</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#A6A596</SvgParameter>
+        <SvgParameter name="stroke-width">2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-1</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule-->
+  <!-- SonderBauflaeche -->
+  <Rule>
+    <Name>Sonder0</Name>
+    <Description>
+      <Title>Sondergebiet</Title>
+    </Description>
+    <ogc:Filter>
+      <!--ogc:And-->
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>4000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>2000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>4000</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>2000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>4000</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <!--ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+            <ogc:Literal>0</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsNull>
+            <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          </ogc:PropertyIsNull>
+        </ogc:Or>
+      </ogc:And-->
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Fill>
+        <SvgParameter name="fill">#FE7F26</SvgParameter>
+        <SvgParameter name="fill-opacity">1.0</SvgParameter>
+      </Fill>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+  <!--Rule>
+    <Name>Sonder1</Name>
+    <Description>
+      <Title>Sondergebiet (Ebene 1)</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:And>
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:Literal>4000</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>2000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>4000</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+          <ogc:PropertyIsBetween>
+            <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+            <ogc:LowerBoundary>
+              <ogc:Literal>2000</ogc:Literal>
+            </ogc:LowerBoundary>
+            <ogc:UpperBoundary>
+              <ogc:Literal>4000</ogc:Literal>
+            </ogc:UpperBoundary>
+          </ogc:PropertyIsBetween>
+        </ogc:Or>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:ebene</ogc:PropertyName>
+          <ogc:Literal>1</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:And>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-2</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#FE7F26</SvgParameter>
+        <SvgParameter name="stroke-width">2</SvgParameter>
+      </Stroke>
+      <PerpendicularOffset>-1</PerpendicularOffset>
+    </PolygonSymbolizer>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule-->
+  <!-- SonstigeBauflaeche -->
+  <Rule>
+    <Name>Sonstiges</Name>
+    <Description>
+      <Title>Sonstiges Gebiet</Title>
+    </Description>
+    <ogc:Filter>
+      <ogc:Or>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:allgArtDerBaulNutzungCode</ogc:PropertyName>
+          <ogc:Literal>9999</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:besondereArtDerBaulichenNutzungCode</ogc:PropertyName>
+          <ogc:Literal>9999</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+        <ogc:PropertyIsEqualTo>
+          <ogc:PropertyName>xplan:besondereArtDerBaulNutzungCode</ogc:PropertyName>
+          <ogc:Literal>9999</ogc:Literal>
+        </ogc:PropertyIsEqualTo>
+      </ogc:Or>
+    </ogc:Filter>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <PolygonSymbolizer uom="meter">
+      <Geometry>
+        <ogc:PropertyName>xplan:position</ogc:PropertyName>
+      </Geometry>
+      <Stroke>
+        <SvgParameter name="stroke">#000000</SvgParameter>
+        <SvgParameter name="stroke-opacity">1.0</SvgParameter>
+        <SvgParameter name="stroke-width">0.2</SvgParameter>
+      </Stroke>
+    </PolygonSymbolizer>
+  </Rule>
+</FeatureTypeStyle>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="177.16534"
+   height="177.16534"
+   viewBox="0 0 50 50"
+   id="svg2"
+   xml:space="preserve"><defs
+   id="defs11" />
+ 
+   
+   <polygon   
+   points="41.9726,41.8759 8.1025,41.8759 8.1025,8.0058 41.9726,8.0058 "  
+   id="path3604"
+   style="fill:#FBFBFB;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+     
+   
+   <path   
+   d="M42.2513 42.1547l-34.3924 0 0 -34.3924 34.3924 0 0 34.3924zm-1.2446 -1.2031l0 -31.9447 -31.9447 0 0 31.9447 31.9447 0zm-2.6966 -2.6966l-26.5515 0 0 -26.5515 26.5515 0 0 26.5515zm-2.0744 -2.0744l0 -22.4027 -22.4027 0 0 22.4027 22.4027 0zm-11.4503 -7.2186l-2.4477 -7.7165 0.9127 0 1.618 5.6006c0.083,0.2213 0.1521,0.4357 0.2074,0.6431 0.0554,0.2074 0.1107,0.4218 0.166,0.643 0.0553,-0.2212 0.1106,-0.4356 0.1659,-0.643 0.0553,-0.2074 0.1107,-0.4218 0.166,-0.6431l1.8254 -5.6006 0.7467 0 -2.4891 7.7165 -0.8713 0zm-5.6836 -3.153l1.9084 0 0 1.452c-0.2213,0.2213 -0.5186,0.4149 -0.892,0.5808 -0.3734,0.166 -0.7122,0.2489 -1.0164,0.2489 -1.4935,0 -2.2403,-1.0371 -2.2403,-3.1115 0,-1.0509 0.2074,-1.8254 0.6223,-2.3232 0.4149,-0.4978 0.9542,-0.7468 1.618,-0.7468 0.1383,0 0.2835,0.007 0.4356,0.0208 0.1521,0.0138 0.2973,0.0622 0.4356,0.1452 0.2766,0.1383 0.4909,0.3111 0.643,0.5186 0.1521,0.2074 0.2835,0.5324 0.3942,0.9749l0.7467 -0.2904c-0.1659,-0.8021 -0.4702,-1.3691 -0.9127,-1.701 -0.4425,-0.3318 -1.0233,-0.5255 -1.7424,-0.5808 -0.3319,0 -0.6154,0.0415 -0.8505,0.1245 -0.2351,0.083 -0.4771,0.1936 -0.726,0.3319 -0.4702,0.3042 -0.8436,0.7675 -1.1202,1.3898 -0.2765,0.6223 -0.4148,1.3621 -0.4148,2.2195 0,1.2446 0.2835,2.2265 0.8504,2.9456 0.567,0.7191 1.3207,1.0786 2.2611,1.0786 0.4425,0 0.9058,-0.1175 1.3898,-0.3526 0.484,-0.2351 0.9472,-0.5463 1.3898,-0.9335l0 -2.8625 -2.7796 0 0 0.8712zm9.5834 3.153l0 -1.0372 3.2359 -4.9369c0.2213,-0.4425 0.4287,-0.7606 0.6223,-0.9542l-3.5263 0 0 -0.9127 4.5635 0 0 0.9127 -3.5679 5.3933 -0.2489 0.5393 3.8998 0 0 0.9957 -4.9784 0z" 
+   id="path3605"
+   style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+   
+   
+  
+   
+  
+   
+   </svg>

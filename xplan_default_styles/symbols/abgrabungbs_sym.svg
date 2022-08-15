@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-5 -5 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolAbgrabungBodenschaetze"
+       style="overflow:visible">
+      <path
+         d="M -4.4,0 L 4.4,0"
+         id="path11"
+         style="fill:none;stroke:#000000;stroke-width:0.5" />
+      <path
+         d="M -2.5,0 L 2.5,0 L 2.5,2 L -2.5,2 L -2.5,0 z"
+         id="path13"
+         style="fill:#000000;stroke:none" />
+    </symbol>
+  </defs>
+  <g
+     transform="matrix(10.460899,0,0,10.460899,44.939271,44.939271)"
+     id="g2388">
+    <use
+       id="use15"
+       x="0"
+       y="0"
+       width="10"
+       height="10"
+       xlink:href="#SymbolAbgrabungBodenschaetze" />
+    <path
+       d="M -2.2267206,0.36437247 L 2.2672065,0.36437247"
+       id="path2384"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       d="M -2.2672065,0.68825911 L 2.2874494,0.68825911"
+       id="path2386"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       d="M -2.2874494,1.0526316 L 2.2469636,1.0526316"
+       id="path2388"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       d="M -2.2874494,1.3967611 L 2.1862348,1.3967611"
+       id="path2390"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>

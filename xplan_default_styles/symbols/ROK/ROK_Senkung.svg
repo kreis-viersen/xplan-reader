@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="400" height="400"
+ xmlns="http://www.w3.org/2000/svg">
+ <title>SVG</title>
+ <style type="text/css"><![CDATA[
+  text {font-size:60px; text-anchor:middle;}
+ ]]></style>
+
+
+
+<polygon points="180 0 220 0 400 180 400 220" stroke="#663300" stroke-width="1px" fill="#663300" />
+
+<polygon points="0 220 0 180 220 400 180 400" stroke="#663300" stroke-width="1px" fill="#663300" />
+
+
+
+<polygon points="180 0 220 0 0 220 0 180" stroke="#663300" stroke-width="1px" fill="#663300" />
+
+<polygon points="400 180 400 220 220 400 180 400" stroke="#663300" stroke-width="1px" fill="#663300" />
+
+
+
+
+
+
+
+
+
+
+ 
+</svg>

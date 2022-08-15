@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  #%L
+  xplan-workspaces - Modul zur Gruppierung aller Workspaces
+  %%
+  Copyright (C) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU Affero General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  #L%
+  -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="-4.5 -3 100 100"
+   id="svg2">
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style6" />
+    <symbol
+       id="SymbolSozial"
+       style="overflow:visible">
+      <rect
+         width="9"
+         height="6"
+         x="-4.5"
+         y="-3"
+         id="rect9"
+         style="fill:#000000;stroke:none" />
+      <path
+         d="M -3,-1.125 L 0,-2.25 L 3.25,-1.125 L 3.25,0.625 L 0,2 L -3,0.625 L -3,-1.125 z"
+         id="path11"
+         style="fill:#ffffff;stroke:none" />
+    </symbol>
+  </defs>
+  <path
+     d="M 2.4307021,57.3768 L 2.4307021,33.275843 L 43.714745,17.4317 L 88.569298,33.052686 L 88.569298,57.153643 L 44.161059,76.5683 L 2.4307021,57.3768 z"
+     id="path2385"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:13.81093788px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+</svg>
