@@ -9,7 +9,7 @@ Fragen, Anmerkungen, Fehlermeldungen etc. können z.B. über ein [GitHub-Issue] 
 ## Installation
 
 Es wird QGIS mindestens in der Version 3.26.0 benötigt.<br><br>
-Das Plugin ist im offiziellen [QGIS-Plugin-Repository] enthalten und kann in QGIS über das Hauptmenü (*Erweiterungen -> Erweiterungen verwalten und installieren*) installiert und auch bei Verfügbarkeit einer neuen Version aktualisiert werden.
+Das Plugin ist im offiziellen [QGIS-Plugin-Repository] enthalten und kann in QGIS über das Hauptmenü (*Erweiterungen -> Erweiterungen verwalten und installieren*) installiert und auch bei Verfügbarkeit einer neuen Version aktualisiert werden. Zukünftig werden weitere Layerstile enthalten sein.
 
 ## Funktionsweise
 
