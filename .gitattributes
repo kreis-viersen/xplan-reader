@@ -1,0 +1,2 @@
+# .sld would be otherwise detected as Scheme
+*.sld linguist-language=XML
