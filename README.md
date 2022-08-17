@@ -23,7 +23,7 @@ Eigene QGIS-Stildateien (.qml) können über einen [GitHub-Pull request] oder au
 
 Als Basis für neue QGIS-Stildateien können die [XPlan-Standard-Stile und SVG-Symbole] der [XPlanBox] verwendet werden. Die SLD-Dateien wurden auf Basis der original SE-Dateien erstellt. Dieses Skript ist ebenfalls als OpenSouce hier verfügbar: [xplan-se-to-sld]
 
-Sowohl die QGIS-Stildateien, welche im Plugin zur Anwendung kommen, als auch die XPlan-Standard-Stile sind in der jeweils aktuell vorliegendne Version im [Download-Zip-Archiv] des Repositories enthalten.
+Sowohl die QGIS-Stildateien, welche im Plugin zur Anwendung kommen, als auch die XPlan-Standard-Stile sind in der jeweils aktuell vorliegenden Version im [Download-Zip-Archiv] des Repositories enthalten.
 Wenn das Plugin in QGIS installiert ist, befinden sich diese im Plugin Verzeichnis:<br>
 _QGIS Hauptmenü_ -> _Einstellungen_ -> _Benutzerprofile_ -> _Aktuelles Profilverzeichnis öffnen_ -> _python_ -> _plugins_ -> _xplan-reader_ -> _styles_ (.qml-Stile für das Plugin) bzw. _xplan_default_styles_ (XPlan-Standard-Stile als SVG und SVG-Symbole)
 
