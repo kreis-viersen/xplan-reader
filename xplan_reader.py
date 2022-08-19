@@ -171,46 +171,96 @@ class XplanReader:
             # die Liste hier definiert die Reihenfolge - ganz oben hier der unterste in QGIS angezeigte Layer
             # Source / Liste von https://xleitstelle.de/releases/objektartenkatalog_5_3
 
-            # -------------------- surfaces / ab hier Flaechen ------------------------------------------------------------ #
+# -------------------- surfaces / ab hier Flaechen ---------------------------------------------------------- #
             addXplanLayer('BP_Plan', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_AbstandsFlaeche', 'Flaeche')
-            addXplanLayer('BP_AbweichungVonUeberbaubererGrundstuecksFlaeche', 'Flaeche')
-            addXplanLayer('BP_AufschuettungsFlaeche', 'Flaeche')
-            addXplanLayer('BP_AusgleichsFlaeche', 'Flaeche')
-            addXplanLayer('BP_BaugebietsTeilFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_PlanArt', 'Flaeche') # nur im XPlanBOX WMS enthalten ?
             addXplanLayer('BP_Bereich', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_BesondererNutzungszweckFlaeche', 'Flaeche')
-            addXplanLayer('BP_BodenschaetzeFlaeche', 'Flaeche')
-            addXplanLayer('BP_EingriffsBereich', 'Flaeche')
-            addXplanLayer('BP_ErhaltungsBereichFlaeche', 'Flaeche')
-            addXplanLayer('BP_FoerderungsFlaeche', 'Flaeche')
-            addXplanLayer('BP_FreiFlaeche', 'Flaeche')
-            addXplanLayer('BP_GebaeudeFlaeche', 'Flaeche')
+            addXplanLayer('BP_BaugebietsTeilFlaeche', 'Flaeche') # Style vorhanden
             addXplanLayer('BP_GemeinbedarfsFlaeche', 'Flaeche')
-            addXplanLayer('BP_GemeinschaftsanlagenFlaeche', 'Flaeche')
             addXplanLayer('BP_GewaesserFlaeche', 'Flaeche')
             addXplanLayer('BP_GruenFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_KennzeichnungsFlaeche', 'Flaeche') # Style vorhanden
             addXplanLayer('BP_KleintierhaltungFlaeche', 'Flaeche')
             addXplanLayer('BP_LandwirtschaftsFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_NebenanlagenAusschlussFlaeche', 'Flaeche')
-            addXplanLayer('BP_NebenanlagenFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_NichtUeberbaubareGrundstuecksflaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_UeberbaubareGrundstuecksFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_PersGruppenBestimmteFlaeche', 'Flaeche')
-            addXplanLayer('BP_RekultivierungsFlaeche', 'Flaeche')
-            addXplanLayer('BP_SchutzPflegeEntwicklungsFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_Sichtflaeche', 'Flaeche') # Style vorhanden
             addXplanLayer('BP_SpielSportanlagenFlaeche', 'Flaeche')
             addXplanLayer('BP_StrassenVerkehrsFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_TechnischeMassnahmenFlaeche', 'Flaeche')
-            addXplanLayer('BP_TextlicheFestsetzungsFlaeche', 'Flaeche')
+            addXplanLayer('BP_WaldFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('SO_Gewaesser', 'Flaeche')
+            addXplanLayer('SO_Wasserrecht', 'Flaeche')
+            addXplanLayer('BP_Landwirtschaft', 'Flaeche')
+            addXplanLayer('SO_Forstrecht', 'Flaeche')
+            addXplanLayer('BP_FreiFlaeche', 'Flaeche')
             addXplanLayer('BP_VerEntsorgung', 'Flaeche')
             addXplanLayer('BP_VerkehrsflaecheBesondererZweckbestimmung', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_WaldFlaeche', 'Flaeche') # Style vorhanden
+            # BP_Bereich_textlicher_Festsetzung im WMS enthalten …. Fehlt ?
+            addXplanLayer('BP_AbgrabungsFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_AufschuettungsFlaeche', 'Flaeche')
+            addXplanLayer('BP_AbstandsFlaeche', 'Flaeche')
+            addXplanLayer('BP_AusgleichsFlaeche', 'Flaeche')
+            addXplanLayer('BP_BodenschaetzeFlaeche', 'Flaeche')
+            addXplanLayer('BP_GenerischesObjekt', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_BesondererNutzungszweckFlaeche', 'Flaeche')
+            addXplanLayer('SO_Bodenschutzrecht', 'Flaeche')
+            addXplanLayer('SO_Denkmalschutzrecht', 'Flaeche')
+            addXplanLayer('BP_ErhaltungsBereichFlaeche', 'Flaeche')
+            addXplanLayer('BP_FoerderungsFlaeche', 'Flaeche')
+            addXplanLayer('BP_GebaeudeFlaeche', 'Flaeche')
+            addXplanLayer('BP_GemeinschaftsanlagenFlaeche', 'Flaeche')
+            addXplanLayer('SO_SonstigesRecht', 'Flaeche')
+            addXplanLayer('SO_SchutzgebietSonstigesRecht', 'Flaeche')
+            addXplanLayer('SO_SchutzgebietWasserrecht', 'Flaeche')
             addXplanLayer('BP_WasserwirtschaftsFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_ZentralerVersorgungsbereich', 'Flaeche')
+            addXplanLayer('BP_KennzeichnungsFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('SO_Luftverkehrsrecht', 'Flaeche')
+            addXplanLayer('BP_NebenanlagenFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_PersGruppenBestimmteFlaeche', 'Flaeche')
+            addXplanLayer('SO_Schienenverkehrsrecht', 'Flaeche')
+            addXplanLayer('SO_Strassenverkehrsrecht', 'Flaeche')
+            addXplanLayer('BP_Strassenkoerper', 'Flaeche')
+            # addXplanLayer('BP_StrassenbegrenzungsLinie', 'Flaeche') -> existiert nur als Linie
+            addXplanLayer('BP_StrassenbegrenzungsLinie', 'Linie') # Style vorhanden
+            addXplanLayer('BP_SchutzPflegeEntwicklungsFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_TechnischeMassnahmenFlaeche', 'Flaeche')
+            addXplanLayer('BP_UeberbaubareGrundstuecksFlaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_NichtUeberbaubareGrundstuecksflaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_NebenanlagenAusschlussFlaeche', 'Flaeche')
+            addXplanLayer('BP_AbstandsMass', 'Flaeche')
+            addXplanLayer('SO_Bauverbotszone', 'Flaeche')
+            addXplanLayer('BP_AnpflanzungBindungErhaltung', 'Flaeche') # Style v1 vorhanden
+            addXplanLayer('BP_AusgleichsMassnahme', 'Flaeche')
+            addXplanLayer('BP_BereichOhneEinAusfahrtLinie', 'Flaeche')
+            # addXplanLayer('BP_EinfahrtsbereichLinie', 'Flaeche') -> existiert nur als Linie
+            addXplanLayer('BP_EinfahrtsbereichLinie', 'Linie') # Style vorhanden
+            addXplanLayer('BP_EinfahrtPunkt', 'Flaeche')
+            addXplanLayer('BP_EingriffsBereich', 'Flaeche')
+            addXplanLayer('BP_FestsetzungNachLandesrecht', 'Flaeche')
+            addXplanLayer('BP_FirstRichtungsLinie', 'Flaeche')
+            addXplanLayer('BP_GemeinschaftsanlagenZuordnung', 'Flaeche')
+            addXplanLayer('BP_HoehenMass', 'Flaeche')
+            addXplanLayer('BP_Immissionsschutz', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_RegelungVergnuegungsstaetten', 'Flaeche')
+            addXplanLayer('BP_SchutzPflegeEntwicklungsMassnahme', 'Flaeche')
+            addXplanLayer('BP_SpezielleBauweise', 'Flaeche')
+            addXplanLayer('BP_UnverbindlicheVormerkung', 'Flaeche')
+            addXplanLayer('BP_Veraenderungssperre', 'Flaeche')
+            addXplanLayer('BP_Wegerecht', 'Flaeche') # Style v2 vorhanden
+            # addXplanLayer('BP_NutzungsartenGrenze', 'Flaeche') -> existiert nur als Linie
+            addXplanLayer('BP_NutzungsartenGrenze', 'Linie') # Style vorhanden
+            # addXplanLayer('BP_BauGrenze', 'Flaeche') -> existiert nur als Linie
+            # addXplanLayer('BP_BauLinie', 'Flaeche') -> existiert nur als Linie
+            addXplanLayer('BP_BauGrenze', 'Linie') # Style vorhanden
+            addXplanLayer('BP_BauLinie', 'Linie') # Style vorhanden
+            addXplanLayer('BP_AbweichungVonBaugrenze', 'Flaeche')
+            addXplanLayer('BP_AbweichungVonUeberbaubererGrundstuecksFlaeche', 'Flaeche')
+            addXplanLayer('BP_VerEntsorgung', 'Linie')
+            addXplanLayer('BP_RichtungssektorGrenze', 'Flaeche')
+            addXplanLayer('BP_ZusatzkontingentLaerm', 'Flaeche')
             addXplanLayer('BP_ZusatzkontingentLaermFlaeche', 'Flaeche')
+            addXplanLayer('BP_Sichtflaeche', 'Flaeche') # Style vorhanden
+            addXplanLayer('BP_Symbole', 'Punkt') # nur im XPlanBOX WMS enthalten ?
+            addXplanLayer('BP_Beschriftung', 'Punkt') # nur im XPlanBOX WMS enthalten ?
+            addXplanLayer('BP_RekultivierungsFlaeche', 'Flaeche')
+            addXplanLayer('BP_TextlicheFestsetzungsFlaeche', 'Flaeche')
+            addXplanLayer('BP_ZentralerVersorgungsbereich', 'Flaeche')
             addXplanLayer('FP_AusgleichsFlaeche', 'Flaeche')
             addXplanLayer('FP_BebauungsFlaeche', 'Flaeche')
             addXplanLayer('FP_Bereich', 'Flaeche') # Style vorhanden
@@ -231,49 +281,21 @@ class XplanReader:
             addXplanLayer('RP_SonstigerSiedlungsbereich', 'Flaeche')
             addXplanLayer('SO_Bereich', 'Flaeche') # Style vorhanden
             addXplanLayer('XP_Bereich', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_AbgrabungsFlaeche', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_AbweichungVonBaugrenze', 'Flaeche')
-            # addXplanLayer('BP_BauGrenze', 'Flaeche') -> existiert nur als Linie
-            # addXplanLayer('BP_BauLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer('BP_BereichOhneEinAusfahrtLinie', 'Flaeche')
-            # addXplanLayer('BP_EinfahrtsbereichLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer('BP_FirstRichtungsLinie', 'Flaeche')
-            # addXplanLayer('BP_NutzungsartenGrenze', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer('BP_RichtungssektorGrenze', 'Flaeche')
-            # addXplanLayer('BP_StrassenbegrenzungsLinie', 'Flaeche') -> existiert nur als Linie
             addXplanLayer('RP_Achse', 'Flaeche')
             addXplanLayer('RP_Grenze', 'Flaeche')
             addXplanLayer('SO_Grenze', 'Flaeche')
-            addXplanLayer('BP_AbstandsMass', 'Flaeche')
-            addXplanLayer('BP_AnpflanzungBindungErhaltung', 'Flaeche')
-            addXplanLayer('BP_AusgleichsMassnahme', 'Flaeche')
             addXplanLayer('BP_Dachgestaltung', 'Flaeche')
-            addXplanLayer('BP_EinfahrtPunkt', 'Flaeche')
             addXplanLayer('BP_EmissionskontingentLaerm', 'Flaeche')
             addXplanLayer('BP_EmissionskontingentLaermGebiet', 'Flaeche')
-            addXplanLayer('BP_FestsetzungNachLandesrecht', 'Flaeche')
             addXplanLayer('BP_Flaechenobjekt', 'Flaeche')
             addXplanLayer('BP_Flaechenschlussobjekt', 'Flaeche')
             addXplanLayer('BP_FlaecheOhneFestsetzung', 'Flaeche')
-            addXplanLayer('BP_GemeinschaftsanlagenZuordnung', 'Flaeche')
-            addXplanLayer('BP_GenerischesObjekt', 'Flaeche') # Style vorhanden
             addXplanLayer('BP_Geometrieobjekt', 'Flaeche')
-            addXplanLayer('BP_HoehenMass', 'Flaeche')
-            addXplanLayer('BP_Immissionsschutz', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_Landwirtschaft', 'Flaeche')
             addXplanLayer('BP_Linienobjekt', 'Flaeche')
             addXplanLayer('BP_Objekt', 'Flaeche')
             addXplanLayer('BP_Punktobjekt', 'Flaeche')
-            addXplanLayer('BP_RegelungVergnuegungsstaetten', 'Flaeche')
             addXplanLayer('BP_Richtungssektor', 'Flaeche')
-            addXplanLayer('BP_SchutzPflegeEntwicklungsMassnahme', 'Flaeche')
-            addXplanLayer('BP_SpezielleBauweise', 'Flaeche')
-            addXplanLayer('BP_Strassenkoerper', 'Flaeche')
             addXplanLayer('BP_Ueberlagerungsobjekt', 'Flaeche')
-            addXplanLayer('BP_UnverbindlicheVormerkung', 'Flaeche')
-            addXplanLayer('BP_Veraenderungssperre', 'Flaeche')
-            addXplanLayer('BP_Wegerecht', 'Flaeche') # Style vorhanden
-            addXplanLayer('BP_ZusatzkontingentLaerm', 'Flaeche')
             addXplanLayer('FP_Abgrabung', 'Flaeche')
             addXplanLayer('FP_AnpassungKlimawandel', 'Flaeche')
             addXplanLayer('FP_Aufschuettung', 'Flaeche') # Style vorhanden
@@ -374,28 +396,16 @@ class XplanReader:
             addXplanLayer('RP_Wasserwirtschaft', 'Flaeche')
             addXplanLayer('RP_WohnenSiedlung', 'Flaeche')
             addXplanLayer('RP_ZentralerOrt', 'Flaeche')
-            addXplanLayer('SO_Bauverbotszone', 'Flaeche')
-            addXplanLayer('SO_Bodenschutzrecht', 'Flaeche')
-            addXplanLayer('SO_Denkmalschutzrecht', 'Flaeche')
             addXplanLayer('SO_Flaechenobjekt', 'Flaeche')
-            addXplanLayer('SO_Forstrecht', 'Flaeche')
             addXplanLayer('SO_Gebiet', 'Flaeche')
             addXplanLayer('SO_Gelaendemorphologie', 'Flaeche')
             addXplanLayer('SO_Geometrieobjekt', 'Flaeche')
-            addXplanLayer('SO_Gewaesser', 'Flaeche')
             addXplanLayer('SO_Linienobjekt', 'Flaeche')
-            addXplanLayer('SO_Luftverkehrsrecht', 'Flaeche')
             addXplanLayer('SO_Objekt', 'Flaeche')
             addXplanLayer('SO_Plan', 'Flaeche') # Style vorhanden
             addXplanLayer('SO_Punktobjekt', 'Flaeche')
-            addXplanLayer('SO_Schienenverkehrsrecht', 'Flaeche')
             addXplanLayer('SO_SchutzgebietNaturschutzrecht', 'Flaeche')
-            addXplanLayer('SO_SchutzgebietSonstigesRecht', 'Flaeche')
-            addXplanLayer('SO_SchutzgebietWasserrecht', 'Flaeche')
-            addXplanLayer('SO_SonstigesRecht', 'Flaeche')
-            addXplanLayer('SO_Strassenverkehrsrecht', 'Flaeche')
             addXplanLayer('SO_TextAbschnitt', 'Flaeche')
-            addXplanLayer('SO_Wasserrecht', 'Flaeche')
             addXplanLayer('XP_AbstraktesPraesentationsobjekt', 'Flaeche')
             addXplanLayer('XP_BegruendungAbschnitt', 'Flaeche')
             addXplanLayer('XP_DatumAttribut', 'Flaeche')
@@ -425,7 +435,6 @@ class XplanReader:
             addXplanLayer('XP_VerbundenerPlan', 'Flaeche')
             addXplanLayer('XP_VerfahrensMerkmal', 'Flaeche')
             addXplanLayer('XP_WirksamkeitBedingung', 'Flaeche')
-
             # -------------------- lines / ab hier Linien ------------------------------------------------------------ #
             addXplanLayer('BP_Plan', 'Linie')
             addXplanLayer('BP_AbstandsFlaeche', 'Linie')
@@ -460,7 +469,6 @@ class XplanReader:
             # addXplanLayer('BP_StrassenVerkehrsFlaeche', 'Linie') -> existiert nur als Flaeche
             addXplanLayer('BP_TechnischeMassnahmenFlaeche', 'Linie')
             addXplanLayer('BP_TextlicheFestsetzungsFlaeche', 'Linie')
-            addXplanLayer('BP_VerEntsorgung', 'Linie')
             addXplanLayer('BP_VerkehrsflaecheBesondererZweckbestimmung', 'Linie')
             # addXplanLayer('BP_WaldFlaeche', 'Linie') -> existiert nur als Flaeche
             # addXplanLayer('BP_WasserwirtschaftsFlaeche', 'Linie') -> existiert nur als Flaeche
@@ -488,19 +496,14 @@ class XplanReader:
             addXplanLayer('XP_Bereich', 'Linie')
             # addXplanLayer('BP_AbgrabungsFlaeche', 'Linie') -> existiert nur als Flaeche
             addXplanLayer('BP_AbweichungVonBaugrenze', 'Linie')
-            addXplanLayer('BP_BauGrenze', 'Linie') # Style vorhanden
-            addXplanLayer('BP_BauLinie', 'Linie') # Style vorhanden
             addXplanLayer('BP_BereichOhneEinAusfahrtLinie', 'Linie')
-            addXplanLayer('BP_EinfahrtsbereichLinie', 'Linie') # Style vorhanden
             addXplanLayer('BP_FirstRichtungsLinie', 'Linie')
-            addXplanLayer('BP_NutzungsartenGrenze', 'Linie') # Style vorhanden
             addXplanLayer('BP_RichtungssektorGrenze', 'Linie')
-            addXplanLayer('BP_StrassenbegrenzungsLinie', 'Linie') # Style vorhanden
             addXplanLayer('RP_Achse', 'Linie')
             addXplanLayer('RP_Grenze', 'Linie')
             addXplanLayer('SO_Grenze', 'Linie')
             addXplanLayer('BP_AbstandsMass', 'Linie')
-            addXplanLayer('BP_AnpflanzungBindungErhaltung', 'Linie') # Style vorhanden
+            addXplanLayer('BP_AnpflanzungBindungErhaltung', 'Linie') # Style v2 vorhanden
             addXplanLayer('BP_AusgleichsMassnahme', 'Linie')
             addXplanLayer('BP_Dachgestaltung', 'Linie')
             addXplanLayer('BP_EinfahrtPunkt', 'Linie')
@@ -527,7 +530,7 @@ class XplanReader:
             addXplanLayer('BP_Ueberlagerungsobjekt', 'Linie')
             addXplanLayer('BP_UnverbindlicheVormerkung', 'Linie')
             addXplanLayer('BP_Veraenderungssperre', 'Linie')
-            addXplanLayer('BP_Wegerecht', 'Linie')
+            addXplanLayer('BP_Wegerecht', 'Linie') # Style v1 vorhanden
             addXplanLayer('BP_ZusatzkontingentLaerm', 'Linie')
             addXplanLayer('FP_Abgrabung', 'Linie')
             addXplanLayer('FP_AnpassungKlimawandel', 'Linie')
@@ -557,7 +560,7 @@ class XplanReader:
             addXplanLayer('FP_VerEntsorgung', 'Linie')
             addXplanLayer('FP_Wasserwirtschaft', 'Linie')
             addXplanLayer('LP_Abgrenzung', 'Linie')
-            addXplanLayer('LP_AnpflanzungBindungErhaltung', 'Linie') # Style vorhanden
+            addXplanLayer('LP_AnpflanzungBindungErhaltung', 'Linie') # Style v2 vorhanden
             addXplanLayer('LP_Ausgleich', 'Linie')
             addXplanLayer('LP_Bodenschutzrecht', 'Linie')
             addXplanLayer('LP_ErholungFreizeit', 'Linie')
@@ -755,7 +758,7 @@ class XplanReader:
             addXplanLayer('RP_Grenze', 'Punkt')
             addXplanLayer('SO_Grenze', 'Punkt')
             addXplanLayer('BP_AbstandsMass', 'Punkt')
-            addXplanLayer('BP_AnpflanzungBindungErhaltung', 'Punkt') # Style vorhanden
+            addXplanLayer('BP_AnpflanzungBindungErhaltung', 'Punkt') # Style v2 vorhanden
             addXplanLayer('BP_AusgleichsMassnahme', 'Punkt')
             addXplanLayer('BP_Dachgestaltung', 'Punkt')
             addXplanLayer('BP_EinfahrtPunkt', 'Punkt')
@@ -782,7 +785,7 @@ class XplanReader:
             addXplanLayer('BP_Ueberlagerungsobjekt', 'Punkt')
             addXplanLayer('BP_UnverbindlicheVormerkung', 'Punkt')
             addXplanLayer('BP_Veraenderungssperre', 'Punkt')
-            addXplanLayer('BP_Wegerecht', 'Punkt')
+            addXplanLayer('BP_Wegerecht', 'Punkt') # Style v1 vorhanden
             addXplanLayer('BP_ZusatzkontingentLaerm', 'Punkt')
             addXplanLayer('FP_Abgrabung', 'Punkt')
             addXplanLayer('FP_AnpassungKlimawandel', 'Punkt')
@@ -935,6 +938,5 @@ class XplanReader:
             addXplanLayer('XP_VerbundenerPlan', 'Punkt')
             addXplanLayer('XP_VerfahrensMerkmal', 'Punkt')
             addXplanLayer('XP_WirksamkeitBedingung', 'Punkt')
-
             # -------------------- text / ab hier Text ------------------------------------------------------------ #
             addXplanLayer('BP_TextAbschnitt', 'Text')
