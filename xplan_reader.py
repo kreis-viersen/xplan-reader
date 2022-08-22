@@ -104,17 +104,24 @@ class XplanReader:
             except:
                 message = 'Datei: \"' + my_gml +  \
                 '\" konnte nicht gelesen werden, bitte Datei überprüfen.'
-                self.iface.messageBar().pushMessage('Fehler', message, level=2, duration=5)
+                self.iface.messageBar().pushMessage('Fehler', message, level=2, duration=10)
                 self.logMessage(message, 2)
 
                 return
 
             gml_root = tree.getroot()
 
-            xplan_ns_uri = gml_root.nsmap['xplan']
+            try:
+                xplan_ns_uri = gml_root.nsmap['xplan']
+                xplan_version = xplan_ns_uri.split('http://www.xplanung.de/xplangml/')[1].replace('/', '.')
+                self.logMessage('XPlanung Version: ' + xplan_version)
+            except:
+                message = 'Datei: \"' + my_gml +  \
+                '\": Namespace "xplan" konnte nicht gefunden werden, bitte Datei überprüfen.'
+                self.iface.messageBar().pushMessage('Fehler', message, level=2, duration=10)
+                self.logMessage(message, 2)
 
-            xplan_version = xplan_ns_uri.split('http://www.xplanung.de/xplangml/')[1].replace('/', '.')
-            self.logMessage('XPlanung Version: ' + xplan_version)
+                return
 
             try:
                 name = next(gml_root.iter('{' + xplan_ns_uri + '}name')).text
