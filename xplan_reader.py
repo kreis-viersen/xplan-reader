@@ -116,10 +116,11 @@ class XplanReader:
             xplan_version = xplan_ns_uri.split('http://www.xplanung.de/xplangml/')[1].replace('/', '.')
             self.logMessage('XPlanung Version: ' + xplan_version)
 
-            name = next(gml_root.iter('{' + xplan_ns_uri + '}name')).text
-            if name is None:
+            try:
+                name = next(gml_root.iter('{' + xplan_ns_uri + '}name')).text
+                self.logMessage('Name des Plans: ' + name)
+            except:
                 name = filename
-            self.logMessage('Name des Plans: ' + name)
 
             root = QgsProject.instance().layerTreeRoot()
 
