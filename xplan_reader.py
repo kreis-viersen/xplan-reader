@@ -170,7 +170,7 @@ class XplanReader:
                             if vlayer.isSpatial():
                                 self.group_extent.combineExtentWith(vlayer.extent())
 
-                        new_group.insertLayer(0, vlayer)
+                            new_group.insertLayer(0, vlayer)
 
             # this list defines the order of layers in QGIS
             # die Liste hier definiert die Reihenfolge - ganz oben hier der unterste in QGIS angezeigte Layer
