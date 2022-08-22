@@ -13,7 +13,11 @@ Das Plugin ist im offiziellen [QGIS-Plugin-Repository] enthalten und kann in QGI
 
 ## Funktionsweise
 
-Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestimmten Reihenfolge in eine Layergruppe.<br> Falls bereits im Plugin vorhanden, wird auf die hinzugefügten Layer ein entsprechender QGIS-Layerstil angewandt. <br>Ist für einen bestimmten Layer noch keine Stildatei vorhanden, erfolgt die Darstellung dieses Layers mit einem zufälligen Stil durch QGIS.
+Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestimmten Reihenfolge in eine Layergruppe.<br><br>Falls bereits im Plugin vorhanden, wird auf die hinzugefügten Layer ein entsprechender QGIS-Layerstil angewandt. <br>Ist für einen bestimmten Layer noch keine Stildatei vorhanden, erfolgt die Darstellung dieses Layers mit einem zufälligen Stil durch QGIS.
+
+### Anforderungen an die XPlanGML-Datei
+
+Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, dies lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
 
 ## Mitmachen mit eigenen QGIS-Stilen !
 
@@ -39,6 +43,7 @@ Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwe
 [GitHub-Issue]: <https://github.com/kreis-viersen/xplan-reader/issues>
 [open@kreis-viersen.de]: <mailto:open@kreis-viersen.de?subject=xplan-reader>
 [QGIS-Plugin-Repository]: <https://plugins.qgis.org/plugins/xplan-reader/>
+[XPlanValidator]: <https://www.xplanungsplattform.de/xplan-validator/>
 [QGIS-Stildateien]: <https://github.com/kreis-viersen/xplan-reader/tree/main/styles>
 [GitHub-Pull request]: <https://github.com/kreis-viersen/xplan-reader/pulls>
 [XPlan-Standard-Stile und SVG-Symbole]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan-default-styles>
