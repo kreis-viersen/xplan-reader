@@ -117,10 +117,9 @@ class XplanReader:
             self.logMessage('XPlanung Version: ' + xplan_version)
 
             name = next(gml_root.iter('{' + xplan_ns_uri + '}name')).text
-            self.logMessage('Name des Plans: ' + name)
-
             if name is None:
                 name = filename
+            self.logMessage('Name des Plans: ' + name)
 
             root = QgsProject.instance().layerTreeRoot()
 
