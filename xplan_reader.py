@@ -26,7 +26,7 @@ from lxml import etree
 from osgeo import ogr
 from pathlib import Path
 
-from qgis.core import Qgis, QgsMessageLog, QgsProject, QgsVectorLayer
+from qgis.core import Qgis, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
 
 from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
@@ -139,6 +139,8 @@ class XplanReader:
 
             new_group = root.addGroup(name)
 
+            self.group_extent = QgsRectangle()
+
             driver = ogr.GetDriverByName('GML')
             layers = [l.GetName() for l in driver.Open(my_gml)]
 
@@ -164,6 +166,9 @@ class XplanReader:
                             if os.path.isfile(style):
                                 vlayer.loadNamedStyle(style)
                                 self.logMessage('Style verwendet: ' + style)
+
+                            if vlayer.isSpatial():
+                                self.group_extent.combineExtentWith(vlayer.extent())
 
                         new_group.insertLayer(0, vlayer)
 
@@ -940,3 +945,9 @@ class XplanReader:
             addXplanLayer('XP_WirksamkeitBedingung', 'Punkt')
             # -------------------- text / ab hier Text ------------------------------------------------------------ #
             addXplanLayer('BP_TextAbschnitt', 'Text')
+
+
+            # zoom to group / Zoom auf die Gruppe
+            self.iface.mapCanvas().setExtent(self.group_extent)
+            self.iface.mapCanvas().zoomByFactor(1.4)
+            self.iface.mapCanvas().refresh()
