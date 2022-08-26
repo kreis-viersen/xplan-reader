@@ -86,7 +86,7 @@ class XplanReader:
 
     def about(self):
         aboutString = "XPlan-Reader<br>QGIS-Plugin zum Import einer XPlanGML-Datei<br>" + \
-        "Author: Kreis Viersen<br>Mail: <a href=\"mailto:open@kreis-viersen.de\">" + \
+        "Author: Kreis Viersen<br>Mail: <a href=\"mailto:open@kreis-viersen.de?subject=XPlan&#8208;Reader\">" + \
         "open@kreis-viersen.de</a><br>Web: " + \
         "<a href=\"https://github.com/kreis-viersen/xplan-reader\">" + \
         "https://github.com/kreis-viersen/xplan-reader</a>"
