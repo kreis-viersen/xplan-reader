@@ -30,7 +30,7 @@ from qgis.core import Qgis, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLa
 
 from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
-from qgis.PyQt.QtWidgets import QAction, QDialog, QMenu
+from qgis.PyQt.QtWidgets import QAction, QDialog, QMenu, QMessageBox
 
 class LoadDialog(QDialog ):
     def __init__(self, caller):
@@ -65,20 +65,32 @@ class XplanReader:
     def initGui(self):
         self.action = QAction(QIcon(os.path.join(self.plugin_dir, 'xplan_reader_icon.png')), \
         '&XPlan-Reader', self.iface.mainWindow())
+        self.aboutAction = QAction(QIcon(os.path.join(self.plugin_dir, 'info_icon.png')), \
+        "&Über XPlan-Reader", self.iface.mainWindow())
         self.action.triggered.connect(self.importXplanGml)
+        self.aboutAction.triggered.connect(self.about)
 
         self.menu = QMenu('&XPlan-reader')
         self.menu.setIcon(QIcon(os.path.join(self.plugin_dir, 'xplan_reader_icon.png')))
-        self.menu.addActions([self.action])
+        self.menu.addActions([self.action, self.aboutAction])
 
         self.iface.pluginMenu().addMenu(self.menu)
         self.iface.addToolBarIcon(self.action)
 
     def unload(self):
         self.iface.removePluginMenu('&XPlan-reader', self.action)
+        self.iface.removePluginMenu('&XPlan-reader', self.aboutAction)
         self.iface.removeToolBarIcon(self.action)
 
         del self.action
+
+    def about(self):
+        aboutString = "XPlan-Reader<br>QGIS-Plugin zum Import einer XPlanGML-Datei<br>" + \
+        "Author: Kreis Viersen<br>Mail: <a href=\"mailto:open@kreis-viersen.de\">" + \
+        "open@kreis-viersen.de</a><br>Web: " + \
+        "<a href=\"https://github.com/kreis-viersen/xplan-reader\">" + \
+        "https://github.com/kreis-viersen/xplan-reader</a>"
+        QMessageBox.information(self.iface.mainWindow(), "Über XPlan-Reader", aboutString)
 
     def logMessage(self, message, type=0):
         QgsMessageLog.logMessage(message, 'XPlan-Reader', level=type)
