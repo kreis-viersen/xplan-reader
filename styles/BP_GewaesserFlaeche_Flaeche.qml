@@ -13,9 +13,10 @@
     </fixedRange>
   </temporal>
   <renderer-v2 symbollevels="0" enableorderby="0" type="RuleRenderer" referencescale="-1" forceraster="0">
-    <rules key="{b4fc1483-847d-44a9-b286-59087e02986b}">
-      <rule scalemindenom="1" key="{fc20f3b7-a4fa-4101-9826-4ee32e647d9e}" filter=" &quot;zweckbestimmung&quot;  =  'LandwirtschaftAllgemein' " symbol="0" scalemaxdenom="10000" label="Zweckbestimmung LandwirtschaftAllgemein"/>
-      <rule scalemindenom="1" key="{263a1fbc-4e6a-41c4-b835-c7f296d244f0}" filter="not(&quot;zweckbestimmung&quot;  =  'LandwirtschaftAllgemein' ) or &quot;zweckbestimmung&quot; is NULL" symbol="1" scalemaxdenom="10000" label="Zweckbestimmung undefiniert"/>
+    <rules key="{594e7fa3-69f5-4990-a7e2-2903c675a113}">
+      <rule scalemindenom="1" key="{b59ce7a7-7ead-4a9f-86f3-6cd8850be5ee}" filter=" &quot;zweckbestimmung&quot;  =  'Wasserflaeche' " symbol="0" scalemaxdenom="10000" label="Zweckbestimmung Wasserflaeche"/>
+      <rule scalemindenom="1" key="{b59ce7a7-7ead-4a9f-86f3-6cd8850be5ee}" filter=" &quot;zweckbestimmung&quot;  =   'Fliessgewaesser' " symbol="1" scalemaxdenom="10000" label="Zweckbestimmung Fliessgewaesser"/>
+      <rule scalemindenom="1" key="{10d572bd-93b9-4700-97fb-1577975e5f5e}" filter=" &quot;zweckbestimmung&quot;  is NULL" symbol="2" scalemaxdenom="10000" label="Zweckbestimmung undefiniert"/>
     </rules>
     <symbols>
       <symbol type="fill" name="0" alpha="1" clip_to_extent="1" force_rhr="0">
@@ -29,7 +30,7 @@
         <layer locked="0" enabled="1" pass="0" class="SimpleFill">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
-            <Option value="204,233,104,255" type="QString" name="color"/>
+            <Option value="153,217,232,255" type="QString" name="color"/>
             <Option value="bevel" type="QString" name="joinstyle"/>
             <Option value="0,0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
@@ -41,7 +42,7 @@
             <Option value="solid" type="QString" name="style"/>
           </Option>
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="204,233,104,255"/>
+          <prop k="color" v="153,217,232,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -71,7 +72,7 @@
         <layer locked="0" enabled="1" pass="0" class="SimpleFill">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
-            <Option value="204,233,104,255" type="QString" name="color"/>
+            <Option value="153,217,232,255" type="QString" name="color"/>
             <Option value="bevel" type="QString" name="joinstyle"/>
             <Option value="0,0" type="QString" name="offset"/>
             <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
@@ -83,7 +84,49 @@
             <Option value="solid" type="QString" name="style"/>
           </Option>
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="204,233,104,255"/>
+          <prop k="color" v="153,217,232,255"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.5"/>
+          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option value="" type="QString" name="name"/>
+              <Option name="properties"/>
+              <Option value="collection" type="QString" name="type"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+      <symbol type="fill" name="2" alpha="1" clip_to_extent="1" force_rhr="0">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </data_defined_properties>
+        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+          <Option type="Map">
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+            <Option value="153,217,232,255" type="QString" name="color"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="35,35,35,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="0.5" type="QString" name="outline_width"/>
+            <Option value="RenderMetersInMapUnits" type="QString" name="outline_width_unit"/>
+            <Option value="solid" type="QString" name="style"/>
+          </Option>
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="153,217,232,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -493,6 +536,13 @@
         </config>
       </editWidget>
     </field>
+    <field name="externeReferenz" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field name="flaechenschluss" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
@@ -514,48 +564,6 @@
         </config>
       </editWidget>
     </field>
-    <field name="weitereZweckbestimmung1" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereZweckbestimmung1Code" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereZweckbestimmung2" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereZweckbestimmung2Code" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereZweckbestimmung3" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereZweckbestimmung3Code" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
     <field name="detaillierteZweckbestimmung" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
@@ -564,48 +572,6 @@
       </editWidget>
     </field>
     <field name="detaillierteZweckbestimmungCode" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereDetailZweckbestimmung1" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereDetailZweckbestimmung1Code" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereDetailZweckbestimmung2" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereDetailZweckbestimmung2Code" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereDetailZweckbestimmung3" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="weitereDetailZweckbestimmung3Code" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -703,7 +669,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="externeReferenz" configurationFlags="None">
+    <field name="gehoertNachrichtlichZuBereich" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -711,34 +677,6 @@
       </editWidget>
     </field>
     <field name="wirdDargestelltDurch" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="refBegruendungInhalt" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="startBedingung" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="endeBedingung" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="aufschrift" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -759,7 +697,14 @@
         </config>
       </editWidget>
     </field>
-    <field name="refTextInhalt" configurationFlags="None">
+    <field name="startBedingung" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="endeBedingung" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -787,7 +732,14 @@
         </config>
       </editWidget>
     </field>
-    <field name="flussrichtung" configurationFlags="None">
+    <field name="gehoertZuBP_Bereich" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="aufschrift" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -835,49 +787,36 @@
     <alias index="36" name="" field="richtungssektorGrenze"/>
     <alias index="37" name="" field="wirdAusgeglichenDurchMassnahme"/>
     <alias index="38" name="" field="hoehenangabe"/>
-    <alias index="39" name="" field="flaechenschluss"/>
-    <alias index="40" name="" field="zweckbestimmung"/>
-    <alias index="41" name="" field="zweckbestimmungCode"/>
-    <alias index="42" name="" field="weitereZweckbestimmung1"/>
-    <alias index="43" name="" field="weitereZweckbestimmung1Code"/>
-    <alias index="44" name="" field="weitereZweckbestimmung2"/>
-    <alias index="45" name="" field="weitereZweckbestimmung2Code"/>
-    <alias index="46" name="" field="weitereZweckbestimmung3"/>
-    <alias index="47" name="" field="weitereZweckbestimmung3Code"/>
-    <alias index="48" name="" field="detaillierteZweckbestimmung"/>
-    <alias index="49" name="" field="detaillierteZweckbestimmungCode"/>
-    <alias index="50" name="" field="weitereDetailZweckbestimmung1"/>
-    <alias index="51" name="" field="weitereDetailZweckbestimmung1Code"/>
-    <alias index="52" name="" field="weitereDetailZweckbestimmung2"/>
-    <alias index="53" name="" field="weitereDetailZweckbestimmung2Code"/>
-    <alias index="54" name="" field="weitereDetailZweckbestimmung3"/>
-    <alias index="55" name="" field="weitereDetailZweckbestimmung3Code"/>
-    <alias index="56" name="" field="realisiert"/>
-    <alias index="57" name="" field="nachrichtlicheUebernahme"/>
-    <alias index="58" name="" field="hinweis"/>
-    <alias index="59" name="" field="aufnahmeAlsFestsetzung"/>
-    <alias index="60" name="" field="vermerk"/>
-    <alias index="61" name="" field="abweichenderHoehenbezug"/>
-    <alias index="62" name="" field="hMin"/>
-    <alias index="63" name="" field="hMax"/>
-    <alias index="64" name="" field="hZwingend"/>
-    <alias index="65" name="" field="h"/>
-    <alias index="66" name="" field="hUeberBezugspunkt"/>
-    <alias index="67" name="" field="hUeberBezugspunktCode"/>
-    <alias index="68" name="" field="wirdAusgeglichenVon"/>
-    <alias index="69" name="" field="externeReferenz"/>
-    <alias index="70" name="" field="wirdDargestelltDurch"/>
-    <alias index="71" name="" field="refBegruendungInhalt"/>
-    <alias index="72" name="" field="startBedingung"/>
-    <alias index="73" name="" field="endeBedingung"/>
-    <alias index="74" name="" field="aufschrift"/>
-    <alias index="75" name="" field="rechtscharakter"/>
-    <alias index="76" name="" field="rechtscharakterCode"/>
-    <alias index="77" name="" field="refTextInhalt"/>
-    <alias index="78" name="" field="wirdAusgeglichenDurchABE"/>
-    <alias index="79" name="" field="wirdAusgeglichenDurchSPEMassnahme"/>
-    <alias index="80" name="" field="wirdAusgeglichenDurchSPEFlaeche"/>
-    <alias index="81" name="" field="flussrichtung"/>
+    <alias index="39" name="" field="externeReferenz"/>
+    <alias index="40" name="" field="flaechenschluss"/>
+    <alias index="41" name="" field="zweckbestimmung"/>
+    <alias index="42" name="" field="zweckbestimmungCode"/>
+    <alias index="43" name="" field="detaillierteZweckbestimmung"/>
+    <alias index="44" name="" field="detaillierteZweckbestimmungCode"/>
+    <alias index="45" name="" field="realisiert"/>
+    <alias index="46" name="" field="nachrichtlicheUebernahme"/>
+    <alias index="47" name="" field="hinweis"/>
+    <alias index="48" name="" field="aufnahmeAlsFestsetzung"/>
+    <alias index="49" name="" field="vermerk"/>
+    <alias index="50" name="" field="abweichenderHoehenbezug"/>
+    <alias index="51" name="" field="hMin"/>
+    <alias index="52" name="" field="hMax"/>
+    <alias index="53" name="" field="hZwingend"/>
+    <alias index="54" name="" field="h"/>
+    <alias index="55" name="" field="hUeberBezugspunkt"/>
+    <alias index="56" name="" field="hUeberBezugspunktCode"/>
+    <alias index="57" name="" field="wirdAusgeglichenVon"/>
+    <alias index="58" name="" field="gehoertNachrichtlichZuBereich"/>
+    <alias index="59" name="" field="wirdDargestelltDurch"/>
+    <alias index="60" name="" field="rechtscharakter"/>
+    <alias index="61" name="" field="rechtscharakterCode"/>
+    <alias index="62" name="" field="startBedingung"/>
+    <alias index="63" name="" field="endeBedingung"/>
+    <alias index="64" name="" field="wirdAusgeglichenDurchABE"/>
+    <alias index="65" name="" field="wirdAusgeglichenDurchSPEMassnahme"/>
+    <alias index="66" name="" field="wirdAusgeglichenDurchSPEFlaeche"/>
+    <alias index="67" name="" field="gehoertZuBP_Bereich"/>
+    <alias index="68" name="" field="aufschrift"/>
   </aliases>
   <defaults>
     <default field="gmlId" applyOnUpdate="0" expression=""/>
@@ -919,23 +858,12 @@
     <default field="richtungssektorGrenze" applyOnUpdate="0" expression=""/>
     <default field="wirdAusgeglichenDurchMassnahme" applyOnUpdate="0" expression=""/>
     <default field="hoehenangabe" applyOnUpdate="0" expression=""/>
+    <default field="externeReferenz" applyOnUpdate="0" expression=""/>
     <default field="flaechenschluss" applyOnUpdate="0" expression=""/>
     <default field="zweckbestimmung" applyOnUpdate="0" expression=""/>
     <default field="zweckbestimmungCode" applyOnUpdate="0" expression=""/>
-    <default field="weitereZweckbestimmung1" applyOnUpdate="0" expression=""/>
-    <default field="weitereZweckbestimmung1Code" applyOnUpdate="0" expression=""/>
-    <default field="weitereZweckbestimmung2" applyOnUpdate="0" expression=""/>
-    <default field="weitereZweckbestimmung2Code" applyOnUpdate="0" expression=""/>
-    <default field="weitereZweckbestimmung3" applyOnUpdate="0" expression=""/>
-    <default field="weitereZweckbestimmung3Code" applyOnUpdate="0" expression=""/>
     <default field="detaillierteZweckbestimmung" applyOnUpdate="0" expression=""/>
     <default field="detaillierteZweckbestimmungCode" applyOnUpdate="0" expression=""/>
-    <default field="weitereDetailZweckbestimmung1" applyOnUpdate="0" expression=""/>
-    <default field="weitereDetailZweckbestimmung1Code" applyOnUpdate="0" expression=""/>
-    <default field="weitereDetailZweckbestimmung2" applyOnUpdate="0" expression=""/>
-    <default field="weitereDetailZweckbestimmung2Code" applyOnUpdate="0" expression=""/>
-    <default field="weitereDetailZweckbestimmung3" applyOnUpdate="0" expression=""/>
-    <default field="weitereDetailZweckbestimmung3Code" applyOnUpdate="0" expression=""/>
     <default field="realisiert" applyOnUpdate="0" expression=""/>
     <default field="nachrichtlicheUebernahme" applyOnUpdate="0" expression=""/>
     <default field="hinweis" applyOnUpdate="0" expression=""/>
@@ -949,19 +877,17 @@
     <default field="hUeberBezugspunkt" applyOnUpdate="0" expression=""/>
     <default field="hUeberBezugspunktCode" applyOnUpdate="0" expression=""/>
     <default field="wirdAusgeglichenVon" applyOnUpdate="0" expression=""/>
-    <default field="externeReferenz" applyOnUpdate="0" expression=""/>
+    <default field="gehoertNachrichtlichZuBereich" applyOnUpdate="0" expression=""/>
     <default field="wirdDargestelltDurch" applyOnUpdate="0" expression=""/>
-    <default field="refBegruendungInhalt" applyOnUpdate="0" expression=""/>
-    <default field="startBedingung" applyOnUpdate="0" expression=""/>
-    <default field="endeBedingung" applyOnUpdate="0" expression=""/>
-    <default field="aufschrift" applyOnUpdate="0" expression=""/>
     <default field="rechtscharakter" applyOnUpdate="0" expression=""/>
     <default field="rechtscharakterCode" applyOnUpdate="0" expression=""/>
-    <default field="refTextInhalt" applyOnUpdate="0" expression=""/>
+    <default field="startBedingung" applyOnUpdate="0" expression=""/>
+    <default field="endeBedingung" applyOnUpdate="0" expression=""/>
     <default field="wirdAusgeglichenDurchABE" applyOnUpdate="0" expression=""/>
     <default field="wirdAusgeglichenDurchSPEMassnahme" applyOnUpdate="0" expression=""/>
     <default field="wirdAusgeglichenDurchSPEFlaeche" applyOnUpdate="0" expression=""/>
-    <default field="flussrichtung" applyOnUpdate="0" expression=""/>
+    <default field="gehoertZuBP_Bereich" applyOnUpdate="0" expression=""/>
+    <default field="aufschrift" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
     <constraint unique_strength="0" notnull_strength="0" field="gmlId" exp_strength="0" constraints="0"/>
@@ -1003,23 +929,12 @@
     <constraint unique_strength="0" notnull_strength="0" field="richtungssektorGrenze" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="wirdAusgeglichenDurchMassnahme" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="hoehenangabe" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="externeReferenz" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="flaechenschluss" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="zweckbestimmung" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="zweckbestimmungCode" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereZweckbestimmung1" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereZweckbestimmung1Code" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereZweckbestimmung2" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereZweckbestimmung2Code" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereZweckbestimmung3" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereZweckbestimmung3Code" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="detaillierteZweckbestimmung" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="detaillierteZweckbestimmungCode" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereDetailZweckbestimmung1" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereDetailZweckbestimmung1Code" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereDetailZweckbestimmung2" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereDetailZweckbestimmung2Code" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereDetailZweckbestimmung3" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="weitereDetailZweckbestimmung3Code" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="realisiert" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="nachrichtlicheUebernahme" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="hinweis" exp_strength="0" constraints="0"/>
@@ -1033,19 +948,17 @@
     <constraint unique_strength="0" notnull_strength="0" field="hUeberBezugspunkt" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="hUeberBezugspunktCode" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="wirdAusgeglichenVon" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="externeReferenz" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="gehoertNachrichtlichZuBereich" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="wirdDargestelltDurch" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="refBegruendungInhalt" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="startBedingung" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="endeBedingung" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="aufschrift" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="rechtscharakter" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="rechtscharakterCode" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="refTextInhalt" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="startBedingung" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="endeBedingung" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="wirdAusgeglichenDurchABE" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="wirdAusgeglichenDurchSPEMassnahme" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" notnull_strength="0" field="wirdAusgeglichenDurchSPEFlaeche" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" notnull_strength="0" field="flussrichtung" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="gehoertZuBP_Bereich" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" notnull_strength="0" field="aufschrift" exp_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
     <constraint field="gmlId" desc="" exp=""/>
@@ -1087,23 +1000,12 @@
     <constraint field="richtungssektorGrenze" desc="" exp=""/>
     <constraint field="wirdAusgeglichenDurchMassnahme" desc="" exp=""/>
     <constraint field="hoehenangabe" desc="" exp=""/>
+    <constraint field="externeReferenz" desc="" exp=""/>
     <constraint field="flaechenschluss" desc="" exp=""/>
     <constraint field="zweckbestimmung" desc="" exp=""/>
     <constraint field="zweckbestimmungCode" desc="" exp=""/>
-    <constraint field="weitereZweckbestimmung1" desc="" exp=""/>
-    <constraint field="weitereZweckbestimmung1Code" desc="" exp=""/>
-    <constraint field="weitereZweckbestimmung2" desc="" exp=""/>
-    <constraint field="weitereZweckbestimmung2Code" desc="" exp=""/>
-    <constraint field="weitereZweckbestimmung3" desc="" exp=""/>
-    <constraint field="weitereZweckbestimmung3Code" desc="" exp=""/>
     <constraint field="detaillierteZweckbestimmung" desc="" exp=""/>
     <constraint field="detaillierteZweckbestimmungCode" desc="" exp=""/>
-    <constraint field="weitereDetailZweckbestimmung1" desc="" exp=""/>
-    <constraint field="weitereDetailZweckbestimmung1Code" desc="" exp=""/>
-    <constraint field="weitereDetailZweckbestimmung2" desc="" exp=""/>
-    <constraint field="weitereDetailZweckbestimmung2Code" desc="" exp=""/>
-    <constraint field="weitereDetailZweckbestimmung3" desc="" exp=""/>
-    <constraint field="weitereDetailZweckbestimmung3Code" desc="" exp=""/>
     <constraint field="realisiert" desc="" exp=""/>
     <constraint field="nachrichtlicheUebernahme" desc="" exp=""/>
     <constraint field="hinweis" desc="" exp=""/>
@@ -1117,25 +1019,23 @@
     <constraint field="hUeberBezugspunkt" desc="" exp=""/>
     <constraint field="hUeberBezugspunktCode" desc="" exp=""/>
     <constraint field="wirdAusgeglichenVon" desc="" exp=""/>
-    <constraint field="externeReferenz" desc="" exp=""/>
+    <constraint field="gehoertNachrichtlichZuBereich" desc="" exp=""/>
     <constraint field="wirdDargestelltDurch" desc="" exp=""/>
-    <constraint field="refBegruendungInhalt" desc="" exp=""/>
-    <constraint field="startBedingung" desc="" exp=""/>
-    <constraint field="endeBedingung" desc="" exp=""/>
-    <constraint field="aufschrift" desc="" exp=""/>
     <constraint field="rechtscharakter" desc="" exp=""/>
     <constraint field="rechtscharakterCode" desc="" exp=""/>
-    <constraint field="refTextInhalt" desc="" exp=""/>
+    <constraint field="startBedingung" desc="" exp=""/>
+    <constraint field="endeBedingung" desc="" exp=""/>
     <constraint field="wirdAusgeglichenDurchABE" desc="" exp=""/>
     <constraint field="wirdAusgeglichenDurchSPEMassnahme" desc="" exp=""/>
     <constraint field="wirdAusgeglichenDurchSPEFlaeche" desc="" exp=""/>
-    <constraint field="flussrichtung" desc="" exp=""/>
+    <constraint field="gehoertZuBP_Bereich" desc="" exp=""/>
+    <constraint field="aufschrift" desc="" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortOrder="1" actionWidgetStyle="dropDown" sortExpression="&quot;zweckbestimmung&quot;">
+  <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="&quot;zweckbestimmung&quot;">
     <columns>
       <column type="field" name="gmlId" hidden="0" width="-1"/>
       <column type="field" name="gmlName" hidden="0" width="-1"/>
@@ -1176,23 +1076,12 @@
       <column type="field" name="richtungssektorGrenze" hidden="0" width="-1"/>
       <column type="field" name="wirdAusgeglichenDurchMassnahme" hidden="0" width="-1"/>
       <column type="field" name="hoehenangabe" hidden="0" width="-1"/>
+      <column type="field" name="externeReferenz" hidden="0" width="-1"/>
       <column type="field" name="flaechenschluss" hidden="0" width="-1"/>
-      <column type="field" name="zweckbestimmung" hidden="0" width="211"/>
+      <column type="field" name="zweckbestimmung" hidden="0" width="195"/>
       <column type="field" name="zweckbestimmungCode" hidden="0" width="-1"/>
-      <column type="field" name="weitereZweckbestimmung1" hidden="0" width="-1"/>
-      <column type="field" name="weitereZweckbestimmung1Code" hidden="0" width="-1"/>
-      <column type="field" name="weitereZweckbestimmung2" hidden="0" width="-1"/>
-      <column type="field" name="weitereZweckbestimmung2Code" hidden="0" width="-1"/>
-      <column type="field" name="weitereZweckbestimmung3" hidden="0" width="-1"/>
-      <column type="field" name="weitereZweckbestimmung3Code" hidden="0" width="-1"/>
       <column type="field" name="detaillierteZweckbestimmung" hidden="0" width="-1"/>
       <column type="field" name="detaillierteZweckbestimmungCode" hidden="0" width="-1"/>
-      <column type="field" name="weitereDetailZweckbestimmung1" hidden="0" width="-1"/>
-      <column type="field" name="weitereDetailZweckbestimmung1Code" hidden="0" width="-1"/>
-      <column type="field" name="weitereDetailZweckbestimmung2" hidden="0" width="-1"/>
-      <column type="field" name="weitereDetailZweckbestimmung2Code" hidden="0" width="-1"/>
-      <column type="field" name="weitereDetailZweckbestimmung3" hidden="0" width="-1"/>
-      <column type="field" name="weitereDetailZweckbestimmung3Code" hidden="0" width="-1"/>
       <column type="field" name="realisiert" hidden="0" width="-1"/>
       <column type="field" name="nachrichtlicheUebernahme" hidden="0" width="-1"/>
       <column type="field" name="hinweis" hidden="0" width="-1"/>
@@ -1206,19 +1095,17 @@
       <column type="field" name="hUeberBezugspunkt" hidden="0" width="-1"/>
       <column type="field" name="hUeberBezugspunktCode" hidden="0" width="-1"/>
       <column type="field" name="wirdAusgeglichenVon" hidden="0" width="-1"/>
-      <column type="field" name="externeReferenz" hidden="0" width="-1"/>
+      <column type="field" name="gehoertNachrichtlichZuBereich" hidden="0" width="-1"/>
       <column type="field" name="wirdDargestelltDurch" hidden="0" width="-1"/>
-      <column type="field" name="refBegruendungInhalt" hidden="0" width="-1"/>
-      <column type="field" name="startBedingung" hidden="0" width="-1"/>
-      <column type="field" name="endeBedingung" hidden="0" width="-1"/>
-      <column type="field" name="aufschrift" hidden="0" width="-1"/>
       <column type="field" name="rechtscharakter" hidden="0" width="-1"/>
       <column type="field" name="rechtscharakterCode" hidden="0" width="-1"/>
-      <column type="field" name="refTextInhalt" hidden="0" width="-1"/>
+      <column type="field" name="startBedingung" hidden="0" width="-1"/>
+      <column type="field" name="endeBedingung" hidden="0" width="-1"/>
       <column type="field" name="wirdAusgeglichenDurchABE" hidden="0" width="-1"/>
       <column type="field" name="wirdAusgeglichenDurchSPEMassnahme" hidden="0" width="-1"/>
       <column type="field" name="wirdAusgeglichenDurchSPEFlaeche" hidden="0" width="-1"/>
-      <column type="field" name="flussrichtung" hidden="0" width="-1"/>
+      <column type="field" name="gehoertZuBP_Bereich" hidden="0" width="-1"/>
+      <column type="field" name="aufschrift" hidden="0" width="-1"/>
       <column type="actions" hidden="1" width="-1"/>
     </columns>
   </attributetableconfig>
@@ -1262,7 +1149,8 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="endeBedingung"/>
     <field editable="1" name="externeReferenz"/>
     <field editable="1" name="flaechenschluss"/>
-    <field editable="1" name="flussrichtung"/>
+    <field editable="1" name="gehoertNachrichtlichZuBereich"/>
+    <field editable="1" name="gehoertZuBP_Bereich"/>
     <field editable="1" name="gehoertZuBereich"/>
     <field editable="1" name="gesetzlicheGrundlage"/>
     <field editable="1" name="gesetzlicheGrundlageCode"/>
@@ -1294,8 +1182,6 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="rechtsstand"/>
     <field editable="1" name="rechtsstandCode"/>
     <field editable="1" name="rechtsverbindlich"/>
-    <field editable="1" name="refBegruendungInhalt"/>
-    <field editable="1" name="refTextInhalt"/>
     <field editable="1" name="richtungssektorGrenze"/>
     <field editable="1" name="startBedingung"/>
     <field editable="1" name="startDatum"/>
@@ -1303,18 +1189,6 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="textAbschnitte"/>
     <field editable="1" name="uuid"/>
     <field editable="1" name="vermerk"/>
-    <field editable="1" name="weitereDetailZweckbestimmung1"/>
-    <field editable="1" name="weitereDetailZweckbestimmung1Code"/>
-    <field editable="1" name="weitereDetailZweckbestimmung2"/>
-    <field editable="1" name="weitereDetailZweckbestimmung2Code"/>
-    <field editable="1" name="weitereDetailZweckbestimmung3"/>
-    <field editable="1" name="weitereDetailZweckbestimmung3Code"/>
-    <field editable="1" name="weitereZweckbestimmung1"/>
-    <field editable="1" name="weitereZweckbestimmung1Code"/>
-    <field editable="1" name="weitereZweckbestimmung2"/>
-    <field editable="1" name="weitereZweckbestimmung2Code"/>
-    <field editable="1" name="weitereZweckbestimmung3"/>
-    <field editable="1" name="weitereZweckbestimmung3Code"/>
     <field editable="1" name="wirdAusgeglichenDurchABE"/>
     <field editable="1" name="wirdAusgeglichenDurchFlaeche"/>
     <field editable="1" name="wirdAusgeglichenDurchMassnahme"/>
@@ -1346,7 +1220,8 @@ def my_form_open(dialog, layer, feature):
     <field name="endeBedingung" labelOnTop="0"/>
     <field name="externeReferenz" labelOnTop="0"/>
     <field name="flaechenschluss" labelOnTop="0"/>
-    <field name="flussrichtung" labelOnTop="0"/>
+    <field name="gehoertNachrichtlichZuBereich" labelOnTop="0"/>
+    <field name="gehoertZuBP_Bereich" labelOnTop="0"/>
     <field name="gehoertZuBereich" labelOnTop="0"/>
     <field name="gesetzlicheGrundlage" labelOnTop="0"/>
     <field name="gesetzlicheGrundlageCode" labelOnTop="0"/>
@@ -1378,8 +1253,6 @@ def my_form_open(dialog, layer, feature):
     <field name="rechtsstand" labelOnTop="0"/>
     <field name="rechtsstandCode" labelOnTop="0"/>
     <field name="rechtsverbindlich" labelOnTop="0"/>
-    <field name="refBegruendungInhalt" labelOnTop="0"/>
-    <field name="refTextInhalt" labelOnTop="0"/>
     <field name="richtungssektorGrenze" labelOnTop="0"/>
     <field name="startBedingung" labelOnTop="0"/>
     <field name="startDatum" labelOnTop="0"/>
@@ -1387,18 +1260,6 @@ def my_form_open(dialog, layer, feature):
     <field name="textAbschnitte" labelOnTop="0"/>
     <field name="uuid" labelOnTop="0"/>
     <field name="vermerk" labelOnTop="0"/>
-    <field name="weitereDetailZweckbestimmung1" labelOnTop="0"/>
-    <field name="weitereDetailZweckbestimmung1Code" labelOnTop="0"/>
-    <field name="weitereDetailZweckbestimmung2" labelOnTop="0"/>
-    <field name="weitereDetailZweckbestimmung2Code" labelOnTop="0"/>
-    <field name="weitereDetailZweckbestimmung3" labelOnTop="0"/>
-    <field name="weitereDetailZweckbestimmung3Code" labelOnTop="0"/>
-    <field name="weitereZweckbestimmung1" labelOnTop="0"/>
-    <field name="weitereZweckbestimmung1Code" labelOnTop="0"/>
-    <field name="weitereZweckbestimmung2" labelOnTop="0"/>
-    <field name="weitereZweckbestimmung2Code" labelOnTop="0"/>
-    <field name="weitereZweckbestimmung3" labelOnTop="0"/>
-    <field name="weitereZweckbestimmung3Code" labelOnTop="0"/>
     <field name="wirdAusgeglichenDurchABE" labelOnTop="0"/>
     <field name="wirdAusgeglichenDurchFlaeche" labelOnTop="0"/>
     <field name="wirdAusgeglichenDurchMassnahme" labelOnTop="0"/>
@@ -1430,7 +1291,8 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="endeBedingung"/>
     <field reuseLastValue="0" name="externeReferenz"/>
     <field reuseLastValue="0" name="flaechenschluss"/>
-    <field reuseLastValue="0" name="flussrichtung"/>
+    <field reuseLastValue="0" name="gehoertNachrichtlichZuBereich"/>
+    <field reuseLastValue="0" name="gehoertZuBP_Bereich"/>
     <field reuseLastValue="0" name="gehoertZuBereich"/>
     <field reuseLastValue="0" name="gesetzlicheGrundlage"/>
     <field reuseLastValue="0" name="gesetzlicheGrundlageCode"/>
@@ -1462,8 +1324,6 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="rechtsstand"/>
     <field reuseLastValue="0" name="rechtsstandCode"/>
     <field reuseLastValue="0" name="rechtsverbindlich"/>
-    <field reuseLastValue="0" name="refBegruendungInhalt"/>
-    <field reuseLastValue="0" name="refTextInhalt"/>
     <field reuseLastValue="0" name="richtungssektorGrenze"/>
     <field reuseLastValue="0" name="startBedingung"/>
     <field reuseLastValue="0" name="startDatum"/>
@@ -1471,18 +1331,6 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="textAbschnitte"/>
     <field reuseLastValue="0" name="uuid"/>
     <field reuseLastValue="0" name="vermerk"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung1"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung1Code"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung2"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung2Code"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung3"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung3Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung1"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung1Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung2"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung2Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung3"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung3Code"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchABE"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchFlaeche"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchMassnahme"/>

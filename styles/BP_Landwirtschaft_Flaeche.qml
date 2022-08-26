@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis minScale="100000000" simplifyMaxScale="1" labelsEnabled="0" symbologyReferenceScale="-1" readOnly="0" maxScale="0" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" version="3.24.2-Tisler" styleCategories="AllStyleCategories">
+<qgis minScale="10000" simplifyMaxScale="1" labelsEnabled="0" symbologyReferenceScale="-1" readOnly="0" maxScale="0" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" simplifyLocal="1" hasScaleBasedVisibilityFlag="1" version="3.24.2-Tisler" styleCategories="AllStyleCategories">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -25,7 +25,7 @@
         <layer enabled="1" pass="0" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
-            <Option value="52,171,143,255" name="color" type="QString"/>
+            <Option value="204,233,104,255" name="color" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="0,0" name="offset" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
@@ -37,7 +37,7 @@
             <Option value="solid" name="style" type="QString"/>
           </Option>
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="52,171,143,255"/>
+          <prop k="color" v="204,233,104,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -62,9 +62,6 @@
   </renderer-v2>
   <customproperties>
     <Option type="Map">
-      <Option name="dualview/previewExpressions" type="List">
-        <Option value="&quot;gmlName&quot;" type="QString"/>
-      </Option>
       <Option value="0" name="embeddedWidgets/count" type="int"/>
       <Option name="variableNames"/>
       <Option name="variableValues"/>
@@ -323,7 +320,7 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="gehoertZuBereich">
+    <field configurationFlags="None" name="rechtsverbindlich">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -337,13 +334,6 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtsverbindlich">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
     <field configurationFlags="None" name="hatGenerAttribut">
       <editWidget type="TextEdit">
         <config>
@@ -351,42 +341,63 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtlicheCharakterisierung">
+    <field configurationFlags="None" name="hoehenangabe">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="rechtlicheCharakterisierungCode">
+    <field configurationFlags="None" name="externeReferenz">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="bedingungStart">
+    <field configurationFlags="None" name="gehoertNachrichtlichZuBereich">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="bedingungEnde">
+    <field configurationFlags="None" name="gehoertZuBereich">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="startDatum">
+    <field configurationFlags="None" name="wirdDargestelltDurch">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="endDatum">
+    <field configurationFlags="None" name="rechtscharakter">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="rechtscharakterCode">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="startBedingung">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="endeBedingung">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -435,6 +446,27 @@
         </config>
       </editWidget>
     </field>
+    <field configurationFlags="None" name="wirdAusgeglichenDurchABE">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="wirdAusgeglichenDurchSPEMassnahme">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="wirdAusgeglichenDurchSPEFlaeche">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field configurationFlags="None" name="wirdAusgeglichenDurchMassnahme">
       <editWidget type="TextEdit">
         <config>
@@ -442,14 +474,7 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="hoehenangabe">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="externeReferenz">
+    <field configurationFlags="None" name="gehoertZuBP_Bereich">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -457,6 +482,27 @@
       </editWidget>
     </field>
     <field configurationFlags="None" name="flaechenschluss">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="flussrichtung">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="nordwinkel">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="nordwinkelUOM">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -505,6 +551,20 @@
         </config>
       </editWidget>
     </field>
+    <field configurationFlags="None" name="weitereZweckbestimmung3">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field configurationFlags="None" name="weitereZweckbestimmung3Code">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field configurationFlags="None" name="detaillierteZweckbestimmung">
       <editWidget type="TextEdit">
         <config>
@@ -547,161 +607,14 @@
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="realisiert">
+    <field configurationFlags="None" name="weitereDetailZweckbestimmung3">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field configurationFlags="None" name="nachrichtlicheUebernahme">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="hinweis">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="aufnahmeAlsFestsetzung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="vermerk">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="abweichenderHoehenbezug">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="hMin">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="hMax">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="hZwingend">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="h">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="hUeberBezugspunkt">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="hUeberBezugspunktCode">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdAusgeglichenVon">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="gehoertNachrichtlichZuBereich">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdDargestelltDurch">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="rechtscharakter">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="rechtscharakterCode">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="startBedingung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="endeBedingung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdAusgeglichenDurchABE">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdAusgeglichenDurchSPEMassnahme">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="wirdAusgeglichenDurchSPEFlaeche">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="gehoertZuBP_Bereich">
+    <field configurationFlags="None" name="weitereDetailZweckbestimmung3Code">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -709,34 +622,6 @@
       </editWidget>
     </field>
     <field configurationFlags="None" name="aufschrift">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="eigentumsart">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="eigentumsartCode">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="betreten">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field configurationFlags="None" name="betretenCode">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -766,66 +651,50 @@
     <alias index="18" field="gliederung1" name=""/>
     <alias index="19" field="gliederung2" name=""/>
     <alias index="20" field="ebene" name=""/>
-    <alias index="21" field="gehoertZuBereich" name=""/>
+    <alias index="21" field="rechtsverbindlich" name=""/>
     <alias index="22" field="informell" name=""/>
-    <alias index="23" field="rechtsverbindlich" name=""/>
-    <alias index="24" field="hatGenerAttribut" name=""/>
-    <alias index="25" field="rechtlicheCharakterisierung" name=""/>
-    <alias index="26" field="rechtlicheCharakterisierungCode" name=""/>
-    <alias index="27" field="bedingungStart" name=""/>
-    <alias index="28" field="bedingungEnde" name=""/>
-    <alias index="29" field="startDatum" name=""/>
-    <alias index="30" field="endDatum" name=""/>
-    <alias index="31" field="wirdAusgeglichenDurchFlaeche" name=""/>
-    <alias index="32" field="laermkontingent" name=""/>
-    <alias index="33" field="laermkontingentGebiet" name=""/>
-    <alias index="34" field="zusatzkontingent" name=""/>
-    <alias index="35" field="zusatzkontingentFlaeche" name=""/>
-    <alias index="36" field="richtungssektorGrenze" name=""/>
-    <alias index="37" field="wirdAusgeglichenDurchMassnahme" name=""/>
-    <alias index="38" field="hoehenangabe" name=""/>
-    <alias index="39" field="externeReferenz" name=""/>
-    <alias index="40" field="flaechenschluss" name=""/>
-    <alias index="41" field="zweckbestimmung" name=""/>
-    <alias index="42" field="zweckbestimmungCode" name=""/>
-    <alias index="43" field="weitereZweckbestimmung1" name=""/>
-    <alias index="44" field="weitereZweckbestimmung1Code" name=""/>
-    <alias index="45" field="weitereZweckbestimmung2" name=""/>
-    <alias index="46" field="weitereZweckbestimmung2Code" name=""/>
-    <alias index="47" field="detaillierteZweckbestimmung" name=""/>
-    <alias index="48" field="detaillierteZweckbestimmungCode" name=""/>
-    <alias index="49" field="weitereDetailZweckbestimmung1" name=""/>
-    <alias index="50" field="weitereDetailZweckbestimmung1Code" name=""/>
-    <alias index="51" field="weitereDetailZweckbestimmung2" name=""/>
-    <alias index="52" field="weitereDetailZweckbestimmung2Code" name=""/>
-    <alias index="53" field="realisiert" name=""/>
-    <alias index="54" field="nachrichtlicheUebernahme" name=""/>
-    <alias index="55" field="hinweis" name=""/>
-    <alias index="56" field="aufnahmeAlsFestsetzung" name=""/>
-    <alias index="57" field="vermerk" name=""/>
-    <alias index="58" field="abweichenderHoehenbezug" name=""/>
-    <alias index="59" field="hMin" name=""/>
-    <alias index="60" field="hMax" name=""/>
-    <alias index="61" field="hZwingend" name=""/>
-    <alias index="62" field="h" name=""/>
-    <alias index="63" field="hUeberBezugspunkt" name=""/>
-    <alias index="64" field="hUeberBezugspunktCode" name=""/>
-    <alias index="65" field="wirdAusgeglichenVon" name=""/>
-    <alias index="66" field="gehoertNachrichtlichZuBereich" name=""/>
-    <alias index="67" field="wirdDargestelltDurch" name=""/>
-    <alias index="68" field="rechtscharakter" name=""/>
-    <alias index="69" field="rechtscharakterCode" name=""/>
-    <alias index="70" field="startBedingung" name=""/>
-    <alias index="71" field="endeBedingung" name=""/>
-    <alias index="72" field="wirdAusgeglichenDurchABE" name=""/>
-    <alias index="73" field="wirdAusgeglichenDurchSPEMassnahme" name=""/>
-    <alias index="74" field="wirdAusgeglichenDurchSPEFlaeche" name=""/>
-    <alias index="75" field="gehoertZuBP_Bereich" name=""/>
-    <alias index="76" field="aufschrift" name=""/>
-    <alias index="77" field="eigentumsart" name=""/>
-    <alias index="78" field="eigentumsartCode" name=""/>
-    <alias index="79" field="betreten" name=""/>
-    <alias index="80" field="betretenCode" name=""/>
+    <alias index="23" field="hatGenerAttribut" name=""/>
+    <alias index="24" field="hoehenangabe" name=""/>
+    <alias index="25" field="externeReferenz" name=""/>
+    <alias index="26" field="gehoertNachrichtlichZuBereich" name=""/>
+    <alias index="27" field="gehoertZuBereich" name=""/>
+    <alias index="28" field="wirdDargestelltDurch" name=""/>
+    <alias index="29" field="rechtscharakter" name=""/>
+    <alias index="30" field="rechtscharakterCode" name=""/>
+    <alias index="31" field="startBedingung" name=""/>
+    <alias index="32" field="endeBedingung" name=""/>
+    <alias index="33" field="wirdAusgeglichenDurchFlaeche" name=""/>
+    <alias index="34" field="laermkontingent" name=""/>
+    <alias index="35" field="laermkontingentGebiet" name=""/>
+    <alias index="36" field="zusatzkontingent" name=""/>
+    <alias index="37" field="zusatzkontingentFlaeche" name=""/>
+    <alias index="38" field="richtungssektorGrenze" name=""/>
+    <alias index="39" field="wirdAusgeglichenDurchABE" name=""/>
+    <alias index="40" field="wirdAusgeglichenDurchSPEMassnahme" name=""/>
+    <alias index="41" field="wirdAusgeglichenDurchSPEFlaeche" name=""/>
+    <alias index="42" field="wirdAusgeglichenDurchMassnahme" name=""/>
+    <alias index="43" field="gehoertZuBP_Bereich" name=""/>
+    <alias index="44" field="flaechenschluss" name=""/>
+    <alias index="45" field="flussrichtung" name=""/>
+    <alias index="46" field="nordwinkel" name=""/>
+    <alias index="47" field="nordwinkelUOM" name=""/>
+    <alias index="48" field="zweckbestimmung" name=""/>
+    <alias index="49" field="zweckbestimmungCode" name=""/>
+    <alias index="50" field="weitereZweckbestimmung1" name=""/>
+    <alias index="51" field="weitereZweckbestimmung1Code" name=""/>
+    <alias index="52" field="weitereZweckbestimmung2" name=""/>
+    <alias index="53" field="weitereZweckbestimmung2Code" name=""/>
+    <alias index="54" field="weitereZweckbestimmung3" name=""/>
+    <alias index="55" field="weitereZweckbestimmung3Code" name=""/>
+    <alias index="56" field="detaillierteZweckbestimmung" name=""/>
+    <alias index="57" field="detaillierteZweckbestimmungCode" name=""/>
+    <alias index="58" field="weitereDetailZweckbestimmung1" name=""/>
+    <alias index="59" field="weitereDetailZweckbestimmung1Code" name=""/>
+    <alias index="60" field="weitereDetailZweckbestimmung2" name=""/>
+    <alias index="61" field="weitereDetailZweckbestimmung2Code" name=""/>
+    <alias index="62" field="weitereDetailZweckbestimmung3" name=""/>
+    <alias index="63" field="weitereDetailZweckbestimmung3Code" name=""/>
+    <alias index="64" field="aufschrift" name=""/>
   </aliases>
   <defaults>
     <default applyOnUpdate="0" field="gmlId" expression=""/>
@@ -849,66 +718,50 @@
     <default applyOnUpdate="0" field="gliederung1" expression=""/>
     <default applyOnUpdate="0" field="gliederung2" expression=""/>
     <default applyOnUpdate="0" field="ebene" expression=""/>
-    <default applyOnUpdate="0" field="gehoertZuBereich" expression=""/>
-    <default applyOnUpdate="0" field="informell" expression=""/>
     <default applyOnUpdate="0" field="rechtsverbindlich" expression=""/>
+    <default applyOnUpdate="0" field="informell" expression=""/>
     <default applyOnUpdate="0" field="hatGenerAttribut" expression=""/>
-    <default applyOnUpdate="0" field="rechtlicheCharakterisierung" expression=""/>
-    <default applyOnUpdate="0" field="rechtlicheCharakterisierungCode" expression=""/>
-    <default applyOnUpdate="0" field="bedingungStart" expression=""/>
-    <default applyOnUpdate="0" field="bedingungEnde" expression=""/>
-    <default applyOnUpdate="0" field="startDatum" expression=""/>
-    <default applyOnUpdate="0" field="endDatum" expression=""/>
+    <default applyOnUpdate="0" field="hoehenangabe" expression=""/>
+    <default applyOnUpdate="0" field="externeReferenz" expression=""/>
+    <default applyOnUpdate="0" field="gehoertNachrichtlichZuBereich" expression=""/>
+    <default applyOnUpdate="0" field="gehoertZuBereich" expression=""/>
+    <default applyOnUpdate="0" field="wirdDargestelltDurch" expression=""/>
+    <default applyOnUpdate="0" field="rechtscharakter" expression=""/>
+    <default applyOnUpdate="0" field="rechtscharakterCode" expression=""/>
+    <default applyOnUpdate="0" field="startBedingung" expression=""/>
+    <default applyOnUpdate="0" field="endeBedingung" expression=""/>
     <default applyOnUpdate="0" field="wirdAusgeglichenDurchFlaeche" expression=""/>
     <default applyOnUpdate="0" field="laermkontingent" expression=""/>
     <default applyOnUpdate="0" field="laermkontingentGebiet" expression=""/>
     <default applyOnUpdate="0" field="zusatzkontingent" expression=""/>
     <default applyOnUpdate="0" field="zusatzkontingentFlaeche" expression=""/>
     <default applyOnUpdate="0" field="richtungssektorGrenze" expression=""/>
+    <default applyOnUpdate="0" field="wirdAusgeglichenDurchABE" expression=""/>
+    <default applyOnUpdate="0" field="wirdAusgeglichenDurchSPEMassnahme" expression=""/>
+    <default applyOnUpdate="0" field="wirdAusgeglichenDurchSPEFlaeche" expression=""/>
     <default applyOnUpdate="0" field="wirdAusgeglichenDurchMassnahme" expression=""/>
-    <default applyOnUpdate="0" field="hoehenangabe" expression=""/>
-    <default applyOnUpdate="0" field="externeReferenz" expression=""/>
+    <default applyOnUpdate="0" field="gehoertZuBP_Bereich" expression=""/>
     <default applyOnUpdate="0" field="flaechenschluss" expression=""/>
+    <default applyOnUpdate="0" field="flussrichtung" expression=""/>
+    <default applyOnUpdate="0" field="nordwinkel" expression=""/>
+    <default applyOnUpdate="0" field="nordwinkelUOM" expression=""/>
     <default applyOnUpdate="0" field="zweckbestimmung" expression=""/>
     <default applyOnUpdate="0" field="zweckbestimmungCode" expression=""/>
     <default applyOnUpdate="0" field="weitereZweckbestimmung1" expression=""/>
     <default applyOnUpdate="0" field="weitereZweckbestimmung1Code" expression=""/>
     <default applyOnUpdate="0" field="weitereZweckbestimmung2" expression=""/>
     <default applyOnUpdate="0" field="weitereZweckbestimmung2Code" expression=""/>
+    <default applyOnUpdate="0" field="weitereZweckbestimmung3" expression=""/>
+    <default applyOnUpdate="0" field="weitereZweckbestimmung3Code" expression=""/>
     <default applyOnUpdate="0" field="detaillierteZweckbestimmung" expression=""/>
     <default applyOnUpdate="0" field="detaillierteZweckbestimmungCode" expression=""/>
     <default applyOnUpdate="0" field="weitereDetailZweckbestimmung1" expression=""/>
     <default applyOnUpdate="0" field="weitereDetailZweckbestimmung1Code" expression=""/>
     <default applyOnUpdate="0" field="weitereDetailZweckbestimmung2" expression=""/>
     <default applyOnUpdate="0" field="weitereDetailZweckbestimmung2Code" expression=""/>
-    <default applyOnUpdate="0" field="realisiert" expression=""/>
-    <default applyOnUpdate="0" field="nachrichtlicheUebernahme" expression=""/>
-    <default applyOnUpdate="0" field="hinweis" expression=""/>
-    <default applyOnUpdate="0" field="aufnahmeAlsFestsetzung" expression=""/>
-    <default applyOnUpdate="0" field="vermerk" expression=""/>
-    <default applyOnUpdate="0" field="abweichenderHoehenbezug" expression=""/>
-    <default applyOnUpdate="0" field="hMin" expression=""/>
-    <default applyOnUpdate="0" field="hMax" expression=""/>
-    <default applyOnUpdate="0" field="hZwingend" expression=""/>
-    <default applyOnUpdate="0" field="h" expression=""/>
-    <default applyOnUpdate="0" field="hUeberBezugspunkt" expression=""/>
-    <default applyOnUpdate="0" field="hUeberBezugspunktCode" expression=""/>
-    <default applyOnUpdate="0" field="wirdAusgeglichenVon" expression=""/>
-    <default applyOnUpdate="0" field="gehoertNachrichtlichZuBereich" expression=""/>
-    <default applyOnUpdate="0" field="wirdDargestelltDurch" expression=""/>
-    <default applyOnUpdate="0" field="rechtscharakter" expression=""/>
-    <default applyOnUpdate="0" field="rechtscharakterCode" expression=""/>
-    <default applyOnUpdate="0" field="startBedingung" expression=""/>
-    <default applyOnUpdate="0" field="endeBedingung" expression=""/>
-    <default applyOnUpdate="0" field="wirdAusgeglichenDurchABE" expression=""/>
-    <default applyOnUpdate="0" field="wirdAusgeglichenDurchSPEMassnahme" expression=""/>
-    <default applyOnUpdate="0" field="wirdAusgeglichenDurchSPEFlaeche" expression=""/>
-    <default applyOnUpdate="0" field="gehoertZuBP_Bereich" expression=""/>
+    <default applyOnUpdate="0" field="weitereDetailZweckbestimmung3" expression=""/>
+    <default applyOnUpdate="0" field="weitereDetailZweckbestimmung3Code" expression=""/>
     <default applyOnUpdate="0" field="aufschrift" expression=""/>
-    <default applyOnUpdate="0" field="eigentumsart" expression=""/>
-    <default applyOnUpdate="0" field="eigentumsartCode" expression=""/>
-    <default applyOnUpdate="0" field="betreten" expression=""/>
-    <default applyOnUpdate="0" field="betretenCode" expression=""/>
   </defaults>
   <constraints>
     <constraint exp_strength="0" constraints="0" field="gmlId" unique_strength="0" notnull_strength="0"/>
@@ -932,66 +785,50 @@
     <constraint exp_strength="0" constraints="0" field="gliederung1" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="gliederung2" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="ebene" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="gehoertZuBereich" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="informell" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="rechtsverbindlich" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="informell" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="hatGenerAttribut" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="rechtlicheCharakterisierung" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="rechtlicheCharakterisierungCode" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="bedingungStart" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="bedingungEnde" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="startDatum" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="endDatum" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="hoehenangabe" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="externeReferenz" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="gehoertNachrichtlichZuBereich" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="gehoertZuBereich" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="wirdDargestelltDurch" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="rechtscharakter" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="rechtscharakterCode" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="startBedingung" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="endeBedingung" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchFlaeche" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="laermkontingent" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="laermkontingentGebiet" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="zusatzkontingent" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="zusatzkontingentFlaeche" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="richtungssektorGrenze" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchABE" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchSPEMassnahme" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchSPEFlaeche" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchMassnahme" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hoehenangabe" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="externeReferenz" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="gehoertZuBP_Bereich" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="flaechenschluss" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="flussrichtung" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="nordwinkel" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="nordwinkelUOM" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="zweckbestimmung" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="zweckbestimmungCode" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereZweckbestimmung1" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereZweckbestimmung1Code" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereZweckbestimmung2" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereZweckbestimmung2Code" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="weitereZweckbestimmung3" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="weitereZweckbestimmung3Code" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="detaillierteZweckbestimmung" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="detaillierteZweckbestimmungCode" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereDetailZweckbestimmung1" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereDetailZweckbestimmung1Code" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereDetailZweckbestimmung2" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="weitereDetailZweckbestimmung2Code" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="realisiert" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="nachrichtlicheUebernahme" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hinweis" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="aufnahmeAlsFestsetzung" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="vermerk" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="abweichenderHoehenbezug" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hMin" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hMax" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hZwingend" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="h" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hUeberBezugspunkt" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="hUeberBezugspunktCode" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenVon" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="gehoertNachrichtlichZuBereich" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="wirdDargestelltDurch" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="rechtscharakter" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="rechtscharakterCode" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="startBedingung" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="endeBedingung" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchABE" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchSPEMassnahme" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="wirdAusgeglichenDurchSPEFlaeche" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="gehoertZuBP_Bereich" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="weitereDetailZweckbestimmung3" unique_strength="0" notnull_strength="0"/>
+    <constraint exp_strength="0" constraints="0" field="weitereDetailZweckbestimmung3Code" unique_strength="0" notnull_strength="0"/>
     <constraint exp_strength="0" constraints="0" field="aufschrift" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="eigentumsart" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="eigentumsartCode" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="betreten" unique_strength="0" notnull_strength="0"/>
-    <constraint exp_strength="0" constraints="0" field="betretenCode" unique_strength="0" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" field="gmlId" desc=""/>
@@ -1015,72 +852,56 @@
     <constraint exp="" field="gliederung1" desc=""/>
     <constraint exp="" field="gliederung2" desc=""/>
     <constraint exp="" field="ebene" desc=""/>
-    <constraint exp="" field="gehoertZuBereich" desc=""/>
-    <constraint exp="" field="informell" desc=""/>
     <constraint exp="" field="rechtsverbindlich" desc=""/>
+    <constraint exp="" field="informell" desc=""/>
     <constraint exp="" field="hatGenerAttribut" desc=""/>
-    <constraint exp="" field="rechtlicheCharakterisierung" desc=""/>
-    <constraint exp="" field="rechtlicheCharakterisierungCode" desc=""/>
-    <constraint exp="" field="bedingungStart" desc=""/>
-    <constraint exp="" field="bedingungEnde" desc=""/>
-    <constraint exp="" field="startDatum" desc=""/>
-    <constraint exp="" field="endDatum" desc=""/>
+    <constraint exp="" field="hoehenangabe" desc=""/>
+    <constraint exp="" field="externeReferenz" desc=""/>
+    <constraint exp="" field="gehoertNachrichtlichZuBereich" desc=""/>
+    <constraint exp="" field="gehoertZuBereich" desc=""/>
+    <constraint exp="" field="wirdDargestelltDurch" desc=""/>
+    <constraint exp="" field="rechtscharakter" desc=""/>
+    <constraint exp="" field="rechtscharakterCode" desc=""/>
+    <constraint exp="" field="startBedingung" desc=""/>
+    <constraint exp="" field="endeBedingung" desc=""/>
     <constraint exp="" field="wirdAusgeglichenDurchFlaeche" desc=""/>
     <constraint exp="" field="laermkontingent" desc=""/>
     <constraint exp="" field="laermkontingentGebiet" desc=""/>
     <constraint exp="" field="zusatzkontingent" desc=""/>
     <constraint exp="" field="zusatzkontingentFlaeche" desc=""/>
     <constraint exp="" field="richtungssektorGrenze" desc=""/>
+    <constraint exp="" field="wirdAusgeglichenDurchABE" desc=""/>
+    <constraint exp="" field="wirdAusgeglichenDurchSPEMassnahme" desc=""/>
+    <constraint exp="" field="wirdAusgeglichenDurchSPEFlaeche" desc=""/>
     <constraint exp="" field="wirdAusgeglichenDurchMassnahme" desc=""/>
-    <constraint exp="" field="hoehenangabe" desc=""/>
-    <constraint exp="" field="externeReferenz" desc=""/>
+    <constraint exp="" field="gehoertZuBP_Bereich" desc=""/>
     <constraint exp="" field="flaechenschluss" desc=""/>
+    <constraint exp="" field="flussrichtung" desc=""/>
+    <constraint exp="" field="nordwinkel" desc=""/>
+    <constraint exp="" field="nordwinkelUOM" desc=""/>
     <constraint exp="" field="zweckbestimmung" desc=""/>
     <constraint exp="" field="zweckbestimmungCode" desc=""/>
     <constraint exp="" field="weitereZweckbestimmung1" desc=""/>
     <constraint exp="" field="weitereZweckbestimmung1Code" desc=""/>
     <constraint exp="" field="weitereZweckbestimmung2" desc=""/>
     <constraint exp="" field="weitereZweckbestimmung2Code" desc=""/>
+    <constraint exp="" field="weitereZweckbestimmung3" desc=""/>
+    <constraint exp="" field="weitereZweckbestimmung3Code" desc=""/>
     <constraint exp="" field="detaillierteZweckbestimmung" desc=""/>
     <constraint exp="" field="detaillierteZweckbestimmungCode" desc=""/>
     <constraint exp="" field="weitereDetailZweckbestimmung1" desc=""/>
     <constraint exp="" field="weitereDetailZweckbestimmung1Code" desc=""/>
     <constraint exp="" field="weitereDetailZweckbestimmung2" desc=""/>
     <constraint exp="" field="weitereDetailZweckbestimmung2Code" desc=""/>
-    <constraint exp="" field="realisiert" desc=""/>
-    <constraint exp="" field="nachrichtlicheUebernahme" desc=""/>
-    <constraint exp="" field="hinweis" desc=""/>
-    <constraint exp="" field="aufnahmeAlsFestsetzung" desc=""/>
-    <constraint exp="" field="vermerk" desc=""/>
-    <constraint exp="" field="abweichenderHoehenbezug" desc=""/>
-    <constraint exp="" field="hMin" desc=""/>
-    <constraint exp="" field="hMax" desc=""/>
-    <constraint exp="" field="hZwingend" desc=""/>
-    <constraint exp="" field="h" desc=""/>
-    <constraint exp="" field="hUeberBezugspunkt" desc=""/>
-    <constraint exp="" field="hUeberBezugspunktCode" desc=""/>
-    <constraint exp="" field="wirdAusgeglichenVon" desc=""/>
-    <constraint exp="" field="gehoertNachrichtlichZuBereich" desc=""/>
-    <constraint exp="" field="wirdDargestelltDurch" desc=""/>
-    <constraint exp="" field="rechtscharakter" desc=""/>
-    <constraint exp="" field="rechtscharakterCode" desc=""/>
-    <constraint exp="" field="startBedingung" desc=""/>
-    <constraint exp="" field="endeBedingung" desc=""/>
-    <constraint exp="" field="wirdAusgeglichenDurchABE" desc=""/>
-    <constraint exp="" field="wirdAusgeglichenDurchSPEMassnahme" desc=""/>
-    <constraint exp="" field="wirdAusgeglichenDurchSPEFlaeche" desc=""/>
-    <constraint exp="" field="gehoertZuBP_Bereich" desc=""/>
+    <constraint exp="" field="weitereDetailZweckbestimmung3" desc=""/>
+    <constraint exp="" field="weitereDetailZweckbestimmung3Code" desc=""/>
     <constraint exp="" field="aufschrift" desc=""/>
-    <constraint exp="" field="eigentumsart" desc=""/>
-    <constraint exp="" field="eigentumsartCode" desc=""/>
-    <constraint exp="" field="betreten" desc=""/>
-    <constraint exp="" field="betretenCode" desc=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" sortExpression="&quot;zweckbestimmung&quot;" actionWidgetStyle="dropDown">
+  <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
     <columns>
       <column width="-1" hidden="0" name="gmlId" type="field"/>
       <column width="-1" hidden="0" name="gmlName" type="field"/>
@@ -1091,7 +912,7 @@
       <column width="-1" hidden="0" name="wmsSortDate" type="field"/>
       <column width="-1" hidden="0" name="xpVersion" type="field"/>
       <column width="-1" hidden="0" name="xpPlanType" type="field"/>
-      <column width="204" hidden="0" name="xpPlanName" type="field"/>
+      <column width="-1" hidden="0" name="xpPlanName" type="field"/>
       <column width="-1" hidden="0" name="uuid" type="field"/>
       <column width="-1" hidden="0" name="text" type="field"/>
       <column width="-1" hidden="0" name="rechtsstand" type="field"/>
@@ -1103,66 +924,50 @@
       <column width="-1" hidden="0" name="gliederung1" type="field"/>
       <column width="-1" hidden="0" name="gliederung2" type="field"/>
       <column width="-1" hidden="0" name="ebene" type="field"/>
-      <column width="-1" hidden="0" name="gehoertZuBereich" type="field"/>
-      <column width="-1" hidden="0" name="informell" type="field"/>
       <column width="-1" hidden="0" name="rechtsverbindlich" type="field"/>
+      <column width="-1" hidden="0" name="informell" type="field"/>
       <column width="-1" hidden="0" name="hatGenerAttribut" type="field"/>
-      <column width="-1" hidden="0" name="rechtlicheCharakterisierung" type="field"/>
-      <column width="-1" hidden="0" name="rechtlicheCharakterisierungCode" type="field"/>
-      <column width="-1" hidden="0" name="bedingungStart" type="field"/>
-      <column width="-1" hidden="0" name="bedingungEnde" type="field"/>
-      <column width="-1" hidden="0" name="startDatum" type="field"/>
-      <column width="-1" hidden="0" name="endDatum" type="field"/>
+      <column width="-1" hidden="0" name="hoehenangabe" type="field"/>
+      <column width="-1" hidden="0" name="externeReferenz" type="field"/>
+      <column width="-1" hidden="0" name="gehoertNachrichtlichZuBereich" type="field"/>
+      <column width="-1" hidden="0" name="gehoertZuBereich" type="field"/>
+      <column width="-1" hidden="0" name="wirdDargestelltDurch" type="field"/>
+      <column width="-1" hidden="0" name="rechtscharakter" type="field"/>
+      <column width="-1" hidden="0" name="rechtscharakterCode" type="field"/>
+      <column width="-1" hidden="0" name="startBedingung" type="field"/>
+      <column width="-1" hidden="0" name="endeBedingung" type="field"/>
       <column width="-1" hidden="0" name="wirdAusgeglichenDurchFlaeche" type="field"/>
       <column width="-1" hidden="0" name="laermkontingent" type="field"/>
       <column width="-1" hidden="0" name="laermkontingentGebiet" type="field"/>
       <column width="-1" hidden="0" name="zusatzkontingent" type="field"/>
       <column width="-1" hidden="0" name="zusatzkontingentFlaeche" type="field"/>
       <column width="-1" hidden="0" name="richtungssektorGrenze" type="field"/>
+      <column width="-1" hidden="0" name="wirdAusgeglichenDurchABE" type="field"/>
+      <column width="-1" hidden="0" name="wirdAusgeglichenDurchSPEMassnahme" type="field"/>
+      <column width="-1" hidden="0" name="wirdAusgeglichenDurchSPEFlaeche" type="field"/>
       <column width="-1" hidden="0" name="wirdAusgeglichenDurchMassnahme" type="field"/>
-      <column width="-1" hidden="0" name="hoehenangabe" type="field"/>
-      <column width="-1" hidden="0" name="externeReferenz" type="field"/>
+      <column width="-1" hidden="0" name="gehoertZuBP_Bereich" type="field"/>
       <column width="-1" hidden="0" name="flaechenschluss" type="field"/>
-      <column width="335" hidden="0" name="zweckbestimmung" type="field"/>
+      <column width="-1" hidden="0" name="flussrichtung" type="field"/>
+      <column width="-1" hidden="0" name="nordwinkel" type="field"/>
+      <column width="-1" hidden="0" name="nordwinkelUOM" type="field"/>
+      <column width="-1" hidden="0" name="zweckbestimmung" type="field"/>
       <column width="-1" hidden="0" name="zweckbestimmungCode" type="field"/>
       <column width="-1" hidden="0" name="weitereZweckbestimmung1" type="field"/>
       <column width="-1" hidden="0" name="weitereZweckbestimmung1Code" type="field"/>
       <column width="-1" hidden="0" name="weitereZweckbestimmung2" type="field"/>
       <column width="-1" hidden="0" name="weitereZweckbestimmung2Code" type="field"/>
+      <column width="-1" hidden="0" name="weitereZweckbestimmung3" type="field"/>
+      <column width="-1" hidden="0" name="weitereZweckbestimmung3Code" type="field"/>
       <column width="-1" hidden="0" name="detaillierteZweckbestimmung" type="field"/>
       <column width="-1" hidden="0" name="detaillierteZweckbestimmungCode" type="field"/>
       <column width="-1" hidden="0" name="weitereDetailZweckbestimmung1" type="field"/>
       <column width="-1" hidden="0" name="weitereDetailZweckbestimmung1Code" type="field"/>
       <column width="-1" hidden="0" name="weitereDetailZweckbestimmung2" type="field"/>
       <column width="-1" hidden="0" name="weitereDetailZweckbestimmung2Code" type="field"/>
-      <column width="-1" hidden="0" name="realisiert" type="field"/>
-      <column width="-1" hidden="0" name="nachrichtlicheUebernahme" type="field"/>
-      <column width="-1" hidden="0" name="hinweis" type="field"/>
-      <column width="-1" hidden="0" name="aufnahmeAlsFestsetzung" type="field"/>
-      <column width="-1" hidden="0" name="vermerk" type="field"/>
-      <column width="-1" hidden="0" name="abweichenderHoehenbezug" type="field"/>
-      <column width="-1" hidden="0" name="hMin" type="field"/>
-      <column width="-1" hidden="0" name="hMax" type="field"/>
-      <column width="-1" hidden="0" name="hZwingend" type="field"/>
-      <column width="-1" hidden="0" name="h" type="field"/>
-      <column width="-1" hidden="0" name="hUeberBezugspunkt" type="field"/>
-      <column width="-1" hidden="0" name="hUeberBezugspunktCode" type="field"/>
-      <column width="-1" hidden="0" name="wirdAusgeglichenVon" type="field"/>
-      <column width="-1" hidden="0" name="gehoertNachrichtlichZuBereich" type="field"/>
-      <column width="-1" hidden="0" name="wirdDargestelltDurch" type="field"/>
-      <column width="-1" hidden="0" name="rechtscharakter" type="field"/>
-      <column width="-1" hidden="0" name="rechtscharakterCode" type="field"/>
-      <column width="-1" hidden="0" name="startBedingung" type="field"/>
-      <column width="-1" hidden="0" name="endeBedingung" type="field"/>
-      <column width="-1" hidden="0" name="wirdAusgeglichenDurchABE" type="field"/>
-      <column width="-1" hidden="0" name="wirdAusgeglichenDurchSPEMassnahme" type="field"/>
-      <column width="-1" hidden="0" name="wirdAusgeglichenDurchSPEFlaeche" type="field"/>
-      <column width="-1" hidden="0" name="gehoertZuBP_Bereich" type="field"/>
+      <column width="-1" hidden="0" name="weitereDetailZweckbestimmung3" type="field"/>
+      <column width="-1" hidden="0" name="weitereDetailZweckbestimmung3Code" type="field"/>
       <column width="-1" hidden="0" name="aufschrift" type="field"/>
-      <column width="-1" hidden="0" name="eigentumsart" type="field"/>
-      <column width="-1" hidden="0" name="eigentumsartCode" type="field"/>
-      <column width="-1" hidden="0" name="betreten" type="field"/>
-      <column width="-1" hidden="0" name="betretenCode" type="field"/>
       <column width="-1" hidden="1" type="actions"/>
     </columns>
   </attributetableconfig>
@@ -1193,23 +998,15 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field editable="1" name="abweichenderHoehenbezug"/>
-    <field editable="1" name="aufnahmeAlsFestsetzung"/>
     <field editable="1" name="aufschrift"/>
-    <field editable="1" name="bedingungEnde"/>
-    <field editable="1" name="bedingungStart"/>
     <field editable="1" name="begruendungAbschnitte"/>
-    <field editable="1" name="betreten"/>
-    <field editable="1" name="betretenCode"/>
     <field editable="1" name="detaillierteZweckbestimmung"/>
     <field editable="1" name="detaillierteZweckbestimmungCode"/>
     <field editable="1" name="ebene"/>
-    <field editable="1" name="eigentumsart"/>
-    <field editable="1" name="eigentumsartCode"/>
-    <field editable="1" name="endDatum"/>
     <field editable="1" name="endeBedingung"/>
     <field editable="1" name="externeReferenz"/>
     <field editable="1" name="flaechenschluss"/>
+    <field editable="1" name="flussrichtung"/>
     <field editable="1" name="gehoertNachrichtlichZuBereich"/>
     <field editable="1" name="gehoertZuBP_Bereich"/>
     <field editable="1" name="gehoertZuBereich"/>
@@ -1222,22 +1019,13 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="gmlName"/>
     <field editable="1" name="gueltigkeitBeginn"/>
     <field editable="1" name="gueltigkeitEnde"/>
-    <field editable="1" name="h"/>
-    <field editable="1" name="hMax"/>
-    <field editable="1" name="hMin"/>
-    <field editable="1" name="hUeberBezugspunkt"/>
-    <field editable="1" name="hUeberBezugspunktCode"/>
-    <field editable="1" name="hZwingend"/>
     <field editable="1" name="hatGenerAttribut"/>
-    <field editable="1" name="hinweis"/>
     <field editable="1" name="hoehenangabe"/>
     <field editable="1" name="informell"/>
     <field editable="1" name="laermkontingent"/>
     <field editable="1" name="laermkontingentGebiet"/>
-    <field editable="1" name="nachrichtlicheUebernahme"/>
-    <field editable="1" name="realisiert"/>
-    <field editable="1" name="rechtlicheCharakterisierung"/>
-    <field editable="1" name="rechtlicheCharakterisierungCode"/>
+    <field editable="1" name="nordwinkel"/>
+    <field editable="1" name="nordwinkelUOM"/>
     <field editable="1" name="rechtscharakter"/>
     <field editable="1" name="rechtscharakterCode"/>
     <field editable="1" name="rechtsstand"/>
@@ -1245,25 +1033,26 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="rechtsverbindlich"/>
     <field editable="1" name="richtungssektorGrenze"/>
     <field editable="1" name="startBedingung"/>
-    <field editable="1" name="startDatum"/>
     <field editable="1" name="text"/>
     <field editable="1" name="textAbschnitte"/>
     <field editable="1" name="uuid"/>
-    <field editable="1" name="vermerk"/>
     <field editable="1" name="weitereDetailZweckbestimmung1"/>
     <field editable="1" name="weitereDetailZweckbestimmung1Code"/>
     <field editable="1" name="weitereDetailZweckbestimmung2"/>
     <field editable="1" name="weitereDetailZweckbestimmung2Code"/>
+    <field editable="1" name="weitereDetailZweckbestimmung3"/>
+    <field editable="1" name="weitereDetailZweckbestimmung3Code"/>
     <field editable="1" name="weitereZweckbestimmung1"/>
     <field editable="1" name="weitereZweckbestimmung1Code"/>
     <field editable="1" name="weitereZweckbestimmung2"/>
     <field editable="1" name="weitereZweckbestimmung2Code"/>
+    <field editable="1" name="weitereZweckbestimmung3"/>
+    <field editable="1" name="weitereZweckbestimmung3Code"/>
     <field editable="1" name="wirdAusgeglichenDurchABE"/>
     <field editable="1" name="wirdAusgeglichenDurchFlaeche"/>
     <field editable="1" name="wirdAusgeglichenDurchMassnahme"/>
     <field editable="1" name="wirdAusgeglichenDurchSPEFlaeche"/>
     <field editable="1" name="wirdAusgeglichenDurchSPEMassnahme"/>
-    <field editable="1" name="wirdAusgeglichenVon"/>
     <field editable="1" name="wirdDargestelltDurch"/>
     <field editable="1" name="wmsSortDate"/>
     <field editable="1" name="xpPlanName"/>
@@ -1276,23 +1065,15 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="zweckbestimmungCode"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="abweichenderHoehenbezug"/>
-    <field labelOnTop="0" name="aufnahmeAlsFestsetzung"/>
     <field labelOnTop="0" name="aufschrift"/>
-    <field labelOnTop="0" name="bedingungEnde"/>
-    <field labelOnTop="0" name="bedingungStart"/>
     <field labelOnTop="0" name="begruendungAbschnitte"/>
-    <field labelOnTop="0" name="betreten"/>
-    <field labelOnTop="0" name="betretenCode"/>
     <field labelOnTop="0" name="detaillierteZweckbestimmung"/>
     <field labelOnTop="0" name="detaillierteZweckbestimmungCode"/>
     <field labelOnTop="0" name="ebene"/>
-    <field labelOnTop="0" name="eigentumsart"/>
-    <field labelOnTop="0" name="eigentumsartCode"/>
-    <field labelOnTop="0" name="endDatum"/>
     <field labelOnTop="0" name="endeBedingung"/>
     <field labelOnTop="0" name="externeReferenz"/>
     <field labelOnTop="0" name="flaechenschluss"/>
+    <field labelOnTop="0" name="flussrichtung"/>
     <field labelOnTop="0" name="gehoertNachrichtlichZuBereich"/>
     <field labelOnTop="0" name="gehoertZuBP_Bereich"/>
     <field labelOnTop="0" name="gehoertZuBereich"/>
@@ -1305,22 +1086,13 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="gmlName"/>
     <field labelOnTop="0" name="gueltigkeitBeginn"/>
     <field labelOnTop="0" name="gueltigkeitEnde"/>
-    <field labelOnTop="0" name="h"/>
-    <field labelOnTop="0" name="hMax"/>
-    <field labelOnTop="0" name="hMin"/>
-    <field labelOnTop="0" name="hUeberBezugspunkt"/>
-    <field labelOnTop="0" name="hUeberBezugspunktCode"/>
-    <field labelOnTop="0" name="hZwingend"/>
     <field labelOnTop="0" name="hatGenerAttribut"/>
-    <field labelOnTop="0" name="hinweis"/>
     <field labelOnTop="0" name="hoehenangabe"/>
     <field labelOnTop="0" name="informell"/>
     <field labelOnTop="0" name="laermkontingent"/>
     <field labelOnTop="0" name="laermkontingentGebiet"/>
-    <field labelOnTop="0" name="nachrichtlicheUebernahme"/>
-    <field labelOnTop="0" name="realisiert"/>
-    <field labelOnTop="0" name="rechtlicheCharakterisierung"/>
-    <field labelOnTop="0" name="rechtlicheCharakterisierungCode"/>
+    <field labelOnTop="0" name="nordwinkel"/>
+    <field labelOnTop="0" name="nordwinkelUOM"/>
     <field labelOnTop="0" name="rechtscharakter"/>
     <field labelOnTop="0" name="rechtscharakterCode"/>
     <field labelOnTop="0" name="rechtsstand"/>
@@ -1328,25 +1100,26 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="rechtsverbindlich"/>
     <field labelOnTop="0" name="richtungssektorGrenze"/>
     <field labelOnTop="0" name="startBedingung"/>
-    <field labelOnTop="0" name="startDatum"/>
     <field labelOnTop="0" name="text"/>
     <field labelOnTop="0" name="textAbschnitte"/>
     <field labelOnTop="0" name="uuid"/>
-    <field labelOnTop="0" name="vermerk"/>
     <field labelOnTop="0" name="weitereDetailZweckbestimmung1"/>
     <field labelOnTop="0" name="weitereDetailZweckbestimmung1Code"/>
     <field labelOnTop="0" name="weitereDetailZweckbestimmung2"/>
     <field labelOnTop="0" name="weitereDetailZweckbestimmung2Code"/>
+    <field labelOnTop="0" name="weitereDetailZweckbestimmung3"/>
+    <field labelOnTop="0" name="weitereDetailZweckbestimmung3Code"/>
     <field labelOnTop="0" name="weitereZweckbestimmung1"/>
     <field labelOnTop="0" name="weitereZweckbestimmung1Code"/>
     <field labelOnTop="0" name="weitereZweckbestimmung2"/>
     <field labelOnTop="0" name="weitereZweckbestimmung2Code"/>
+    <field labelOnTop="0" name="weitereZweckbestimmung3"/>
+    <field labelOnTop="0" name="weitereZweckbestimmung3Code"/>
     <field labelOnTop="0" name="wirdAusgeglichenDurchABE"/>
     <field labelOnTop="0" name="wirdAusgeglichenDurchFlaeche"/>
     <field labelOnTop="0" name="wirdAusgeglichenDurchMassnahme"/>
     <field labelOnTop="0" name="wirdAusgeglichenDurchSPEFlaeche"/>
     <field labelOnTop="0" name="wirdAusgeglichenDurchSPEMassnahme"/>
-    <field labelOnTop="0" name="wirdAusgeglichenVon"/>
     <field labelOnTop="0" name="wirdDargestelltDurch"/>
     <field labelOnTop="0" name="wmsSortDate"/>
     <field labelOnTop="0" name="xpPlanName"/>
@@ -1359,23 +1132,15 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="zweckbestimmungCode"/>
   </labelOnTop>
   <reuseLastValue>
-    <field reuseLastValue="0" name="abweichenderHoehenbezug"/>
-    <field reuseLastValue="0" name="aufnahmeAlsFestsetzung"/>
     <field reuseLastValue="0" name="aufschrift"/>
-    <field reuseLastValue="0" name="bedingungEnde"/>
-    <field reuseLastValue="0" name="bedingungStart"/>
     <field reuseLastValue="0" name="begruendungAbschnitte"/>
-    <field reuseLastValue="0" name="betreten"/>
-    <field reuseLastValue="0" name="betretenCode"/>
     <field reuseLastValue="0" name="detaillierteZweckbestimmung"/>
     <field reuseLastValue="0" name="detaillierteZweckbestimmungCode"/>
     <field reuseLastValue="0" name="ebene"/>
-    <field reuseLastValue="0" name="eigentumsart"/>
-    <field reuseLastValue="0" name="eigentumsartCode"/>
-    <field reuseLastValue="0" name="endDatum"/>
     <field reuseLastValue="0" name="endeBedingung"/>
     <field reuseLastValue="0" name="externeReferenz"/>
     <field reuseLastValue="0" name="flaechenschluss"/>
+    <field reuseLastValue="0" name="flussrichtung"/>
     <field reuseLastValue="0" name="gehoertNachrichtlichZuBereich"/>
     <field reuseLastValue="0" name="gehoertZuBP_Bereich"/>
     <field reuseLastValue="0" name="gehoertZuBereich"/>
@@ -1388,22 +1153,13 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="gmlName"/>
     <field reuseLastValue="0" name="gueltigkeitBeginn"/>
     <field reuseLastValue="0" name="gueltigkeitEnde"/>
-    <field reuseLastValue="0" name="h"/>
-    <field reuseLastValue="0" name="hMax"/>
-    <field reuseLastValue="0" name="hMin"/>
-    <field reuseLastValue="0" name="hUeberBezugspunkt"/>
-    <field reuseLastValue="0" name="hUeberBezugspunktCode"/>
-    <field reuseLastValue="0" name="hZwingend"/>
     <field reuseLastValue="0" name="hatGenerAttribut"/>
-    <field reuseLastValue="0" name="hinweis"/>
     <field reuseLastValue="0" name="hoehenangabe"/>
     <field reuseLastValue="0" name="informell"/>
     <field reuseLastValue="0" name="laermkontingent"/>
     <field reuseLastValue="0" name="laermkontingentGebiet"/>
-    <field reuseLastValue="0" name="nachrichtlicheUebernahme"/>
-    <field reuseLastValue="0" name="realisiert"/>
-    <field reuseLastValue="0" name="rechtlicheCharakterisierung"/>
-    <field reuseLastValue="0" name="rechtlicheCharakterisierungCode"/>
+    <field reuseLastValue="0" name="nordwinkel"/>
+    <field reuseLastValue="0" name="nordwinkelUOM"/>
     <field reuseLastValue="0" name="rechtscharakter"/>
     <field reuseLastValue="0" name="rechtscharakterCode"/>
     <field reuseLastValue="0" name="rechtsstand"/>
@@ -1411,25 +1167,26 @@ def my_form_open(dialog, layer, feature):
     <field reuseLastValue="0" name="rechtsverbindlich"/>
     <field reuseLastValue="0" name="richtungssektorGrenze"/>
     <field reuseLastValue="0" name="startBedingung"/>
-    <field reuseLastValue="0" name="startDatum"/>
     <field reuseLastValue="0" name="text"/>
     <field reuseLastValue="0" name="textAbschnitte"/>
     <field reuseLastValue="0" name="uuid"/>
-    <field reuseLastValue="0" name="vermerk"/>
     <field reuseLastValue="0" name="weitereDetailZweckbestimmung1"/>
     <field reuseLastValue="0" name="weitereDetailZweckbestimmung1Code"/>
     <field reuseLastValue="0" name="weitereDetailZweckbestimmung2"/>
     <field reuseLastValue="0" name="weitereDetailZweckbestimmung2Code"/>
+    <field reuseLastValue="0" name="weitereDetailZweckbestimmung3"/>
+    <field reuseLastValue="0" name="weitereDetailZweckbestimmung3Code"/>
     <field reuseLastValue="0" name="weitereZweckbestimmung1"/>
     <field reuseLastValue="0" name="weitereZweckbestimmung1Code"/>
     <field reuseLastValue="0" name="weitereZweckbestimmung2"/>
     <field reuseLastValue="0" name="weitereZweckbestimmung2Code"/>
+    <field reuseLastValue="0" name="weitereZweckbestimmung3"/>
+    <field reuseLastValue="0" name="weitereZweckbestimmung3Code"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchABE"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchFlaeche"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchMassnahme"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchSPEFlaeche"/>
     <field reuseLastValue="0" name="wirdAusgeglichenDurchSPEMassnahme"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenVon"/>
     <field reuseLastValue="0" name="wirdDargestelltDurch"/>
     <field reuseLastValue="0" name="wmsSortDate"/>
     <field reuseLastValue="0" name="xpPlanName"/>
