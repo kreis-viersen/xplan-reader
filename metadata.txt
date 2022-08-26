@@ -6,7 +6,7 @@ about=Remark:
 
       Mit diesem Tool kann eine XPlanGML-Datei in QGIS mit vordefinierter Layerreihenfolge und Styling importiert werden.
 tags=xplan,xplanung,bplan,bebauungsplan
-version=0.2.0
+version=0.3.0
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
 qgisMinimumVersion=3.26
 author=Kreis Viersen
@@ -17,8 +17,16 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.2.0:
-          - Reihenfolge der Styles geändert
+changelog=v0.3.0:
+    - Zoome auf den geladenen Plan
+    - diverse Fehler beim Laden von nicht validem XPlanGML behoben
+    - XPlanGML muss nicht mehr zwingend einen Plannamen besitzen
+    - Infobox "Über XPlan-Reader" hinzugefügt
+    - Reihenfolge der Styles geändert
+    - viele neue und geänderte Styles:
+    https://github.com/kreis-viersen/xplan-reader/commit/c63622
+    v0.2.0:
+    - Reihenfolge der Styles geändert
     - neue Styles:
       BP_AnpflanzungBindungErhaltung_Flaeche
       BP_Wegerecht_Linie
