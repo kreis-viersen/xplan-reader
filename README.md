@@ -23,6 +23,8 @@ Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, dies lässt sic
 
 Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen. Das Plugin liefert bei der Installation bereits ein paar [QGIS-Stildateien] mit, aber es gibt noch viel zu tun. :-)
 
+Es existieren noch nicht für alle Objektarten [QGIS-Stildateien] - auch besteht ggf. Bedarf bestehende Stile zu verbessern.
+
 Eigene QGIS-Stildateien (.qml) können über einen [GitHub-Pull request] oder auch gerne per E-Mail an [open@kreis-viersen.de] eingereicht werden. Diese können dann zukünftig standardmäßig mit dem Plugin ausgeliefert werden.
 
 Als Basis für neue QGIS-Stildateien können die [XPlan-Standard-Stile und SVG-Symbole] der [XPlanBox] verwendet werden. Die SLD-Dateien wurden auf Basis der original SE-Dateien erstellt. Dieses Skript ist ebenfalls als OpenSouce hier verfügbar: [xplan-se-to-sld]
