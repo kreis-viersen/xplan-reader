@@ -41,6 +41,10 @@ Alle Dateien im Ordner [xplan-default-styles] stehen ebenfalls unter [GPL-3.0-Li
 
 Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwenden zu dürfen. Das Icon ist Copyright (c) Leitstelle XPlanung / XBau.
 
+[Info-Icon] aus [Wikipedia] unter [CCO].
+
+
+
 
 [GitHub-Issue]: <https://github.com/kreis-viersen/xplan-reader/issues>
 [open@kreis-viersen.de]: <mailto:open@kreis-viersen.de?subject=xplan-reader>
@@ -56,4 +60,6 @@ Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwe
 [xplan-default-styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan-default-styles>
 [XLeitstelle]: <https://xleitstelle.de/leitstelle>
 [XPlanung-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/xplan_reader_icon.png>
-
+[Info-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/info_icon.png>
+[Wikipedia]: <https://de.m.wikipedia.org/wiki/Datei:Info_icon-72a7cf.svg>
+[CCO]: <https://creativecommons.org/publicdomain/zero/1.0/deed.en>
