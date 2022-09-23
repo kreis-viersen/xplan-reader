@@ -161,6 +161,17 @@ class XplanReader:
             self.group_extent = QgsRectangle()
 
             driver = ogr.GetDriverByName('GML')
+            driver.Open(my_gml)
+
+            # change GeometryType in gfs to handle GeometryCollection import 
+            my_gfs = os.path.splitext(my_gml)[0] + '.gfs'
+            gfs_tree = etree.parse(my_gfs)
+            gfs_root = gfs_tree.getroot()
+            for geometry_type in gfs_root.iter('GeometryType'):
+                if geometry_type.text == '7':
+                    geometry_type.text = '0'
+            gfs_tree.write(my_gfs, encoding = "UTF-8", xml_declaration = False)
+
             layers = [l.GetName() for l in driver.Open(my_gml)]
 
             def addXplanLayer(layername, gtype):
