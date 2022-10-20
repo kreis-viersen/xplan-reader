@@ -992,6 +992,12 @@ class XplanReader:
             # -------------------- text / ab hier Text ------------------------------------------------------------ #
             addXplanLayer('BP_TextAbschnitt', 'Text')
 
+            # collapse layers / klappe Layer zusammen
+            for group in [child for child in root.children() if child.nodeType() == 0]:
+                if new_group.name() == group.name():
+                    for layer in group.findLayers():
+                        if layer.isExpanded():
+                            layer.setExpanded(False)
 
             # zoom to group / Zoom auf die Gruppe
             self.iface.mapCanvas().setExtent(self.group_extent)
