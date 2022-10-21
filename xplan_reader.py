@@ -1014,8 +1014,10 @@ class XplanReader:
             for group in [child for child in root.children() if child.nodeType() == 0]:
                 if new_group.name() == group.name():
                     for layer in group.findLayers():
-                        if layer.isExpanded():
-                            layer.setExpanded(False)
+                        # for some layers setExpanded(False) isn't working for some reason
+                        # so we need to expand first
+                        layer.setExpanded(True)
+                        layer.setExpanded(False)
 
             # zoom to group / Zoom auf die Gruppe
             self.iface.mapCanvas().setExtent(self.group_extent)
