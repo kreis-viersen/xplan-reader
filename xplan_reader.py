@@ -138,8 +138,9 @@ class XplanReader:
             try:
                 name = next(gml_root.iter('{' + xplan_ns_uri + '}name')).text
                 self.logMessage('Name des Plans: ' + name)
+                name = name + ' (XPlanung v' + xplan_version + ')'
             except:
-                name = filename
+                name = filename + ' (XPlanung v' + xplan_version + ')'
 
             root = QgsProject.instance().layerTreeRoot()
 
