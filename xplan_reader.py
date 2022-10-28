@@ -32,7 +32,7 @@ from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction, QDialog, QMenu, QMessageBox
 
-class LoadDialog(QDialog ):
+class LoadDialog(QDialog):
     def __init__(self, caller):
         super(LoadDialog, self ).__init__()
         uic.loadUi(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'xplan_reader.ui'), self)
@@ -141,6 +141,14 @@ class XplanReader:
                 name = name + ' (XPlanung v' + xplan_version + ')'
             except:
                 name = filename + ' (XPlanung v' + xplan_version + ')'
+
+            try:
+                gemeinde_name = next(gml_root.iter('{' + xplan_ns_uri + '}gemeindeName')).text
+                self.logMessage('Gemeindename: ' + gemeinde_name)
+                if len(gemeinde_name) > 0:
+                    name = gemeinde_name + ' - ' + name
+            except:
+                self.logMessage('Kein Gemeindename in der XPlanGML gefunden.')
 
             root = QgsProject.instance().layerTreeRoot()
 
