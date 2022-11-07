@@ -1027,7 +1027,19 @@ class XplanReader:
                         layer.setExpanded(True)
                         layer.setExpanded(False)
 
+
+            canvas = self.iface.mapCanvas()
+
+            def onCanvasRefreshed():
+                canvas.mapCanvasRefreshed.disconnect(onCanvasRefreshed)
+                # maximum scale 1:1000
+                if canvas.scale() < 1000:
+                    canvas.zoomScale(1000)
+                    canvas.refresh()
+
+            canvas.mapCanvasRefreshed.connect(onCanvasRefreshed)
+
             # zoom to group / Zoom auf die Gruppe
-            self.iface.mapCanvas().setExtent(self.group_extent)
-            self.iface.mapCanvas().zoomByFactor(1.4)
-            self.iface.mapCanvas().refresh()
+            canvas.setExtent(self.group_extent)
+            canvas.zoomByFactor(1.4)
+            canvas.refresh()
