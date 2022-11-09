@@ -171,6 +171,7 @@ class XplanReader:
 
             driver = ogr.GetDriverByName('GML')
 
+            # GFS-workaround could be removed as soon as GDAL 3.6.0 is available
             my_gfs = os.path.splitext(my_gml)[0] + '.gfs'
 
             # don't touch existing .gfs
@@ -180,7 +181,7 @@ class XplanReader:
                 gfs_tree = etree.parse(my_gfs)
                 gfs_root = gfs_tree.getroot()
                 for geometry_type in gfs_root.iter('GeometryType'):
-                    # if needed, change GeometryType in .gfs to handle GeometryCollection import
+                    # if needed, change GeometryType in .gfs to handle false GeometryCollection import
                     if geometry_type.text == '7':
                         geometry_type.text = '0'
                         write_gfs = True
