@@ -37,7 +37,7 @@ _QGIS Hauptmenü_ -> _Einstellungen_ -> _Benutzerprofile_ -> _Aktuelles Profilve
 
 Das Plugin steht unter der [GPL-3.0-Lizenz] als OpenSouce zur Verfügung.
 
-Alle Dateien im Ordner [xplan-default-styles] stehen ebenfalls unter [GPL-3.0-Lizenz] und Copyright (c) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de.
+Alle Dateien im Ordner [xplan_default_styles] stehen ebenfalls unter [GPL-3.0-Lizenz] und Copyright (c) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de.
 
 Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwenden zu dürfen. Das Icon ist Copyright (c) Leitstelle XPlanung / XBau.
 
@@ -57,7 +57,7 @@ Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwe
 [xplan-se-to-sld]: <https://github.com/kreis-viersen/xplan-se-to-sld>
 [Download-Zip-Archiv]: <https://github.com/kreis-viersen/xplan-reader/archive/refs/heads/main.zip>
 [GPL-3.0-Lizenz]: https://github.com/kreis-viersen/xplan-reader/blob/main/LICENSE
-[xplan-default-styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
+[xplan_default_styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
 [XLeitstelle]: <https://xleitstelle.de/leitstelle>
 [XPlanung-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/xplan_reader_icon.png>
 [Info-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/info_icon.png>
