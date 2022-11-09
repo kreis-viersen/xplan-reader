@@ -52,12 +52,12 @@ Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwe
 [XPlanValidator]: <https://www.xplanungsplattform.de/xplan-validator/>
 [QGIS-Stildateien]: <https://github.com/kreis-viersen/xplan-reader/tree/main/styles>
 [GitHub-Pull request]: <https://github.com/kreis-viersen/xplan-reader/pulls>
-[XPlan-Standard-Stile und SVG-Symbole]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan-default-styles>
+[XPlan-Standard-Stile und SVG-Symbole]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
 [XPlanBox]: <https://gitlab.opencode.de/diplanung/ozgxplanung>
 [xplan-se-to-sld]: <https://github.com/kreis-viersen/xplan-se-to-sld>
 [Download-Zip-Archiv]: <https://github.com/kreis-viersen/xplan-reader/archive/refs/heads/main.zip>
 [GPL-3.0-Lizenz]: https://github.com/kreis-viersen/xplan-reader/blob/main/LICENSE
-[xplan-default-styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan-default-styles>
+[xplan-default-styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
 [XLeitstelle]: <https://xleitstelle.de/leitstelle>
 [XPlanung-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/xplan_reader_icon.png>
 [Info-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/info_icon.png>
