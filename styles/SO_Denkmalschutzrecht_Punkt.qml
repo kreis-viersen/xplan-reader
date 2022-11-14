@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyMaxScale="1" readOnly="0" maxScale="1" minScale="2500" styleCategories="AllStyleCategories" version="3.26.1-Buenos Aires" labelsEnabled="1" simplifyLocal="1" simplifyDrawingHints="1" symbologyReferenceScale="-1" hasScaleBasedVisibilityFlag="1" simplifyDrawingTol="1" simplifyAlgorithm="0">
+<qgis simplifyMaxScale="1" readOnly="0" maxScale="0" minScale="100000000" styleCategories="AllStyleCategories" version="3.26.1-Buenos Aires" labelsEnabled="1" simplifyLocal="1" simplifyDrawingHints="0" symbologyReferenceScale="-1" hasScaleBasedVisibilityFlag="0" simplifyDrawingTol="1" simplifyAlgorithm="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -41,7 +41,7 @@
             <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
             <Option name="draw_inside_polygon" type="QString" value="0"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="line_color" type="QString" value="232,113,141,255"/>
+            <Option name="line_color" type="QString" value="133,182,111,255"/>
             <Option name="line_style" type="QString" value="solid"/>
             <Option name="line_width" type="QString" value="0.6"/>
             <Option name="line_width_unit" type="QString" value="MM"/>
@@ -69,7 +69,7 @@
           <prop k="dash_pattern_offset_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="bevel"/>
-          <prop k="line_color" v="232,113,141,255"/>
+          <prop k="line_color" v="133,182,111,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="0.6"/>
           <prop k="line_width_unit" v="MM"/>
@@ -108,24 +108,24 @@
         <layer pass="0" class="SimpleFill" locked="0" enabled="1">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="232,113,141,255"/>
+            <Option name="color" type="QString" value="133,182,111,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="166,81,101,255"/>
+            <Option name="outline_color" type="QString" value="95,130,79,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.2"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
             <Option name="style" type="QString" value="solid"/>
           </Option>
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="232,113,141,255"/>
+          <prop k="color" v="133,182,111,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="166,81,101,255"/>
+          <prop k="outline_color" v="95,130,79,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.2"/>
           <prop k="outline_width_unit" v="MM"/>
@@ -153,14 +153,14 @@
           <Option type="Map">
             <Option name="angle" type="QString" value="0"/>
             <Option name="cap_style" type="QString" value="square"/>
-            <Option name="color" type="QString" value="232,113,141,255"/>
+            <Option name="color" type="QString" value="133,182,111,255"/>
             <Option name="horizontal_anchor_point" type="QString" value="1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="name" type="QString" value="diamond"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="166,81,101,255"/>
+            <Option name="outline_color" type="QString" value="95,130,79,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.2"/>
             <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -173,14 +173,14 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="232,113,141,255"/>
+          <prop k="color" v="133,182,111,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="diamond"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="166,81,101,255"/>
+          <prop k="outline_color" v="95,130,79,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.2"/>
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -201,9 +201,12 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 symbollevels="0" enableorderby="0" type="singleSymbol" referencescale="-1" forceraster="0">
+  <renderer-v2 symbollevels="0" enableorderby="0" type="RuleRenderer" referencescale="-1" forceraster="0">
+    <rules key="{0c58778e-d081-4aae-a80b-adc40667ba00}">
+      <rule key="{9fdc7971-8c6b-4fb1-a990-7b2c62346dce}" symbol="0" scalemaxdenom="2501" scalemindenom="1"/>
+    </rules>
     <symbols>
-      <symbol clip_to_extent="1" force_rhr="0" name="0" alpha="1" type="line" frame_rate="10" is_animated="0">
+      <symbol clip_to_extent="1" force_rhr="0" name="0" alpha="1" type="marker" frame_rate="10" is_animated="0">
         <data_defined_properties>
           <Option type="Map">
             <Option name="name" type="QString" value=""/>
@@ -211,63 +214,47 @@
             <Option name="type" type="QString" value="collection"/>
           </Option>
         </data_defined_properties>
-        <layer pass="0" class="SimpleLine" locked="0" enabled="1">
+        <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
           <Option type="Map">
-            <Option name="align_dash_pattern" type="QString" value="0"/>
-            <Option name="capstyle" type="QString" value="square"/>
-            <Option name="customdash" type="QString" value="5;2"/>
-            <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="customdash_unit" type="QString" value="MM"/>
-            <Option name="dash_pattern_offset" type="QString" value="0"/>
-            <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
-            <Option name="draw_inside_polygon" type="QString" value="0"/>
+            <Option name="angle" type="QString" value="0"/>
+            <Option name="cap_style" type="QString" value="square"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
+            <Option name="horizontal_anchor_point" type="QString" value="1"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="line_color" type="QString" value="0,0,0,255"/>
-            <Option name="line_style" type="QString" value="solid"/>
-            <Option name="line_width" type="QString" value="0.25"/>
-            <Option name="line_width_unit" type="QString" value="RenderMetersInMapUnits"/>
-            <Option name="offset" type="QString" value="0"/>
+            <Option name="name" type="QString" value="circle"/>
+            <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="ring_filter" type="QString" value="0"/>
-            <Option name="trim_distance_end" type="QString" value="0"/>
-            <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="trim_distance_end_unit" type="QString" value="MM"/>
-            <Option name="trim_distance_start" type="QString" value="0"/>
-            <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="trim_distance_start_unit" type="QString" value="MM"/>
-            <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
-            <Option name="use_custom_dash" type="QString" value="0"/>
-            <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_color" type="QString" value="255,255,255,255"/>
+            <Option name="outline_style" type="QString" value="solid"/>
+            <Option name="outline_width" type="QString" value="0.4"/>
+            <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="outline_width_unit" type="QString" value="MM"/>
+            <Option name="scale_method" type="QString" value="diameter"/>
+            <Option name="size" type="QString" value="4"/>
+            <Option name="size_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
+            <Option name="size_unit" type="QString" value="MM"/>
+            <Option name="vertical_anchor_point" type="QString" value="1"/>
           </Option>
-          <prop k="align_dash_pattern" v="0"/>
-          <prop k="capstyle" v="square"/>
-          <prop k="customdash" v="5;2"/>
-          <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="customdash_unit" v="MM"/>
-          <prop k="dash_pattern_offset" v="0"/>
-          <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="dash_pattern_offset_unit" v="MM"/>
-          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="angle" v="0"/>
+          <prop k="cap_style" v="square"/>
+          <prop k="color" v="0,0,0,255"/>
+          <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
-          <prop k="line_color" v="0,0,0,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.25"/>
-          <prop k="line_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
+          <prop k="name" v="circle"/>
+          <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="trim_distance_end" v="0"/>
-          <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="trim_distance_end_unit" v="MM"/>
-          <prop k="trim_distance_start" v="0"/>
-          <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="trim_distance_start_unit" v="MM"/>
-          <prop k="tweak_dash_pattern_on_corners" v="0"/>
-          <prop k="use_custom_dash" v="0"/>
-          <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="outline_color" v="255,255,255,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.4"/>
+          <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="scale_method" v="diameter"/>
+          <prop k="size" v="4"/>
+          <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="size_unit" v="MM"/>
+          <prop k="vertical_anchor_point" v="1"/>
           <data_defined_properties>
             <Option type="Map">
               <Option name="name" type="QString" value=""/>
@@ -278,16 +265,14 @@
         </layer>
       </symbol>
     </symbols>
-    <rotation/>
-    <sizescale/>
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontSize="10" textOpacity="1" fontFamily="Arial" fontWordSpacing="0" forcedItalic="0" multilineHeight="1" useSubstitutions="0" legendString="Aa" previewBkgrdColor="255,255,255,255" fontWeight="50" fontLetterSpacing="0" fontSizeUnit="Point" fieldName="CASE &#xd;&#xa;WHEN try(text is not NULL,'-') THEN to_string(&quot;text&quot; )&#xd;&#xa;ELSE ''&#xd;&#xa;END&#xd;&#xa;||&#xd;&#xa;CASE &#xd;&#xa;WHEN try(aufschrift is not NULL,'-') THEN  ' '+ to_string(&quot;aufschrift&quot; )&#xd;&#xa;ELSE ''&#xd;&#xa;END&#xd;&#xa;" namedStyle="Regular" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedBold="0" fontKerning="1" fontItalic="0" textOrientation="horizontal" textColor="50,50,50,255" allowHtml="0" blendMode="0" isExpression="1" capitalization="0" fontUnderline="0" fontStrikeout="0">
+      <text-style fontSize="7" textOpacity="1" fontFamily="Arial" fontWordSpacing="0" forcedItalic="0" multilineHeight="1" useSubstitutions="0" legendString="Aa" previewBkgrdColor="255,255,255,255" fontWeight="50" fontLetterSpacing="0" fontSizeUnit="Point" fieldName="concat(&#xd;&#xa;'SO Denkmalschutzrecht' +  '\n' +&#xd;&#xa;CASE &#xd;&#xa;WHEN try(artDerFestlegung is not NULL,'-') THEN &#xd;&#xa;CASE &#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1000 THEN 'Denkmalschutz Ensemble' +  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1100 THEN 'Denkmalschutz Einzelanlage'+  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1200 THEN 'Grabungsschutzgebiet' +  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1300 THEN 'Engere Pufferzone Welterbestätte' +  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1400 THEN 'Weitere Pufferzone Welterbestätte' +  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1500 THEN 'Archäologisches Denkmal'  +  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 1600 THEN 'Bodendenkmal' +  '\n'&#xd;&#xa;       WHEN &quot;artDerFestlegung&quot;= 9999 THEN 'Sonst. Denkmalschutzrecht' +  '\n'&#xd;&#xa;ELSE ''&#xd;&#xa;END&#xd;&#xa;ELSE '' &#xd;&#xa;END&#xd;&#xa;+&#xd;&#xa;CASE &#xd;&#xa;WHEN try(name is not NULL,'-') THEN &quot;name&quot;&#xd;&#xa;ELSE ''&#xd;&#xa;END&#xd;&#xa;)" namedStyle="Regular" fontSizeMapUnitScale="3x:0,0,0,0,0,0" forcedBold="0" fontKerning="1" fontItalic="0" textOrientation="horizontal" textColor="50,50,50,255" allowHtml="0" blendMode="0" isExpression="1" capitalization="0" fontUnderline="0" fontStrikeout="0">
         <families/>
         <text-buffer bufferOpacity="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferJoinStyle="128" bufferSizeUnits="Percentage" bufferDraw="1" bufferNoFill="1" bufferBlendMode="0" bufferSize="25" bufferColor="250,250,250,255"/>
         <text-mask maskJoinStyle="128" maskOpacity="1" maskSize="0" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM" maskEnabled="0" maskType="0"/>
-        <background shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeType="0" shapeBlendMode="0" shapeSVGFile="" shapeSizeType="0" shapeOffsetX="0" shapeSizeUnit="Point" shapeRadiiUnit="Point" shapeDraw="0" shapeRadiiY="0" shapeJoinStyle="64" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeRotation="0" shapeBorderWidthUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="Point" shapeBorderWidth="0" shapeOpacity="1" shapeBorderColor="128,128,128,255" shapeOffsetY="0" shapeRadiiX="0">
+        <background shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeType="0" shapeBlendMode="0" shapeSVGFile="" shapeSizeType="0" shapeOffsetX="0" shapeSizeUnit="Point" shapeRadiiUnit="Point" shapeDraw="0" shapeRadiiY="0" shapeJoinStyle="64" shapeRotationType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="3" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="3" shapeRotation="0" shapeBorderWidthUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="Point" shapeBorderWidth="0" shapeOpacity="1" shapeBorderColor="128,128,128,255" shapeOffsetY="0" shapeRadiiX="0">
           <symbol clip_to_extent="1" force_rhr="0" name="markerSymbol" alpha="1" type="marker" frame_rate="10" is_animated="0">
             <data_defined_properties>
               <Option type="Map">
@@ -300,7 +285,7 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="133,182,111,255"/>
+                <Option name="color" type="QString" value="213,180,60,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
@@ -320,7 +305,7 @@
               </Option>
               <prop k="angle" v="0"/>
               <prop k="cap_style" v="square"/>
-              <prop k="color" v="133,182,111,255"/>
+              <prop k="color" v="213,180,60,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="name" v="circle"/>
@@ -357,27 +342,27 @@
             <layer pass="0" class="SimpleFill" locked="0" enabled="1">
               <Option type="Map">
                 <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-                <Option name="color" type="QString" value="255,255,255,255"/>
+                <Option name="color" type="QString" value="247,247,247,255"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="128,128,128,255"/>
-                <Option name="outline_style" type="QString" value="no"/>
-                <Option name="outline_width" type="QString" value="0"/>
-                <Option name="outline_width_unit" type="QString" value="Point"/>
+                <Option name="outline_color" type="QString" value="82,82,82,255"/>
+                <Option name="outline_style" type="QString" value="solid"/>
+                <Option name="outline_width" type="QString" value="0.26"/>
+                <Option name="outline_width_unit" type="QString" value="MM"/>
                 <Option name="style" type="QString" value="solid"/>
               </Option>
               <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,255,255,255"/>
+              <prop k="color" v="247,247,247,255"/>
               <prop k="joinstyle" v="bevel"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="128,128,128,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_unit" v="Point"/>
+              <prop k="outline_color" v="82,82,82,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
               <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
@@ -399,13 +384,19 @@
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" addDirectionSymbol="0" rightDirectionSymbol=">" decimals="3" placeDirectionSymbol="0" autoWrapLength="0" formatNumbers="0" plussign="0" wrapChar="" multilineAlign="0" leftDirectionSymbol="&lt;"/>
-      <placement placement="3" lineAnchorPercent="0.5" polygonPlacementFlags="2" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" overlapHandling="PreventOverlap" priority="5" distUnits="MM" dist="0" centroidInside="0" offsetType="0" overrunDistanceUnit="MM" yOffset="0" preserveRotation="1" quadOffset="4" lineAnchorClipping="0" rotationUnit="AngleDegrees" lineAnchorTextPoint="FollowPlacement" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" maxCurvedCharAngleIn="25" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" centroidWhole="0" allowDegraded="0" layerType="LineGeometry" geometryGenerator="" fitInPolygonOnly="0" repeatDistance="0" placementFlags="9" offsetUnits="MM" overrunDistance="0" lineAnchorType="0"/>
-      <rendering limitNumLabels="0" scaleMax="0" fontLimitPixelSize="0" minFeatureSize="0" obstacle="1" upsidedownLabels="0" zIndex="0" obstacleFactor="1" scaleMin="0" fontMinPixelSize="3" mergeLines="0" fontMaxPixelSize="10000" labelPerPart="0" unplacedVisibility="0" obstacleType="1" maxNumLabels="2000" scaleVisibility="0" drawLabels="1"/>
+      <text-format reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" addDirectionSymbol="0" rightDirectionSymbol=">" decimals="3" placeDirectionSymbol="0" autoWrapLength="0" formatNumbers="0" plussign="0" wrapChar="" multilineAlign="3" leftDirectionSymbol="&lt;"/>
+      <placement placement="1" lineAnchorPercent="0.5" polygonPlacementFlags="2" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" overlapHandling="PreventOverlap" priority="5" distUnits="MM" dist="20" centroidInside="0" offsetType="1" overrunDistanceUnit="MM" yOffset="0" preserveRotation="1" quadOffset="5" lineAnchorClipping="0" rotationUnit="AngleDegrees" lineAnchorTextPoint="FollowPlacement" maxCurvedCharAngleOut="-25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" xOffset="4" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" maxCurvedCharAngleIn="25" geometryGeneratorEnabled="0" repeatDistanceUnits="MM" centroidWhole="0" allowDegraded="0" layerType="PointGeometry" geometryGenerator="" fitInPolygonOnly="0" repeatDistance="0" placementFlags="10" offsetUnits="MM" overrunDistance="0" lineAnchorType="0"/>
+      <rendering limitNumLabels="0" scaleMax="1001" fontLimitPixelSize="0" minFeatureSize="0" obstacle="1" upsidedownLabels="0" zIndex="0" obstacleFactor="1" scaleMin="0" fontMinPixelSize="3" mergeLines="0" fontMaxPixelSize="10000" labelPerPart="0" unplacedVisibility="0" obstacleType="1" maxNumLabels="2000" scaleVisibility="1" drawLabels="1"/>
       <dd_properties>
         <Option type="Map">
           <Option name="name" type="QString" value=""/>
-          <Option name="properties"/>
+          <Option name="properties" type="Map">
+            <Option name="PositionPoint" type="Map">
+              <Option name="active" type="bool" value="false"/>
+              <Option name="type" type="int" value="1"/>
+              <Option name="val" type="QString" value=""/>
+            </Option>
+          </Option>
           <Option name="type" type="QString" value="collection"/>
         </Option>
       </dd_properties>
@@ -420,9 +411,9 @@
           </Option>
           <Option name="drawToAllParts" type="bool" value="false"/>
           <Option name="enabled" type="QString" value="0"/>
-          <Option name="labelAnchorPoint" type="QString" value="point_on_exterior"/>
+          <Option name="labelAnchorPoint" type="QString" value="centroid"/>
           <Option name="lineSymbol" type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot; alpha=&quot;1&quot; type=&quot;line&quot; frame_rate=&quot;10&quot; is_animated=&quot;0&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer pass=&quot;0&quot; class=&quot;SimpleLine&quot; locked=&quot;0&quot; enabled=&quot;1&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;align_dash_pattern&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;capstyle&quot; type=&quot;QString&quot; value=&quot;square&quot;/>&lt;Option name=&quot;customdash&quot; type=&quot;QString&quot; value=&quot;5;2&quot;/>&lt;Option name=&quot;customdash_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;customdash_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;dash_pattern_offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;dash_pattern_offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;dash_pattern_offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;draw_inside_polygon&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;joinstyle&quot; type=&quot;QString&quot; value=&quot;bevel&quot;/>&lt;Option name=&quot;line_color&quot; type=&quot;QString&quot; value=&quot;60,60,60,255&quot;/>&lt;Option name=&quot;line_style&quot; type=&quot;QString&quot; value=&quot;solid&quot;/>&lt;Option name=&quot;line_width&quot; type=&quot;QString&quot; value=&quot;0.3&quot;/>&lt;Option name=&quot;line_width_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;offset&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;offset_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;offset_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;ring_filter&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_end_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_end_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;trim_distance_start&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;trim_distance_start_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;Option name=&quot;trim_distance_start_unit&quot; type=&quot;QString&quot; value=&quot;MM&quot;/>&lt;Option name=&quot;tweak_dash_pattern_on_corners&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;use_custom_dash&quot; type=&quot;QString&quot; value=&quot;0&quot;/>&lt;Option name=&quot;width_map_unit_scale&quot; type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_end_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;trim_distance_start&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_start_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_start_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option name=&quot;name&quot; type=&quot;QString&quot; value=&quot;&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option name=&quot;type&quot; type=&quot;QString&quot; value=&quot;collection&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>"/>
-          <Option name="minLength" type="double" value="0"/>
+          <Option name="minLength" type="double" value="20"/>
           <Option name="minLengthMapUnitScale" type="QString" value="3x:0,0,0,0,0,0"/>
           <Option name="minLengthUnit" type="QString" value="MM"/>
           <Option name="offsetFromAnchor" type="double" value="0"/>
@@ -437,9 +428,8 @@
   </labeling>
   <customproperties>
     <Option type="Map">
-      <Option name="OnConvertFormatRegeneratePrimaryKey" type="bool" value="false"/>
       <Option name="dualview/previewExpressions" type="List">
-        <Option type="QString" value="&quot;gmlName&quot;"/>
+        <Option type="QString" value="&quot;name&quot;"/>
       </Option>
       <Option name="embeddedWidgets/count" type="int" value="0"/>
       <Option name="variableNames"/>
@@ -450,9 +440,8 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory scaleBasedVisibility="0" penWidth="0" direction="0" showAxis="1" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleDependency="Area" labelPlacementMethod="XHeight" spacingUnit="MM" backgroundColor="#ffffff" height="15" opacity="1" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" diagramOrientation="Up" minimumSize="0" spacing="5" barWidth="5" backgroundAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" width="15" enabled="0" minScaleDenominator="1" lineSizeType="MM" sizeType="MM">
+    <DiagramCategory scaleBasedVisibility="0" penWidth="0" direction="0" showAxis="1" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" scaleDependency="Area" labelPlacementMethod="XHeight" spacingUnit="MM" backgroundColor="#ffffff" height="15" opacity="1" rotationOffset="270" lineSizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" diagramOrientation="Up" minimumSize="0" spacing="5" barWidth="5" backgroundAlpha="255" spacingUnitScale="3x:0,0,0,0,0,0" width="15" enabled="0" minScaleDenominator="0" lineSizeType="MM" sizeType="MM">
       <fontProperties strikethrough="0" style="" bold="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" underline="0" italic="0"/>
-      <attribute color="#000000" colorOpacity="1" label="" field=""/>
       <axisSymbol>
         <symbol clip_to_extent="1" force_rhr="0" name="" alpha="1" type="line" frame_rate="10" is_animated="0">
           <data_defined_properties>
@@ -531,7 +520,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings zIndex="0" placement="2" linePlacementFlags="18" dist="0" obstacle="0" priority="0" showAll="1">
+  <DiagramLayerSettings zIndex="0" placement="0" linePlacementFlags="18" dist="0" obstacle="0" priority="0" showAll="1">
     <properties>
       <Option type="Map">
         <Option name="name" type="QString" value=""/>
@@ -554,36 +543,22 @@
         </config>
       </editWidget>
     </field>
-    <field name="rechtsstand" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="ebene" configurationFlags="None">
+    <field name="artDerFestlegung" configurationFlags="None">
       <editWidget type="Range">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="aufschrift" configurationFlags="None">
+    <field name="name" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
       </editWidget>
     </field>
-    <field name="rechtscharakter" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="text" configurationFlags="None">
-      <editWidget type="TextEdit">
+    <field name="nummer" configurationFlags="None">
+      <editWidget type="Range">
         <config>
           <Option/>
         </config>
@@ -592,48 +567,38 @@
   </fieldConfiguration>
   <aliases>
     <alias index="0" name="" field="gml_id"/>
-    <alias index="1" name="" field="rechtsstand"/>
-    <alias index="2" name="" field="ebene"/>
-    <alias index="3" name="" field="aufschrift"/>
-    <alias index="4" name="" field="rechtscharakter"/>
-    <alias index="5" name="" field="text"/>
+    <alias index="1" name="" field="artDerFestlegung"/>
+    <alias index="2" name="" field="name"/>
+    <alias index="3" name="" field="nummer"/>
   </aliases>
   <defaults>
     <default applyOnUpdate="0" expression="" field="gml_id"/>
-    <default applyOnUpdate="0" expression="" field="rechtsstand"/>
-    <default applyOnUpdate="0" expression="" field="ebene"/>
-    <default applyOnUpdate="0" expression="" field="aufschrift"/>
-    <default applyOnUpdate="0" expression="" field="rechtscharakter"/>
-    <default applyOnUpdate="0" expression="" field="text"/>
+    <default applyOnUpdate="0" expression="" field="artDerFestlegung"/>
+    <default applyOnUpdate="0" expression="" field="name"/>
+    <default applyOnUpdate="0" expression="" field="nummer"/>
   </defaults>
   <constraints>
     <constraint unique_strength="0" exp_strength="0" constraints="1" field="gml_id" notnull_strength="1"/>
-    <constraint unique_strength="0" exp_strength="0" constraints="0" field="rechtsstand" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" constraints="0" field="ebene" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" constraints="0" field="aufschrift" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" constraints="0" field="rechtscharakter" notnull_strength="0"/>
-    <constraint unique_strength="0" exp_strength="0" constraints="0" field="text" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="artDerFestlegung" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="name" notnull_strength="0"/>
+    <constraint unique_strength="0" exp_strength="0" constraints="0" field="nummer" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint desc="" field="gml_id" exp=""/>
-    <constraint desc="" field="rechtsstand" exp=""/>
-    <constraint desc="" field="ebene" exp=""/>
-    <constraint desc="" field="aufschrift" exp=""/>
-    <constraint desc="" field="rechtscharakter" exp=""/>
-    <constraint desc="" field="text" exp=""/>
+    <constraint desc="" field="artDerFestlegung" exp=""/>
+    <constraint desc="" field="name" exp=""/>
+    <constraint desc="" field="nummer" exp=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <attributetableconfig sortExpression="&quot;name&quot;" actionWidgetStyle="dropDown" sortOrder="1">
     <columns>
-      <column name="text" type="field" hidden="0" width="410"/>
-      <column name="rechtsstand" type="field" hidden="0" width="-1"/>
-      <column name="ebene" type="field" hidden="0" width="-1"/>
-      <column name="rechtscharakter" type="field" hidden="0" width="-1"/>
-      <column name="aufschrift" type="field" hidden="0" width="214"/>
       <column name="gml_id" type="field" hidden="0" width="-1"/>
+      <column name="artDerFestlegung" type="field" hidden="0" width="123"/>
+      <column name="name" type="field" hidden="0" width="173"/>
+      <column name="nummer" type="field" hidden="0" width="-1"/>
       <column type="actions" hidden="1" width="-1"/>
     </columns>
   </attributetableconfig>
@@ -664,251 +629,26 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field name="abweichenderHoehenbezug" editable="1"/>
-    <field name="aufnahmeAlsFestsetzung" editable="1"/>
-    <field name="aufschrift" editable="1"/>
-    <field name="bedingungEnde" editable="1"/>
-    <field name="bedingungStart" editable="1"/>
-    <field name="begruendungAbschnitte" editable="1"/>
-    <field name="ebene" editable="1"/>
-    <field name="endDatum" editable="1"/>
-    <field name="endeBedingung" editable="1"/>
-    <field name="externeReferenz" editable="1"/>
-    <field name="flaechenschluss" editable="1"/>
-    <field name="flussrichtung" editable="1"/>
-    <field name="gehoertNachrichtlichZuBereich" editable="1"/>
-    <field name="gehoertZuBP_Bereich" editable="1"/>
-    <field name="gehoertZuBereich" editable="1"/>
-    <field name="gesetzlicheGrundlage" editable="1"/>
-    <field name="gesetzlicheGrundlageCode" editable="1"/>
-    <field name="gliederung1" editable="1"/>
-    <field name="gliederung2" editable="1"/>
-    <field name="gmlDescription" editable="1"/>
-    <field name="gmlId" editable="1"/>
-    <field name="gmlName" editable="1"/>
+    <field name="artDerFestlegung" editable="1"/>
     <field name="gml_id" editable="1"/>
-    <field name="gueltigkeitBeginn" editable="1"/>
-    <field name="gueltigkeitEnde" editable="1"/>
-    <field name="h" editable="1"/>
-    <field name="hMax" editable="1"/>
-    <field name="hMin" editable="1"/>
-    <field name="hUeberBezugspunkt" editable="1"/>
-    <field name="hUeberBezugspunktCode" editable="1"/>
-    <field name="hZwingend" editable="1"/>
-    <field name="hatGenerAttribut" editable="1"/>
-    <field name="hinweis" editable="1"/>
-    <field name="hoehenangabe" editable="1"/>
-    <field name="informell" editable="1"/>
-    <field name="laermkontingent" editable="1"/>
-    <field name="laermkontingentGebiet" editable="1"/>
-    <field name="nachrichtlicheUebernahme" editable="1"/>
-    <field name="nordwinkel" editable="1"/>
-    <field name="nordwinkelUOM" editable="1"/>
-    <field name="realisiert" editable="1"/>
-    <field name="rechtlicheCharakterisierung" editable="1"/>
-    <field name="rechtlicheCharakterisierungCode" editable="1"/>
-    <field name="rechtscharakter" editable="1"/>
-    <field name="rechtscharakterCode" editable="1"/>
-    <field name="rechtsstand" editable="1"/>
-    <field name="rechtsstandCode" editable="1"/>
-    <field name="rechtsverbindlich" editable="1"/>
-    <field name="richtungssektorGrenze" editable="1"/>
-    <field name="startBedingung" editable="1"/>
-    <field name="startDatum" editable="1"/>
-    <field name="text" editable="1"/>
-    <field name="textAbschnitte" editable="1"/>
-    <field name="uuid" editable="1"/>
-    <field name="vermerk" editable="1"/>
-    <field name="weitereZweckbestimmung1" editable="1"/>
-    <field name="weitereZweckbestimmung1Code" editable="1"/>
-    <field name="weitereZweckbestimmung2" editable="1"/>
-    <field name="weitereZweckbestimmung2Code" editable="1"/>
-    <field name="weitereZweckbestimmung3" editable="1"/>
-    <field name="weitereZweckbestimmung3Code" editable="1"/>
-    <field name="weitereZweckbestimmung4" editable="1"/>
-    <field name="weitereZweckbestimmung4Code" editable="1"/>
-    <field name="wirdAusgeglichenDurchABE" editable="1"/>
-    <field name="wirdAusgeglichenDurchFlaeche" editable="1"/>
-    <field name="wirdAusgeglichenDurchMassnahme" editable="1"/>
-    <field name="wirdAusgeglichenDurchSPEFlaeche" editable="1"/>
-    <field name="wirdAusgeglichenDurchSPEMassnahme" editable="1"/>
-    <field name="wirdAusgeglichenVon" editable="1"/>
-    <field name="wirdDargestelltDurch" editable="1"/>
-    <field name="wmsSortDate" editable="1"/>
-    <field name="xpPlanName" editable="1"/>
-    <field name="xpPlanType" editable="1"/>
-    <field name="xpVersion" editable="1"/>
-    <field name="xplanMgrPlanId" editable="1"/>
-    <field name="zusatzkontingent" editable="1"/>
-    <field name="zusatzkontingentFlaeche" editable="1"/>
-    <field name="zweckbestimmung" editable="1"/>
-    <field name="zweckbestimmungCode" editable="1"/>
+    <field name="name" editable="1"/>
+    <field name="nummer" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="abweichenderHoehenbezug"/>
-    <field labelOnTop="0" name="aufnahmeAlsFestsetzung"/>
-    <field labelOnTop="0" name="aufschrift"/>
-    <field labelOnTop="0" name="bedingungEnde"/>
-    <field labelOnTop="0" name="bedingungStart"/>
-    <field labelOnTop="0" name="begruendungAbschnitte"/>
-    <field labelOnTop="0" name="ebene"/>
-    <field labelOnTop="0" name="endDatum"/>
-    <field labelOnTop="0" name="endeBedingung"/>
-    <field labelOnTop="0" name="externeReferenz"/>
-    <field labelOnTop="0" name="flaechenschluss"/>
-    <field labelOnTop="0" name="flussrichtung"/>
-    <field labelOnTop="0" name="gehoertNachrichtlichZuBereich"/>
-    <field labelOnTop="0" name="gehoertZuBP_Bereich"/>
-    <field labelOnTop="0" name="gehoertZuBereich"/>
-    <field labelOnTop="0" name="gesetzlicheGrundlage"/>
-    <field labelOnTop="0" name="gesetzlicheGrundlageCode"/>
-    <field labelOnTop="0" name="gliederung1"/>
-    <field labelOnTop="0" name="gliederung2"/>
-    <field labelOnTop="0" name="gmlDescription"/>
-    <field labelOnTop="0" name="gmlId"/>
-    <field labelOnTop="0" name="gmlName"/>
+    <field labelOnTop="0" name="artDerFestlegung"/>
     <field labelOnTop="0" name="gml_id"/>
-    <field labelOnTop="0" name="gueltigkeitBeginn"/>
-    <field labelOnTop="0" name="gueltigkeitEnde"/>
-    <field labelOnTop="0" name="h"/>
-    <field labelOnTop="0" name="hMax"/>
-    <field labelOnTop="0" name="hMin"/>
-    <field labelOnTop="0" name="hUeberBezugspunkt"/>
-    <field labelOnTop="0" name="hUeberBezugspunktCode"/>
-    <field labelOnTop="0" name="hZwingend"/>
-    <field labelOnTop="0" name="hatGenerAttribut"/>
-    <field labelOnTop="0" name="hinweis"/>
-    <field labelOnTop="0" name="hoehenangabe"/>
-    <field labelOnTop="0" name="informell"/>
-    <field labelOnTop="0" name="laermkontingent"/>
-    <field labelOnTop="0" name="laermkontingentGebiet"/>
-    <field labelOnTop="0" name="nachrichtlicheUebernahme"/>
-    <field labelOnTop="0" name="nordwinkel"/>
-    <field labelOnTop="0" name="nordwinkelUOM"/>
-    <field labelOnTop="0" name="realisiert"/>
-    <field labelOnTop="0" name="rechtlicheCharakterisierung"/>
-    <field labelOnTop="0" name="rechtlicheCharakterisierungCode"/>
-    <field labelOnTop="0" name="rechtscharakter"/>
-    <field labelOnTop="0" name="rechtscharakterCode"/>
-    <field labelOnTop="0" name="rechtsstand"/>
-    <field labelOnTop="0" name="rechtsstandCode"/>
-    <field labelOnTop="0" name="rechtsverbindlich"/>
-    <field labelOnTop="0" name="richtungssektorGrenze"/>
-    <field labelOnTop="0" name="startBedingung"/>
-    <field labelOnTop="0" name="startDatum"/>
-    <field labelOnTop="0" name="text"/>
-    <field labelOnTop="0" name="textAbschnitte"/>
-    <field labelOnTop="0" name="uuid"/>
-    <field labelOnTop="0" name="vermerk"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung1"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung1Code"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung2"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung2Code"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung3"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung3Code"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung4"/>
-    <field labelOnTop="0" name="weitereZweckbestimmung4Code"/>
-    <field labelOnTop="0" name="wirdAusgeglichenDurchABE"/>
-    <field labelOnTop="0" name="wirdAusgeglichenDurchFlaeche"/>
-    <field labelOnTop="0" name="wirdAusgeglichenDurchMassnahme"/>
-    <field labelOnTop="0" name="wirdAusgeglichenDurchSPEFlaeche"/>
-    <field labelOnTop="0" name="wirdAusgeglichenDurchSPEMassnahme"/>
-    <field labelOnTop="0" name="wirdAusgeglichenVon"/>
-    <field labelOnTop="0" name="wirdDargestelltDurch"/>
-    <field labelOnTop="0" name="wmsSortDate"/>
-    <field labelOnTop="0" name="xpPlanName"/>
-    <field labelOnTop="0" name="xpPlanType"/>
-    <field labelOnTop="0" name="xpVersion"/>
-    <field labelOnTop="0" name="xplanMgrPlanId"/>
-    <field labelOnTop="0" name="zusatzkontingent"/>
-    <field labelOnTop="0" name="zusatzkontingentFlaeche"/>
-    <field labelOnTop="0" name="zweckbestimmung"/>
-    <field labelOnTop="0" name="zweckbestimmungCode"/>
+    <field labelOnTop="0" name="name"/>
+    <field labelOnTop="0" name="nummer"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="abweichenderHoehenbezug" reuseLastValue="0"/>
-    <field name="aufnahmeAlsFestsetzung" reuseLastValue="0"/>
-    <field name="aufschrift" reuseLastValue="0"/>
-    <field name="bedingungEnde" reuseLastValue="0"/>
-    <field name="bedingungStart" reuseLastValue="0"/>
-    <field name="begruendungAbschnitte" reuseLastValue="0"/>
-    <field name="ebene" reuseLastValue="0"/>
-    <field name="endDatum" reuseLastValue="0"/>
-    <field name="endeBedingung" reuseLastValue="0"/>
-    <field name="externeReferenz" reuseLastValue="0"/>
-    <field name="flaechenschluss" reuseLastValue="0"/>
-    <field name="flussrichtung" reuseLastValue="0"/>
-    <field name="gehoertNachrichtlichZuBereich" reuseLastValue="0"/>
-    <field name="gehoertZuBP_Bereich" reuseLastValue="0"/>
-    <field name="gehoertZuBereich" reuseLastValue="0"/>
-    <field name="gesetzlicheGrundlage" reuseLastValue="0"/>
-    <field name="gesetzlicheGrundlageCode" reuseLastValue="0"/>
-    <field name="gliederung1" reuseLastValue="0"/>
-    <field name="gliederung2" reuseLastValue="0"/>
-    <field name="gmlDescription" reuseLastValue="0"/>
-    <field name="gmlId" reuseLastValue="0"/>
-    <field name="gmlName" reuseLastValue="0"/>
+    <field name="artDerFestlegung" reuseLastValue="0"/>
     <field name="gml_id" reuseLastValue="0"/>
-    <field name="gueltigkeitBeginn" reuseLastValue="0"/>
-    <field name="gueltigkeitEnde" reuseLastValue="0"/>
-    <field name="h" reuseLastValue="0"/>
-    <field name="hMax" reuseLastValue="0"/>
-    <field name="hMin" reuseLastValue="0"/>
-    <field name="hUeberBezugspunkt" reuseLastValue="0"/>
-    <field name="hUeberBezugspunktCode" reuseLastValue="0"/>
-    <field name="hZwingend" reuseLastValue="0"/>
-    <field name="hatGenerAttribut" reuseLastValue="0"/>
-    <field name="hinweis" reuseLastValue="0"/>
-    <field name="hoehenangabe" reuseLastValue="0"/>
-    <field name="informell" reuseLastValue="0"/>
-    <field name="laermkontingent" reuseLastValue="0"/>
-    <field name="laermkontingentGebiet" reuseLastValue="0"/>
-    <field name="nachrichtlicheUebernahme" reuseLastValue="0"/>
-    <field name="nordwinkel" reuseLastValue="0"/>
-    <field name="nordwinkelUOM" reuseLastValue="0"/>
-    <field name="realisiert" reuseLastValue="0"/>
-    <field name="rechtlicheCharakterisierung" reuseLastValue="0"/>
-    <field name="rechtlicheCharakterisierungCode" reuseLastValue="0"/>
-    <field name="rechtscharakter" reuseLastValue="0"/>
-    <field name="rechtscharakterCode" reuseLastValue="0"/>
-    <field name="rechtsstand" reuseLastValue="0"/>
-    <field name="rechtsstandCode" reuseLastValue="0"/>
-    <field name="rechtsverbindlich" reuseLastValue="0"/>
-    <field name="richtungssektorGrenze" reuseLastValue="0"/>
-    <field name="startBedingung" reuseLastValue="0"/>
-    <field name="startDatum" reuseLastValue="0"/>
-    <field name="text" reuseLastValue="0"/>
-    <field name="textAbschnitte" reuseLastValue="0"/>
-    <field name="uuid" reuseLastValue="0"/>
-    <field name="vermerk" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung1" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung1Code" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung2" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung2Code" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung3" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung3Code" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung4" reuseLastValue="0"/>
-    <field name="weitereZweckbestimmung4Code" reuseLastValue="0"/>
-    <field name="wirdAusgeglichenDurchABE" reuseLastValue="0"/>
-    <field name="wirdAusgeglichenDurchFlaeche" reuseLastValue="0"/>
-    <field name="wirdAusgeglichenDurchMassnahme" reuseLastValue="0"/>
-    <field name="wirdAusgeglichenDurchSPEFlaeche" reuseLastValue="0"/>
-    <field name="wirdAusgeglichenDurchSPEMassnahme" reuseLastValue="0"/>
-    <field name="wirdAusgeglichenVon" reuseLastValue="0"/>
-    <field name="wirdDargestelltDurch" reuseLastValue="0"/>
-    <field name="wmsSortDate" reuseLastValue="0"/>
-    <field name="xpPlanName" reuseLastValue="0"/>
-    <field name="xpPlanType" reuseLastValue="0"/>
-    <field name="xpVersion" reuseLastValue="0"/>
-    <field name="xplanMgrPlanId" reuseLastValue="0"/>
-    <field name="zusatzkontingent" reuseLastValue="0"/>
-    <field name="zusatzkontingentFlaeche" reuseLastValue="0"/>
-    <field name="zweckbestimmung" reuseLastValue="0"/>
-    <field name="zweckbestimmungCode" reuseLastValue="0"/>
+    <field name="name" reuseLastValue="0"/>
+    <field name="nummer" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
-  <previewExpression>"gmlName"</previewExpression>
+  <previewExpression>"name"</previewExpression>
   <mapTip></mapTip>
-  <layerGeometryType>1</layerGeometryType>
+  <layerGeometryType>0</layerGeometryType>
 </qgis>
