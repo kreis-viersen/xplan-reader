@@ -20,6 +20,7 @@ deprecated=False
 changelog=unreleased:
     - Gemeindename wird dem Gruppennamen hinzugefügt (wenn vorhanden)
     - Zoome nicht näher als Maßstab 1:1000 auf den geladenen Plan
+    - viele neue und geänderte Styles
     v0.5.0
     - geladene Layer sind nun zugeklappt
     - XPlanung Version der XPlanGML dem Gruppennamen hinzugefügt
