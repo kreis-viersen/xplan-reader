@@ -17,7 +17,7 @@ Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestim
 
 ### Anforderungen an die XPlanGML-Datei
 
-Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, dies lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
+Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, technische Validität lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
 
 ## Mitmachen mit eigenen QGIS-Stilen !
 
