@@ -18,6 +18,7 @@ icon=xplan_reader_icon.png
 server=False
 deprecated=False
 changelog=unreleased:
+    - Behebe Fehler wenn GFS nicht erzeugt werden kann
     - Gemeindename wird dem Gruppennamen hinzugefügt (wenn vorhanden)
     - Zoome nicht näher als Maßstab 1:1000 auf den geladenen Plan
     - viele neue und geänderte Styles

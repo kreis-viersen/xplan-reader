@@ -178,15 +178,16 @@ class XplanReader:
             if not os.path.isfile(my_gfs):
                 write_gfs = False
                 driver.Open(my_gml)
-                gfs_tree = etree.parse(my_gfs)
-                gfs_root = gfs_tree.getroot()
-                for geometry_type in gfs_root.iter('GeometryType'):
-                    # if needed, change GeometryType in .gfs to handle false GeometryCollection import
-                    if geometry_type.text == '7':
-                        geometry_type.text = '0'
-                        write_gfs = True
-                if write_gfs:
-                    gfs_tree.write(my_gfs, encoding = "UTF-8", xml_declaration = False)
+                if os.path.isfile(my_gfs):
+                    gfs_tree = etree.parse(my_gfs)
+                    gfs_root = gfs_tree.getroot()
+                    for geometry_type in gfs_root.iter('GeometryType'):
+                        # if needed, change GeometryType in .gfs to handle false GeometryCollection import
+                        if geometry_type.text == '7':
+                            geometry_type.text = '0'
+                            write_gfs = True
+                    if write_gfs:
+                        gfs_tree.write(my_gfs, encoding = "UTF-8", xml_declaration = False)
 
             layers = [l.GetName() for l in driver.Open(my_gml)]
 
