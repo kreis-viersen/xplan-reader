@@ -135,8 +135,19 @@ class XplanReader:
 
                 return
 
+            plan_category = None
+            for elem in ('BP_Plan', 'FP_Plan', 'LP_Plan', 'RP_Plan', 'SO_Plan'):
+                try:
+                    if(next(gml_root.iter('{' + xplan_ns_uri + '}' + elem)).tag):
+                        plan_category = elem
+                        self.logMessage('Plankategorie: ' + elem)
+                        break
+                except:
+                    continue
+
             try:
-                name = next(gml_root.iter('{' + xplan_ns_uri + '}name')).text
+                plan_element = next(gml_root.iter('{' + xplan_ns_uri + '}' + plan_category))
+                name = next(plan_element.iter('{' + xplan_ns_uri + '}name')).text
                 self.logMessage('Name des Plans: ' + name)
                 name = name + ' (XPlanung v' + xplan_version + ')'
             except:
