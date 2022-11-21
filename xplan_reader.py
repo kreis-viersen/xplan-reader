@@ -23,7 +23,7 @@ import os
 import sys
 
 from lxml import etree
-from osgeo import ogr
+from osgeo import gdal, ogr
 from pathlib import Path
 
 from qgis.core import Qgis, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
@@ -49,6 +49,12 @@ class XplanReader:
         # Python-Modul "packaging" ist z.B. für Debian nicht standardmäßig enthalten
         if sys.platform.startswith("win"):
             from packaging import version
+
+            # GFS-workaround is not needed for GDAL >=3.6.0
+            self.use_gfs_workaround = False
+            if version.parse(gdal.__version__) < version.parse('3.6.0'):
+                self.use_gfs_workaround = True
+
             qgis_version = version.parse(Qgis.QGIS_VERSION.split('-')[0])
             if qgis_version < version.parse('3.26.0') \
             and not version.parse('3.22.8') < qgis_version < version.parse('3.23.0'):
@@ -182,23 +188,23 @@ class XplanReader:
 
             driver = ogr.GetDriverByName('GML')
 
-            # GFS-workaround could be removed as soon as GDAL 3.6.0 is available
-            my_gfs = os.path.splitext(my_gml)[0] + '.gfs'
+            if self.use_gfs_workaround:
+                my_gfs = os.path.splitext(my_gml)[0] + '.gfs'
 
-            # don't touch existing .gfs
-            if not os.path.isfile(my_gfs):
-                write_gfs = False
-                driver.Open(my_gml)
-                if os.path.isfile(my_gfs):
-                    gfs_tree = etree.parse(my_gfs)
-                    gfs_root = gfs_tree.getroot()
-                    for geometry_type in gfs_root.iter('GeometryType'):
-                        # if needed, change GeometryType in .gfs to handle false GeometryCollection import
-                        if geometry_type.text == '7':
-                            geometry_type.text = '0'
-                            write_gfs = True
-                    if write_gfs:
-                        gfs_tree.write(my_gfs, encoding = "UTF-8", xml_declaration = False)
+                # don't touch existing .gfs
+                if not os.path.isfile(my_gfs):
+                    write_gfs = False
+                    driver.Open(my_gml)
+                    if os.path.isfile(my_gfs):
+                        gfs_tree = etree.parse(my_gfs)
+                        gfs_root = gfs_tree.getroot()
+                        for geometry_type in gfs_root.iter('GeometryType'):
+                            # if needed, change GeometryType in .gfs to handle false GeometryCollection import
+                            if geometry_type.text == '7':
+                                geometry_type.text = '0'
+                                write_gfs = True
+                        if write_gfs:
+                            gfs_tree.write(my_gfs, encoding = "UTF-8", xml_declaration = False)
 
             layers = [l.GetName() for l in driver.Open(my_gml)]
 
