@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" labelsEnabled="1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" readOnly="0" maxScale="0" simplifyMaxScale="1" version="3.26.1-Buenos Aires" hasScaleBasedVisibilityFlag="0" minScale="100000000" simplifyLocal="1" symbologyReferenceScale="-1">
+<qgis styleCategories="AllStyleCategories" simplifyMaxScale="1" symbologyReferenceScale="-1" simplifyDrawingTol="1" version="3.26.1-Buenos Aires" simplifyAlgorithm="0" readOnly="0" hasScaleBasedVisibilityFlag="0" maxScale="0" minScale="100000000" simplifyDrawingHints="1" simplifyLocal="1" labelsEnabled="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal endField="" enabled="0" mode="0" startExpression="" accumulate="0" durationField="" limitMode="0" durationUnit="min" endExpression="" fixedDuration="0" startField="">
+  <temporal mode="0" endExpression="" durationUnit="min" limitMode="0" startExpression="" endField="" accumulate="0" startField="" durationField="" fixedDuration="0" enabled="0">
     <fixedRange>
       <start></start>
       <end></end>
     </fixedRange>
   </temporal>
-  <elevation zscale="1" type="IndividualFeatures" clamping="Terrain" respectLayerSymbol="1" symbology="Line" showMarkerSymbolInSurfacePlots="0" extrusionEnabled="0" binding="Centroid" zoffset="0" extrusion="0">
+  <elevation binding="Centroid" extrusionEnabled="0" type="IndividualFeatures" showMarkerSymbolInSurfacePlots="0" clamping="Terrain" zoffset="0" respectLayerSymbol="1" extrusion="0" zscale="1" symbology="Line">
     <data-defined-properties>
       <Option type="Map">
         <Option type="QString" value="" name="name"/>
@@ -21,7 +21,7 @@
       </Option>
     </data-defined-properties>
     <profileLineSymbol>
-      <symbol type="line" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="">
+      <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="line" name="" force_rhr="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -29,7 +29,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+        <layer class="SimpleLine" pass="0" enabled="1" locked="0">
           <Option type="Map">
             <Option type="QString" value="0" name="align_dash_pattern"/>
             <Option type="QString" value="square" name="capstyle"/>
@@ -97,7 +97,7 @@
       </symbol>
     </profileLineSymbol>
     <profileFillSymbol>
-      <symbol type="fill" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="">
+      <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="fill" name="" force_rhr="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -105,7 +105,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+        <layer class="SimpleFill" pass="0" enabled="1" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="196,60,57,255" name="color"/>
@@ -141,7 +141,7 @@
       </symbol>
     </profileFillSymbol>
     <profileMarkerSymbol>
-      <symbol type="marker" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="">
+      <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="marker" name="" force_rhr="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -149,7 +149,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+        <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
           <Option type="Map">
             <Option type="QString" value="0" name="angle"/>
             <Option type="QString" value="square" name="cap_style"/>
@@ -201,13 +201,13 @@
       </symbol>
     </profileMarkerSymbol>
   </elevation>
-  <renderer-v2 type="RuleRenderer" enableorderby="0" referencescale="-1" forceraster="0" symbollevels="0">
+  <renderer-v2 type="RuleRenderer" forceraster="0" referencescale="-1" enableorderby="0" symbollevels="0">
     <rules key="{c2d81d5a-b68b-4e5a-b02a-473a39550a59}">
       <rule symbol="0" key="{ad47db3b-72ce-4b58-8d84-fd2c2486df32}" label="alle"/>
-      <rule symbol="1" filter="&quot;zweckbestimmung&quot; is NULL" key="{f8024804-ff98-46b6-839a-f2e2c9ab6663}" label="nicht xplanungskonform"/>
+      <rule symbol="1" key="{f8024804-ff98-46b6-839a-f2e2c9ab6663}" filter="&quot;zweckbestimmung&quot; is NULL" label="nicht xplanungskonform"/>
     </rules>
     <symbols>
-      <symbol type="fill" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="0">
+      <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="fill" name="0" force_rhr="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -215,7 +215,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+        <layer class="SimpleFill" pass="0" enabled="1" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="233,78,165,255" name="color"/>
@@ -249,7 +249,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol type="fill" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="1">
+      <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="fill" name="1" force_rhr="0" alpha="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -257,7 +257,7 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+        <layer class="SimpleFill" pass="0" enabled="1" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
             <Option type="QString" value="228,26,28,255" name="color"/>
@@ -453,12 +453,12 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontSize="10" blendMode="0" useSubstitutions="0" fontLetterSpacing="0" forcedBold="0" forcedItalic="0" fontSizeUnit="Point" fieldName="concat(&#xd;&#xa; '', &#xd;&#xa;CASE &#xd;&#xa;when &quot;zweckbestimmung&quot;= 1000 or &quot;zweckbestimmung&quot;= 'OeffentlicheVerwaltung' THEN 'für öffentliche '+ '\n' +'Verwaltung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10000 or &quot;zweckbestimmung&quot;= 'KommunaleEinrichtung' THEN 'Kom. Einrichtung '+ '\n' +'z.B. Rathaus, '+ '\n' +'Fuhrpark etc'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10001 or &quot;zweckbestimmung&quot;= 'BetriebOeffentlZweckbestimmung' THEN 'Betrieb öff. '+ '\n' +'Zweckbestimmung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10002 or &quot;zweckbestimmung&quot;= 'AnlageBundLand' THEN 'Einrichtung '+ '\n' +'Bund Land '+ '\n' +'Anlage z.B. Arbeitsamt'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10003 or &quot;zweckbestimmung&quot;= 'SonstigeOeffentlicheVerwaltung' THEN 'Sonst. öff. '+ '\n' +'Verwaltung z.B: IHK'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1200 or &quot;zweckbestimmung&quot;= 'BildungForschung' THEN 'Bildung '+ '\n' +'und '+ '\n' +'Forschung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12000 or &quot;zweckbestimmung&quot;= 'Schule' THEN 'Schulische '+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12001 or &quot;zweckbestimmung&quot;= 'Hochschule' THEN 'Hochschule etc.'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12002 or &quot;zweckbestimmung&quot;= 'BerufsbildendeSchule' THEN 'Berufsbildende '+ '\n' +'Schule'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12003 or &quot;zweckbestimmung&quot;= 'Forschungseinrichtung' THEN 'Forschungs-'+ '\n' +'einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12004 or &quot;zweckbestimmung&quot;= 'SonstigesBildungForschung' THEN 'Sonst. Bildung'+ '\n' +' und '+ '\n' +'Forschung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1400 or &quot;zweckbestimmung&quot;= 'Kirche' THEN 'Kirchliche '+ '\n' +'Einrichtungen'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14000 or &quot;zweckbestimmung&quot;= 'Sakralgebaeude' THEN 'Sakralgebäude'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14001 or &quot;zweckbestimmung&quot;= 'KirchlicheVerwaltung' THEN 'kirchliche '+ '\n' +'Verwaltung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14002 or &quot;zweckbestimmung&quot;= 'Kirchengemeinde' THEN 'Relig. Gemeindehaus, '+ '\n' +'Gemeindezentrum'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14003 or &quot;zweckbestimmung&quot;= 'SonstigesKirche' THEN 'Sonst. relig. '+ '\n' +'Zwecken '+ '\n' +'dienende Anlage'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1600 or &quot;zweckbestimmung&quot;= 'Sozial' THEN 'Einrichtung '+ '\n' +'soziale '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16000 or &quot;zweckbestimmung&quot;= 'EinrichtungKinder' THEN 'Soz. Einrichtung '+ '\n' +'Kinder'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16001 or &quot;zweckbestimmung&quot;= 'EinrichtungJugendliche' THEN 'Soz. Einrichtung '+ '\n' +'Jugendliche'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16002 or &quot;zweckbestimmung&quot;= 'EinrichtungFamilienErwachsene' THEN 'Soz. Einrichtung '+ '\n' +'Familien '+ '\n' +'Erwachsene'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16003 or &quot;zweckbestimmung&quot;= 'EinrichtungSenioren' THEN 'Soz. Einrichtung '+ '\n' +'Senioren'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16004 or &quot;zweckbestimmung&quot;= 'SonstigeSozialeEinrichtung' THEN 'Sonst. soz. '+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1800 or &quot;zweckbestimmung&quot;= 'Gesundheit' THEN 'Einrichtung '+ '\n' +'gesundheitliche '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 18000 or &quot;zweckbestimmung&quot;= 'Krankenhaus' THEN 'Krankenhaus '+ '\n' +'etc'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 18001 or &quot;zweckbestimmung&quot;= 'SonstigesGesundheit' THEN 'Sonst. '+ '\n' +'Gesundheits-'+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2000 or &quot;zweckbestimmung&quot;= 'Kultur' THEN 'Einrichtung '+ '\n' +'kulturelle '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 20000 or &quot;zweckbestimmung&quot;= 'MusikTheater' THEN 'Kultur. '+ '\n' +'Einrichtung '+ '\n' +'Musik '+ '\n' +'Theater'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 20001 or &quot;zweckbestimmung&quot;= 'Bildung' THEN 'Kultur. '+ '\n' +'Einrichtung '+ '\n' +'mit Bildungs-'+ '\n' +'funktion'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 20002 or &quot;zweckbestimmung&quot;= 'SonstigeKultur' THEN 'Sonst. '+ '\n' +'kultur. '+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2200 or &quot;zweckbestimmung&quot;= 'Sport' THEN 'Einrichtung '+ '\n' +'sportliche '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 22000 or &quot;zweckbestimmung&quot;= 'Bad' THEN 'Schwimmbad '+ '\n' +'etc.'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 22001 or &quot;zweckbestimmung&quot;= 'SportplatzSporthalle' THEN 'Sportplatz, '+ '\n' +'Sporthalle, '+ '\n' +'Tennishalle'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 22002 or &quot;zweckbestimmung&quot;= 'SonstigerSport' THEN 'Sonst. '+ '\n' +'Sporteinrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2400 or &quot;zweckbestimmung&quot;= 'SicherheitOrdnung' THEN 'Einrichtungen '+ '\n' +'Sicherheit '+ '\n' +'und '+ '\n' +'Ordnung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24000 or &quot;zweckbestimmung&quot;= 'Feuerwehr' THEN 'Einrichtung '+ '\n' +'Feuerwehr'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24001 or &quot;zweckbestimmung&quot;= 'Schutzbauwerk' THEN 'Schutz'+ '\n' +'bauwerk'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24002 or &quot;zweckbestimmung&quot;= 'Justiz' THEN 'Einrichtung  '+ '\n' +'Justiz'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24003 or &quot;zweckbestimmung&quot;= 'SonstigeSicherheitOrdnung' THEN 'Sonst.'+'\n'+'Einrichtung '+ '\n' +'Sicherheit '+ '\n' + '\n' +'Ordnung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2600 or &quot;zweckbestimmung&quot;= 'Infrastruktur' THEN 'Einrichtung '+ '\n' +'Infrastruktur'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 26000 or &quot;zweckbestimmung&quot;= 'Post' THEN 'Einrichtung '+ '\n' +'Post'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 26001 or &quot;zweckbestimmung&quot;= 'SonstigeInfrastruktur' THEN 'Sonst. '+ '\n' +'Einrichtung '+ '\n' +'Infrastruktur'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 9999 or &quot;zweckbestimmung&quot;= 'Sonstiges' THEN 'Sonstige '+ '\n' +'Einrichtungen '+ '\n' +'und '+ '\n' +'Anlagen'&#xd;&#xa;ELSE 'nicht definiert' &#xd;&#xa;END)" fontUnderline="0" allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" textOpacity="1" fontStrikeout="0" previewBkgrdColor="255,255,255,255" fontWordSpacing="0" namedStyle="Regular" multilineHeight="1" fontWeight="50" fontFamily="Arial" fontKerning="1" textColor="233,78,165,255" legendString="Aa" textOrientation="horizontal" capitalization="0" isExpression="1">
+      <text-style allowHtml="0" namedStyle="Regular" textOrientation="horizontal" textColor="233,78,165,255" multilineHeight="1" fieldName="concat(&#xd;&#xa; '', &#xd;&#xa;CASE &#xd;&#xa;when &quot;zweckbestimmung&quot;= 1000 or &quot;zweckbestimmung&quot;= 'OeffentlicheVerwaltung' THEN 'für öffentliche '+ '\n' +'Verwaltung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10000 or &quot;zweckbestimmung&quot;= 'KommunaleEinrichtung' THEN 'Kom. Einrichtung '+ '\n' +'z.B. Rathaus, '+ '\n' +'Fuhrpark etc'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10001 or &quot;zweckbestimmung&quot;= 'BetriebOeffentlZweckbestimmung' THEN 'Betrieb öff. '+ '\n' +'Zweckbestimmung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10002 or &quot;zweckbestimmung&quot;= 'AnlageBundLand' THEN 'Einrichtung '+ '\n' +'Bund Land '+ '\n' +'Anlage z.B. Arbeitsamt'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 10003 or &quot;zweckbestimmung&quot;= 'SonstigeOeffentlicheVerwaltung' THEN 'Sonst. öff. '+ '\n' +'Verwaltung z.B: IHK'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1200 or &quot;zweckbestimmung&quot;= 'BildungForschung' THEN 'Bildung '+ '\n' +'und '+ '\n' +'Forschung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12000 or &quot;zweckbestimmung&quot;= 'Schule' THEN 'Schulische '+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12001 or &quot;zweckbestimmung&quot;= 'Hochschule' THEN 'Hochschule etc.'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12002 or &quot;zweckbestimmung&quot;= 'BerufsbildendeSchule' THEN 'Berufsbildende '+ '\n' +'Schule'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12003 or &quot;zweckbestimmung&quot;= 'Forschungseinrichtung' THEN 'Forschungs-'+ '\n' +'einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 12004 or &quot;zweckbestimmung&quot;= 'SonstigesBildungForschung' THEN 'Sonst. Bildung'+ '\n' +' und '+ '\n' +'Forschung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1400 or &quot;zweckbestimmung&quot;= 'Kirche' THEN 'Kirchliche '+ '\n' +'Einrichtungen'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14000 or &quot;zweckbestimmung&quot;= 'Sakralgebaeude' THEN 'Sakralgebäude'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14001 or &quot;zweckbestimmung&quot;= 'KirchlicheVerwaltung' THEN 'kirchliche '+ '\n' +'Verwaltung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14002 or &quot;zweckbestimmung&quot;= 'Kirchengemeinde' THEN 'Relig. Gemeindehaus, '+ '\n' +'Gemeindezentrum'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 14003 or &quot;zweckbestimmung&quot;= 'SonstigesKirche' THEN 'Sonst. relig. '+ '\n' +'Zwecken '+ '\n' +'dienende Anlage'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1600 or &quot;zweckbestimmung&quot;= 'Sozial' THEN 'Einrichtung '+ '\n' +'soziale '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16000 or &quot;zweckbestimmung&quot;= 'EinrichtungKinder' THEN 'Soz. Einrichtung '+ '\n' +'Kinder'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16001 or &quot;zweckbestimmung&quot;= 'EinrichtungJugendliche' THEN 'Soz. Einrichtung '+ '\n' +'Jugendliche'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16002 or &quot;zweckbestimmung&quot;= 'EinrichtungFamilienErwachsene' THEN 'Soz. Einrichtung '+ '\n' +'Familien '+ '\n' +'Erwachsene'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16003 or &quot;zweckbestimmung&quot;= 'EinrichtungSenioren' THEN 'Soz. Einrichtung '+ '\n' +'Senioren'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 16004 or &quot;zweckbestimmung&quot;= 'SonstigeSozialeEinrichtung' THEN 'Sonst. soz. '+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 1800 or &quot;zweckbestimmung&quot;= 'Gesundheit' THEN 'Einrichtung '+ '\n' +'gesundheitliche '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 18000 or &quot;zweckbestimmung&quot;= 'Krankenhaus' THEN 'Krankenhaus '+ '\n' +'etc'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 18001 or &quot;zweckbestimmung&quot;= 'SonstigesGesundheit' THEN 'Sonst. '+ '\n' +'Gesundheits-'+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2000 or &quot;zweckbestimmung&quot;= 'Kultur' THEN 'Einrichtung '+ '\n' +'kulturelle '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 20000 or &quot;zweckbestimmung&quot;= 'MusikTheater' THEN 'Kultur. '+ '\n' +'Einrichtung '+ '\n' +'Musik '+ '\n' +'Theater'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 20001 or &quot;zweckbestimmung&quot;= 'Bildung' THEN 'Kultur. '+ '\n' +'Einrichtung '+ '\n' +'mit Bildungs-'+ '\n' +'funktion'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 20002 or &quot;zweckbestimmung&quot;= 'SonstigeKultur' THEN 'Sonst. '+ '\n' +'kultur. '+ '\n' +'Einrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2200 or &quot;zweckbestimmung&quot;= 'Sport' THEN 'Einrichtung '+ '\n' +'sportliche '+ '\n' +'Zwecke'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 22000 or &quot;zweckbestimmung&quot;= 'Bad' THEN 'Schwimmbad '+ '\n' +'etc.'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 22001 or &quot;zweckbestimmung&quot;= 'SportplatzSporthalle' THEN 'Sportplatz, '+ '\n' +'Sporthalle, '+ '\n' +'Tennishalle'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 22002 or &quot;zweckbestimmung&quot;= 'SonstigerSport' THEN 'Sonst. '+ '\n' +'Sporteinrichtung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2400 or &quot;zweckbestimmung&quot;= 'SicherheitOrdnung' THEN 'Einrichtungen '+ '\n' +'Sicherheit '+ '\n' +'und '+ '\n' +'Ordnung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24000 or &quot;zweckbestimmung&quot;= 'Feuerwehr' THEN 'Einrichtung '+ '\n' +'Feuerwehr'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24001 or &quot;zweckbestimmung&quot;= 'Schutzbauwerk' THEN 'Schutz'+ '\n' +'bauwerk'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24002 or &quot;zweckbestimmung&quot;= 'Justiz' THEN 'Einrichtung  '+ '\n' +'Justiz'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 24003 or &quot;zweckbestimmung&quot;= 'SonstigeSicherheitOrdnung' THEN 'Sonst.'+'\n'+'Einrichtung '+ '\n' +'Sicherheit '+ '\n' + '\n' +'Ordnung'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 2600 or &quot;zweckbestimmung&quot;= 'Infrastruktur' THEN 'Einrichtung '+ '\n' +'Infrastruktur'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 26000 or &quot;zweckbestimmung&quot;= 'Post' THEN 'Einrichtung '+ '\n' +'Post'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 26001 or &quot;zweckbestimmung&quot;= 'SonstigeInfrastruktur' THEN 'Sonst. '+ '\n' +'Einrichtung '+ '\n' +'Infrastruktur'&#xd;&#xa;when &quot;zweckbestimmung&quot;= 9999 or &quot;zweckbestimmung&quot;= 'Sonstiges' THEN 'Sonstige '+ '\n' +'Einrichtungen '+ '\n' +'und '+ '\n' +'Anlagen'&#xd;&#xa;ELSE 'nicht definiert' &#xd;&#xa;END)" forcedItalic="0" fontItalic="0" blendMode="0" fontSize="10" fontLetterSpacing="0" fontUnderline="0" fontStrikeout="0" useSubstitutions="0" fontKerning="1" forcedBold="0" fontSizeUnit="Point" previewBkgrdColor="255,255,255,255" textOpacity="1" isExpression="1" fontWeight="50" fontFamily="Arial" capitalization="0" fontWordSpacing="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" legendString="Aa">
         <families/>
-        <text-buffer bufferSize="30" bufferSizeUnits="Percentage" bufferDraw="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferJoinStyle="128" bufferNoFill="1" bufferColor="250,250,250,255"/>
-        <text-mask maskOpacity="1" maskEnabled="0" maskSize="0" maskJoinStyle="128" maskedSymbolLayers="" maskSizeUnits="MM" maskType="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0"/>
-        <background shapeType="0" shapeRotation="0" shapeRadiiUnit="Point" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeFillColor="255,255,255,255" shapeSizeY="0" shapeRadiiY="0" shapeRotationType="0" shapeJoinStyle="64" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeBorderColor="128,128,128,255" shapeSizeUnit="Point" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeSVGFile="" shapeBorderWidth="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="Point" shapeSizeX="0" shapeDraw="0" shapeBorderWidthUnit="Point" shapeBlendMode="0" shapeRadiiX="0">
-          <symbol type="marker" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="markerSymbol">
+        <text-buffer bufferOpacity="1" bufferBlendMode="0" bufferColor="250,250,250,255" bufferSize="30" bufferJoinStyle="128" bufferDraw="1" bufferSizeUnits="Percentage" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferNoFill="1"/>
+        <text-mask maskType="0" maskSize="0" maskEnabled="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSizeUnits="MM" maskedSymbolLayers="" maskJoinStyle="128" maskOpacity="1"/>
+        <background shapeRotation="0" shapeBorderWidth="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeType="0" shapeSizeY="0" shapeSizeX="0" shapeOffsetUnit="Point" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeBorderWidthUnit="Point" shapeOffsetY="0" shapeRadiiY="0" shapeSVGFile="" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeDraw="0" shapeRadiiX="0" shapeRotationType="0" shapeRadiiUnit="Point" shapeOffsetX="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="Point" shapeBorderColor="128,128,128,255" shapeSizeMapUnitScale="3x:0,0,0,0,0,0">
+          <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="marker" name="markerSymbol" force_rhr="0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -466,7 +466,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" locked="0" class="SimpleMarker" pass="0">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
@@ -516,7 +516,7 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol type="fill" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="fillSymbol">
+          <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="fill" name="fillSymbol" force_rhr="0" alpha="1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -524,7 +524,7 @@
                 <Option type="QString" value="collection" name="type"/>
               </Option>
             </data_defined_properties>
-            <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
               <Option type="Map">
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
                 <Option type="QString" value="255,255,255,255" name="color"/>
@@ -559,7 +559,7 @@
             </layer>
           </symbol>
         </background>
-        <shadow shadowOffsetUnit="MM" shadowOpacity="0.69999999999999996" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowBlendMode="6" shadowUnder="0" shadowOffsetDist="1" shadowRadius="1.5" shadowScale="100" shadowOffsetAngle="135" shadowColor="0,0,0,255" shadowRadiusAlphaOnly="0" shadowDraw="0"/>
+        <shadow shadowOffsetGlobal="1" shadowRadiusUnit="MM" shadowRadius="1.5" shadowOpacity="0.69999999999999996" shadowScale="100" shadowColor="0,0,0,255" shadowUnder="0" shadowDraw="0" shadowOffsetUnit="MM" shadowBlendMode="6" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
         <dd_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -569,9 +569,9 @@
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" wrapChar="" multilineAlign="3" autoWrapLength="0" formatNumbers="0" decimals="3" addDirectionSymbol="0" leftDirectionSymbol="&lt;" rightDirectionSymbol=">"/>
-      <placement dist="0" centroidInside="0" rotationUnit="AngleDegrees" geometryGeneratorType="PointGeometry" distUnits="MM" maxCurvedCharAngleOut="-25" offsetType="0" lineAnchorPercent="0.5" lineAnchorTextPoint="FollowPlacement" repeatDistanceUnits="MM" preserveRotation="1" distMapUnitScale="3x:0,0,0,0,0,0" overlapHandling="PreventOverlap" polygonPlacementFlags="2" quadOffset="4" rotationAngle="0" layerType="PolygonGeometry" geometryGeneratorEnabled="0" overrunDistance="0" geometryGenerator="" yOffset="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorType="0" priority="5" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" xOffset="0" placement="0" repeatDistance="0" centroidWhole="0" maxCurvedCharAngleIn="25" placementFlags="10" lineAnchorClipping="0" offsetUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" overrunDistanceUnit="MM" fitInPolygonOnly="0"/>
-      <rendering minFeatureSize="0" fontMaxPixelSize="10000" labelPerPart="0" scaleMax="751" maxNumLabels="2000" unplacedVisibility="0" fontMinPixelSize="3" scaleMin="0" obstacleFactor="1" fontLimitPixelSize="0" limitNumLabels="0" zIndex="0" scaleVisibility="1" drawLabels="1" obstacleType="1" mergeLines="0" upsidedownLabels="0" obstacle="1"/>
+      <text-format decimals="3" autoWrapLength="0" leftDirectionSymbol="&lt;" plussign="0" reverseDirectionSymbol="0" multilineAlign="3" wrapChar="" formatNumbers="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" rightDirectionSymbol=">" addDirectionSymbol="0"/>
+      <placement rotationAngle="0" maxCurvedCharAngleIn="25" rotationUnit="AngleDegrees" overrunDistance="0" polygonPlacementFlags="2" lineAnchorTextPoint="FollowPlacement" lineAnchorClipping="0" layerType="PolygonGeometry" overlapHandling="PreventOverlap" quadOffset="4" offsetUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" allowDegraded="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceUnit="MM" lineAnchorPercent="0.5" placementFlags="10" distUnits="MM" geometryGeneratorEnabled="0" centroidWhole="0" dist="0" placement="0" lineAnchorType="0" fitInPolygonOnly="0" geometryGeneratorType="PointGeometry" preserveRotation="1" centroidInside="0" yOffset="0" offsetType="0" repeatDistance="0" distMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" maxCurvedCharAngleOut="-25" geometryGenerator="" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" xOffset="0" priority="5"/>
+      <rendering maxNumLabels="2000" obstacleType="1" limitNumLabels="0" scaleMax="1001" fontMaxPixelSize="10000" scaleMin="0" upsidedownLabels="0" fontLimitPixelSize="0" minFeatureSize="0" mergeLines="0" unplacedVisibility="0" drawLabels="1" zIndex="0" fontMinPixelSize="3" obstacleFactor="1" obstacle="1" labelPerPart="0" scaleVisibility="1"/>
       <dd_properties>
         <Option type="Map">
           <Option type="QString" value="" name="name"/>
@@ -591,7 +591,7 @@
           <Option type="bool" value="false" name="drawToAllParts"/>
           <Option type="QString" value="0" name="enabled"/>
           <Option type="QString" value="point_on_exterior" name="labelAnchorPoint"/>
-          <Option type="QString" value="&lt;symbol type=&quot;line&quot; clip_to_extent=&quot;1&quot; is_animated=&quot;0&quot; alpha=&quot;1&quot; frame_rate=&quot;10&quot; force_rhr=&quot;0&quot; name=&quot;symbol&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer enabled=&quot;1&quot; locked=&quot;0&quot; class=&quot;SimpleLine&quot; pass=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;align_dash_pattern&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;capstyle&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;5;2&quot; name=&quot;customdash&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;customdash_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;dash_pattern_offset&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;draw_inside_polygon&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;60,60,60,255&quot; name=&quot;line_color&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;line_style&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0.3&quot; name=&quot;line_width&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;line_width_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;offset&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;ring_filter&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_end&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_start&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;use_custom_dash&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_end_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;trim_distance_start&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_start_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_start_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
+          <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; frame_rate=&quot;10&quot; is_animated=&quot;0&quot; type=&quot;line&quot; name=&quot;symbol&quot; force_rhr=&quot;0&quot; alpha=&quot;1&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer class=&quot;SimpleLine&quot; pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;align_dash_pattern&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;square&quot; name=&quot;capstyle&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;5;2&quot; name=&quot;customdash&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;customdash_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;customdash_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;dash_pattern_offset&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;dash_pattern_offset_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;draw_inside_polygon&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;bevel&quot; name=&quot;joinstyle&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;60,60,60,255&quot; name=&quot;line_color&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;solid&quot; name=&quot;line_style&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0.3&quot; name=&quot;line_width&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;line_width_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;offset&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;offset_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;offset_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;ring_filter&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_end&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_end_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;trim_distance_start&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;MM&quot; name=&quot;trim_distance_start_unit&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;0&quot; name=&quot;use_custom_dash&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;3x:0,0,0,0,0,0&quot; name=&quot;width_map_unit_scale&quot;/>&lt;/Option>&lt;prop k=&quot;align_dash_pattern&quot; v=&quot;0&quot;/>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;dash_pattern_offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;dash_pattern_offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;dash_pattern_offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_end_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_end_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;trim_distance_start&quot; v=&quot;0&quot;/>&lt;prop k=&quot;trim_distance_start_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;trim_distance_start_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;tweak_dash_pattern_on_corners&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
           <Option type="double" value="0" name="minLength"/>
           <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
           <Option type="QString" value="MM" name="minLengthUnit"/>
@@ -618,12 +618,12 @@
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory scaleDependency="Area" height="15" barWidth="5" spacingUnitScale="3x:0,0,0,0,0,0" showAxis="1" enabled="0" backgroundAlpha="255" backgroundColor="#ffffff" opacity="1" rotationOffset="270" minimumSize="0" diagramOrientation="Up" penAlpha="255" width="15" maxScaleDenominator="1e+08" spacing="5" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" minScaleDenominator="0" labelPlacementMethod="XHeight" sizeType="MM" penWidth="0" scaleBasedVisibility="0" direction="0" spacingUnit="MM">
-      <fontProperties italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" bold="0" strikethrough="0" style=""/>
-      <attribute color="#000000" colorOpacity="1" field="" label=""/>
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+    <DiagramCategory showAxis="1" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" barWidth="5" backgroundAlpha="255" scaleDependency="Area" spacingUnitScale="3x:0,0,0,0,0,0" opacity="1" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" height="15" direction="0" labelPlacementMethod="XHeight" diagramOrientation="Up" backgroundColor="#ffffff" lineSizeType="MM" minScaleDenominator="0" maxScaleDenominator="1e+08" scaleBasedVisibility="0" penAlpha="255" spacingUnit="MM" minimumSize="0" penWidth="0" enabled="0" sizeType="MM" width="15" spacing="5">
+      <fontProperties style="" strikethrough="0" bold="0" italic="0" underline="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
+      <attribute colorOpacity="1" field="" label="" color="#000000"/>
       <axisSymbol>
-        <symbol type="line" clip_to_extent="1" is_animated="0" alpha="1" frame_rate="10" force_rhr="0" name="">
+        <symbol clip_to_extent="1" frame_rate="10" is_animated="0" type="line" name="" force_rhr="0" alpha="1">
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -631,7 +631,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <layer enabled="1" locked="0" class="SimpleLine" pass="0">
+          <layer class="SimpleLine" pass="0" enabled="1" locked="0">
             <Option type="Map">
               <Option type="QString" value="0" name="align_dash_pattern"/>
               <Option type="QString" value="square" name="capstyle"/>
@@ -700,7 +700,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings zIndex="0" showAll="1" obstacle="0" placement="1" dist="0" linePlacementFlags="18" priority="0">
+  <DiagramLayerSettings placement="1" linePlacementFlags="18" priority="0" showAll="1" zIndex="0" obstacle="0" dist="0">
     <properties>
       <Option type="Map">
         <Option type="QString" value="" name="name"/>
@@ -709,7 +709,7 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
     <checkConfiguration type="Map">
       <Option type="Map" name="QgsGeometryGapCheck">
@@ -750,6 +750,13 @@
         </config>
       </editWidget>
     </field>
+    <field name="aufschrift" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field name="rechtscharakter" configurationFlags="None">
       <editWidget type="TextEdit">
         <config>
@@ -764,8 +771,15 @@
         </config>
       </editWidget>
     </field>
-    <field name="Z" configurationFlags="None">
-      <editWidget type="Range">
+    <field name="GFZ" configurationFlags="None">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="GRZ" configurationFlags="None">
+      <editWidget type="TextEdit">
         <config>
           <Option/>
         </config>
@@ -780,60 +794,70 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" field="gml_id" name=""/>
-    <alias index="1" field="text" name=""/>
-    <alias index="2" field="rechtsstand" name=""/>
-    <alias index="3" field="ebene" name=""/>
-    <alias index="4" field="rechtscharakter" name=""/>
-    <alias index="5" field="flaechenschluss" name=""/>
-    <alias index="6" field="Z" name=""/>
-    <alias index="7" field="zweckbestimmung" name=""/>
+    <alias name="" index="0" field="gml_id"/>
+    <alias name="" index="1" field="text"/>
+    <alias name="" index="2" field="rechtsstand"/>
+    <alias name="" index="3" field="ebene"/>
+    <alias name="" index="4" field="aufschrift"/>
+    <alias name="" index="5" field="rechtscharakter"/>
+    <alias name="" index="6" field="flaechenschluss"/>
+    <alias name="" index="7" field="GFZ"/>
+    <alias name="" index="8" field="GRZ"/>
+    <alias name="" index="9" field="zweckbestimmung"/>
   </aliases>
   <defaults>
-    <default applyOnUpdate="0" expression="" field="gml_id"/>
-    <default applyOnUpdate="0" expression="" field="text"/>
-    <default applyOnUpdate="0" expression="" field="rechtsstand"/>
-    <default applyOnUpdate="0" expression="" field="ebene"/>
-    <default applyOnUpdate="0" expression="" field="rechtscharakter"/>
-    <default applyOnUpdate="0" expression="" field="flaechenschluss"/>
-    <default applyOnUpdate="0" expression="" field="Z"/>
-    <default applyOnUpdate="0" expression="" field="zweckbestimmung"/>
+    <default expression="" field="gml_id" applyOnUpdate="0"/>
+    <default expression="" field="text" applyOnUpdate="0"/>
+    <default expression="" field="rechtsstand" applyOnUpdate="0"/>
+    <default expression="" field="ebene" applyOnUpdate="0"/>
+    <default expression="" field="aufschrift" applyOnUpdate="0"/>
+    <default expression="" field="rechtscharakter" applyOnUpdate="0"/>
+    <default expression="" field="flaechenschluss" applyOnUpdate="0"/>
+    <default expression="" field="GFZ" applyOnUpdate="0"/>
+    <default expression="" field="GRZ" applyOnUpdate="0"/>
+    <default expression="" field="zweckbestimmung" applyOnUpdate="0"/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" notnull_strength="1" unique_strength="0" field="gml_id" constraints="1"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="text" constraints="0"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="rechtsstand" constraints="0"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="ebene" constraints="0"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="rechtscharakter" constraints="0"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="flaechenschluss" constraints="0"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="Z" constraints="0"/>
-    <constraint exp_strength="0" notnull_strength="0" unique_strength="0" field="zweckbestimmung" constraints="0"/>
+    <constraint constraints="1" unique_strength="0" exp_strength="0" field="gml_id" notnull_strength="1"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="text" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="rechtsstand" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="ebene" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="aufschrift" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="rechtscharakter" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="flaechenschluss" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="GFZ" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="GRZ" notnull_strength="0"/>
+    <constraint constraints="0" unique_strength="0" exp_strength="0" field="zweckbestimmung" notnull_strength="0"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" desc="" field="gml_id"/>
     <constraint exp="" desc="" field="text"/>
     <constraint exp="" desc="" field="rechtsstand"/>
     <constraint exp="" desc="" field="ebene"/>
+    <constraint exp="" desc="" field="aufschrift"/>
     <constraint exp="" desc="" field="rechtscharakter"/>
     <constraint exp="" desc="" field="flaechenschluss"/>
-    <constraint exp="" desc="" field="Z"/>
+    <constraint exp="" desc="" field="GFZ"/>
+    <constraint exp="" desc="" field="GRZ"/>
     <constraint exp="" desc="" field="zweckbestimmung"/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" sortExpression="&quot;text&quot;" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;text&quot;" sortOrder="0">
     <columns>
-      <column type="field" width="-1" name="text" hidden="0"/>
-      <column type="field" width="-1" name="flaechenschluss" hidden="0"/>
-      <column type="field" width="-1" name="rechtscharakter" hidden="0"/>
-      <column type="field" width="-1" name="gml_id" hidden="0"/>
-      <column type="field" width="-1" name="rechtsstand" hidden="0"/>
-      <column type="field" width="-1" name="ebene" hidden="0"/>
-      <column type="field" width="-1" name="Z" hidden="0"/>
-      <column type="field" width="-1" name="zweckbestimmung" hidden="0"/>
-      <column type="actions" width="-1" hidden="0"/>
+      <column type="field" name="text" hidden="0" width="-1"/>
+      <column type="field" name="flaechenschluss" hidden="0" width="-1"/>
+      <column type="field" name="rechtscharakter" hidden="0" width="-1"/>
+      <column type="field" name="gml_id" hidden="0" width="-1"/>
+      <column type="field" name="rechtsstand" hidden="0" width="-1"/>
+      <column type="field" name="ebene" hidden="0" width="-1"/>
+      <column type="field" name="zweckbestimmung" hidden="0" width="-1"/>
+      <column type="field" name="aufschrift" hidden="0" width="281"/>
+      <column type="field" name="GFZ" hidden="0" width="-1"/>
+      <column type="field" name="GRZ" hidden="0" width="-1"/>
+      <column type="actions" hidden="0" width="-1"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -1241,193 +1265,193 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="zweckbestimmungCode"/>
   </labelOnTop>
   <reuseLastValue>
-    <field reuseLastValue="0" name="BM"/>
-    <field reuseLastValue="0" name="BMUOM"/>
-    <field reuseLastValue="0" name="BMZ"/>
-    <field reuseLastValue="0" name="BMZ_Ausn"/>
-    <field reuseLastValue="0" name="BMZmax"/>
-    <field reuseLastValue="0" name="BMZmin"/>
-    <field reuseLastValue="0" name="BM_Ausn"/>
-    <field reuseLastValue="0" name="BM_AusnUOM"/>
-    <field reuseLastValue="0" name="BMmax"/>
-    <field reuseLastValue="0" name="BMmaxUOM"/>
-    <field reuseLastValue="0" name="BMmin"/>
-    <field reuseLastValue="0" name="BMminUOM"/>
-    <field reuseLastValue="0" name="Bmax"/>
-    <field reuseLastValue="0" name="BmaxUOM"/>
-    <field reuseLastValue="0" name="Bmin"/>
-    <field reuseLastValue="0" name="BminUOM"/>
-    <field reuseLastValue="0" name="DN"/>
-    <field reuseLastValue="0" name="DNUOM"/>
-    <field reuseLastValue="0" name="DNZwingend"/>
-    <field reuseLastValue="0" name="DNZwingendUOM"/>
-    <field reuseLastValue="0" name="DNmax"/>
-    <field reuseLastValue="0" name="DNmaxUOM"/>
-    <field reuseLastValue="0" name="DNmin"/>
-    <field reuseLastValue="0" name="DNminUOM"/>
-    <field reuseLastValue="0" name="FR"/>
-    <field reuseLastValue="0" name="FRUOM"/>
-    <field reuseLastValue="0" name="Fmax"/>
-    <field reuseLastValue="0" name="FmaxUOM"/>
-    <field reuseLastValue="0" name="Fmin"/>
-    <field reuseLastValue="0" name="FminUOM"/>
-    <field reuseLastValue="0" name="GF"/>
-    <field reuseLastValue="0" name="GFUOM"/>
-    <field reuseLastValue="0" name="GFZ"/>
-    <field reuseLastValue="0" name="GFZ_Ausn"/>
-    <field reuseLastValue="0" name="GFZmax"/>
-    <field reuseLastValue="0" name="GFZmin"/>
-    <field reuseLastValue="0" name="GF_Ausn"/>
-    <field reuseLastValue="0" name="GF_AusnUOM"/>
-    <field reuseLastValue="0" name="GFmax"/>
-    <field reuseLastValue="0" name="GFmaxUOM"/>
-    <field reuseLastValue="0" name="GFmin"/>
-    <field reuseLastValue="0" name="GFminUOM"/>
-    <field reuseLastValue="0" name="GR"/>
-    <field reuseLastValue="0" name="GRUOM"/>
-    <field reuseLastValue="0" name="GRZ"/>
-    <field reuseLastValue="0" name="GRZ_Ausn"/>
-    <field reuseLastValue="0" name="GRZmax"/>
-    <field reuseLastValue="0" name="GRZmin"/>
-    <field reuseLastValue="0" name="GR_Ausn"/>
-    <field reuseLastValue="0" name="GR_AusnUOM"/>
-    <field reuseLastValue="0" name="GRmax"/>
-    <field reuseLastValue="0" name="GRmaxUOM"/>
-    <field reuseLastValue="0" name="GRmin"/>
-    <field reuseLastValue="0" name="GRminUOM"/>
-    <field reuseLastValue="0" name="MaxZahlWohnungen"/>
-    <field reuseLastValue="0" name="MinGRWohneinheit"/>
-    <field reuseLastValue="0" name="MinGRWohneinheitUOM"/>
-    <field reuseLastValue="0" name="Tmax"/>
-    <field reuseLastValue="0" name="TmaxUOM"/>
-    <field reuseLastValue="0" name="Tmin"/>
-    <field reuseLastValue="0" name="TminUOM"/>
-    <field reuseLastValue="0" name="Z"/>
-    <field reuseLastValue="0" name="ZU"/>
-    <field reuseLastValue="0" name="ZU_Ausn"/>
-    <field reuseLastValue="0" name="ZUmax"/>
-    <field reuseLastValue="0" name="ZUmin"/>
-    <field reuseLastValue="0" name="ZUzwingend"/>
-    <field reuseLastValue="0" name="Z_Ausn"/>
-    <field reuseLastValue="0" name="Z_Staffel"/>
-    <field reuseLastValue="0" name="Zmax"/>
-    <field reuseLastValue="0" name="Zmin"/>
-    <field reuseLastValue="0" name="Zzwingend"/>
-    <field reuseLastValue="0" name="abweichendeBauweise"/>
-    <field reuseLastValue="0" name="abweichendeBauweiseCode"/>
-    <field reuseLastValue="0" name="abweichenderHoehenbezug"/>
-    <field reuseLastValue="0" name="aufnahmeAlsFestsetzung"/>
-    <field reuseLastValue="0" name="aufschrift"/>
-    <field reuseLastValue="0" name="bauweise"/>
-    <field reuseLastValue="0" name="bauweiseCode"/>
-    <field reuseLastValue="0" name="bebauungsArt"/>
-    <field reuseLastValue="0" name="bebauungsArtCode"/>
-    <field reuseLastValue="0" name="bedingungEnde"/>
-    <field reuseLastValue="0" name="bedingungStart"/>
-    <field reuseLastValue="0" name="begrenzungslinie"/>
-    <field reuseLastValue="0" name="begruendungAbschnitte"/>
-    <field reuseLastValue="0" name="besondereZweckbestimmung"/>
-    <field reuseLastValue="0" name="besondereZweckbestimmungCode"/>
-    <field reuseLastValue="0" name="bezugspunkt"/>
-    <field reuseLastValue="0" name="dachform"/>
-    <field reuseLastValue="0" name="dachformCode"/>
-    <field reuseLastValue="0" name="dachgestaltung"/>
-    <field reuseLastValue="0" name="datumAbsolut"/>
-    <field reuseLastValue="0" name="detaillierteDachform"/>
-    <field reuseLastValue="0" name="detaillierteDachformCode"/>
-    <field reuseLastValue="0" name="detaillierteZweckbestimmung"/>
-    <field reuseLastValue="0" name="detaillierteZweckbestimmungCode"/>
-    <field reuseLastValue="0" name="ebene"/>
-    <field reuseLastValue="0" name="endDatum"/>
-    <field reuseLastValue="0" name="endeBedingung"/>
-    <field reuseLastValue="0" name="externeReferenz"/>
-    <field reuseLastValue="0" name="flaechenschluss"/>
-    <field reuseLastValue="0" name="gehoertNachrichtlichZuBereich"/>
-    <field reuseLastValue="0" name="gehoertZuBP_Bereich"/>
-    <field reuseLastValue="0" name="gehoertZuBereich"/>
-    <field reuseLastValue="0" name="gesetzlicheGrundlage"/>
-    <field reuseLastValue="0" name="gesetzlicheGrundlageCode"/>
-    <field reuseLastValue="0" name="gliederung1"/>
-    <field reuseLastValue="0" name="gliederung2"/>
-    <field reuseLastValue="0" name="gmlDescription"/>
-    <field reuseLastValue="0" name="gmlId"/>
-    <field reuseLastValue="0" name="gmlName"/>
-    <field reuseLastValue="0" name="gml_id"/>
-    <field reuseLastValue="0" name="gueltigkeitBeginn"/>
-    <field reuseLastValue="0" name="gueltigkeitEnde"/>
-    <field reuseLastValue="0" name="h"/>
-    <field reuseLastValue="0" name="hMax"/>
-    <field reuseLastValue="0" name="hMin"/>
-    <field reuseLastValue="0" name="hUeberBezugspunkt"/>
-    <field reuseLastValue="0" name="hUeberBezugspunktCode"/>
-    <field reuseLastValue="0" name="hZwingend"/>
-    <field reuseLastValue="0" name="h_uom"/>
-    <field reuseLastValue="0" name="hatGenerAttribut"/>
-    <field reuseLastValue="0" name="hinweis"/>
-    <field reuseLastValue="0" name="hoehenangabe"/>
-    <field reuseLastValue="0" name="hoehenbezug"/>
-    <field reuseLastValue="0" name="informell"/>
-    <field reuseLastValue="0" name="laermkontingent"/>
-    <field reuseLastValue="0" name="laermkontingentGebiet"/>
-    <field reuseLastValue="0" name="nachrichtlicheUebernahme"/>
-    <field reuseLastValue="0" name="nutzungsform"/>
-    <field reuseLastValue="0" name="nutzungsformCode"/>
-    <field reuseLastValue="0" name="realisiert"/>
-    <field reuseLastValue="0" name="rechtlicheCharakterisierung"/>
-    <field reuseLastValue="0" name="rechtlicheCharakterisierungCode"/>
-    <field reuseLastValue="0" name="rechtscharakter"/>
-    <field reuseLastValue="0" name="rechtscharakterCode"/>
-    <field reuseLastValue="0" name="rechtsstand"/>
-    <field reuseLastValue="0" name="rechtsstandCode"/>
-    <field reuseLastValue="0" name="rechtsverbindlich"/>
-    <field reuseLastValue="0" name="richtungssektorGrenze"/>
-    <field reuseLastValue="0" name="startBedingung"/>
-    <field reuseLastValue="0" name="startDatum"/>
-    <field reuseLastValue="0" name="text"/>
-    <field reuseLastValue="0" name="textAbschnitte"/>
-    <field reuseLastValue="0" name="uuid"/>
-    <field reuseLastValue="0" name="vermerk"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung1"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung1Code"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung2"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung2Code"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung3"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung3Code"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung4"/>
-    <field reuseLastValue="0" name="weitereBesondZweckbestimmung4Code"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung1"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung1Code"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung2"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung2Code"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung3"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung3Code"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung4"/>
-    <field reuseLastValue="0" name="weitereDetailZweckbestimmung4Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung1"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung1Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung2"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung2Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung3"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung3Code"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung4"/>
-    <field reuseLastValue="0" name="weitereZweckbestimmung4Code"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenDurchABE"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenDurchFlaeche"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenDurchMassnahme"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenDurchSPEFlaeche"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenDurchSPEMassnahme"/>
-    <field reuseLastValue="0" name="wirdAusgeglichenVon"/>
-    <field reuseLastValue="0" name="wirdDargestelltDurch"/>
-    <field reuseLastValue="0" name="wmsSortDate"/>
-    <field reuseLastValue="0" name="xpPlanName"/>
-    <field reuseLastValue="0" name="xpPlanType"/>
-    <field reuseLastValue="0" name="xpVersion"/>
-    <field reuseLastValue="0" name="xplanMgrPlanId"/>
-    <field reuseLastValue="0" name="zugunstenVon"/>
-    <field reuseLastValue="0" name="zusatzkontingent"/>
-    <field reuseLastValue="0" name="zusatzkontingentFlaeche"/>
-    <field reuseLastValue="0" name="zweckbestimmung"/>
-    <field reuseLastValue="0" name="zweckbestimmungCode"/>
+    <field name="BM" reuseLastValue="0"/>
+    <field name="BMUOM" reuseLastValue="0"/>
+    <field name="BMZ" reuseLastValue="0"/>
+    <field name="BMZ_Ausn" reuseLastValue="0"/>
+    <field name="BMZmax" reuseLastValue="0"/>
+    <field name="BMZmin" reuseLastValue="0"/>
+    <field name="BM_Ausn" reuseLastValue="0"/>
+    <field name="BM_AusnUOM" reuseLastValue="0"/>
+    <field name="BMmax" reuseLastValue="0"/>
+    <field name="BMmaxUOM" reuseLastValue="0"/>
+    <field name="BMmin" reuseLastValue="0"/>
+    <field name="BMminUOM" reuseLastValue="0"/>
+    <field name="Bmax" reuseLastValue="0"/>
+    <field name="BmaxUOM" reuseLastValue="0"/>
+    <field name="Bmin" reuseLastValue="0"/>
+    <field name="BminUOM" reuseLastValue="0"/>
+    <field name="DN" reuseLastValue="0"/>
+    <field name="DNUOM" reuseLastValue="0"/>
+    <field name="DNZwingend" reuseLastValue="0"/>
+    <field name="DNZwingendUOM" reuseLastValue="0"/>
+    <field name="DNmax" reuseLastValue="0"/>
+    <field name="DNmaxUOM" reuseLastValue="0"/>
+    <field name="DNmin" reuseLastValue="0"/>
+    <field name="DNminUOM" reuseLastValue="0"/>
+    <field name="FR" reuseLastValue="0"/>
+    <field name="FRUOM" reuseLastValue="0"/>
+    <field name="Fmax" reuseLastValue="0"/>
+    <field name="FmaxUOM" reuseLastValue="0"/>
+    <field name="Fmin" reuseLastValue="0"/>
+    <field name="FminUOM" reuseLastValue="0"/>
+    <field name="GF" reuseLastValue="0"/>
+    <field name="GFUOM" reuseLastValue="0"/>
+    <field name="GFZ" reuseLastValue="0"/>
+    <field name="GFZ_Ausn" reuseLastValue="0"/>
+    <field name="GFZmax" reuseLastValue="0"/>
+    <field name="GFZmin" reuseLastValue="0"/>
+    <field name="GF_Ausn" reuseLastValue="0"/>
+    <field name="GF_AusnUOM" reuseLastValue="0"/>
+    <field name="GFmax" reuseLastValue="0"/>
+    <field name="GFmaxUOM" reuseLastValue="0"/>
+    <field name="GFmin" reuseLastValue="0"/>
+    <field name="GFminUOM" reuseLastValue="0"/>
+    <field name="GR" reuseLastValue="0"/>
+    <field name="GRUOM" reuseLastValue="0"/>
+    <field name="GRZ" reuseLastValue="0"/>
+    <field name="GRZ_Ausn" reuseLastValue="0"/>
+    <field name="GRZmax" reuseLastValue="0"/>
+    <field name="GRZmin" reuseLastValue="0"/>
+    <field name="GR_Ausn" reuseLastValue="0"/>
+    <field name="GR_AusnUOM" reuseLastValue="0"/>
+    <field name="GRmax" reuseLastValue="0"/>
+    <field name="GRmaxUOM" reuseLastValue="0"/>
+    <field name="GRmin" reuseLastValue="0"/>
+    <field name="GRminUOM" reuseLastValue="0"/>
+    <field name="MaxZahlWohnungen" reuseLastValue="0"/>
+    <field name="MinGRWohneinheit" reuseLastValue="0"/>
+    <field name="MinGRWohneinheitUOM" reuseLastValue="0"/>
+    <field name="Tmax" reuseLastValue="0"/>
+    <field name="TmaxUOM" reuseLastValue="0"/>
+    <field name="Tmin" reuseLastValue="0"/>
+    <field name="TminUOM" reuseLastValue="0"/>
+    <field name="Z" reuseLastValue="0"/>
+    <field name="ZU" reuseLastValue="0"/>
+    <field name="ZU_Ausn" reuseLastValue="0"/>
+    <field name="ZUmax" reuseLastValue="0"/>
+    <field name="ZUmin" reuseLastValue="0"/>
+    <field name="ZUzwingend" reuseLastValue="0"/>
+    <field name="Z_Ausn" reuseLastValue="0"/>
+    <field name="Z_Staffel" reuseLastValue="0"/>
+    <field name="Zmax" reuseLastValue="0"/>
+    <field name="Zmin" reuseLastValue="0"/>
+    <field name="Zzwingend" reuseLastValue="0"/>
+    <field name="abweichendeBauweise" reuseLastValue="0"/>
+    <field name="abweichendeBauweiseCode" reuseLastValue="0"/>
+    <field name="abweichenderHoehenbezug" reuseLastValue="0"/>
+    <field name="aufnahmeAlsFestsetzung" reuseLastValue="0"/>
+    <field name="aufschrift" reuseLastValue="0"/>
+    <field name="bauweise" reuseLastValue="0"/>
+    <field name="bauweiseCode" reuseLastValue="0"/>
+    <field name="bebauungsArt" reuseLastValue="0"/>
+    <field name="bebauungsArtCode" reuseLastValue="0"/>
+    <field name="bedingungEnde" reuseLastValue="0"/>
+    <field name="bedingungStart" reuseLastValue="0"/>
+    <field name="begrenzungslinie" reuseLastValue="0"/>
+    <field name="begruendungAbschnitte" reuseLastValue="0"/>
+    <field name="besondereZweckbestimmung" reuseLastValue="0"/>
+    <field name="besondereZweckbestimmungCode" reuseLastValue="0"/>
+    <field name="bezugspunkt" reuseLastValue="0"/>
+    <field name="dachform" reuseLastValue="0"/>
+    <field name="dachformCode" reuseLastValue="0"/>
+    <field name="dachgestaltung" reuseLastValue="0"/>
+    <field name="datumAbsolut" reuseLastValue="0"/>
+    <field name="detaillierteDachform" reuseLastValue="0"/>
+    <field name="detaillierteDachformCode" reuseLastValue="0"/>
+    <field name="detaillierteZweckbestimmung" reuseLastValue="0"/>
+    <field name="detaillierteZweckbestimmungCode" reuseLastValue="0"/>
+    <field name="ebene" reuseLastValue="0"/>
+    <field name="endDatum" reuseLastValue="0"/>
+    <field name="endeBedingung" reuseLastValue="0"/>
+    <field name="externeReferenz" reuseLastValue="0"/>
+    <field name="flaechenschluss" reuseLastValue="0"/>
+    <field name="gehoertNachrichtlichZuBereich" reuseLastValue="0"/>
+    <field name="gehoertZuBP_Bereich" reuseLastValue="0"/>
+    <field name="gehoertZuBereich" reuseLastValue="0"/>
+    <field name="gesetzlicheGrundlage" reuseLastValue="0"/>
+    <field name="gesetzlicheGrundlageCode" reuseLastValue="0"/>
+    <field name="gliederung1" reuseLastValue="0"/>
+    <field name="gliederung2" reuseLastValue="0"/>
+    <field name="gmlDescription" reuseLastValue="0"/>
+    <field name="gmlId" reuseLastValue="0"/>
+    <field name="gmlName" reuseLastValue="0"/>
+    <field name="gml_id" reuseLastValue="0"/>
+    <field name="gueltigkeitBeginn" reuseLastValue="0"/>
+    <field name="gueltigkeitEnde" reuseLastValue="0"/>
+    <field name="h" reuseLastValue="0"/>
+    <field name="hMax" reuseLastValue="0"/>
+    <field name="hMin" reuseLastValue="0"/>
+    <field name="hUeberBezugspunkt" reuseLastValue="0"/>
+    <field name="hUeberBezugspunktCode" reuseLastValue="0"/>
+    <field name="hZwingend" reuseLastValue="0"/>
+    <field name="h_uom" reuseLastValue="0"/>
+    <field name="hatGenerAttribut" reuseLastValue="0"/>
+    <field name="hinweis" reuseLastValue="0"/>
+    <field name="hoehenangabe" reuseLastValue="0"/>
+    <field name="hoehenbezug" reuseLastValue="0"/>
+    <field name="informell" reuseLastValue="0"/>
+    <field name="laermkontingent" reuseLastValue="0"/>
+    <field name="laermkontingentGebiet" reuseLastValue="0"/>
+    <field name="nachrichtlicheUebernahme" reuseLastValue="0"/>
+    <field name="nutzungsform" reuseLastValue="0"/>
+    <field name="nutzungsformCode" reuseLastValue="0"/>
+    <field name="realisiert" reuseLastValue="0"/>
+    <field name="rechtlicheCharakterisierung" reuseLastValue="0"/>
+    <field name="rechtlicheCharakterisierungCode" reuseLastValue="0"/>
+    <field name="rechtscharakter" reuseLastValue="0"/>
+    <field name="rechtscharakterCode" reuseLastValue="0"/>
+    <field name="rechtsstand" reuseLastValue="0"/>
+    <field name="rechtsstandCode" reuseLastValue="0"/>
+    <field name="rechtsverbindlich" reuseLastValue="0"/>
+    <field name="richtungssektorGrenze" reuseLastValue="0"/>
+    <field name="startBedingung" reuseLastValue="0"/>
+    <field name="startDatum" reuseLastValue="0"/>
+    <field name="text" reuseLastValue="0"/>
+    <field name="textAbschnitte" reuseLastValue="0"/>
+    <field name="uuid" reuseLastValue="0"/>
+    <field name="vermerk" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung1" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung1Code" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung2" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung2Code" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung3" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung3Code" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung4" reuseLastValue="0"/>
+    <field name="weitereBesondZweckbestimmung4Code" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung1" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung1Code" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung2" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung2Code" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung3" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung3Code" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung4" reuseLastValue="0"/>
+    <field name="weitereDetailZweckbestimmung4Code" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung1" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung1Code" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung2" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung2Code" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung3" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung3Code" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung4" reuseLastValue="0"/>
+    <field name="weitereZweckbestimmung4Code" reuseLastValue="0"/>
+    <field name="wirdAusgeglichenDurchABE" reuseLastValue="0"/>
+    <field name="wirdAusgeglichenDurchFlaeche" reuseLastValue="0"/>
+    <field name="wirdAusgeglichenDurchMassnahme" reuseLastValue="0"/>
+    <field name="wirdAusgeglichenDurchSPEFlaeche" reuseLastValue="0"/>
+    <field name="wirdAusgeglichenDurchSPEMassnahme" reuseLastValue="0"/>
+    <field name="wirdAusgeglichenVon" reuseLastValue="0"/>
+    <field name="wirdDargestelltDurch" reuseLastValue="0"/>
+    <field name="wmsSortDate" reuseLastValue="0"/>
+    <field name="xpPlanName" reuseLastValue="0"/>
+    <field name="xpPlanType" reuseLastValue="0"/>
+    <field name="xpVersion" reuseLastValue="0"/>
+    <field name="xplanMgrPlanId" reuseLastValue="0"/>
+    <field name="zugunstenVon" reuseLastValue="0"/>
+    <field name="zusatzkontingent" reuseLastValue="0"/>
+    <field name="zusatzkontingentFlaeche" reuseLastValue="0"/>
+    <field name="zweckbestimmung" reuseLastValue="0"/>
+    <field name="zweckbestimmungCode" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
