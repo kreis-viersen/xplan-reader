@@ -41,10 +41,6 @@ class XplanReader:
     def __init__(self, iface):
         self.iface = iface
 
-        # we need at least / wir benötigen mindestens
-        # QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
-        # https://github.com/qgis/QGIS/pull/48556
-        # https://github.com/qgis/QGIS/pull/48572
         # Python module "packaging" is not distributed e.g. with Debian
         # Python-Modul "packaging" ist z.B. für Debian nicht standardmäßig enthalten
         if sys.platform.startswith("win"):
@@ -55,6 +51,10 @@ class XplanReader:
             if version.parse(gdal.__version__) < version.parse('3.6.0'):
                 self.use_gfs_workaround = True
 
+            # we need at least / wir benötigen mindestens
+            # QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
+            # https://github.com/qgis/QGIS/pull/48556
+            # https://github.com/qgis/QGIS/pull/48572
             qgis_version = version.parse(Qgis.QGIS_VERSION.split('-')[0])
             if qgis_version < version.parse('3.26.0') \
             and not version.parse('3.22.8') < qgis_version < version.parse('3.23.0'):
@@ -147,8 +147,11 @@ class XplanReader:
                     if(next(gml_root.iter('{' + xplan_ns_uri + '}' + elem)).tag):
                         plan_category = elem
                         self.logMessage('Plankategorie: ' + plan_category)
+
                         break
+
                 except:
+
                     continue
 
             try:
