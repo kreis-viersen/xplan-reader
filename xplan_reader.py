@@ -140,7 +140,7 @@ class XplanReader:
                 try:
                     if(next(gml_root.iter('{' + xplan_ns_uri + '}' + elem)).tag):
                         plan_category = elem
-                        self.logMessage('Plankategorie: ' + elem)
+                        self.logMessage('Plankategorie: ' + plan_category)
                         break
                 except:
                     continue
