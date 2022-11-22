@@ -41,15 +41,16 @@ class XplanReader:
     def __init__(self, iface):
         self.iface = iface
 
+        self.use_gfs_workaround = True
+
         # Python module "packaging" is not distributed e.g. with Debian
         # Python-Modul "packaging" ist z.B. für Debian nicht standardmäßig enthalten
         if sys.platform.startswith("win"):
             from packaging import version
 
             # GFS-workaround is not needed for GDAL >=3.6.0
-            self.use_gfs_workaround = False
-            if version.parse(gdal.__version__) < version.parse('3.6.0'):
-                self.use_gfs_workaround = True
+            if version.parse(gdal.__version__) >= version.parse('3.6.0'):
+                self.use_gfs_workaround = False
 
             # we need at least / wir benötigen mindestens
             # QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
