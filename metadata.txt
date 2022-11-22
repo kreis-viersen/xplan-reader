@@ -17,8 +17,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.6.0:
-    - Verwende GFS-Workaround nur für GDAL < 3.6.0
+changelog=unreleased:
+    - diverse Verbesserungen für andere Betriebssysteme als Windows
+    v0.6.0:
     - Verwende den Namen von *_Plan für Gruppennamen (wenn vorhanden)
     - Behebe Fehler wenn GFS nicht erzeugt werden kann
     - Gemeindename wird dem Gruppennamen hinzugefügt (wenn vorhanden)
