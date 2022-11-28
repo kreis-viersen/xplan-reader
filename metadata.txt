@@ -18,6 +18,7 @@ icon=xplan_reader_icon.png
 server=False
 deprecated=False
 changelog=unreleased:
+    - Zoome auf bestimmte, runde Maßstäbe
     - diverse Verbesserungen für andere Betriebssysteme als Windows
     v0.6.0:
     - Verwende GFS-Workaround nur für GDAL < 3.6.0

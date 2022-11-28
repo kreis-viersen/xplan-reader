@@ -1052,9 +1052,19 @@ class XplanReader:
 
             def onCanvasRefreshed():
                 canvas.mapCanvasRefreshed.disconnect(onCanvasRefreshed)
+                scale = canvas.scale()
                 # maximum scale 1:1000
-                if canvas.scale() < 1000:
+                if scale < 1000:
                     canvas.zoomScale(1000)
+                elif 1000 < scale < 2000:
+                    canvas.zoomScale(2000)
+                elif 2000 < scale < 4000:
+                    canvas.zoomScale(4000)
+                elif 4000 < scale < 8000:
+                    canvas.zoomScale(8000)
+                elif 8000 < scale < 16000:
+                    canvas.zoomScale(16000)
+
                     canvas.refresh()
 
             canvas.mapCanvasRefreshed.connect(onCanvasRefreshed)
