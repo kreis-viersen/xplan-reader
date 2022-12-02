@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis readOnly="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" styleCategories="LayerConfiguration|Symbology|Symbology3D|Labeling|Forms|Actions|MapTips|Diagrams|AttributeTable|Rendering|CustomProperties|GeometryOptions|Relations|Temporal|Legend|Elevation|Notes" hasScaleBasedVisibilityFlag="0" version="3.26.3-Buenos Aires" maxScale="0" symbologyReferenceScale="-1" simplifyMaxScale="1" labelsEnabled="0" simplifyLocal="1" minScale="0">
+<qgis readOnly="0" simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyDrawingTol="1" styleCategories="LayerConfiguration|Symbology|Symbology3D|Labeling|Forms|Actions|MapTips|Diagrams|AttributeTable|Rendering|CustomProperties|GeometryOptions|Relations|Temporal|Legend|Elevation|Notes" hasScaleBasedVisibilityFlag="0" version="3.26.3-Buenos Aires" maxScale="0" symbologyReferenceScale="-1" simplifyMaxScale="1" labelsEnabled="0" simplifyLocal="1" minScale="100000000">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -41,7 +41,7 @@
             <Option value="MM" name="dash_pattern_offset_unit" type="QString"/>
             <Option value="0" name="draw_inside_polygon" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
-            <Option value="133,182,111,255" name="line_color" type="QString"/>
+            <Option value="213,180,60,255" name="line_color" type="QString"/>
             <Option value="solid" name="line_style" type="QString"/>
             <Option value="0.6" name="line_width" type="QString"/>
             <Option value="MM" name="line_width_unit" type="QString"/>
@@ -69,7 +69,7 @@
           <prop k="dash_pattern_offset_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="bevel"/>
-          <prop k="line_color" v="133,182,111,255"/>
+          <prop k="line_color" v="213,180,60,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="0.6"/>
           <prop k="line_width_unit" v="MM"/>
@@ -108,24 +108,24 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
-            <Option value="133,182,111,255" name="color" type="QString"/>
+            <Option value="213,180,60,255" name="color" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="0,0" name="offset" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
             <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="95,130,79,255" name="outline_color" type="QString"/>
+            <Option value="152,129,43,255" name="outline_color" type="QString"/>
             <Option value="solid" name="outline_style" type="QString"/>
             <Option value="0.2" name="outline_width" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
             <Option value="solid" name="style" type="QString"/>
           </Option>
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="133,182,111,255"/>
+          <prop k="color" v="213,180,60,255"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="95,130,79,255"/>
+          <prop k="outline_color" v="152,129,43,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.2"/>
           <prop k="outline_width_unit" v="MM"/>
@@ -153,14 +153,14 @@
           <Option type="Map">
             <Option value="0" name="angle" type="QString"/>
             <Option value="square" name="cap_style" type="QString"/>
-            <Option value="133,182,111,255" name="color" type="QString"/>
+            <Option value="213,180,60,255" name="color" type="QString"/>
             <Option value="1" name="horizontal_anchor_point" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="diamond" name="name" type="QString"/>
             <Option value="0,0" name="offset" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
             <Option value="MM" name="offset_unit" type="QString"/>
-            <Option value="95,130,79,255" name="outline_color" type="QString"/>
+            <Option value="152,129,43,255" name="outline_color" type="QString"/>
             <Option value="solid" name="outline_style" type="QString"/>
             <Option value="0.2" name="outline_width" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale" type="QString"/>
@@ -173,14 +173,14 @@
           </Option>
           <prop k="angle" v="0"/>
           <prop k="cap_style" v="square"/>
-          <prop k="color" v="133,182,111,255"/>
+          <prop k="color" v="213,180,60,255"/>
           <prop k="horizontal_anchor_point" v="1"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="name" v="diamond"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="95,130,79,255"/>
+          <prop k="outline_color" v="152,129,43,255"/>
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.2"/>
           <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -202,8 +202,8 @@
     </profileMarkerSymbol>
   </elevation>
   <renderer-v2 enableorderby="0" type="RuleRenderer" forceraster="0" symbollevels="0" referencescale="-1">
-    <rules key="{65317f7c-d098-4eb8-b399-e73214f756bb}">
-      <rule symbol="0" scalemaxdenom="2001" scalemindenom="1" key="{763d7e0a-05f4-4331-9c43-478be85778ce}"/>
+    <rules key="{04f8f3a1-3c15-41eb-afd7-cf029b89393f}">
+      <rule symbol="0" key="{f86f41c3-91d5-47c9-8ce0-59f728ca52a1}"/>
     </rules>
     <symbols>
       <symbol alpha="1" is_animated="0" name="0" clip_to_extent="1" type="fill" force_rhr="0" frame_rate="10">
@@ -217,7 +217,7 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale" type="QString"/>
-            <Option value="6,5,1,255" name="color" type="QString"/>
+            <Option value="114,155,111,91" name="color" type="QString"/>
             <Option value="bevel" name="joinstyle" type="QString"/>
             <Option value="0,0" name="offset" type="QString"/>
             <Option value="3x:0,0,0,0,0,0" name="offset_map_unit_scale" type="QString"/>
@@ -226,10 +226,10 @@
             <Option value="solid" name="outline_style" type="QString"/>
             <Option value="0.26" name="outline_width" type="QString"/>
             <Option value="MM" name="outline_width_unit" type="QString"/>
-            <Option value="b_diagonal" name="style" type="QString"/>
+            <Option value="solid" name="style" type="QString"/>
           </Option>
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="6,5,1,255"/>
+          <prop k="color" v="114,155,111,91"/>
           <prop k="joinstyle" v="bevel"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -238,7 +238,7 @@
           <prop k="outline_style" v="solid"/>
           <prop k="outline_width" v="0.26"/>
           <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="b_diagonal"/>
+          <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
               <Option value="" name="name" type="QString"/>
@@ -264,7 +264,7 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory diagramOrientation="Up" spacingUnitScale="3x:0,0,0,0,0,0" opacity="1" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" width="15" showAxis="1" enabled="0" backgroundColor="#ffffff" penAlpha="255" maxScaleDenominator="0" rotationOffset="270" backgroundAlpha="255" minimumSize="0" sizeType="MM" direction="0" scaleBasedVisibility="0" spacing="5" spacingUnit="MM" minScaleDenominator="0" scaleDependency="Area" height="15" labelPlacementMethod="XHeight" penWidth="0" lineSizeType="MM" barWidth="5">
+    <DiagramCategory diagramOrientation="Up" spacingUnitScale="3x:0,0,0,0,0,0" opacity="1" sizeScale="3x:0,0,0,0,0,0" penColor="#000000" lineSizeScale="3x:0,0,0,0,0,0" width="15" showAxis="1" enabled="0" backgroundColor="#ffffff" penAlpha="255" maxScaleDenominator="1e+08" rotationOffset="270" backgroundAlpha="255" minimumSize="0" sizeType="MM" direction="0" scaleBasedVisibility="0" spacing="5" spacingUnit="MM" minScaleDenominator="0" scaleDependency="Area" height="15" labelPlacementMethod="XHeight" penWidth="0" lineSizeType="MM" barWidth="5">
       <fontProperties underline="0" strikethrough="0" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style="" italic="0" bold="0"/>
       <axisSymbol>
         <symbol alpha="1" is_animated="0" name="" clip_to_extent="1" type="line" force_rhr="0" frame_rate="10">
@@ -394,48 +394,6 @@
         </config>
       </editWidget>
     </field>
-    <field name="art">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="knotenpunkt">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="geschwindigkeit">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="geschwindigkeit_uom">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="schenkellaenge">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="schenkellaenge_uom">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
   </fieldConfiguration>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
@@ -446,12 +404,6 @@
       <column name="rechtsstand" type="field" width="-1" hidden="0"/>
       <column name="rechtscharakter" type="field" width="-1" hidden="0"/>
       <column name="flaechenschluss" type="field" width="-1" hidden="0"/>
-      <column name="art" type="field" width="-1" hidden="0"/>
-      <column name="knotenpunkt" type="field" width="-1" hidden="0"/>
-      <column name="geschwindigkeit" type="field" width="-1" hidden="0"/>
-      <column name="geschwindigkeit_uom" type="field" width="-1" hidden="0"/>
-      <column name="schenkellaenge" type="field" width="-1" hidden="0"/>
-      <column name="schenkellaenge_uom" type="field" width="-1" hidden="0"/>
       <column type="actions" width="-1" hidden="1"/>
     </columns>
   </attributetableconfig>
@@ -482,40 +434,22 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <editable>
-    <field name="art" editable="1"/>
     <field name="flaechenschluss" editable="1"/>
-    <field name="geschwindigkeit" editable="1"/>
-    <field name="geschwindigkeit_uom" editable="1"/>
     <field name="gml_id" editable="1"/>
-    <field name="knotenpunkt" editable="1"/>
     <field name="rechtscharakter" editable="1"/>
     <field name="rechtsstand" editable="1"/>
-    <field name="schenkellaenge" editable="1"/>
-    <field name="schenkellaenge_uom" editable="1"/>
   </editable>
   <labelOnTop>
-    <field labelOnTop="0" name="art"/>
     <field labelOnTop="0" name="flaechenschluss"/>
-    <field labelOnTop="0" name="geschwindigkeit"/>
-    <field labelOnTop="0" name="geschwindigkeit_uom"/>
     <field labelOnTop="0" name="gml_id"/>
-    <field labelOnTop="0" name="knotenpunkt"/>
     <field labelOnTop="0" name="rechtscharakter"/>
     <field labelOnTop="0" name="rechtsstand"/>
-    <field labelOnTop="0" name="schenkellaenge"/>
-    <field labelOnTop="0" name="schenkellaenge_uom"/>
   </labelOnTop>
   <reuseLastValue>
-    <field name="art" reuseLastValue="0"/>
     <field name="flaechenschluss" reuseLastValue="0"/>
-    <field name="geschwindigkeit" reuseLastValue="0"/>
-    <field name="geschwindigkeit_uom" reuseLastValue="0"/>
     <field name="gml_id" reuseLastValue="0"/>
-    <field name="knotenpunkt" reuseLastValue="0"/>
     <field name="rechtscharakter" reuseLastValue="0"/>
     <field name="rechtsstand" reuseLastValue="0"/>
-    <field name="schenkellaenge" reuseLastValue="0"/>
-    <field name="schenkellaenge_uom" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
