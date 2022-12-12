@@ -1072,6 +1072,10 @@ class XplanReader:
                     canvas.zoomScale(128000)
                 elif 128000 < scale < 256000:
                     canvas.zoomScale(256000)
+                elif 256000 < scale < 512000:
+                    canvas.zoomScale(512000)
+                elif 512000 < scale < 1024000:
+                    canvas.zoomScale(1024000)
 
                     canvas.refresh()
 
