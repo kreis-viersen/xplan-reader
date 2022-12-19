@@ -241,7 +241,6 @@ class XplanReader:
             # die Liste hier definiert die Reihenfolge - ganz oben hier der unterste in QGIS angezeigte Layer
             # Source / Liste von https://xleitstelle.de/releases/objektartenkatalog_5_3
 
-# -------------------- surfaces / ab hier Flaechen ---------------------------------------------------------- #
             addXplanLayer('RP_Plan', 'Flaeche')
             addXplanLayer('RP_Bereich', 'Flaeche')
             addXplanLayer('RP_Achse', 'Flaeche')
@@ -632,7 +631,6 @@ class XplanReader:
             addXplanLayer('XP_VerbundenerPlan', 'Flaeche')
             addXplanLayer('XP_VerfahrensMerkmal', 'Flaeche')
             addXplanLayer('XP_WirksamkeitBedingung', 'Flaeche')
-            # -------------------- lines / ab hier Linien ------------------------------------------------------------ #
             addXplanLayer('BP_Plan', 'Linie')
             addXplanLayer('BP_AbstandsFlaeche', 'Linie')
             addXplanLayer('BP_AbweichungVonUeberbaubererGrundstuecksFlaeche', 'Linie')
@@ -830,8 +828,6 @@ class XplanReader:
             addXplanLayer('XP_VerbundenerPlan', 'Linie')
             addXplanLayer('XP_VerfahrensMerkmal', 'Linie')
             addXplanLayer('XP_WirksamkeitBedingung', 'Linie')
-
-            # -------------------- points / ab hier Punkte ------------------------------------------------------------ #
             addXplanLayer('BP_Plan', 'Punkt')
             addXplanLayer('BP_AbstandsFlaeche', 'Punkt')
             addXplanLayer('BP_AbweichungVonUeberbaubererGrundstuecksFlaeche', 'Punkt')
