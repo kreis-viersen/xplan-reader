@@ -43,8 +43,10 @@ class XplanReader:
         self.use_gfs_workaround = False
 
         def versionstringToTuple(vstring):
-                return tuple(map(int, (vstring.split("."))))
-
+            # for something like 3.7.0dev-52baae2708-dirty
+            first_part = vstring.split("dev")[0]
+            return tuple(map(int, (first_part.split("."))))
+            
         # GFS-workaround is not needed for GDAL >=3.6.0
         if versionstringToTuple(gdal.__version__) < versionstringToTuple('3.6.0'):
             self.use_gfs_workaround = True
