@@ -1040,7 +1040,7 @@ class XplanReader:
             addXplanLayer('XP_Objekt', 'Punkt')
             addXplanLayer('XP_Plan', 'Punkt')
             addXplanLayer('XP_Plangeber', 'Punkt')
-            # addXplanLayer('XP_PPO', 'Punkt') liefert nichts sinnvolles
+            addXplanLayer('XP_PPO', 'Punkt')
             addXplanLayer('XP_Praesentationsobjekt', 'Punkt')
             addXplanLayer('XP_PTO', 'Punkt')
             addXplanLayer('XP_Rasterdarstellung', 'Punkt')

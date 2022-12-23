@@ -17,9 +17,11 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.9.0:
+changelog=unreleased:
+    - Lade auch XP_PPO
+    v0.9.0:
     - BP_Bereich ohne eigene Geometrie(n) wird auch geladen 
-    - eingige Styles aktualisiert
+    - einige Styles aktualisiert
     v0.8.0:
     - Zoome auf weitere bestimmte, runde Maßstäbe
     - Behebe Fehler bei der Verwendung von GDAL-Entwicklungsversionen
