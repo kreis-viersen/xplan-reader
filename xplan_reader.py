@@ -211,6 +211,8 @@ class XplanReader:
 
             layers = [l.GetName() for l in driver.Open(my_gml)]
 
+            self.create_bp_bereich = True
+
             def addXplanLayer(layername, gtype):
                 if layername in layers:
                     if gtype == 'Punkt':
@@ -221,9 +223,23 @@ class XplanReader:
                         geomtype =  'MultiSurface'
                     elif gtype == 'Text':
                         geomtype =  ""
+                    
+                    # geometry is optional for BP_Bereich and we only want to create it once
+                    if layername == 'BP_Bereich':
+                        if self.create_bp_bereich == True:
+                            vlayer = QgsVectorLayer(my_gml + '|layername=' + layername + '|geometrytype=' + geomtype, layername, 'ogr')
+                        else:
 
-                    vlayer = QgsVectorLayer(my_gml + '|layername=' + layername + '|geometrytype=' + geomtype, layername, 'ogr')
+                            return
+
+                    else:
+                        vlayer = QgsVectorLayer(my_gml + '|layername=' + layername + '|geometrytype=' + geomtype, layername, 'ogr')
+
                     if vlayer.featureCount() != 0:
+                        if layername == 'BP_Bereich': 
+                            self.create_bp_bereich = False
+                            if vlayer.isSpatial():
+                                gtype = 'Flaeche'
                         if not vlayer.isValid():
                             self.logMessage(layername + ' (' + gtype + ') konnte nicht geladen werden!', 2)
                         else:
@@ -242,6 +258,10 @@ class XplanReader:
             # this list defines the order of layers in QGIS
             # die Liste hier definiert die Reihenfolge - ganz oben hier der unterste in QGIS angezeigte Layer
             # Source / Liste von https://xleitstelle.de/releases/objektartenkatalog_5_3
+
+            addXplanLayer('BP_TextAbschnitt', 'Text')
+            addXplanLayer('BP_Bereich', 'Text')
+
 
             addXplanLayer('RP_Plan', 'Flaeche')
             addXplanLayer('RP_Bereich', 'Flaeche')
@@ -639,7 +659,7 @@ class XplanReader:
             addXplanLayer('BP_AufschuettungsFlaeche', 'Linie')
             addXplanLayer('BP_AusgleichsFlaeche', 'Linie')
             # addXplanLayer('BP_BaugebietsTeilFlaeche', 'Linie') -> existiert nur als Flaeche
-            addXplanLayer('BP_Bereich', 'Linie')
+            # addXplanLayer('BP_Bereich', 'Linie') -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer('BP_BesondererNutzungszweckFlaeche', 'Linie')
             addXplanLayer('BP_BodenschaetzeFlaeche', 'Linie')
             addXplanLayer('BP_EingriffsBereich', 'Linie')
@@ -836,7 +856,7 @@ class XplanReader:
             addXplanLayer('BP_AufschuettungsFlaeche', 'Punkt')
             addXplanLayer('BP_AusgleichsFlaeche', 'Punkt')
             # addXplanLayer('BP_BaugebietsTeilFlaeche', 'Punkt') -> existiert nur als Flaeche
-            addXplanLayer('BP_Bereich', 'Punkt')
+            # addXplanLayer('BP_Bereich', 'Punkt') -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer('BP_BesondererNutzungszweckFlaeche', 'Punkt')
             addXplanLayer('BP_BodenschaetzeFlaeche', 'Punkt')
             addXplanLayer('BP_EingriffsBereich', 'Punkt')
@@ -1033,8 +1053,6 @@ class XplanReader:
             addXplanLayer('XP_VerbundenerPlan', 'Punkt')
             addXplanLayer('XP_VerfahrensMerkmal', 'Punkt')
             addXplanLayer('XP_WirksamkeitBedingung', 'Punkt')
-            # -------------------- text / ab hier Text ------------------------------------------------------------ #
-            addXplanLayer('BP_TextAbschnitt', 'Text')
 
             # collapse layers / klappe Layer zusammen
             for group in [child for child in root.children() if child.nodeType() == 0]:
