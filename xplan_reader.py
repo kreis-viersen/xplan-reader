@@ -225,6 +225,7 @@ class XplanReader:
                     vlayer = QgsVectorLayer(my_gml + '|layername=' + layername + '|geometrytype=' + geomtype, layername, 'ogr')
 
                     if vlayer.featureCount() != 0:
+                        # geometry is optional for BP_Bereich
                         if layername == 'BP_Bereich' and vlayer.isSpatial():
                             gtype = 'Flaeche'
                         if not vlayer.isValid():
