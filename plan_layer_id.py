@@ -10,7 +10,7 @@ def plan_layer_id(feature, parent, context):
     <h2>Beispiele:</h2>
     <ul>
       <li>plan_layer_id() -> 'BP_Plan_aab900c2_5501_4e24_ac7d_66129fd4294a'</li>
-      <li>aggregate(layer:= plan_layer_id(), aggregate:='collect', expression:=$geometry) -> Geometrie des *_Plan-Layers</li>
+      <li>aggregate(layer:=plan_layer_id(), aggregate:='collect', expression:=$geometry) -> Geometrie des *_Plan-Layers</li>
     </ul>
     """
     root = QgsProject.instance().layerTreeRoot()
