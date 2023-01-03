@@ -19,7 +19,7 @@ Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestim
 
 Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, technische Validität lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
 
-## Mitmachen 
+## Mitmachen beim XPlan-Reader
 
 Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen. 
 
