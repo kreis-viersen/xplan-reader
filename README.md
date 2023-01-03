@@ -27,7 +27,7 @@ Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen.
 
 Der XPLAN-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. Weitere Beispiel-Pläne sind uns daher auch gerne willkommen und können per E-Mail an [open@kreis-viersen.de] gesendet werden. Zu eingesandten Plänen gibt es von uns ein Feedback - gerne können Pläne auch per Videokonferenz gemeinsam analysiert werden.
 
-### ...mit eigenen QGIS-Stilen:
+### ...mit eigenen QGIS-Stilen
 
 Das Plugin liefert bei der Installation bereits ein paar [QGIS-Stildateien] mit, aber es gibt noch viel zu tun. :-)
 
