@@ -25,11 +25,13 @@ from lxml import etree
 from osgeo import gdal, ogr
 from pathlib import Path
 
-from qgis.core import Qgis, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
+from qgis.core import Qgis, QgsExpression, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
 
 from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction, QDialog, QMenu, QMessageBox
+
+from .plan_layer_id import plan_layer_id
 
 class LoadDialog(QDialog):
     def __init__(self, caller):
@@ -87,6 +89,8 @@ class XplanReader:
         self.iface.removePluginMenu('&XPlan-reader', self.action)
         self.iface.removePluginMenu('&XPlan-reader', self.aboutAction)
         self.iface.removeToolBarIcon(self.action)
+
+        QgsExpression.unregisterFunction(plan_layer_id.name())
 
         del self.action
 
