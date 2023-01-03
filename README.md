@@ -19,9 +19,17 @@ Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestim
 
 Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, technische Validität lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
 
-## Mitmachen mit eigenen QGIS-Stilen !
+## Mitmachen beim XPlan-Reader
 
-Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen. Das Plugin liefert bei der Installation bereits ein paar [QGIS-Stildateien] mit, aber es gibt noch viel zu tun. :-)
+Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen. 
+
+### ...mit XPlanGML-Dateien zum Testen
+
+Der XPLAN-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. Weitere Beispiel-Pläne sind uns daher auch gerne willkommen und können per E-Mail an [open@kreis-viersen.de] gesendet werden. Zu eingesandten Plänen gibt es von uns ein Feedback - gerne können Pläne auch per Videokonferenz gemeinsam analysiert werden.
+
+### ...mit eigenen QGIS-Stilen:
+
+Das Plugin liefert bei der Installation bereits ein paar [QGIS-Stildateien] mit, aber es gibt noch viel zu tun. :-)
 
 Es existieren noch nicht für alle Objektarten [QGIS-Stildateien] - auch besteht ggf. Bedarf bestehende Stile zu verbessern.
 
