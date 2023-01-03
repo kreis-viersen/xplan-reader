@@ -45,7 +45,7 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>&lt;a href=&quot;https://github.com/kreis-viersen/xplan-reader/blob/main/README.md#mitmachen-beim-xplan-reader&quot;&gt;Mitmachen beim XPlan-Reader !&lt;/a&gt;&lt;br&gt;&lt;br&gt;Der XPLAN-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. &lt;br&gt;Weitere Beispiel-Pläne sind uns daher auch gerne willkommen und können per E-Mail an &lt;a href=&quot;mailto:open@kreis-viersen.de?subject=xplan-reader&quot;&gt;open@kreis-viersen.de&lt;/a&gt;&lt;br&gt;gesendet werden.&lt;br&gt;Zu eingesandten Plänen gibt es von uns ein Feedback und gerne können Pläne auch per Videokonferenz gemeinsam&lt;br&gt;analysiert werden.</string>
+        <string>&lt;a href=&quot;https://github.com/kreis-viersen/xplan-reader/blob/main/README.md#mitmachen-beim-xplan-reader&quot;&gt;Mitmachen beim XPlan-Reader !&lt;/a&gt;&lt;br&gt;&lt;br&gt;Der XPlan-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. &lt;br&gt;Weitere Beispiel-Pläne sind uns daher auch gerne willkommen und können per E-Mail an &lt;a href=&quot;mailto:open@kreis-viersen.de?subject=xplan-reader&quot;&gt;open@kreis-viersen.de&lt;/a&gt;&lt;br&gt;gesendet werden.&lt;br&gt;Zu eingesandten Plänen gibt es von uns ein Feedback und gerne können Pläne auch per Videokonferenz gemeinsam&lt;br&gt;analysiert werden.</string>
        </property>
        <property name="openExternalLinks">
         <bool>true</bool>
