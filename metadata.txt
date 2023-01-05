@@ -17,7 +17,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.10.0:
+changelog=unreleased:
+    - Erstelle Ausdrucksvariable mit vereinfachter *_Plan-Geometrie 
+    v0.10.0:
     - Aufruf zum Einsenden von Beispiel-Plänen
     - Eigene Funktion "plan_layer_id" für Ausdrücke
     - Lade auch XP_PPO

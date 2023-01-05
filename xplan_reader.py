@@ -25,7 +25,7 @@ from lxml import etree
 from osgeo import gdal, ogr
 from pathlib import Path
 
-from qgis.core import Qgis, QgsExpression, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
+from qgis.core import Qgis, QgsExpression, QgsExpressionContextUtils, QgsFeatureRequest, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
 
 from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
@@ -235,15 +235,26 @@ class XplanReader:
                         if not vlayer.isValid():
                             self.logMessage(layername + ' (' + gtype + ') konnte nicht geladen werden!', 2)
                         else:
+                            if vlayer.isSpatial():
+                                self.group_extent.combineExtentWith(vlayer.extent())
+
+                                if layername in ['BP_Plan', 'FP_Plan', 'LP_Plan', 'RP_Plan', 'SO_Plan']:
+                                    request = QgsFeatureRequest()
+                                    request.setLimit(1)
+                                    for feature in vlayer.getFeatures(request):
+                                        geom = feature.geometry()
+                                        geom = geom.convexHull().convertToType(1).simplify(5)
+
+                                        var_name = 'vereinfacht_' + vlayer.id()
+                                        QgsExpressionContextUtils.setProjectVariable(QgsProject.instance(), var_name, geom)
+                                        self.logMessage('Ausdrucksvariable erstellt: ' + var_name)
+
                             QgsProject.instance().addMapLayer(vlayer, False)
 
                             style = os.path.join(self.style_dir, layername + '_' + gtype + '.qml')
                             if os.path.isfile(style):
                                 vlayer.loadNamedStyle(style)
                                 self.logMessage('Style verwendet: ' + style)
-
-                            if vlayer.isSpatial():
-                                self.group_extent.combineExtentWith(vlayer.extent())
 
                             new_group.insertLayer(0, vlayer)
 
