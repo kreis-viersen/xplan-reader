@@ -239,15 +239,19 @@ class XplanReader:
                                 self.group_extent.combineExtentWith(vlayer.extent())
 
                                 if layername in ['BP_Plan', 'FP_Plan', 'LP_Plan', 'RP_Plan', 'SO_Plan']:
+                                    var_name_xplanversion = 'xplanversion_' + vlayer.id()
+                                    QgsExpressionContextUtils.setProjectVariable(QgsProject.instance(), var_name_xplanversion, float(xplan_version))
+                                    self.logMessage('Ausdrucksvariable erstellt: ' + var_name_xplanversion)
+
                                     request = QgsFeatureRequest()
                                     request.setLimit(1)
                                     for feature in vlayer.getFeatures(request):
                                         geom = feature.geometry()
                                         geom = geom.convexHull().convertToType(1).simplify(5)
 
-                                        var_name = 'vereinfacht_' + vlayer.id()
-                                        QgsExpressionContextUtils.setProjectVariable(QgsProject.instance(), var_name, geom)
-                                        self.logMessage('Ausdrucksvariable erstellt: ' + var_name)
+                                        var_name_simplified = 'vereinfacht_' + vlayer.id()
+                                        QgsExpressionContextUtils.setProjectVariable(QgsProject.instance(), var_name_simplified, geom)
+                                        self.logMessage('Ausdrucksvariable erstellt: ' + var_name_simplified)
 
                             QgsProject.instance().addMapLayer(vlayer, False)
 
