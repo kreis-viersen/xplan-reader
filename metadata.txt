@@ -6,7 +6,7 @@ about=Remark:
 
       Mit diesem Tool kann eine XPlanGML-Datei in QGIS mit vordefinierter Layerreihenfolge und Styling importiert werden.
 tags=xplan,xplanung,bplan,bebauungsplan
-version=0.10.0
+version=0.11.0
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
 qgisMinimumVersion=3.26
 author=Kreis Viersen
@@ -17,7 +17,7 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=unreleased:
+changelog=v0.11.0:
     - Performancesteigerung für Layer mit externen Beschriftungsfeldern
     - Erstelle Ausdrucksvariable mit XPlan-Version des Plans 
     - Erstelle Ausdrucksvariable mit vereinfachter *_Plan-Geometrie 
