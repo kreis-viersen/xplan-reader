@@ -20,6 +20,7 @@ deprecated=False
 changelog=unreleased:
     - Erstelle Ausdrucksvariable mit XPlan-Version des Plans 
     - Erstelle Ausdrucksvariable mit vereinfachter *_Plan-Geometrie 
+    - neue und geänderte Styles
     v0.10.0:
     - Aufruf zum Einsenden von Beispiel-Plänen
     - Eigene Funktion "plan_layer_id" für Ausdrücke
