@@ -18,6 +18,7 @@ icon=xplan_reader_icon.png
 server=False
 deprecated=False
 changelog=unreleased:
+    - Performancesteigerung für Layer mit externen Beschriftungsfeldern
     - Erstelle Ausdrucksvariable mit XPlan-Version des Plans 
     - Erstelle Ausdrucksvariable mit vereinfachter *_Plan-Geometrie 
     - neue und geänderte Styles
