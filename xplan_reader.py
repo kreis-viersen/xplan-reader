@@ -646,7 +646,6 @@ class XplanReader:
             # addXplanLayer('XP_PPO', 'Flaeche') -> existiert nur als Punkt
             addXplanLayer('XP_Praesentationsobjekt', 'Flaeche')
             # addXplanLayer('XP_PTO', 'Flaeche') -> existiert nur als Punkt
-            addXplanLayer('XP_Rasterdarstellung', 'Flaeche')
             addXplanLayer('XP_SPEMassnahmenDaten', 'Flaeche')
             addXplanLayer('XP_SpezExterneReferenz', 'Flaeche')
             addXplanLayer('XP_StringAttribut', 'Flaeche')
@@ -843,7 +842,6 @@ class XplanReader:
             # addXplanLayer('XP_PPO', 'Linie') -> existiert nur als Punkt
             addXplanLayer('XP_Praesentationsobjekt', 'Linie')
             # addXplanLayer('XP_PTO', 'Linie') -> -> existiert nur als Punkt
-            addXplanLayer('XP_Rasterdarstellung', 'Linie')
             addXplanLayer('XP_SPEMassnahmenDaten', 'Linie')
             addXplanLayer('XP_SpezExterneReferenz', 'Linie')
             addXplanLayer('XP_StringAttribut', 'Linie')
@@ -1046,7 +1044,6 @@ class XplanReader:
             addXplanLayer('XP_PPO', 'Punkt')
             addXplanLayer('XP_Praesentationsobjekt', 'Punkt')
             addXplanLayer('XP_PTO', 'Punkt')
-            addXplanLayer('XP_Rasterdarstellung', 'Punkt')
             addXplanLayer('XP_SPEMassnahmenDaten', 'Punkt')
             addXplanLayer('XP_SpezExterneReferenz', 'Punkt')
             addXplanLayer('XP_StringAttribut', 'Punkt')
@@ -1057,6 +1054,7 @@ class XplanReader:
             addXplanLayer('XP_VerfahrensMerkmal', 'Punkt')
             addXplanLayer('XP_WirksamkeitBedingung', 'Punkt')
 
+            addXplanLayer('XP_Rasterdarstellung', 'Text')
             addXplanLayer('BP_TextAbschnitt', 'Text')
 
 
