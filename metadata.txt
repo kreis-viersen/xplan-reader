@@ -17,7 +17,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.11.0:
+changelog=unreleased:
+    - XP_Rasterdarstellung existiert nur ohne Geometrie
+    v0.11.0:
     - Performancesteigerung für Layer mit externen Beschriftungsfeldern
     - Erstelle Ausdrucksvariable mit XPlan-Version des Plans 
     - Erstelle Ausdrucksvariable mit vereinfachter *_Plan-Geometrie 
