@@ -250,7 +250,11 @@ class XplanReader:
                                         geom = geom.convexHull().convertToType(1).simplify(5)
 
                                         var_name_simplified = 'vereinfacht_' + vlayer.id()
-                                        QgsExpressionContextUtils.setProjectVariable(QgsProject.instance(), var_name_simplified, geom)
+                                        if vlayer.crs().isGeographic():
+                                            precision = 5
+                                        else:
+                                            precision = 0
+                                        QgsExpressionContextUtils.setProjectVariable(QgsProject.instance(), var_name_simplified, geom.asWkt(precision))
                                         self.logMessage('Ausdrucksvariable erstellt: ' + var_name_simplified)
 
                             QgsProject.instance().addMapLayer(vlayer, False)

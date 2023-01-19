@@ -22,6 +22,7 @@ icon=xplan_reader_icon.png
 server=False
 deprecated=False
 changelog=unreleased:
+    - Verwende WKT für Variable mit vereinfachter *_Plan-Geometrie
     - XP_Rasterdarstellung existiert nur ohne Geometrie
     - viele neue und geänderte Styles
     v0.11.0:
