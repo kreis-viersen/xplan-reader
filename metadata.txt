@@ -23,6 +23,7 @@ server=False
 deprecated=False
 changelog=unreleased:
     - XP_Rasterdarstellung existiert nur ohne Geometrie
+    - viele neue und geänderte Styles
     v0.11.0:
     - Performancesteigerung für Layer mit externen Beschriftungsfeldern
     - Erstelle Ausdrucksvariable mit XPlan-Version des Plans 
