@@ -341,7 +341,7 @@
             </Option>
             <Option type="Map" name="PositionPoint">
               <Option type="bool" name="active" value="true"/>
-              <Option type="QString" name="expression" value="translate(&#xd;&#xa;closest_point(&#xd;&#xa;exterior_ring(&#xd;&#xa;buffer(&#xd;&#xa;var( 'vereinfacht_' +  plan_layer_id()) , @map_scale/30)),&#xd;&#xa;point_on_surface($geometry)&#xd;&#xa;), -@map_scale/90, 0)"/>
+              <Option type="QString" name="expression" value="translate(&#xd;&#xa;closest_point(&#xd;&#xa;exterior_ring(&#xd;&#xa;buffer(&#xd;&#xa;geom_from_wkt(var( 'vereinfacht_' +  plan_layer_id())) , @map_scale/30)),&#xd;&#xa;point_on_surface($geometry)&#xd;&#xa;), -@map_scale/90, 0)"/>
               <Option type="int" name="type" value="3"/>
             </Option>
           </Option>
