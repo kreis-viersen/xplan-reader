@@ -6,7 +6,7 @@
 - zur Qualitätssicherung
 - oder auch zum Erstellen eines QGIS-Server-Projektes, etwa um einen WMS eines Flächennutzungsplans zu veröffentlichen
 
-Fragen, Anmerkungen, Fehlermeldungen etc. können z.B. über ein [GitHub-Issue] oder auch gerne per E-Mail an [open@kreis-viersen.de] mitgeteilt werden.
+Fragen, Anmerkungen, Fehlermeldungen etc. können z.B. über ein Issue oder auch gerne per E-Mail an [open@kreis-viersen.de] mitgeteilt werden.
 
 <img src=./xplan-reader.gif>
 
