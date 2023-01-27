@@ -21,7 +21,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.12.0:
+changelog=unreleased:
+    - *_TextAbschnitt existiert nur ohne Geometrie
+    v0.12.0:
     - Verwende WKT für Variable mit vereinfachter *_Plan-Geometrie
     - XP_Rasterdarstellung existiert nur ohne Geometrie
     - viele neue und geänderte Styles
