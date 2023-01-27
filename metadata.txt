@@ -23,6 +23,7 @@ server=False
 deprecated=False
 changelog=unreleased:
     - *_TextAbschnitt existiert nur ohne Geometrie
+    - Reihenfolge der Styles geändert
     v0.12.0:
     - Verwende WKT für Variable mit vereinfachter *_Plan-Geometrie
     - XP_Rasterdarstellung existiert nur ohne Geometrie
