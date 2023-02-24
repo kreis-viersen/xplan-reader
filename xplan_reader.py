@@ -272,41 +272,38 @@ class XplanReader:
 
             addXplanLayer('RP_Plan', 'Flaeche')
             addXplanLayer('RP_Bereich', 'Flaeche')
+            addXplanLayer('RP_Forstwirtschaft', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_IndustrieGewerbe', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_Landwirtschaft', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_WohnenSiedlung', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_Gewaesser', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_Schienenverkehr', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_Siedlung', 'Flaeche') 
+            addXplanLayer('RP_Wasserverkehr', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_Entsorgung', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_Erholung', 'Flaeche') # Flächenfüller
+            addXplanLayer('RP_NaturLandschaft', 'Flaeche') # Flächenfüller
             addXplanLayer('RP_Achse', 'Flaeche')
             addXplanLayer('RP_Bodenschutz', 'Flaeche')
             addXplanLayer('RP_Einzelhandel', 'Flaeche')
             addXplanLayer('RP_Energieversorgung', 'Flaeche')
-            addXplanLayer('RP_Entsorgung', 'Flaeche')
             addXplanLayer('RP_Entwicklungsschwerpunkte', 'Flaeche')
-            addXplanLayer('RP_Erholung', 'Flaeche')
-            addXplanLayer('RP_ErneuerbareEnergie', 'Flaeche')
-            addXplanLayer('RP_Forstwirtschaft', 'Flaeche')
-            addXplanLayer('RP_Gewaesser', 'Flaeche')
             addXplanLayer('RP_Freiraum', 'Flaeche')
             addXplanLayer('RP_FreizeitErholung', 'Flaeche')
             addXplanLayer('RP_Funktionszuweisung', 'Flaeche')
             addXplanLayer('RP_GemeindeFunktionSiedlungsentwicklung', 'Flaeche')
             addXplanLayer('RP_GenerischesObjekt', 'Flaeche')
-            addXplanLayer('RP_Grenze', 'Flaeche')
             addXplanLayer('RP_GruenzugGruenzaesur', 'Flaeche')
             addXplanLayer('RP_Hochwasserschutz', 'Flaeche')
-            addXplanLayer('RP_IndustrieGewerbe', 'Flaeche')
             addXplanLayer('RP_Klimaschutz', 'Flaeche')
             addXplanLayer('RP_Kommunikation', 'Flaeche')
             addXplanLayer('RP_Kulturlandschaft', 'Flaeche')
-            addXplanLayer('RP_LaermschutzBauschutz', 'Flaeche')
             addXplanLayer('RP_Laermschutzbereich', 'Flaeche')
             addXplanLayer('RP_Luftverkehr', 'Flaeche')
-            addXplanLayer('RP_Landwirtschaft', 'Flaeche')
-            addXplanLayer('RP_NaturLandschaft', 'Flaeche')
-            addXplanLayer('RP_NaturschutzrechtlichesSchutzgebiet', 'Flaeche')
             addXplanLayer('RP_Planungsraum', 'Flaeche')
             addXplanLayer('RP_RadwegWanderweg', 'Flaeche')
             addXplanLayer('RP_Raumkategorie', 'Flaeche')
-            addXplanLayer('RP_Rohstoff', 'Flaeche')
             addXplanLayer('RP_Rohstoffsicherung', 'Flaeche')
-            addXplanLayer('RP_Schienenverkehr', 'Flaeche')
-            addXplanLayer('RP_Siedlung', 'Flaeche')
             addXplanLayer('RP_SonstigeInfrastruktur', 'Flaeche')
             addXplanLayer('RP_SonstigeSiedlungsstruktur', 'Flaeche')
             addXplanLayer('RP_SonstigerFreiraumschutz', 'Flaeche')
@@ -317,17 +314,20 @@ class XplanReader:
             addXplanLayer('RP_Strassenverkehr', 'Flaeche')
             addXplanLayer('RP_Verkehr', 'Flaeche')
             addXplanLayer('RP_VorbHochwasserschutz', 'Flaeche')
-            addXplanLayer('RP_Wasserschutz', 'Flaeche')
-            addXplanLayer('RP_Wasserverkehr', 'Flaeche')
             addXplanLayer('RP_Wasserwirtschaft', 'Flaeche')
             addXplanLayer('RP_Windenergie', 'Flaeche')
             addXplanLayer('RP_ Windenergienutzung', 'Flaeche')
-            addXplanLayer('RP_WohnenSiedlung', 'Flaeche')
             addXplanLayer('RP_ZentralerOrt', 'Flaeche')
             addXplanLayer('RP_Sperrgebiet', 'Flaeche')
             addXplanLayer('RP_Geometrieobjekt', 'Flaeche')
             addXplanLayer('RP_Legendenobjekt', 'Flaeche')
             addXplanLayer('RP_Objekt', 'Flaeche')
+            addXplanLayer('RP_ErneuerbareEnergie', 'Flaeche') # Füllmuster
+            addXplanLayer('RP_Rohstoff', 'Flaeche') # Füllmuster
+            addXplanLayer('RP_LaermschutzBauschutz', 'Flaeche') # Füllmuster
+            addXplanLayer('RP_Wasserschutz', 'Flaeche') # Füllmuster
+            addXplanLayer('RP_NaturschutzrechtlichesSchutzgebiet', 'Flaeche') # Liniensignatur 
+            addXplanLayer('RP_Grenze', 'Flaeche') # Liniensignatur 
             addXplanLayer('RP_Plan', 'Linie')
             addXplanLayer('RP_Bereich', 'Linie')
             addXplanLayer('RP_Achse', 'Linie')
@@ -468,7 +468,6 @@ class XplanReader:
             addXplanLayer('BP_StrassenVerkehrsFlaeche', 'Flaeche')
             addXplanLayer('BP_WaldFlaeche', 'Flaeche')
             addXplanLayer('BP_Landwirtschaft', 'Flaeche')
-            addXplanLayer('BP_FreiFlaeche', 'Flaeche')
             addXplanLayer('BP_VerEntsorgung', 'Flaeche')
             addXplanLayer('BP_VerkehrsflaecheBesondererZweckbestimmung', 'Flaeche')
             # BP_Bereich_textlicher_Festsetzung im WMS enthalten …. Fehlt ?
@@ -503,6 +502,7 @@ class XplanReader:
             addXplanLayer('BP_NichtUeberbaubareGrundstuecksflaeche', 'Flaeche')
             addXplanLayer('BP_NebenanlagenAusschlussFlaeche', 'Flaeche')
             addXplanLayer('BP_AbstandsMass', 'Flaeche')
+            addXplanLayer('BP_FreiFlaeche', 'Flaeche')
             addXplanLayer('FP_DarstellungNachLandesrecht', 'Flaeche')
             addXplanLayer('FP_Flaechenobjekt', 'Flaeche')
             addXplanLayer('FP_Flaechenschlussobjekt', 'Flaeche')
