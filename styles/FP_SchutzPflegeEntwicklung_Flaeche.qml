@@ -1,17 +1,17 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="Symbology|Labeling" version="3.26.3-Buenos Aires" labelsEnabled="0">
-  <renderer-v2 referencescale="-1" type="RuleRenderer" enableorderby="0" forceraster="0" symbollevels="0">
+<qgis version="3.26.3-Buenos Aires" styleCategories="Symbology|Labeling" labelsEnabled="0">
+  <renderer-v2 symbollevels="0" type="RuleRenderer" forceraster="0" referencescale="-1" enableorderby="0">
     <rules key="{e24f8b7c-bef7-40b0-9166-230655136810}">
-      <rule scalemindenom="1000" scalemaxdenom="16001" symbol="0" label="alle" key="{4516b24e-8d66-4f18-aea1-690d202a0144}"/>
-      <rule filter="&quot;ziel&quot;=1000" symbol="1" label="davon Schutz und Pflege" key="{c5066fad-e3b5-44c9-ad32-7b7a798a78d3}"/>
-      <rule filter="&quot;ziel&quot;=2000" symbol="2" label="davon Entwicklung" key="{88fcf382-6b1e-404f-aa12-fe9ae78aec00}"/>
-      <rule filter="&quot;ziel&quot;=3000" symbol="3" label="davon Neu-Anlage" key="{9754aaa1-2ffe-4b25-bd49-6857910bf08e}"/>
-      <rule filter="&quot;ziel&quot;=4000" symbol="4" label="davon Schutz, Pflege und Entwicklung" key="{1c012b5b-6cc7-45ae-b328-d6b2eaa0add3}"/>
-      <rule filter="&quot;ziel&quot;=9999" symbol="5" label="davon sonst. Ziel" key="{774f722f-9f06-4dd6-96e0-a54f2dd9ba28}"/>
-      <rule filter="&quot;ziel&quot; is NULL" symbol="6" label="davon Ziel nicht definert" key="{35d87c04-a144-43de-bab1-14cb1315b735}"/>
+      <rule label="alle" symbol="0" scalemaxdenom="16001" scalemindenom="1000" key="{4516b24e-8d66-4f18-aea1-690d202a0144}"/>
+      <rule label="davon Schutz und Pflege" symbol="1" filter="&quot;ziel&quot;=1000" key="{c5066fad-e3b5-44c9-ad32-7b7a798a78d3}"/>
+      <rule label="davon Entwicklung" symbol="2" filter="&quot;ziel&quot;=2000" key="{88fcf382-6b1e-404f-aa12-fe9ae78aec00}"/>
+      <rule label="davon Neu-Anlage" symbol="3" filter="&quot;ziel&quot;=3000" key="{9754aaa1-2ffe-4b25-bd49-6857910bf08e}"/>
+      <rule label="davon Schutz, Pflege und Entwicklung" symbol="4" filter="&quot;ziel&quot;=4000" key="{1c012b5b-6cc7-45ae-b328-d6b2eaa0add3}"/>
+      <rule label="davon sonst. Ziel" symbol="5" filter="&quot;ziel&quot;=9999" key="{774f722f-9f06-4dd6-96e0-a54f2dd9ba28}"/>
+      <rule label="davon Ziel nicht definert" symbol="6" filter="&quot;ziel&quot; is NULL" key="{35d87c04-a144-43de-bab1-14cb1315b735}"/>
     </rules>
     <symbols>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="0" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -33,17 +33,17 @@
             <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
             <Option type="QString" value="no" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,0,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,128,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="10"/>
-          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="style" v="no"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="0,0,255,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0,128,0,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="10" k="outline_width"/>
+          <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+          <prop v="no" k="style"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -71,22 +71,22 @@
             <Option type="QString" value="0" name="ring_filter"/>
             <Option type="QString" value="1" name="rotate"/>
           </Option>
-          <prop k="average_angle_length" v="4"/>
-          <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="average_angle_unit" v="MM"/>
-          <prop k="interval" v="10"/>
-          <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="interval_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="place_on_every_part" v="true"/>
-          <prop k="placements" v="Interval"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="rotate" v="1"/>
+          <prop v="4" k="average_angle_length"/>
+          <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
+          <prop v="MM" k="average_angle_unit"/>
+          <prop v="10" k="interval"/>
+          <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+          <prop v="RenderMetersInMapUnits" k="interval_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="0" k="offset_along_line"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+          <prop v="MM" k="offset_along_line_unit"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="true" k="place_on_every_part"/>
+          <prop v="Interval" k="placements"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -94,7 +94,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" type="marker" clip_to_extent="1" alpha="1" name="@0@1" force_rhr="0" frame_rate="10">
+          <symbol frame_rate="10" force_rhr="0" type="marker" alpha="1" clip_to_extent="1" is_animated="0" name="@0@1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -123,24 +123,24 @@
                 <Option type="QString" value="RenderMetersInMapUnits" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="chr" v="T  "/>
-              <prop k="color" v="35,35,35,255"/>
-              <prop k="font" v="Arial"/>
-              <prop k="font_style" v="Bold"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="-1,-1"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="RenderMetersInMapUnits"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-              <prop k="size" v="12"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="RenderMetersInMapUnits"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop v="0" k="angle"/>
+              <prop v="T  " k="chr"/>
+              <prop v="35,35,35,255" k="color"/>
+              <prop v="Arial" k="font"/>
+              <prop v="Bold" k="font_style"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="-1,-1" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+              <prop v="12" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -152,7 +152,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="1" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="1">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -174,17 +174,17 @@
             <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
             <Option type="QString" value="no" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,0,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,128,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="10"/>
-          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="style" v="no"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="0,0,255,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0,128,0,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="10" k="outline_width"/>
+          <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+          <prop v="no" k="style"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -212,22 +212,22 @@
             <Option type="QString" value="0" name="ring_filter"/>
             <Option type="QString" value="1" name="rotate"/>
           </Option>
-          <prop k="average_angle_length" v="4"/>
-          <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="average_angle_unit" v="MM"/>
-          <prop k="interval" v="10"/>
-          <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="interval_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="place_on_every_part" v="true"/>
-          <prop k="placements" v="Interval"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="rotate" v="1"/>
+          <prop v="4" k="average_angle_length"/>
+          <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
+          <prop v="MM" k="average_angle_unit"/>
+          <prop v="10" k="interval"/>
+          <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+          <prop v="RenderMetersInMapUnits" k="interval_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="0" k="offset_along_line"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+          <prop v="MM" k="offset_along_line_unit"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="true" k="place_on_every_part"/>
+          <prop v="Interval" k="placements"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -235,7 +235,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" type="marker" clip_to_extent="1" alpha="1" name="@1@1" force_rhr="0" frame_rate="10">
+          <symbol frame_rate="10" force_rhr="0" type="marker" alpha="1" clip_to_extent="1" is_animated="0" name="@1@1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -264,24 +264,24 @@
                 <Option type="QString" value="RenderMetersInMapUnits" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="chr" v="T  "/>
-              <prop k="color" v="35,35,35,255"/>
-              <prop k="font" v="Arial"/>
-              <prop k="font_style" v="Bold"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="-1,-1"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="RenderMetersInMapUnits"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-              <prop k="size" v="12"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="RenderMetersInMapUnits"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop v="0" k="angle"/>
+              <prop v="T  " k="chr"/>
+              <prop v="35,35,35,255" k="color"/>
+              <prop v="Arial" k="font"/>
+              <prop v="Bold" k="font_style"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="-1,-1" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+              <prop v="12" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -293,7 +293,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="2" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="2">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -315,17 +315,17 @@
             <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
             <Option type="QString" value="no" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,0,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,128,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="10"/>
-          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="style" v="no"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="0,0,255,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0,128,0,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="10" k="outline_width"/>
+          <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+          <prop v="no" k="style"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -353,22 +353,22 @@
             <Option type="QString" value="0" name="ring_filter"/>
             <Option type="QString" value="1" name="rotate"/>
           </Option>
-          <prop k="average_angle_length" v="4"/>
-          <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="average_angle_unit" v="MM"/>
-          <prop k="interval" v="10"/>
-          <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="interval_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="place_on_every_part" v="true"/>
-          <prop k="placements" v="Interval"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="rotate" v="1"/>
+          <prop v="4" k="average_angle_length"/>
+          <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
+          <prop v="MM" k="average_angle_unit"/>
+          <prop v="10" k="interval"/>
+          <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+          <prop v="RenderMetersInMapUnits" k="interval_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="0" k="offset_along_line"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+          <prop v="MM" k="offset_along_line_unit"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="true" k="place_on_every_part"/>
+          <prop v="Interval" k="placements"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -376,7 +376,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" type="marker" clip_to_extent="1" alpha="1" name="@2@1" force_rhr="0" frame_rate="10">
+          <symbol frame_rate="10" force_rhr="0" type="marker" alpha="1" clip_to_extent="1" is_animated="0" name="@2@1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -405,24 +405,24 @@
                 <Option type="QString" value="RenderMetersInMapUnits" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="chr" v="T  "/>
-              <prop k="color" v="35,35,35,255"/>
-              <prop k="font" v="Arial"/>
-              <prop k="font_style" v="Bold"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="-1,-1"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="RenderMetersInMapUnits"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-              <prop k="size" v="12"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="RenderMetersInMapUnits"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop v="0" k="angle"/>
+              <prop v="T  " k="chr"/>
+              <prop v="35,35,35,255" k="color"/>
+              <prop v="Arial" k="font"/>
+              <prop v="Bold" k="font_style"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="-1,-1" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+              <prop v="12" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -434,7 +434,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="3" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="3">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -456,17 +456,17 @@
             <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
             <Option type="QString" value="no" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,0,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,128,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="10"/>
-          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="style" v="no"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="0,0,255,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0,128,0,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="10" k="outline_width"/>
+          <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+          <prop v="no" k="style"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -494,22 +494,22 @@
             <Option type="QString" value="0" name="ring_filter"/>
             <Option type="QString" value="1" name="rotate"/>
           </Option>
-          <prop k="average_angle_length" v="4"/>
-          <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="average_angle_unit" v="MM"/>
-          <prop k="interval" v="10"/>
-          <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="interval_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="place_on_every_part" v="true"/>
-          <prop k="placements" v="Interval"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="rotate" v="1"/>
+          <prop v="4" k="average_angle_length"/>
+          <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
+          <prop v="MM" k="average_angle_unit"/>
+          <prop v="10" k="interval"/>
+          <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+          <prop v="RenderMetersInMapUnits" k="interval_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="0" k="offset_along_line"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+          <prop v="MM" k="offset_along_line_unit"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="true" k="place_on_every_part"/>
+          <prop v="Interval" k="placements"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -517,7 +517,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" type="marker" clip_to_extent="1" alpha="1" name="@3@1" force_rhr="0" frame_rate="10">
+          <symbol frame_rate="10" force_rhr="0" type="marker" alpha="1" clip_to_extent="1" is_animated="0" name="@3@1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -546,24 +546,24 @@
                 <Option type="QString" value="RenderMetersInMapUnits" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="chr" v="T  "/>
-              <prop k="color" v="35,35,35,255"/>
-              <prop k="font" v="Arial"/>
-              <prop k="font_style" v="Bold"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="-1,-1"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="RenderMetersInMapUnits"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-              <prop k="size" v="12"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="RenderMetersInMapUnits"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop v="0" k="angle"/>
+              <prop v="T  " k="chr"/>
+              <prop v="35,35,35,255" k="color"/>
+              <prop v="Arial" k="font"/>
+              <prop v="Bold" k="font_style"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="-1,-1" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+              <prop v="12" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -575,7 +575,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="4" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="4">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -597,17 +597,17 @@
             <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
             <Option type="QString" value="no" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,0,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,128,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="10"/>
-          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="style" v="no"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="0,0,255,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0,128,0,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="10" k="outline_width"/>
+          <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+          <prop v="no" k="style"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -635,22 +635,22 @@
             <Option type="QString" value="0" name="ring_filter"/>
             <Option type="QString" value="1" name="rotate"/>
           </Option>
-          <prop k="average_angle_length" v="4"/>
-          <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="average_angle_unit" v="MM"/>
-          <prop k="interval" v="10"/>
-          <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="interval_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="place_on_every_part" v="true"/>
-          <prop k="placements" v="Interval"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="rotate" v="1"/>
+          <prop v="4" k="average_angle_length"/>
+          <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
+          <prop v="MM" k="average_angle_unit"/>
+          <prop v="10" k="interval"/>
+          <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+          <prop v="RenderMetersInMapUnits" k="interval_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="0" k="offset_along_line"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+          <prop v="MM" k="offset_along_line_unit"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="true" k="place_on_every_part"/>
+          <prop v="Interval" k="placements"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -658,7 +658,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" type="marker" clip_to_extent="1" alpha="1" name="@4@1" force_rhr="0" frame_rate="10">
+          <symbol frame_rate="10" force_rhr="0" type="marker" alpha="1" clip_to_extent="1" is_animated="0" name="@4@1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -687,24 +687,24 @@
                 <Option type="QString" value="RenderMetersInMapUnits" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="chr" v="T  "/>
-              <prop k="color" v="35,35,35,255"/>
-              <prop k="font" v="Arial"/>
-              <prop k="font_style" v="Bold"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="-1,-1"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="RenderMetersInMapUnits"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-              <prop k="size" v="12"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="RenderMetersInMapUnits"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop v="0" k="angle"/>
+              <prop v="T  " k="chr"/>
+              <prop v="35,35,35,255" k="color"/>
+              <prop v="Arial" k="font"/>
+              <prop v="Bold" k="font_style"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="-1,-1" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+              <prop v="12" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -716,7 +716,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="5" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="5">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -738,17 +738,17 @@
             <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
             <Option type="QString" value="no" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="0,0,255,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="0,128,0,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="10"/>
-          <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-          <prop k="style" v="no"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="0,0,255,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="0,128,0,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="10" k="outline_width"/>
+          <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+          <prop v="no" k="style"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -776,22 +776,22 @@
             <Option type="QString" value="0" name="ring_filter"/>
             <Option type="QString" value="1" name="rotate"/>
           </Option>
-          <prop k="average_angle_length" v="4"/>
-          <prop k="average_angle_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="average_angle_unit" v="MM"/>
-          <prop k="interval" v="10"/>
-          <prop k="interval_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="interval_unit" v="RenderMetersInMapUnits"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="place_on_every_part" v="true"/>
-          <prop k="placements" v="Interval"/>
-          <prop k="ring_filter" v="0"/>
-          <prop k="rotate" v="1"/>
+          <prop v="4" k="average_angle_length"/>
+          <prop v="3x:0,0,0,0,0,0" k="average_angle_map_unit_scale"/>
+          <prop v="MM" k="average_angle_unit"/>
+          <prop v="10" k="interval"/>
+          <prop v="3x:0,0,0,0,0,0" k="interval_map_unit_scale"/>
+          <prop v="RenderMetersInMapUnits" k="interval_unit"/>
+          <prop v="0" k="offset"/>
+          <prop v="0" k="offset_along_line"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_along_line_map_unit_scale"/>
+          <prop v="MM" k="offset_along_line_unit"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="true" k="place_on_every_part"/>
+          <prop v="Interval" k="placements"/>
+          <prop v="0" k="ring_filter"/>
+          <prop v="1" k="rotate"/>
           <data_defined_properties>
             <Option type="Map">
               <Option type="QString" value="" name="name"/>
@@ -799,7 +799,7 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol is_animated="0" type="marker" clip_to_extent="1" alpha="1" name="@5@1" force_rhr="0" frame_rate="10">
+          <symbol frame_rate="10" force_rhr="0" type="marker" alpha="1" clip_to_extent="1" is_animated="0" name="@5@1">
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -828,24 +828,24 @@
                 <Option type="QString" value="RenderMetersInMapUnits" name="size_unit"/>
                 <Option type="QString" value="1" name="vertical_anchor_point"/>
               </Option>
-              <prop k="angle" v="0"/>
-              <prop k="chr" v="T  "/>
-              <prop k="color" v="35,35,35,255"/>
-              <prop k="font" v="Arial"/>
-              <prop k="font_style" v="Bold"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="-1,-1"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="RenderMetersInMapUnits"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="RenderMetersInMapUnits"/>
-              <prop k="size" v="12"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="RenderMetersInMapUnits"/>
-              <prop k="vertical_anchor_point" v="1"/>
+              <prop v="0" k="angle"/>
+              <prop v="T  " k="chr"/>
+              <prop v="35,35,35,255" k="color"/>
+              <prop v="Arial" k="font"/>
+              <prop v="Bold" k="font_style"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="-1,-1" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="outline_width_unit"/>
+              <prop v="12" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="RenderMetersInMapUnits" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -857,7 +857,7 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol is_animated="0" type="fill" clip_to_extent="1" alpha="1" name="6" force_rhr="0" frame_rate="10">
+      <symbol frame_rate="10" force_rhr="0" type="fill" alpha="1" clip_to_extent="1" is_animated="0" name="6">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -868,7 +868,7 @@
         <layer locked="0" pass="0" class="SimpleFill" enabled="1">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-            <Option type="QString" value="228,26,28,255" name="color"/>
+            <Option type="QString" value="255,0,0,255" name="color"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="0,0" name="offset"/>
             <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
@@ -879,17 +879,17 @@
             <Option type="QString" value="MM" name="outline_width_unit"/>
             <Option type="QString" value="solid" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="228,26,28,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="128,14,16,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="0.26"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="solid"/>
+          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+          <prop v="255,0,0,255" k="color"/>
+          <prop v="bevel" k="joinstyle"/>
+          <prop v="0,0" k="offset"/>
+          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+          <prop v="MM" k="offset_unit"/>
+          <prop v="128,14,16,255" k="outline_color"/>
+          <prop v="solid" k="outline_style"/>
+          <prop v="0.26" k="outline_width"/>
+          <prop v="MM" k="outline_width_unit"/>
+          <prop v="solid" k="style"/>
           <effect type="effectStack" enabled="0">
             <effect type="dropShadow">
               <Option type="Map">
@@ -906,18 +906,18 @@
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_unit_scale"/>
                 <Option type="QString" value="1" name="opacity"/>
               </Option>
-              <prop k="blend_mode" v="13"/>
-              <prop k="blur_level" v="2.645"/>
-              <prop k="blur_unit" v="MM"/>
-              <prop k="blur_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="0,0,0,255"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="0"/>
-              <prop k="offset_angle" v="135"/>
-              <prop k="offset_distance" v="2"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="offset_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="opacity" v="1"/>
+              <prop v="13" k="blend_mode"/>
+              <prop v="2.645" k="blur_level"/>
+              <prop v="MM" k="blur_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="2" k="draw_mode"/>
+              <prop v="0" k="enabled"/>
+              <prop v="135" k="offset_angle"/>
+              <prop v="2" k="offset_distance"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
+              <prop v="1" k="opacity"/>
             </effect>
             <effect type="outerGlow">
               <Option type="Map">
@@ -940,24 +940,24 @@
                 <Option type="QString" value="MM" name="spread_unit"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="spread_unit_scale"/>
               </Option>
-              <prop k="blend_mode" v="0"/>
-              <prop k="blur_level" v="0.7935"/>
-              <prop k="blur_unit" v="MM"/>
-              <prop k="blur_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color1" v="0,0,255,255"/>
-              <prop k="color2" v="0,255,0,255"/>
-              <prop k="color_type" v="0"/>
-              <prop k="direction" v="ccw"/>
-              <prop k="discrete" v="0"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="0"/>
-              <prop k="opacity" v="0.5"/>
-              <prop k="rampType" v="gradient"/>
-              <prop k="single_color" v="255,255,255,255"/>
-              <prop k="spec" v="rgb"/>
-              <prop k="spread" v="2"/>
-              <prop k="spread_unit" v="MM"/>
-              <prop k="spread_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop v="0" k="blend_mode"/>
+              <prop v="0.7935" k="blur_level"/>
+              <prop v="MM" k="blur_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
+              <prop v="0,0,255,255" k="color1"/>
+              <prop v="0,255,0,255" k="color2"/>
+              <prop v="0" k="color_type"/>
+              <prop v="ccw" k="direction"/>
+              <prop v="0" k="discrete"/>
+              <prop v="2" k="draw_mode"/>
+              <prop v="0" k="enabled"/>
+              <prop v="0.5" k="opacity"/>
+              <prop v="gradient" k="rampType"/>
+              <prop v="255,255,255,255" k="single_color"/>
+              <prop v="rgb" k="spec"/>
+              <prop v="2" k="spread"/>
+              <prop v="MM" k="spread_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
             </effect>
             <effect type="blur">
               <Option type="Map">
@@ -970,14 +970,14 @@
                 <Option type="QString" value="1" name="enabled"/>
                 <Option type="QString" value="1" name="opacity"/>
               </Option>
-              <prop k="blend_mode" v="0"/>
-              <prop k="blur_level" v="2.645"/>
-              <prop k="blur_method" v="0"/>
-              <prop k="blur_unit" v="MM"/>
-              <prop k="blur_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="1"/>
-              <prop k="opacity" v="1"/>
+              <prop v="0" k="blend_mode"/>
+              <prop v="2.645" k="blur_level"/>
+              <prop v="0" k="blur_method"/>
+              <prop v="MM" k="blur_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
+              <prop v="2" k="draw_mode"/>
+              <prop v="1" k="enabled"/>
+              <prop v="1" k="opacity"/>
             </effect>
             <effect type="innerShadow">
               <Option type="Map">
@@ -994,18 +994,18 @@
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_unit_scale"/>
                 <Option type="QString" value="1" name="opacity"/>
               </Option>
-              <prop k="blend_mode" v="13"/>
-              <prop k="blur_level" v="2.645"/>
-              <prop k="blur_unit" v="MM"/>
-              <prop k="blur_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="0,0,0,255"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="0"/>
-              <prop k="offset_angle" v="135"/>
-              <prop k="offset_distance" v="2"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="offset_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="opacity" v="1"/>
+              <prop v="13" k="blend_mode"/>
+              <prop v="2.645" k="blur_level"/>
+              <prop v="MM" k="blur_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="2" k="draw_mode"/>
+              <prop v="0" k="enabled"/>
+              <prop v="135" k="offset_angle"/>
+              <prop v="2" k="offset_distance"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
+              <prop v="1" k="opacity"/>
             </effect>
             <effect type="innerGlow">
               <Option type="Map">
@@ -1028,24 +1028,24 @@
                 <Option type="QString" value="MM" name="spread_unit"/>
                 <Option type="QString" value="3x:0,0,0,0,0,0" name="spread_unit_scale"/>
               </Option>
-              <prop k="blend_mode" v="0"/>
-              <prop k="blur_level" v="0.7935"/>
-              <prop k="blur_unit" v="MM"/>
-              <prop k="blur_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color1" v="0,0,255,255"/>
-              <prop k="color2" v="0,255,0,255"/>
-              <prop k="color_type" v="0"/>
-              <prop k="direction" v="ccw"/>
-              <prop k="discrete" v="0"/>
-              <prop k="draw_mode" v="2"/>
-              <prop k="enabled" v="0"/>
-              <prop k="opacity" v="0.5"/>
-              <prop k="rampType" v="gradient"/>
-              <prop k="single_color" v="255,255,255,255"/>
-              <prop k="spec" v="rgb"/>
-              <prop k="spread" v="2"/>
-              <prop k="spread_unit" v="MM"/>
-              <prop k="spread_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop v="0" k="blend_mode"/>
+              <prop v="0.7935" k="blur_level"/>
+              <prop v="MM" k="blur_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
+              <prop v="0,0,255,255" k="color1"/>
+              <prop v="0,255,0,255" k="color2"/>
+              <prop v="0" k="color_type"/>
+              <prop v="ccw" k="direction"/>
+              <prop v="0" k="discrete"/>
+              <prop v="2" k="draw_mode"/>
+              <prop v="0" k="enabled"/>
+              <prop v="0.5" k="opacity"/>
+              <prop v="gradient" k="rampType"/>
+              <prop v="255,255,255,255" k="single_color"/>
+              <prop v="rgb" k="spec"/>
+              <prop v="2" k="spread"/>
+              <prop v="MM" k="spread_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
             </effect>
           </effect>
           <data_defined_properties>

@@ -79,14 +79,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -110,12 +110,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -190,14 +190,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -221,12 +221,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -301,14 +301,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -332,12 +332,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -412,14 +412,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -443,12 +443,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -523,14 +523,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -554,12 +554,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -634,14 +634,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -665,12 +665,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -866,14 +866,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -897,12 +897,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -977,14 +977,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1008,12 +1008,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1088,14 +1088,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1119,12 +1119,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1199,14 +1199,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1230,12 +1230,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1310,14 +1310,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1341,12 +1341,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1421,14 +1421,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1452,12 +1452,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1532,14 +1532,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1563,12 +1563,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1643,14 +1643,14 @@
               <Option type="Map">
                 <Option name="angle" type="QString" value="0"/>
                 <Option name="cap_style" type="QString" value="square"/>
-                <Option name="color" type="QString" value="24,127,233,255"/>
+                <Option name="color" type="QString" value="0,0,0,255"/>
                 <Option name="horizontal_anchor_point" type="QString" value="1"/>
                 <Option name="joinstyle" type="QString" value="bevel"/>
                 <Option name="name" type="QString" value="circle"/>
                 <Option name="offset" type="QString" value="0,0"/>
                 <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
                 <Option name="offset_unit" type="QString" value="MM"/>
-                <Option name="outline_color" type="QString" value="24,127,233,255"/>
+                <Option name="outline_color" type="QString" value="0,0,0,255"/>
                 <Option name="outline_style" type="QString" value="solid"/>
                 <Option name="outline_width" type="QString" value="0.2"/>
                 <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -1674,12 +1674,12 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="24,127,233,255"/>
+            <Option name="color" type="QString" value="0,0,0,255"/>
             <Option name="joinstyle" type="QString" value="bevel"/>
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="24,127,233,255"/>
+            <Option name="outline_color" type="QString" value="0,0,0,255"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.36"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -1698,9 +1698,9 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontKerning="1" multilineHeightUnit="Percentage" fontUnderline="0" forcedItalic="0" multilineHeight="1" fontItalic="0" fontLetterSpacing="0" allowHtml="0" fontStrikeout="0" fieldName="'Wasserschutz\n'+&#xd;&#xa;Case When try(gebietsTyp is not null) then &#xd;&#xa;&#x9;Case&#xd;&#xa;&#x9;When gebietsTyp=1000 then 'Vorranggebiet'&#xd;&#xa;&#x9;When gebietsTyp=1001 then 'Vorrangstandort'&#xd;&#xa;&#x9;When gebietsTyp=1100 then 'Vorbehaltsgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1101 then 'Vorbehaltsstandort'&#xd;&#xa;&#x9;When gebietsTyp=1200 then 'Eignungsgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1300 then 'Vorrang&amp;Eignungsgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1400 then 'Ausschlussgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1500 then 'Vorsorgegebiet'&#xd;&#xa;&#x9;When gebietsTyp=1501 then 'Vorsorgestandort'&#xd;&#xa;&#x9;When gebietsTyp=1600 then 'Vorzugsraum'&#xd;&#xa;&#x9;When gebietsTyp=1700 then 'Potenzialgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1800 then 'Schwerpunktraum'&#xd;&#xa;&#x9;When gebietsTyp=9999 then 'SonstigesGebiet'&#xd;&#xa;&#x9;Else '' &#x9;End &#xd;&#xa;ELSE 'gebietsTyp nicht definiert'End &#xd;&#xa;&#xd;&#xa;+ case when try(typ is not null) then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;When typ=1000 then '\n Wasserschutzgebiet'&#xd;&#xa;&#x9;When typ=2000 then '\n Grundwasserschutz'&#xd;&#xa;&#x9;When typ=2001 then '\n Grundwasservorkommen'&#xd;&#xa;&#x9;When typ=2002 then '\n Gewässerschutz'&#xd;&#xa;&#x9;When typ=3000 then '\n Trinkwasserschutz'&#xd;&#xa;&#x9;When typ=4000 then '\n Trinkwassergewinnung'&#xd;&#xa;&#x9;When typ=5000 then '\n Oberflächenwasserschutz'&#xd;&#xa;&#x9;When typ=6000 then '\n Heilquelle'&#xd;&#xa;&#x9;When typ=7000 then '\n Wasserversorgung'&#xd;&#xa;&#x9;When typ=9000 then '\n sonst.Wasserschutz'&#xd;&#xa;&#x9;Else 'typ nicht definiert'&#x9;&#x9;End &#xd;&#xa;Else'typ nicht definiert'End &#xd;&#xa;&#xd;&#xa;+ case when try(bergbauplanungTyp is not null) then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;When bergbauplanungTyp=1000 then '\n Lagerstätte'&#xd;&#xa;&#x9;When bergbauplanungTyp=1100 then '\n Sicherung'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1200 then '\n Gewinnung'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1300 then '\n Abbaubereich'&#xd;&#xa;&#x9;When bergbauplanungTyp=1400 then '\n Sicherheitszone'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1500 then '\n Anlage/Einrichtung Bergbau'&#x9;&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1600 then '\n Halde, Aufschüttung, Ablagerung'&#xd;&#xa;&#x9;When bergbauplanungTyp=1700 then '\n Sanierungsfläche'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1800 then '\n Ansiedlung/Umsiedlung'&#x9;&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1900 then '\n Bergbaufolgelandschaft'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=9999 then '\n sons. Bergbauplanung'&#x9;&#x9;&#x9;&#xd;&#xa;&#x9;Else ''&#x9;&#xd;&#xa;&#x9;End &#xd;&#xa;Else''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case when try(&quot;text&quot; is not null) then   case &#xd;&#xa;when length(&quot;text&quot;)>25 then '\n'+left(replace(&quot;text&quot;,'\n',' '),25)+'...'&#xd;&#xa;when length(&quot;text&quot;)&lt;26 then '\n'+     replace(&quot;text&quot;,'\n',' ')  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung1&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung1&quot;)>25 then '\n'+left(&quot;gliederung1&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung1&quot;)&lt;26 then '\n'+     &quot;gliederung1&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung2&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung2&quot;)>25 then '\n'+left(&quot;gliederung2&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung2&quot;)&lt;26 then '\n'+     &quot;gliederung2&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;aufschrift&quot; is not null) then   case &#xd;&#xa;when length(&quot;aufschrift&quot;)>25 then '\n'+left(&quot;aufschrift&quot;,25)+'...'&#xd;&#xa;when length(&quot;aufschrift&quot;)&lt;26 then '\n'+     &quot;aufschrift&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;" textOrientation="horizontal" forcedBold="0" textOpacity="1" legendString="Aa" namedStyle="Standard" fontWeight="50" fontFamily="Arial" fontSize="8" capitalization="0" textColor="24,127,233,255" useSubstitutions="0" isExpression="1" fontWordSpacing="0" blendMode="0" previewBkgrdColor="255,255,255,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point">
+      <text-style fontKerning="1" multilineHeightUnit="Percentage" fontUnderline="0" forcedItalic="0" multilineHeight="1" fontItalic="0" fontLetterSpacing="0" allowHtml="0" fontStrikeout="0" fieldName="'Rohstoff\n'+&#xd;&#xa;Case When try(gebietsTyp is not null) then &#xd;&#xa;&#x9;Case&#xd;&#xa;&#x9;When gebietsTyp=1000 then 'Vorranggebiet'&#xd;&#xa;&#x9;When gebietsTyp=1001 then 'Vorrangstandort'&#xd;&#xa;&#x9;When gebietsTyp=1100 then 'Vorbehaltsgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1101 then 'Vorbehaltsstandort'&#xd;&#xa;&#x9;When gebietsTyp=1200 then 'Eignungsgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1300 then 'Vorrang&amp;Eignungsgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1400 then 'Ausschlussgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1500 then 'Vorsorgegebiet'&#xd;&#xa;&#x9;When gebietsTyp=1501 then 'Vorsorgestandort'&#xd;&#xa;&#x9;When gebietsTyp=1600 then 'Vorzugsraum'&#xd;&#xa;&#x9;When gebietsTyp=1700 then 'Potenzialgebiet'&#xd;&#xa;&#x9;When gebietsTyp=1800 then 'Schwerpunktraum'&#xd;&#xa;&#x9;When gebietsTyp=9999 then 'SonstigesGebiet'&#xd;&#xa;&#x9;Else '' &#x9;End &#xd;&#xa;ELSE 'gebietsTyp nicht definiert'End &#xd;&#xa;&#xd;&#xa;+ case when try(rohstoffTyp is not null) then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;When rohstoffTyp=1000 then '\n Rohstoff: Anhydritstein'&#xd;&#xa;&#x9;When rohstoffTyp=1100 then '\n Rohstoff: Baryt'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1200 then '\n Rohstoff: BasaltDiabas'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1300 then '\n Rohstoff: Bentonit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1400 then '\n Rohstoff: Blaehton'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1500 then '\n Rohstoff: Braunkohle'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1600 then '\n Rohstoff: Buntsandstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1700 then '\n Rohstoff: Dekostein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1800 then '\n Rohstoff: Diorit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=1900 then '\n Rohstoff: Dolomitstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2000 then '\n Rohstoff: Erdgas'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2100 then '\n Rohstoff: Erdöl'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2200 then '\n Rohstoff: Erz'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2300 then '\n Rohstoff: Feldspat'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2400 then '\n Rohstoff: Festgestein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2500 then '\n Rohstoff: Flussspat'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2600 then '\n Rohstoff: Gangquarz'&#xd;&#xa;&#x9;When rohstoffTyp=2700 then '\n Rohstoff: Gipsstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2800 then '\n Rohstoff: Gneis'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=2900 then '\n Rohstoff: Granit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3000 then '\n Rohstoff: Grauwacke'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3100 then '\n Rohstoff: Hartgestein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3200 then '\n Rohstoff: Kalk Kalktuff Kreide'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3300 then '\n Rohstoff: Kalkmergelstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3400 then '\n Rohstoff: Kalkstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3500 then '\n Rohstoff: Kaolin'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3600 then '\n Rohstoff: Karbonatgestein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3700 then '\n Rohstoff: Kies'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3800 then '\n Rohstoff: Kieselgur'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=3900 then '\n Rohstoff: Kieshaltiger Sand'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4000 then '\n Rohstoff: KiesSand'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4100 then '\n Rohstoff: Klei'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4200 then '\n Rohstoff: Kristallin'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4300 then '\n Rohstoff: Kupfer'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4400 then '\n Rohstoff: Lehm'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4500 then '\n Rohstoff: Marmor'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4600 then '\n Rohstoff: Mergel'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4700 then '\n Rohstoff: Mergelstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4800 then '\n Rohstoff: Mikrogranit Granitporphyr'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=4900 then '\n Rohstoff: Monzonit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5000 then '\n Rohstoff: Muschelkalk'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5100 then '\n Rohstoff: Naturstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5200 then '\n Rohstoff: Naturwerkstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5300 then '\n Rohstoff: Ölschiefer'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5400 then '\n Rohstoff: Pegmatitsand'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5500 then '\n Rohstoff: Quarzit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5600 then '\n Rohstoff: Quarzsand'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5700 then '\n Rohstoff: Rhyolith'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5800 then '\n Rohstoff: Rhyolith Quarzporphyr'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=5900 then '\n Rohstoff: Salz'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6000 then '\n Rohstoff: Sand'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6100 then '\n Rohstoff: Sandstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6200 then '\n Rohstoff: Spezialton'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6300 then '\n Rohstoff: Steine und Erden'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6400 then '\n Rohstoff: Steinkohle'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6500 then '\n Rohstoff: Ton'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6600 then '\n Rohstoff: Tonstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6700 then '\n Rohstoff: Torf'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6800 then '\n Rohstoff: Tuff Bimsstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=6900 then '\n Rohstoff: Uran'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=7000 then '\n Rohstoff: Vulkanit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=7100 then '\n Rohstoff: Werkstein'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=7200 then '\n Rohstoff: Andesit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=7300 then '\n Rohstoff: Formsand'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=7400 then '\n Rohstoff: Gabbro'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=7500 then '\n Rohstoff: Mikrodiorit Kuselit'&#x9;&#xd;&#xa;&#x9;When rohstoffTyp=9999 then '\n Rohstoff: sonstiges'&#x9;When rohstoffTyp=1000 then '\n Rohstoff: Anhydritstein'&#xd;&#xa;&#x9;Else ''&#x9;&#x9;End &#xd;&#xa;Else''End &#xd;&#xa;&#xd;&#xa;+ case when try(bergbauplanungTyp is not null) then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;When bergbauplanungTyp=1000 then '\n Lagerstätte'&#xd;&#xa;&#x9;When bergbauplanungTyp=1100 then '\n Sicherung'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1200 then '\n Gewinnung'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1300 then '\n Abbaubereich'&#xd;&#xa;&#x9;When bergbauplanungTyp=1400 then '\n Sicherheitszone'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1500 then '\n Anlage/Einrichtung Bergbau'&#x9;&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1600 then '\n Halde, Aufschüttung, Ablagerung'&#xd;&#xa;&#x9;When bergbauplanungTyp=1700 then '\n Sanierungsfläche'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1800 then '\n Ansiedlung/Umsiedlung'&#x9;&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=1900 then '\n Bergbaufolgelandschaft'&#x9;&#xd;&#xa;&#x9;When bergbauplanungTyp=9999 then '\n sons. Bergbauplanung'&#x9;&#x9;&#x9;&#xd;&#xa;&#x9;Else ''&#x9;&#xd;&#xa;&#x9;End &#xd;&#xa;Else''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case when try(&quot;text&quot; is not null) then   case &#xd;&#xa;when length(&quot;text&quot;)>25 then '\n'+left(replace(&quot;text&quot;,'\n',' '),25)+'...'&#xd;&#xa;when length(&quot;text&quot;)&lt;26 then '\n'+     replace(&quot;text&quot;,'\n',' ')  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung1&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung1&quot;)>25 then '\n'+left(&quot;gliederung1&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung1&quot;)&lt;26 then '\n'+     &quot;gliederung1&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung2&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung2&quot;)>25 then '\n'+left(&quot;gliederung2&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung2&quot;)&lt;26 then '\n'+     &quot;gliederung2&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;aufschrift&quot; is not null) then   case &#xd;&#xa;when length(&quot;aufschrift&quot;)>25 then '\n'+left(&quot;aufschrift&quot;,25)+'...'&#xd;&#xa;when length(&quot;aufschrift&quot;)&lt;26 then '\n'+     &quot;aufschrift&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;" textOrientation="horizontal" forcedBold="0" textOpacity="1" legendString="Aa" namedStyle="Standard" fontWeight="50" fontFamily="Arial" fontSize="8" capitalization="0" textColor="50,50,50,255" useSubstitutions="0" isExpression="1" fontWordSpacing="0" blendMode="0" previewBkgrdColor="255,255,255,255" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point">
         <families/>
-        <text-buffer bufferColor="255,255,255,255" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSize="60" bufferNoFill="1" bufferBlendMode="0" bufferSizeUnits="Percentage" bufferDraw="1" bufferJoinStyle="128"/>
+        <text-buffer bufferColor="205,205,205,255" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSize="25" bufferNoFill="1" bufferBlendMode="0" bufferSizeUnits="Percentage" bufferDraw="1" bufferJoinStyle="128"/>
         <text-mask maskType="0" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskJoinStyle="128" maskSize="0" maskOpacity="1" maskSizeUnits="MM" maskEnabled="0"/>
         <background shapeRadiiX="0" shapeFillColor="255,255,255,255" shapeSizeY="0" shapeSizeX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeOffsetUnit="Point" shapeOpacity="1" shapeJoinStyle="64" shapeSizeType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRotation="0" shapeDraw="0" shapeBorderWidthUnit="Point" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeSizeUnit="Point" shapeOffsetX="0" shapeSVGFile="" shapeRadiiY="0" shapeRadiiUnit="Point" shapeBorderWidth="0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeType="0">
           <symbol force_rhr="0" is_animated="0" alpha="1" name="markerSymbol" frame_rate="10" type="marker" clip_to_extent="1">
@@ -1785,7 +1785,7 @@
         <substitutions/>
       </text-style>
       <text-format leftDirectionSymbol="&lt;" autoWrapLength="0" multilineAlign="3" formatNumbers="0" addDirectionSymbol="0" plussign="0" wrapChar="" rightDirectionSymbol=">" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" placeDirectionSymbol="0" decimals="3"/>
-      <placement fitInPolygonOnly="0" centroidInside="1" overlapHandling="PreventOverlap" maxCurvedCharAngleIn="25" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorClipping="0" maxCurvedCharAngleOut="-25" xOffset="0" offsetType="0" lineAnchorTextPoint="FollowPlacement" layerType="PolygonGeometry" geometryGenerator="" geometryGeneratorEnabled="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" placementFlags="10" quadOffset="4" repeatDistance="0" priority="5" overrunDistance="0" placement="0" rotationAngle="0" repeatDistanceUnits="MM" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" lineAnchorPercent="0.5" dist="0" allowDegraded="0" polygonPlacementFlags="2" yOffset="0" distUnits="MM" rotationUnit="AngleDegrees" centroidWhole="0" overrunDistanceUnit="MM" lineAnchorType="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
+      <placement fitInPolygonOnly="0" centroidInside="1" overlapHandling="PreventOverlap" maxCurvedCharAngleIn="25" geometryGeneratorType="PointGeometry" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" lineAnchorClipping="0" maxCurvedCharAngleOut="-25" xOffset="0" offsetType="0" lineAnchorTextPoint="FollowPlacement" layerType="PolygonGeometry" geometryGenerator="" geometryGeneratorEnabled="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" placementFlags="10" quadOffset="4" repeatDistance="0" priority="5" overrunDistance="0" placement="0" rotationAngle="0" repeatDistanceUnits="MM" preserveRotation="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" lineAnchorPercent="0.5" dist="0" allowDegraded="0" polygonPlacementFlags="2" yOffset="0" distUnits="MM" rotationUnit="AngleDegrees" centroidWhole="1" overrunDistanceUnit="MM" lineAnchorType="0" distMapUnitScale="3x:0,0,0,0,0,0"/>
       <rendering scaleMin="0" limitNumLabels="0" labelPerPart="0" mergeLines="0" zIndex="0" fontLimitPixelSize="0" maxNumLabels="2000" minFeatureSize="0" fontMinPixelSize="3" fontMaxPixelSize="10000" scaleVisibility="1" scaleMax="4001" upsidedownLabels="0" obstacle="1" drawLabels="1" obstacleFactor="1" unplacedVisibility="0" obstacleType="1"/>
       <dd_properties>
         <Option type="Map">
