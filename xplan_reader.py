@@ -25,7 +25,7 @@ from lxml import etree
 from osgeo import gdal, ogr
 from pathlib import Path
 
-from qgis.core import Qgis, QgsExpression, QgsExpressionContextUtils, QgsFeatureRequest, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer
+from qgis.core import Qgis, QgsExpression, QgsExpressionContextUtils, QgsFeatureRequest, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer, QgsWkbTypes
 
 from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
@@ -247,7 +247,7 @@ class XplanReader:
                                     request.setLimit(1)
                                     for feature in vlayer.getFeatures(request):
                                         geom = feature.geometry()
-                                        geom = geom.convexHull().convertToType(1).simplify(5)
+                                        geom = geom.convexHull().convertToType(QgsWkbTypes.LineGeometry).simplify(5)
 
                                         var_name_simplified = 'vereinfacht_' + vlayer.id()
                                         if vlayer.crs().isGeographic():
