@@ -49,7 +49,7 @@ _QGIS Hauptmenü_ -> _Einstellungen_ -> _Benutzerprofile_ -> _Aktuelles Profilve
 
 Das Plugin steht unter der [GPL-3.0-Lizenz] als OpenSouce zur Verfügung.
 
-Alle Dateien im Ordner [xplan_default_styles] stehen ebenfalls unter [GPL-3.0-Lizenz] und Copyright (c) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de.
+Alle Dateien im Ordner [xplan_default_styles] stehen unter [AGPL-3.0-Lizenz] und Copyright (c) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de.
 
 Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwenden zu dürfen. Das Icon ist Copyright (c) Leitstelle XPlanung / XBau.
 
@@ -74,6 +74,7 @@ Umringpolygon eines Bebauungsplans aus QGIS nach XPlanung konvertieren:<br>https
 [GPL-3.0-Lizenz]: https://github.com/kreis-viersen/xplan-reader/blob/main/LICENSE
 [xplan_default_styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
 [XLeitstelle]: <https://xleitstelle.de/leitstelle>
+[AGPL-3.0-Lizenz]: <https://www.gnu.org/licenses/agpl-3.0.txt>
 [XPlanung-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/xplan_reader_icon.png>
 [Info-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/info_icon.png>
 [Wikipedia]: <https://de.m.wikipedia.org/wiki/Datei:Info_icon-72a7cf.svg>
