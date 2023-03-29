@@ -25,7 +25,7 @@ from lxml import etree
 from osgeo import gdal, ogr
 from pathlib import Path
 
-from qgis.core import Qgis, QgsExpression, QgsExpressionContextUtils, QgsFeatureRequest, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer, QgsWkbTypes
+from qgis.core import Qgis, QgsCoordinateReferenceSystem, QgsCoordinateTransform, QgsExpression, QgsExpressionContextUtils, QgsFeatureRequest, QgsMessageLog, QgsProject, QgsRectangle, QgsVectorLayer, QgsWkbTypes
 
 from qgis.PyQt import uic
 from qgis.PyQt.QtGui import QIcon
@@ -236,7 +236,11 @@ class XplanReader:
                             self.logMessage(layername + ' (' + gtype + ') konnte nicht geladen werden!', 2)
                         else:
                             if vlayer.isSpatial():
-                                self.group_extent.combineExtentWith(vlayer.extent())
+                                src_crs = QgsCoordinateReferenceSystem(vlayer.crs().authid())
+                                dest_crs = QgsCoordinateReferenceSystem(QgsProject.instance().crs().authid())
+                                tr = QgsCoordinateTransform(src_crs, dest_crs, QgsProject().instance())
+                                layer_extent = tr.transform(vlayer.extent())
+                                self.group_extent.combineExtentWith(layer_extent)
 
                                 if layername in ['BP_Plan', 'FP_Plan', 'LP_Plan', 'RP_Plan', 'SO_Plan']:
                                     var_name_xplanversion = 'xplanversion_' + vlayer.id()

@@ -21,7 +21,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.13.1:
+changelog=unreleased:
+    - Zoome auch auf Plan, wenn Plan-KBS nicht dem Projekt-KBS entspricht
+    v0.13.1:
     - Behebe Fehler bei Erzeugung der vereinfachten *_Plan-Geometrie
     v0.13.0:
     - *_TextAbschnitt existiert nur ohne Geometrie
