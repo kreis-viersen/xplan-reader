@@ -1,7 +1,8 @@
 from qgis.core import QgsExpressionContext, QgsProject
 from qgis.utils import qgsfunction
 
-@qgsfunction(args='auto', group='XPlan-Reader', referenced_columns=[])
+
+@qgsfunction(args="auto", group="XPlan-Reader", referenced_columns=[])
 def plan_layer_id(feature, parent, context):
     """
     Liefert die ID des zugehörigen *.Plan-Layers, also von
@@ -14,17 +15,19 @@ def plan_layer_id(feature, parent, context):
     </ul>
     """
     root = QgsProject.instance().layerTreeRoot()
-    current_layer = root.findLayer(context.variable('layer_id'))
+    current_layer = root.findLayer(context.variable("layer_id"))
     if current_layer:
         parent_group_layers = current_layer.parent().children()
         if parent_group_layers:
-          for l in parent_group_layers:
-              if l.name() in ['BP_Plan', 'FP_Plan', 'LP_Plan', 'RP_Plan', 'SO_Plan']:
-                  result = l.layerId()
-                  
-                  break
-              
-              else:
-                result = 'Kein *.Plan-Layer in Gruppe oder auf gleicher Ebene gefunden.'
-            
+            for l in parent_group_layers:
+                if l.name() in ["BP_Plan", "FP_Plan", "LP_Plan", "RP_Plan", "SO_Plan"]:
+                    result = l.layerId()
+
+                    break
+
+                else:
+                    result = (
+                        "Kein *.Plan-Layer in Gruppe oder auf gleicher Ebene gefunden."
+                    )
+
     return result

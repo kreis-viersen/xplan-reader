@@ -19,6 +19,8 @@ QGIS plugin
 ***************************************************************************
 """
 
+
 def classFactory(iface):
     from .xplan_reader import XplanReader
+
     return XplanReader(iface)
