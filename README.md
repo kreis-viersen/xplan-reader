@@ -61,7 +61,6 @@ Umringpolygon eines Bebauungsplans aus QGIS nach XPlanung konvertieren:<br>https
 
 
 
-[GitHub-Issue]: <https://github.com/kreis-viersen/xplan-reader/issues>
 [open@kreis-viersen.de]: <mailto:open@kreis-viersen.de?subject=xplan-reader>
 [QGIS-Plugin-Repository]: <https://plugins.qgis.org/plugins/xplan-reader/>
 [XPlanValidator]: <https://www.xplanungsplattform.de/xplan-validator/>
