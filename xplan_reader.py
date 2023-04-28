@@ -415,6 +415,10 @@ class XplanReader:
             # die Liste hier definiert die Reihenfolge - ganz oben hier der unterste in QGIS angezeigte Layer
             # Source / Liste von https://xleitstelle.de/releases/objektartenkatalog_5_3
 
+            addXplanLayer("SO_Plan", "Flaeche")
+            addXplanLayer(
+                "SO_Bereich", "Text"
+            )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("RP_Plan", "Flaeche")
             addXplanLayer(
                 "RP_Bereich", "Text"
@@ -469,7 +473,6 @@ class XplanReader:
             addXplanLayer("RP_Geometrieobjekt", "Flaeche")
             addXplanLayer("RP_Legendenobjekt", "Flaeche")
             addXplanLayer("RP_Objekt", "Flaeche")
-            addXplanLayer("RP_ErneuerbareEnergie", "Flaeche")  # Füllmuster
             addXplanLayer("RP_Rohstoff", "Flaeche")  # Füllmuster
             addXplanLayer("RP_LaermschutzBauschutz", "Flaeche")  # Füllmuster
             addXplanLayer("RP_Wasserschutz", "Flaeche")  # Füllmuster
@@ -486,7 +489,6 @@ class XplanReader:
             addXplanLayer("RP_Entsorgung", "Linie")
             addXplanLayer("RP_Entwicklungsschwerpunkte", "Linie")
             addXplanLayer("RP_Erholung", "Linie")
-            addXplanLayer("RP_ErneuerbareEnergie", "Linie")
             addXplanLayer("RP_Forstwirtschaft", "Linie")
             addXplanLayer("RP_Gewaesser", "Linie")
             addXplanLayer("RP_Freiraum", "Linie")
@@ -544,7 +546,6 @@ class XplanReader:
             addXplanLayer("RP_Entsorgung", "Punkt")
             addXplanLayer("RP_Entwicklungsschwerpunkte", "Punkt")
             addXplanLayer("RP_Erholung", "Punkt")
-            addXplanLayer("RP_ErneuerbareEnergie", "Punkt")
             addXplanLayer("RP_Forstwirtschaft", "Punkt")
             addXplanLayer("RP_Gewaesser", "Punkt")
             addXplanLayer("RP_Freiraum", "Punkt")
@@ -752,6 +753,7 @@ class XplanReader:
             addXplanLayer("LP_WasserrechtSonstige", "Flaeche")
             addXplanLayer("LP_WasserrechtWirtschaftAbflussHochwSchutz", "Flaeche")
             addXplanLayer("LP_Zwischennutzung", "Flaeche")
+            addXplanLayer("RP_ErneuerbareEnergie", "Flaeche")  # Füllmuster
             addXplanLayer("SO_Gewaesser", "Flaeche")
             addXplanLayer("SO_Wasserrecht", "Flaeche")
             addXplanLayer("SO_Forstrecht", "Flaeche")
@@ -771,9 +773,6 @@ class XplanReader:
             addXplanLayer("FP_PrivilegiertesVorhaben", "Flaeche")
             addXplanLayer("SO_Strassenverkehrsrecht", "Flaeche")
             addXplanLayer("SO_Bauverbotszone", "Flaeche")
-            addXplanLayer(
-                "SO_Bereich", "Text"
-            )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("SO_Grenze", "Flaeche")
             addXplanLayer("SO_Flaechenobjekt", "Flaeche")
             addXplanLayer("SO_Gebiet", "Flaeche")
@@ -781,7 +780,6 @@ class XplanReader:
             addXplanLayer("SO_Geometrieobjekt", "Flaeche")
             addXplanLayer("SO_Linienobjekt", "Flaeche")
             addXplanLayer("SO_Objekt", "Flaeche")
-            addXplanLayer("SO_Plan", "Flaeche")
             addXplanLayer("SO_Punktobjekt", "Flaeche")
             addXplanLayer("SO_SchutzgebietNaturschutzrecht", "Flaeche")
             addXplanLayer("XP_AbstraktesPraesentationsobjekt", "Flaeche")
@@ -955,6 +953,7 @@ class XplanReader:
             addXplanLayer("LP_WasserrechtSonstige", "Linie")
             addXplanLayer("LP_WasserrechtWirtschaftAbflussHochwSchutz", "Linie")
             addXplanLayer("LP_Zwischennutzung", "Linie")
+            addXplanLayer("RP_ErneuerbareEnergie", "Linie")
             addXplanLayer("SO_Bauverbotszone", "Linie")
             addXplanLayer("SO_Bodenschutzrecht", "Linie")
             addXplanLayer("SO_Denkmalschutzrecht", "Linie")
@@ -1153,6 +1152,7 @@ class XplanReader:
             addXplanLayer("LP_WasserrechtSonstige", "Punkt")
             addXplanLayer("LP_WasserrechtWirtschaftAbflussHochwSchutz", "Punkt")
             addXplanLayer("LP_Zwischennutzung", "Punkt")
+            addXplanLayer("RP_ErneuerbareEnergie", "Punkt")
             addXplanLayer("SO_Bauverbotszone", "Punkt")
             addXplanLayer("SO_Bodenschutzrecht", "Punkt")
             addXplanLayer("SO_Denkmalschutzrecht", "Punkt")
