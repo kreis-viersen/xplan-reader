@@ -478,7 +478,7 @@ class XplanReader:
             )  # Liniensignatur
             addXplanLayer("RP_Grenze", "Flaeche")  # Liniensignatur
             addXplanLayer("RP_Plan", "Linie")
-            addXplanLayer("RP_Bereich", "Linie")
+            # addXplanLayer("RP_Bereich", "Linie") -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer("RP_Achse", "Linie")
             addXplanLayer("RP_Bodenschutz", "Linie")
             addXplanLayer("RP_Einzelhandel", "Linie")
@@ -536,7 +536,7 @@ class XplanReader:
             addXplanLayer("RP_Legendenobjekt", "Linie")
             addXplanLayer("RP_Objekt", "Linie")
             addXplanLayer("RP_Plan", "Punkt")
-            addXplanLayer("RP_Bereich", "Punkt")
+            # addXplanLayer("RP_Bereich", "Punkt") -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer("RP_Achse", "Punkt")
             addXplanLayer("RP_Bodenschutz", "Punkt")
             addXplanLayer("RP_Einzelhandel", "Punkt")
@@ -711,7 +711,7 @@ class XplanReader:
             addXplanLayer("LP_Biotopverbundflaeche", "Flaeche")
             addXplanLayer("LP_TextlicheFestsetzungsFlaeche", "Flaeche")
             addXplanLayer("LP_ZuBegruenendeGrundstueckflaeche", "Flaeche")
-            addXplanLayer("XP_Bereich", "Flaeche")
+            # addXplanLayer("XP_Bereich", "Flaeche") -> kommt so nicht vor
             addXplanLayer("BP_Dachgestaltung", "Flaeche")
             addXplanLayer("BP_EmissionskontingentLaerm", "Flaeche")
             addXplanLayer("BP_EmissionskontingentLaermGebiet", "Flaeche")
@@ -850,7 +850,7 @@ class XplanReader:
             addXplanLayer("BP_ZusatzkontingentLaermFlaeche", "Linie")
             addXplanLayer("FP_AusgleichsFlaeche", "Linie")
             addXplanLayer("FP_BebauungsFlaeche", "Linie")
-            addXplanLayer("FP_Bereich", "Linie")
+            # addXplanLayer("FP_Bereich", "Linie") -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer("FP_KeineZentrAbwasserBeseitigungFlaeche", "Linie")
             # addXplanLayer('FP_LandwirtschaftsFlaeche', 'Linie')  -> existiert nur als Flaeche
             addXplanLayer("FP_NutzungsbeschraenkungsFlaeche", "Linie")
@@ -860,12 +860,12 @@ class XplanReader:
             # addXplanLayer('FP_WaldFlaeche', 'Linie') -> existiert nur als Flaeche
             addXplanLayer("FP_ZentralerVersorgungsbereich", "Linie")
             addXplanLayer("LP_AllgGruenflaeche", "Linie")
-            addXplanLayer("LP_Bereich", "Linie")
+            # addXplanLayer("LP_Bereich", "Linie") -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer("LP_Biotopverbundflaeche", "Linie")
             addXplanLayer("LP_TextlicheFestsetzungsFlaeche", "Linie")
             addXplanLayer("LP_ZuBegruenendeGrundstueckflaeche", "Linie")
-            addXplanLayer("SO_Bereich", "Linie")
-            addXplanLayer("XP_Bereich", "Linie")
+            # addXplanLayer("SO_Bereich", "Linie") -> existiert wahrscheinlich nur als Flaeche
+            # addXplanLayer("XP_Bereich", "Linie") kommt so nicht vor
             # addXplanLayer('BP_AbgrabungsFlaeche', 'Linie') -> existiert nur als Flaeche
             addXplanLayer("BP_AbweichungVonBaugrenze", "Linie")
             addXplanLayer("BP_BereichOhneEinAusfahrtLinie", "Linie")
@@ -1044,7 +1044,7 @@ class XplanReader:
             addXplanLayer("BP_ZusatzkontingentLaermFlaeche", "Punkt")
             addXplanLayer("FP_AusgleichsFlaeche", "Punkt")
             addXplanLayer("FP_BebauungsFlaeche", "Punkt")
-            addXplanLayer("FP_Bereich", "Punkt")
+            # addXplanLayer("FP_Bereich", "Punkt") -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer("FP_KeineZentrAbwasserBeseitigungFlaeche", "Punkt")
             # addXplanLayer('FP_LandwirtschaftsFlaeche', 'Punkt') -> existiert nur als Flaeche
             addXplanLayer("FP_NutzungsbeschraenkungsFlaeche", "Punkt")
@@ -1054,12 +1054,12 @@ class XplanReader:
             # addXplanLayer('FP_WaldFlaeche', 'Punkt') -> existiert nur als Flaeche
             addXplanLayer("FP_ZentralerVersorgungsbereich", "Punkt")
             addXplanLayer("LP_AllgGruenflaeche", "Punkt")
-            addXplanLayer("LP_Bereich", "Punkt")
+            # addXplanLayer("LP_Bereich", "Punkt") -> existiert wahrscheinlich nur als Flaeche
             addXplanLayer("LP_Biotopverbundflaeche", "Punkt")
             addXplanLayer("LP_TextlicheFestsetzungsFlaeche", "Punkt")
             addXplanLayer("LP_ZuBegruenendeGrundstueckflaeche", "Punkt")
-            addXplanLayer("SO_Bereich", "Punkt")
-            addXplanLayer("XP_Bereich", "Punkt")
+            # addXplanLayer("SO_Bereich", "Punkt") -> existiert wahrscheinlich nur als Flaeche
+            # addXplanLayer("XP_Bereich", "Punkt") kommt so nicht vor
             # addXplanLayer('BP_AbgrabungsFlaeche', 'Punkt') -> existiert nur als Flaeche
             addXplanLayer("BP_AbweichungVonBaugrenze", "Punkt")
             # addXplanLayer('BP_BauGrenze', 'Punkt') -> existiert nur als Linie
