@@ -144,7 +144,6 @@ class XplanReader:
         if result == 1:
             file_path = self.dlg.qgsFileWidget.filePath()
             if file_path == "":
-
                 return
 
             my_gml = file_path
@@ -197,7 +196,37 @@ class XplanReader:
                         break
 
                 except:
+                    continue
 
+            raster_reference_count = 0
+            for elem in (
+                "BP_Bereich",
+                "FP_Bereich",
+                "LP_Bereich",
+                "RP_Bereich",
+                "SO_Bereich",
+            ):
+                try:
+                    for bereich_element in gml_root.iter(
+                        "{" + xplan_ns_uri + "}" + elem
+                    ):
+                        for refscan_element in bereich_element.iter(
+                            "{" + xplan_ns_uri + "}refScan"
+                        ):
+                            referenzurl_element = next(
+                                refscan_element.iter(
+                                    "{" + xplan_ns_uri + "}referenzURL"
+                                )
+                            )
+                            if len(referenzurl_element.text) > 0:
+                                raster_reference_count = raster_reference_count + 1
+
+                        self.logMessage(
+                            "Anzahl referenzierter Rasterpläne: "
+                            + str(raster_reference_count)
+                        )
+
+                except:
                     continue
 
             try:
@@ -355,6 +384,20 @@ class XplanReader:
                                         self.logMessage(
                                             "Ausdrucksvariable erstellt: "
                                             + var_name_simplified
+                                        )
+
+                                        var_name_rastercount = (
+                                            "anzahl_rasterplaene_" + vlayer.id()
+                                        )
+
+                                        QgsExpressionContextUtils.setProjectVariable(
+                                            QgsProject.instance(),
+                                            var_name_rastercount,
+                                            float(raster_reference_count),
+                                        )
+                                        self.logMessage(
+                                            "Ausdrucksvariable erstellt: "
+                                            + var_name_rastercount
                                         )
 
                             QgsProject.instance().addMapLayer(vlayer, False)
