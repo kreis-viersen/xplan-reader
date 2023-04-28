@@ -314,8 +314,8 @@ class XplanReader:
                     )
 
                     if vlayer.featureCount() != 0:
-                        # geometry is optional for BP_Bereich
-                        if layername == "BP_Bereich" and vlayer.isSpatial():
+                        # geometry is optional for *_Bereich
+                        if layername.endswith("_Bereich") and vlayer.isSpatial():
                             gtype = "Flaeche"
                         if not vlayer.isValid():
                             self.logMessage(
@@ -416,7 +416,9 @@ class XplanReader:
             # Source / Liste von https://xleitstelle.de/releases/objektartenkatalog_5_3
 
             addXplanLayer("RP_Plan", "Flaeche")
-            addXplanLayer("RP_Bereich", "Flaeche")
+            addXplanLayer(
+                "RP_Bereich", "Text"
+            )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("RP_Forstwirtschaft", "Flaeche")  # Flächenfüller
             addXplanLayer("RP_IndustrieGewerbe", "Flaeche")  # Flächenfüller
             addXplanLayer("RP_Landwirtschaft", "Flaeche")  # Flächenfüller
@@ -592,7 +594,9 @@ class XplanReader:
             addXplanLayer("RP_Legendenobjekt", "Punkt")
             addXplanLayer("RP_Objekt", "Punkt")
             addXplanLayer("FP_Plan", "Flaeche")
-            addXplanLayer("FP_Bereich", "Flaeche")
+            addXplanLayer(
+                "FP_Bereich", "Text"
+            )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("FP_BebauungsFlaeche", "Flaeche")
             addXplanLayer("FP_WaldFlaeche", "Flaeche")
             addXplanLayer("FP_VerEntsorgung", "Flaeche")
@@ -701,7 +705,9 @@ class XplanReader:
             addXplanLayer("BP_TextlicheFestsetzungsFlaeche", "Flaeche")
             addXplanLayer("BP_ZentralerVersorgungsbereich", "Flaeche")
             addXplanLayer("LP_AllgGruenflaeche", "Flaeche")
-            addXplanLayer("LP_Bereich", "Flaeche")
+            addXplanLayer(
+                "LP_Bereich", "Text"
+            )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("LP_Biotopverbundflaeche", "Flaeche")
             addXplanLayer("LP_TextlicheFestsetzungsFlaeche", "Flaeche")
             addXplanLayer("LP_ZuBegruenendeGrundstueckflaeche", "Flaeche")
@@ -765,7 +771,9 @@ class XplanReader:
             addXplanLayer("FP_PrivilegiertesVorhaben", "Flaeche")
             addXplanLayer("SO_Strassenverkehrsrecht", "Flaeche")
             addXplanLayer("SO_Bauverbotszone", "Flaeche")
-            addXplanLayer("SO_Bereich", "Flaeche")
+            addXplanLayer(
+                "SO_Bereich", "Text"
+            )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("SO_Grenze", "Flaeche")
             addXplanLayer("SO_Flaechenobjekt", "Flaeche")
             addXplanLayer("SO_Gebiet", "Flaeche")
