@@ -10,19 +10,99 @@
             <Option type="QString" value="collection" name="type"/>
           </Option>
         </data_defined_properties>
+        <layer class="PointPatternFill" enabled="1" pass="0" locked="0">
+          <Option type="Map">
+            <Option type="double" value="0" name="angle"/>
+            <Option type="QString" value="shape" name="clip_mode"/>
+            <Option type="QString" value="feature" name="coordinate_reference"/>
+            <Option type="QString" value="1.2" name="displacement_x"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="displacement_x_map_unit_scale"/>
+            <Option type="QString" value="MM" name="displacement_x_unit"/>
+            <Option type="QString" value="0" name="displacement_y"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="displacement_y_map_unit_scale"/>
+            <Option type="QString" value="MM" name="displacement_y_unit"/>
+            <Option type="QString" value="4" name="distance_x"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="distance_x_map_unit_scale"/>
+            <Option type="QString" value="MM" name="distance_x_unit"/>
+            <Option type="QString" value="4" name="distance_y"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="distance_y_map_unit_scale"/>
+            <Option type="QString" value="MM" name="distance_y_unit"/>
+            <Option type="QString" value="0" name="offset_x"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_x_map_unit_scale"/>
+            <Option type="QString" value="MM" name="offset_x_unit"/>
+            <Option type="QString" value="0" name="offset_y"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_y_map_unit_scale"/>
+            <Option type="QString" value="MM" name="offset_y_unit"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+            <Option type="QString" value="MM" name="outline_width_unit"/>
+            <Option type="QString" value="0" name="random_deviation_x"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="random_deviation_x_map_unit_scale"/>
+            <Option type="QString" value="MM" name="random_deviation_x_unit"/>
+            <Option type="QString" value="0" name="random_deviation_y"/>
+            <Option type="QString" value="3x:0,0,0,0,0,0" name="random_deviation_y_map_unit_scale"/>
+            <Option type="QString" value="MM" name="random_deviation_y_unit"/>
+            <Option type="QString" value="872406299" name="seed"/>
+          </Option>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option name="properties"/>
+              <Option type="QString" value="collection" name="type"/>
+            </Option>
+          </data_defined_properties>
+          <symbol force_rhr="0" alpha="1" frame_rate="10" is_animated="0" clip_to_extent="1" type="marker" name="@0@0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleMarker" enabled="1" pass="0" locked="0">
+              <Option type="Map">
+                <Option type="QString" value="0" name="angle"/>
+                <Option type="QString" value="square" name="cap_style"/>
+                <Option type="QString" value="255,231,19,255" name="color"/>
+                <Option type="QString" value="1" name="horizontal_anchor_point"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="circle" name="name"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="255,231,19,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.2" name="outline_width"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="outline_width_map_unit_scale"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="diameter" name="scale_method"/>
+                <Option type="QString" value="2" name="size"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="size_map_unit_scale"/>
+                <Option type="QString" value="MM" name="size_unit"/>
+                <Option type="QString" value="1" name="vertical_anchor_point"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </layer>
         <layer class="SimpleFill" enabled="1" pass="0" locked="0">
           <Option type="Map">
             <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
-            <Option type="QString" value="190,178,151,69" name="color"/>
+            <Option type="QString" value="0,0,0,255" name="color"/>
             <Option type="QString" value="bevel" name="joinstyle"/>
             <Option type="QString" value="0,0" name="offset"/>
             <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
             <Option type="QString" value="MM" name="offset_unit"/>
-            <Option type="QString" value="190,178,151,255" name="outline_color"/>
+            <Option type="QString" value="0,0,0,255" name="outline_color"/>
             <Option type="QString" value="solid" name="outline_style"/>
-            <Option type="QString" value="4" name="outline_width"/>
-            <Option type="QString" value="RenderMetersInMapUnits" name="outline_width_unit"/>
-            <Option type="QString" value="solid" name="style"/>
+            <Option type="QString" value="0.36" name="outline_width"/>
+            <Option type="QString" value="MM" name="outline_width_unit"/>
+            <Option type="QString" value="no" name="style"/>
           </Option>
           <data_defined_properties>
             <Option type="Map">
@@ -39,9 +119,9 @@
   </renderer-v2>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style capitalization="0" textOpacity="1" fontWeight="50" namedStyle="Standard" allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" useSubstitutions="0" multilineHeightUnit="Percentage" legendString="Aa" previewBkgrdColor="255,255,255,255" fontWordSpacing="0" forcedItalic="0" fontLetterSpacing="0" fontItalic="0" fontFamily="Arial" forcedBold="0" isExpression="1" blendMode="0" textColor="50,50,50,255" fontUnderline="0" fontStrikeout="0" fontSize="8" fontSizeUnit="Point" fontKerning="1" textOrientation="horizontal" fieldName="'zentraler'+ '\n' +  'Versorgungs-'+'\nbereich'&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;text&quot; is not null) then   case &#xd;&#xa;when length(&quot;text&quot;)>25 then '\n'+left(replace(&quot;text&quot;,'\n',' '),25)+'...'&#xd;&#xa;when length(&quot;text&quot;)&lt;26 then '\n'+     replace(&quot;text&quot;,'\n',' ')  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung1&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung1&quot;)>25 then '\n'+left(&quot;gliederung1&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung1&quot;)&lt;26 then '\n'+     &quot;gliederung1&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung2&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung2&quot;)>25 then '\n'+left(&quot;gliederung2&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung2&quot;)&lt;26 then '\n'+     &quot;gliederung2&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;aufschrift&quot; is not null) then   case &#xd;&#xa;when length(&quot;aufschrift&quot;)>25 then '\n'+left(&quot;aufschrift&quot;,25)+'...'&#xd;&#xa;when length(&quot;aufschrift&quot;)&lt;26 then '\n'+     &quot;aufschrift&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;name&quot; is not null) and try(&quot;name&quot;[1]is null) then   case &#xd;&#xa;when length(&quot;name&quot;)>25 then '\n'+left(&quot;name&quot;,25)+'...'&#xd;&#xa;when length(&quot;name&quot;)&lt;26 then '\n'+     &quot;name&quot;  End ELSE '' End">
+      <text-style capitalization="0" textOpacity="1" fontWeight="50" namedStyle="Standard" allowHtml="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" useSubstitutions="0" multilineHeightUnit="Percentage" legendString="Aa" previewBkgrdColor="255,255,255,255" fontWordSpacing="0" forcedItalic="0" fontLetterSpacing="0" fontItalic="0" fontFamily="Arial" forcedBold="0" isExpression="1" blendMode="0" textColor="255,231,19,255" fontUnderline="0" fontStrikeout="0" fontSize="8" fontSizeUnit="Point" fontKerning="1" textOrientation="horizontal" fieldName="'Unverbindliche'+'\n'+'Vormerkung'+&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;text&quot; is not null) then   case &#xd;&#xa;when length(&quot;text&quot;)>25 then '\n'+left(replace(&quot;text&quot;,'\n',' '),25)+'...'&#xd;&#xa;when length(&quot;text&quot;)&lt;26 then '\n'+     replace(&quot;text&quot;,'\n',' ')  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung1&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung1&quot;)>25 then '\n'+left(&quot;gliederung1&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung1&quot;)&lt;26 then '\n'+     &quot;gliederung1&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung2&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung2&quot;)>25 then '\n'+left(&quot;gliederung2&quot;,25)+'...'&#xd;&#xa;when length(&quot;gliederung2&quot;)&lt;26 then '\n'+     &quot;gliederung2&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;aufschrift&quot; is not null) then   case &#xd;&#xa;when length(&quot;aufschrift&quot;)>25 then '\n'+left(&quot;aufschrift&quot;,25)+'...'&#xd;&#xa;when length(&quot;aufschrift&quot;)&lt;26 then '\n'+     &quot;aufschrift&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;vormerkung&quot; is not null) then   case &#xd;&#xa;when length(&quot;vormerkung&quot;)>25 then '\n'+left(&quot;vormerkung&quot;,25)+'...'&#xd;&#xa;when length(&quot;vormerkung&quot;)&lt;26 then '\n'+     &quot;vormerkung&quot;  End ELSE '' End">
         <families/>
-        <text-buffer bufferJoinStyle="128" bufferNoFill="1" bufferSizeUnits="Percentage" bufferBlendMode="0" bufferOpacity="1" bufferDraw="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="250,250,250,255" bufferSize="25"/>
+        <text-buffer bufferJoinStyle="128" bufferNoFill="1" bufferSizeUnits="Percentage" bufferBlendMode="0" bufferOpacity="1" bufferDraw="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="0,0,0,255" bufferSize="40"/>
         <text-mask maskJoinStyle="128" maskSizeUnits="MM" maskEnabled="0" maskedSymbolLayers="" maskType="0" maskOpacity="1" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="0"/>
         <background shapeRadiiUnit="Point" shapeJoinStyle="64" shapeRadiiX="0" shapeSizeY="0" shapeRadiiY="0" shapeDraw="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeBorderWidthUnit="Point" shapeSizeType="0" shapeRotationType="0" shapeSizeX="0" shapeFillColor="255,255,255,255" shapeOpacity="1" shapeBorderWidth="0" shapeSizeUnit="Point" shapeOffsetX="0" shapeOffsetY="0" shapeSVGFile="" shapeOffsetUnit="Point" shapeRotation="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0">
           <symbol force_rhr="0" alpha="1" frame_rate="10" is_animated="0" clip_to_extent="1" type="marker" name="markerSymbol">
@@ -56,7 +136,7 @@
               <Option type="Map">
                 <Option type="QString" value="0" name="angle"/>
                 <Option type="QString" value="square" name="cap_style"/>
-                <Option type="QString" value="225,89,137,255" name="color"/>
+                <Option type="QString" value="183,72,75,255" name="color"/>
                 <Option type="QString" value="1" name="horizontal_anchor_point"/>
                 <Option type="QString" value="bevel" name="joinstyle"/>
                 <Option type="QString" value="circle" name="name"/>
@@ -126,7 +206,7 @@
         <substitutions/>
       </text-style>
       <text-format addDirectionSymbol="0" rightDirectionSymbol=">" formatNumbers="0" decimals="3" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" multilineAlign="3" plussign="0" wrapChar="" autoWrapLength="0" leftDirectionSymbol="&lt;" placeDirectionSymbol="0"/>
-      <placement distUnits="MM" centroidWhole="1" allowDegraded="0" geometryGeneratorType="PointGeometry" quadOffset="4" rotationUnit="AngleDegrees" rotationAngle="0" lineAnchorType="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" centroidInside="1" polygonPlacementFlags="2" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" lineAnchorPercent="0.5" maxCurvedCharAngleOut="-25" overlapHandling="PreventOverlap" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="FollowPlacement" placementFlags="10" placement="1" fitInPolygonOnly="0" overrunDistanceUnit="MM" yOffset="0" layerType="PolygonGeometry" geometryGeneratorEnabled="0" repeatDistance="0" offsetType="0" priority="5" dist="0" geometryGenerator="" xOffset="0" overrunDistance="0" lineAnchorClipping="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM"/>
+      <placement distUnits="MM" centroidWhole="0" allowDegraded="0" geometryGeneratorType="PointGeometry" quadOffset="4" rotationUnit="AngleDegrees" rotationAngle="0" lineAnchorType="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" centroidInside="1" polygonPlacementFlags="2" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" offsetUnits="MM" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" lineAnchorPercent="0.5" maxCurvedCharAngleOut="-25" overlapHandling="PreventOverlap" distMapUnitScale="3x:0,0,0,0,0,0" lineAnchorTextPoint="FollowPlacement" placementFlags="10" placement="1" fitInPolygonOnly="0" overrunDistanceUnit="MM" yOffset="0" layerType="PolygonGeometry" geometryGeneratorEnabled="0" repeatDistance="0" offsetType="0" priority="5" dist="0" geometryGenerator="" xOffset="0" overrunDistance="0" lineAnchorClipping="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM"/>
       <rendering fontMinPixelSize="3" labelPerPart="0" fontLimitPixelSize="0" fontMaxPixelSize="10000" upsidedownLabels="0" limitNumLabels="0" obstacleType="1" unplacedVisibility="0" drawLabels="1" zIndex="0" maxNumLabels="2000" scaleMin="0" scaleVisibility="1" mergeLines="0" minFeatureSize="0" obstacle="1" scaleMax="4001" obstacleFactor="1"/>
       <dd_properties>
         <Option type="Map">
