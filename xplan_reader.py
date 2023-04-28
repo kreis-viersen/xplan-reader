@@ -327,16 +327,23 @@ class XplanReader:
                             )
                         else:
                             if vlayer.isSpatial():
+                                layer_extent = vlayer.extent()
+
                                 src_crs = QgsCoordinateReferenceSystem(
                                     vlayer.crs().authid()
                                 )
                                 dest_crs = QgsCoordinateReferenceSystem(
                                     QgsProject.instance().crs().authid()
                                 )
-                                tr = QgsCoordinateTransform(
-                                    src_crs, dest_crs, QgsProject().instance()
-                                )
-                                layer_extent = tr.transform(vlayer.extent())
+                                if src_crs != dest_crs:
+                                    try:
+                                        tr = QgsCoordinateTransform(
+                                            src_crs, dest_crs, QgsProject().instance()
+                                        )
+                                        layer_extent = tr.transform(vlayer.extent())
+                                    except:
+                                        pass
+
                                 self.group_extent.combineExtentWith(layer_extent)
 
                                 if layername in [
