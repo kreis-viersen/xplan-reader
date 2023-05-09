@@ -10,7 +10,7 @@ about=Remark:
       - oder auch zum Erstellen eines QGIS-Server-Projektes, etwa um einen WMS eines Flächennutzungsplans zu veröffentlichen.
 
 tags=xplan,xplanung,bplan,bebauungsplan,fnp,flächennutzungsplan
-version=0.14.0
+version=0.15.0-beta-1
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
 qgisMinimumVersion=3.26
 author=Kreis Viersen
@@ -21,7 +21,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.14.0:
+changelog=0.15.0-beta-1:
+    - Lade auch XPlanGML ohne expliziten "xplan" namespace/prefix  
+    v0.14.0:
     - Erstelle Ausdrucksvariable mit Anzahl refernzierter Rasterpläne von *_Bereich 
     - Zoome auch auf Plan, wenn Plan-KBS nicht dem Projekt-KBS entspricht
     - FP/LP/RP/SO_Bereich ohne eigene Geometrie(n) wird auch geladen

@@ -169,22 +169,26 @@ class XplanReader:
 
             try:
                 xplan_ns_uri = gml_root.nsmap["xplan"]
-                xplan_version = xplan_ns_uri.split("http://www.xplanung.de/xplangml/")[
-                    1
-                ].replace("/", ".")
-                self.logMessage("XPlanung Version: " + xplan_version)
             except:
-                message = (
-                    'Datei: "'
-                    + my_gml
-                    + '": Namespace "xplan" konnte nicht gefunden werden, bitte Datei überprüfen.'
-                )
-                self.iface.messageBar().pushMessage(
-                    "Fehler", message, level=2, duration=10
-                )
-                self.logMessage(message, 2)
+                try:
+                    xplan_ns_uri = gml_root.nsmap[None]
+                except:
+                    message = (
+                        'Datei: "'
+                        + my_gml
+                        + '": XPlanung-Namespace konnte nicht gefunden werden, bitte Datei überprüfen.'
+                    )
+                    self.iface.messageBar().pushMessage(
+                        "Fehler", message, level=2, duration=10
+                    )
+                    self.logMessage(message, 2)
 
-                return
+                    return
+
+            xplan_version = xplan_ns_uri.split("http://www.xplanung.de/xplangml/")[
+                1
+            ].replace("/", ".")
+            self.logMessage("XPlanung Version: " + xplan_version)
 
             plan_category = None
             for elem in ("BP_Plan", "FP_Plan", "LP_Plan", "RP_Plan", "SO_Plan"):
