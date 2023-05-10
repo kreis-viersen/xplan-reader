@@ -605,34 +605,36 @@ class XplanReader:
             addXplanLayer("RP_Geometrieobjekt", "Punkt")
             addXplanLayer("RP_Legendenobjekt", "Punkt")
             addXplanLayer("RP_Objekt", "Punkt")
+            # ----------------------------------------------------Start FNP--------------------------
             addXplanLayer("FP_Plan", "Flaeche")
             addXplanLayer(
                 "FP_Bereich", "Text"
             )  # bei Bedarf wird der Style 'Flaeche' geladen
-            addXplanLayer("FP_BebauungsFlaeche", "Flaeche")
-            addXplanLayer("FP_WaldFlaeche", "Flaeche")
-            addXplanLayer("FP_VerEntsorgung", "Flaeche")
             addXplanLayer("FP_Gewaesser", "Flaeche")
+            addXplanLayer("FP_WaldFlaeche", "Flaeche")
             addXplanLayer("FP_LandwirtschaftsFlaeche", "Flaeche")
             addXplanLayer("FP_Gruen", "Flaeche")
-            addXplanLayer("FP_Gemeinbedarf", "Flaeche")
             addXplanLayer("FP_Strassenverkehr", "Flaeche")
+            addXplanLayer("FP_BebauungsFlaeche", "Flaeche")
+            addXplanLayer("FP_VerEntsorgung", "Flaeche")
+            addXplanLayer("FP_Gemeinbedarf", "Flaeche")
             addXplanLayer("FP_SpielSportanlage", "Flaeche")
+            # ----------------------------------------------------Start BPLAN--------------------------
             addXplanLayer("BP_Plan", "Flaeche")
             addXplanLayer("BP_PlanArt", "Flaeche")  # nur im XPlanBOX WMS enthalten ?
             addXplanLayer(
                 "BP_Bereich", "Text"
             )  # bei Bedarf wird der Style 'Flaeche' geladen
-            addXplanLayer("BP_BaugebietsTeilFlaeche", "Flaeche")
-            addXplanLayer("BP_GemeinbedarfsFlaeche", "Flaeche")
             addXplanLayer("BP_GewaesserFlaeche", "Flaeche")
-            addXplanLayer("BP_GruenFlaeche", "Flaeche")
-            addXplanLayer("BP_KleintierhaltungFlaeche", "Flaeche")
-            addXplanLayer("BP_LandwirtschaftsFlaeche", "Flaeche")
-            addXplanLayer("BP_SpielSportanlagenFlaeche", "Flaeche")
-            addXplanLayer("BP_StrassenVerkehrsFlaeche", "Flaeche")
             addXplanLayer("BP_WaldFlaeche", "Flaeche")
             addXplanLayer("BP_Landwirtschaft", "Flaeche")
+            addXplanLayer("BP_LandwirtschaftsFlaeche", "Flaeche")
+            addXplanLayer("BP_StrassenVerkehrsFlaeche", "Flaeche")
+            addXplanLayer("BP_GruenFlaeche", "Flaeche")
+            addXplanLayer("BP_BaugebietsTeilFlaeche", "Flaeche")
+            addXplanLayer("BP_GemeinbedarfsFlaeche", "Flaeche")
+            addXplanLayer("BP_KleintierhaltungFlaeche", "Flaeche")
+            addXplanLayer("BP_SpielSportanlagenFlaeche", "Flaeche")
             addXplanLayer("BP_VerEntsorgung", "Flaeche")
             addXplanLayer("BP_VerkehrsflaecheBesondererZweckbestimmung", "Flaeche")
             # BP_Bereich_textlicher_Festsetzung im WMS enthalten …. Fehlt ?
@@ -660,7 +662,6 @@ class XplanReader:
             addXplanLayer("BP_PersGruppenBestimmteFlaeche", "Flaeche")
             addXplanLayer("BP_Strassenkoerper", "Flaeche")
             # addXplanLayer('BP_StrassenbegrenzungsLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer("BP_StrassenbegrenzungsLinie", "Linie")
             addXplanLayer("BP_SchutzPflegeEntwicklungsFlaeche", "Flaeche")
             addXplanLayer("BP_TechnischeMassnahmenFlaeche", "Flaeche")
             addXplanLayer("BP_UeberbaubareGrundstuecksFlaeche", "Flaeche")
@@ -699,14 +700,11 @@ class XplanReader:
             addXplanLayer("BP_Veraenderungssperre", "Flaeche")
             addXplanLayer("BP_Wegerecht", "Flaeche")
             # addXplanLayer('BP_NutzungsartenGrenze', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer("BP_NutzungsartenGrenze", "Linie")
             # addXplanLayer('BP_BauGrenze', 'Flaeche') -> existiert nur als Linie
             # addXplanLayer('BP_BauLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer("BP_BauGrenze", "Linie")
             addXplanLayer("BP_BauLinie", "Linie")
             addXplanLayer("BP_AbweichungVonBaugrenze", "Flaeche")
             addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Flaeche")
-            addXplanLayer("BP_VerEntsorgung", "Linie")
             addXplanLayer("BP_RichtungssektorGrenze", "Flaeche")
             addXplanLayer("BP_ZusatzkontingentLaerm", "Flaeche")
             addXplanLayer("BP_ZusatzkontingentLaermFlaeche", "Flaeche")
@@ -821,6 +819,10 @@ class XplanReader:
             addXplanLayer("XP_VerfahrensMerkmal", "Flaeche")
             addXplanLayer("XP_WirksamkeitBedingung", "Flaeche")
             addXplanLayer("BP_Plan", "Linie")
+            addXplanLayer("BP_StrassenbegrenzungsLinie", "Linie")
+            addXplanLayer("BP_NutzungsartenGrenze", "Linie")
+            addXplanLayer("BP_BauGrenze", "Linie")
+            addXplanLayer("BP_VerEntsorgung", "Linie")
             addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Linie")
             addXplanLayer("BP_AufschuettungsFlaeche", "Linie")
             addXplanLayer("BP_AusgleichsFlaeche", "Linie")
