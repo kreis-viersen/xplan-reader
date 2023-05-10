@@ -21,7 +21,7 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=0.15.0:
+changelog=v0.15.0:
     - Lade auch XPlanGML ohne expliziten "xplan" namespace/prefix
     - Lade auch XP_RasterplanBasis (kommt vor bis XPlanung v4)
     - XP_BegruendungAbschnitt existiert nur ohne Geometrie
