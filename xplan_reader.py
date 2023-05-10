@@ -792,7 +792,7 @@ class XplanReader:
             addXplanLayer("SO_Punktobjekt", "Flaeche")
             addXplanLayer("SO_SchutzgebietNaturschutzrecht", "Flaeche")
             addXplanLayer("XP_AbstraktesPraesentationsobjekt", "Flaeche")
-            addXplanLayer("XP_BegruendungAbschnitt", "Flaeche")
+            # addXplanLayer("XP_BegruendungAbschnitt", "Flaeche") -> existiert nur als Text
             addXplanLayer("XP_DatumAttribut", "Flaeche")
             addXplanLayer("XP_DoubleAttribut", "Flaeche")
             addXplanLayer("XP_ExterneReferenz", "Flaeche")
@@ -989,7 +989,7 @@ class XplanReader:
             addXplanLayer("SO_Strassenverkehrsrecht", "Linie")
             addXplanLayer("SO_Wasserrecht", "Linie")
             addXplanLayer("XP_AbstraktesPraesentationsobjekt", "Linie")
-            addXplanLayer("XP_BegruendungAbschnitt", "Linie")
+            # addXplanLayer("XP_BegruendungAbschnitt", "Linie") -> existiert nur als Text
             addXplanLayer("XP_DatumAttribut", "Linie")
             addXplanLayer("XP_DoubleAttribut", "Linie")
             addXplanLayer("XP_ExterneReferenz", "Linie")
@@ -1188,7 +1188,7 @@ class XplanReader:
             addXplanLayer("SO_Strassenverkehrsrecht", "Punkt")
             addXplanLayer("SO_Wasserrecht", "Punkt")
             addXplanLayer("XP_AbstraktesPraesentationsobjekt", "Punkt")
-            addXplanLayer("XP_BegruendungAbschnitt", "Punkt")
+            # addXplanLayer("XP_BegruendungAbschnitt", "Punkt") -> existiert nur als Text
             addXplanLayer("XP_DatumAttribut", "Punkt")
             addXplanLayer("XP_DoubleAttribut", "Punkt")
             addXplanLayer("XP_ExterneReferenz", "Punkt")
@@ -1215,6 +1215,7 @@ class XplanReader:
             addXplanLayer("XP_VerfahrensMerkmal", "Punkt")
             addXplanLayer("XP_WirksamkeitBedingung", "Punkt")
 
+            addXplanLayer("XP_BegruendungAbschnitt", "Text")
             addXplanLayer("XP_Rasterdarstellung", "Text")
             addXplanLayer("XP_TextAbschnitt", "Text")
             addXplanLayer("SO_TextAbschnitt", "Text")
