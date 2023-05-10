@@ -1216,7 +1216,8 @@ class XplanReader:
             addXplanLayer("XP_WirksamkeitBedingung", "Punkt")
 
             addXplanLayer("XP_BegruendungAbschnitt", "Text")
-            addXplanLayer("XP_Rasterdarstellung", "Text")
+            addXplanLayer("XP_RasterplanBasis", "Text")  # nur XPlanung v3/v4
+            addXplanLayer("XP_Rasterdarstellung", "Text")  # nur XPlanung v5
             addXplanLayer("XP_TextAbschnitt", "Text")
             addXplanLayer("SO_TextAbschnitt", "Text")
             addXplanLayer("RP_TextAbschnitt", "Text")
