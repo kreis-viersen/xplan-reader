@@ -140,6 +140,9 @@ class XplanReader:
         self.dlg.show()
         result = self.dlg.exec_()
 
+        self.dest_crs = None
+        self.plan_id = None
+
         # check if confirmed with OK / wenn mit OK bestätigt wurde
         if result == 1:
             file_path = self.dlg.qgsFileWidget.filePath()
@@ -336,13 +339,15 @@ class XplanReader:
                                 src_crs = QgsCoordinateReferenceSystem(
                                     vlayer.crs().authid()
                                 )
-                                dest_crs = QgsCoordinateReferenceSystem(
+                                self.dest_crs = QgsCoordinateReferenceSystem(
                                     QgsProject.instance().crs().authid()
                                 )
-                                if src_crs != dest_crs:
+                                if src_crs != self.dest_crs:
                                     try:
                                         tr = QgsCoordinateTransform(
-                                            src_crs, dest_crs, QgsProject().instance()
+                                            src_crs,
+                                            self.dest_crs,
+                                            QgsProject().instance(),
                                         )
                                         layer_extent = tr.transform(vlayer.extent())
                                     except:
@@ -357,6 +362,8 @@ class XplanReader:
                                     "RP_Plan",
                                     "SO_Plan",
                                 ]:
+                                    self.plan_id = vlayer.id()
+
                                     var_name_xplanversion = (
                                         "xplanversion_" + vlayer.id()
                                     )
@@ -1224,6 +1231,28 @@ class XplanReader:
             addXplanLayer("LP_TextAbschnitt", "Text")
             addXplanLayer("FP_TextAbschnitt", "Text")
             addXplanLayer("BP_TextAbschnitt", "Text")
+
+            # project variable "plan_in_deutschland"
+            bbox_germany = QgsRectangle(280353, 5235877, 921261, 6106245)
+            bbox_germany_crs = QgsCoordinateReferenceSystem("EPSG:25832")
+
+            if bbox_germany_crs != self.dest_crs:
+                try:
+                    tr = QgsCoordinateTransform(
+                        bbox_germany_crs, self.dest_crs, QgsProject().instance()
+                    )
+                    bbox_germany = tr.transform(bbox_germany)
+                except:
+                    pass
+
+            var_name_bbox = "plan_in_deutschland_" + self.plan_id
+
+            QgsExpressionContextUtils.setProjectVariable(
+                QgsProject.instance(),
+                var_name_bbox,
+                bbox_germany.intersects(self.group_extent),
+            )
+            self.logMessage("Ausdrucksvariable erstellt: " + var_name_bbox)
 
             # collapse layers / klappe Layer zusammen
             for group in [child for child in root.children() if child.nodeType() == 0]:
