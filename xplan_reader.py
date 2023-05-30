@@ -212,6 +212,7 @@ class XplanReader:
                 "LP_Bereich",
                 "RP_Bereich",
                 "SO_Bereich",
+                "XP_Rasterdarstellung",  # only XPlaung > 6
             ):
                 try:
                     for bereich_element in gml_root.iter(
