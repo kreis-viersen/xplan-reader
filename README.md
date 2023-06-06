@@ -56,7 +56,7 @@ Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwe
 [Info-Icon] aus [Wikipedia] unter [CCO].
 
 ## Umringtool
-Umringpolygon eines Bebauungsplans aus QGIS nach XPlanung konvertieren:<br>https://github.com/kreis-viersen/umringpolygon-zu-xplanung
+Umringpolygon eines Bebauungsplans aus QGIS nach XPlanung konvertieren:<br>https://github.com/kreis-viersen/xplan-umring
 
 
 
