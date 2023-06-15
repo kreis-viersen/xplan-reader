@@ -59,16 +59,21 @@ class XplanReader:
     def __init__(self, iface):
         self.iface = iface
 
-        self.use_gfs_workaround = False
+        self.use_gfs_workaround_one = False
+        self.use_gfs_workaround_two = False
 
         def versionstringToTuple(vstring):
             # for something like 3.7.0dev-52baae2708-dirty
             first_part = vstring.split("dev")[0]
             return tuple(map(int, (first_part.split("."))))
 
-        # GFS-workaround is not needed for GDAL >=3.6.0
+        # gfs_workaround_one is not needed for GDAL >=3.6.0
         if versionstringToTuple(gdal.__version__) < versionstringToTuple("3.6.0"):
-            self.use_gfs_workaround = True
+            self.use_gfs_workaround_one = True
+
+        # gfs_workaround_two is only needed for GDAL = 3.7.0
+        if versionstringToTuple(gdal.__version__) == versionstringToTuple("3.7.0"):
+            self.use_gfs_workaround_two = True
 
         # we need at least / wir benötigen mindestens
         # QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
@@ -278,7 +283,7 @@ class XplanReader:
 
             driver = ogr.GetDriverByName("GML")
 
-            if self.use_gfs_workaround:
+            if self.use_gfs_workaround_one or self.use_gfs_workaround_two:
                 my_gfs = os.path.splitext(my_gml)[0] + ".gfs"
 
                 # don't touch existing .gfs
@@ -288,11 +293,20 @@ class XplanReader:
                     if os.path.isfile(my_gfs):
                         gfs_tree = etree.parse(my_gfs)
                         gfs_root = gfs_tree.getroot()
-                        for geometry_type in gfs_root.iter("GeometryType"):
-                            # if needed, change GeometryType in .gfs to handle false GeometryCollection import
-                            if geometry_type.text == "7":
-                                geometry_type.text = "0"
-                                write_gfs = True
+                        if self.use_gfs_workaround_one:
+                            for geometry_type in gfs_root.iter("GeometryType"):
+                                # if needed, change GeometryType in .gfs to handle false GeometryCollection import
+                                if geometry_type.text == "7":
+                                    geometry_type.text = "0"
+                                    write_gfs = True
+                        if self.use_gfs_workaround_two:
+                            for geometry_name in gfs_root.iter("GeometryName"):
+                                if geometry_name.text == "boundedBy":
+                                    geometry_name.getparent().remove(geometry_name)
+                                    write_gfs = True
+                                    for geometry_element_path in gfs_root.iter("GeometryElementPath"):
+                                        if "boundedBy" in geometry_element_path.text: 
+                                            geometry_element_path.getparent().remove(geometry_element_path)
                         if write_gfs:
                             gfs_tree.write(
                                 my_gfs, encoding="UTF-8", xml_declaration=False
