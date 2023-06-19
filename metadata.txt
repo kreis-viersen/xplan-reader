@@ -10,7 +10,7 @@ about=Remark:
       - oder auch zum Erstellen eines QGIS-Server-Projektes, etwa um einen WMS eines Flächennutzungsplans zu veröffentlichen.
 
 tags=xplan,xplanung,bplan,bebauungsplan,fnp,flächennutzungsplan
-version=0.16.0
+version=0.17.0
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
 qgisMinimumVersion=3.26
 author=Kreis Viersen
@@ -21,7 +21,10 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.16.0:
+changelog=v0.17.0:
+    - Workaround für Fehler in GDAL 3.7.0
+    - viele optimierte Styles
+    v0.16.0:
     - Zähle auch Rasterpläne aus XP_Rasterdarstellung
     - Erstelle Ausdrucksvariable "plan_in_deutschland"
     - Reihenfolge der Styles optimiert
