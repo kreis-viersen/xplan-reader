@@ -304,9 +304,13 @@ class XplanReader:
                                 if geometry_name.text == "boundedBy":
                                     geometry_name.getparent().remove(geometry_name)
                                     write_gfs = True
-                                    for geometry_element_path in gfs_root.iter("GeometryElementPath"):
-                                        if "boundedBy" in geometry_element_path.text: 
-                                            geometry_element_path.getparent().remove(geometry_element_path)
+                                    for geometry_element_path in gfs_root.iter(
+                                        "GeometryElementPath"
+                                    ):
+                                        if "boundedBy" in geometry_element_path.text:
+                                            geometry_element_path.getparent().remove(
+                                                geometry_element_path
+                                            )
                         if write_gfs:
                             gfs_tree.write(
                                 my_gfs, encoding="UTF-8", xml_declaration=False
@@ -737,10 +741,12 @@ class XplanReader:
             addXplanLayer("BP_RekultivierungsFlaeche", "Flaeche")
             addXplanLayer("BP_TextlicheFestsetzungsFlaeche", "Flaeche")
             addXplanLayer("BP_ZentralerVersorgungsbereich", "Flaeche")
-            addXplanLayer("LP_AllgGruenflaeche", "Flaeche")
+            # ----------------------------------------------------Start LPLAN--------------------------
+            addXplanLayer("LP_Plan", "Flaeche")
             addXplanLayer(
                 "LP_Bereich", "Text"
             )  # bei Bedarf wird der Style 'Flaeche' geladen
+            addXplanLayer("LP_AllgGruenflaeche", "Flaeche")
             addXplanLayer("LP_Biotopverbundflaeche", "Flaeche")
             addXplanLayer("LP_TextlicheFestsetzungsFlaeche", "Flaeche")
             addXplanLayer("LP_ZuBegruenendeGrundstueckflaeche", "Flaeche")
@@ -771,7 +777,6 @@ class XplanReader:
             addXplanLayer("LP_NutzungsAusschluss", "Flaeche")
             addXplanLayer("LP_NutzungserfordernisRegelung", "Flaeche")
             addXplanLayer("LP_Objekt", "Flaeche")
-            addXplanLayer("LP_Plan", "Flaeche")
             addXplanLayer("LP_PlanerischeVertiefung", "Flaeche")
             addXplanLayer("LP_Punktobjekt", "Flaeche")
             addXplanLayer("LP_SchutzobjektInternatRecht", "Flaeche")
@@ -785,6 +790,7 @@ class XplanReader:
             addXplanLayer("LP_WasserrechtSonstige", "Flaeche")
             addXplanLayer("LP_WasserrechtWirtschaftAbflussHochwSchutz", "Flaeche")
             addXplanLayer("LP_Zwischennutzung", "Flaeche")
+            addXplanLayer("SO_Schienenverkehrsrecht", "Flaeche")
             addXplanLayer("SO_Gewaesser", "Flaeche")
             addXplanLayer("SO_Wasserrecht", "Flaeche")
             addXplanLayer("SO_Forstrecht", "Flaeche")
@@ -794,7 +800,6 @@ class XplanReader:
             addXplanLayer("SO_SchutzgebietSonstigesRecht", "Flaeche")
             addXplanLayer("SO_SchutzgebietWasserrecht", "Flaeche")
             addXplanLayer("SO_Luftverkehrsrecht", "Flaeche")
-            addXplanLayer("SO_Schienenverkehrsrecht", "Flaeche")
             addXplanLayer("FP_Aufschuettung", "Flaeche")
             addXplanLayer("FP_Wasserwirtschaft", "Flaeche")
             addXplanLayer("FP_NutzungsbeschraenkungsFlaeche", "Flaeche")
