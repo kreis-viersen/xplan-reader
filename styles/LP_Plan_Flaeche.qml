@@ -1,533 +1,258 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis hasScaleBasedVisibilityFlag="0" version="3.20.2-Odense" styleCategories="AllStyleCategories" simplifyAlgorithm="0" minScale="100000000" readOnly="0" labelsEnabled="0" simplifyDrawingTol="1" maxScale="0" simplifyDrawingHints="1" simplifyLocal="1" simplifyMaxScale="1">
-  <flags>
-    <Identifiable>1</Identifiable>
-    <Removable>1</Removable>
-    <Searchable>1</Searchable>
-    <Private>0</Private>
-  </flags>
-  <temporal enabled="0" endField="" startExpression="" mode="0" startField="" endExpression="" accumulate="0" durationUnit="min" durationField="" fixedDuration="0">
-    <fixedRange>
-      <start></start>
-      <end></end>
-    </fixedRange>
-  </temporal>
-  <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+<qgis version="3.30.2-'s-Hertogenbosch" labelsEnabled="1" styleCategories="Symbology|Labeling">
+  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" referencescale="-1" type="RuleRenderer">
+    <rules key="{37f7d154-6eab-42c4-992e-91f7bddbabd3}">
+      <rule symbol="0" key="{8da3026b-34f2-431c-95e7-ea5f7acc4ef5}"/>
+    </rules>
     <symbols>
-      <symbol name="0" alpha="1" clip_to_extent="1" force_rhr="0" type="fill">
+      <symbol alpha="1" is_animated="0" clip_to_extent="1" force_rhr="0" type="fill" name="0" frame_rate="10">
         <data_defined_properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option value="" type="QString" name="name"/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option value="collection" type="QString" name="type"/>
           </Option>
         </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
+        <layer class="SimpleFill" locked="0" enabled="1" pass="0" id="{036e7298-189d-410c-8350-818962d3cc8e}">
           <Option type="Map">
-            <Option name="border_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="color" type="QString" value="229,182,54,255"/>
-            <Option name="joinstyle" type="QString" value="bevel"/>
-            <Option name="offset" type="QString" value="0,0"/>
-            <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="160,160,160,255"/>
-            <Option name="outline_style" type="QString" value="solid"/>
-            <Option name="outline_width" type="QString" value="1.5"/>
-            <Option name="outline_width_unit" type="QString" value="MM"/>
-            <Option name="style" type="QString" value="no"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+            <Option value="229,182,54,255" type="QString" name="color"/>
+            <Option value="bevel" type="QString" name="joinstyle"/>
+            <Option value="0,0" type="QString" name="offset"/>
+            <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+            <Option value="MM" type="QString" name="offset_unit"/>
+            <Option value="160,160,160,255" type="QString" name="outline_color"/>
+            <Option value="solid" type="QString" name="outline_style"/>
+            <Option value="1.5" type="QString" name="outline_width"/>
+            <Option value="MM" type="QString" name="outline_width_unit"/>
+            <Option value="no" type="QString" name="style"/>
           </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="color" v="229,182,54,255"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="offset" v="0,0"/>
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="outline_color" v="160,160,160,255"/>
-          <prop k="outline_style" v="solid"/>
-          <prop k="outline_width" v="1.5"/>
-          <prop k="outline_width_unit" v="MM"/>
-          <prop k="style" v="no"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option name="name" type="QString" value=""/>
+              <Option value="" type="QString" name="name"/>
               <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
+              <Option value="collection" type="QString" name="type"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
     </symbols>
-    <rotation/>
-    <sizescale/>
   </renderer-v2>
-  <customproperties>
-    <Option type="Map">
-      <Option name="embeddedWidgets/count" type="int" value="0"/>
-      <Option name="variableNames"/>
-      <Option name="variableValues"/>
-    </Option>
-  </customproperties>
-  <blendMode>0</blendMode>
-  <featureBlendMode>0</featureBlendMode>
-  <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory sizeType="MM" minimumSize="0" maxScaleDenominator="1e+08" opacity="1" width="15" minScaleDenominator="0" spacingUnitScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" penAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" spacingUnit="MM" direction="0" diagramOrientation="Up" spacing="5" penWidth="0" enabled="0" height="15" backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" scaleDependency="Area" labelPlacementMethod="XHeight" showAxis="1" rotationOffset="270" backgroundColor="#ffffff" barWidth="5" penColor="#000000">
-      <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
-      <axisSymbol>
-        <symbol name="" alpha="1" clip_to_extent="1" force_rhr="0" type="line">
-          <data_defined_properties>
-            <Option type="Map">
-              <Option name="name" type="QString" value=""/>
-              <Option name="properties"/>
-              <Option name="type" type="QString" value="collection"/>
-            </Option>
-          </data_defined_properties>
-          <layer enabled="1" locked="0" class="SimpleLine" pass="0">
-            <Option type="Map">
-              <Option name="align_dash_pattern" type="QString" value="0"/>
-              <Option name="capstyle" type="QString" value="square"/>
-              <Option name="customdash" type="QString" value="5;2"/>
-              <Option name="customdash_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="customdash_unit" type="QString" value="MM"/>
-              <Option name="dash_pattern_offset" type="QString" value="0"/>
-              <Option name="dash_pattern_offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="dash_pattern_offset_unit" type="QString" value="MM"/>
-              <Option name="draw_inside_polygon" type="QString" value="0"/>
-              <Option name="joinstyle" type="QString" value="bevel"/>
-              <Option name="line_color" type="QString" value="35,35,35,255"/>
-              <Option name="line_style" type="QString" value="solid"/>
-              <Option name="line_width" type="QString" value="0.26"/>
-              <Option name="line_width_unit" type="QString" value="MM"/>
-              <Option name="offset" type="QString" value="0"/>
-              <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="offset_unit" type="QString" value="MM"/>
-              <Option name="ring_filter" type="QString" value="0"/>
-              <Option name="trim_distance_end" type="QString" value="0"/>
-              <Option name="trim_distance_end_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="trim_distance_end_unit" type="QString" value="MM"/>
-              <Option name="trim_distance_start" type="QString" value="0"/>
-              <Option name="trim_distance_start_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-              <Option name="trim_distance_start_unit" type="QString" value="MM"/>
-              <Option name="tweak_dash_pattern_on_corners" type="QString" value="0"/>
-              <Option name="use_custom_dash" type="QString" value="0"/>
-              <Option name="width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
-            </Option>
-            <prop k="align_dash_pattern" v="0"/>
-            <prop k="capstyle" v="square"/>
-            <prop k="customdash" v="5;2"/>
-            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="customdash_unit" v="MM"/>
-            <prop k="dash_pattern_offset" v="0"/>
-            <prop k="dash_pattern_offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="dash_pattern_offset_unit" v="MM"/>
-            <prop k="draw_inside_polygon" v="0"/>
-            <prop k="joinstyle" v="bevel"/>
-            <prop k="line_color" v="35,35,35,255"/>
-            <prop k="line_style" v="solid"/>
-            <prop k="line_width" v="0.26"/>
-            <prop k="line_width_unit" v="MM"/>
-            <prop k="offset" v="0"/>
-            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="ring_filter" v="0"/>
-            <prop k="trim_distance_end" v="0"/>
-            <prop k="trim_distance_end_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="trim_distance_end_unit" v="MM"/>
-            <prop k="trim_distance_start" v="0"/>
-            <prop k="trim_distance_start_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="trim_distance_start_unit" v="MM"/>
-            <prop k="tweak_dash_pattern_on_corners" v="0"/>
-            <prop k="use_custom_dash" v="0"/>
-            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+  <labeling type="simple">
+    <settings calloutType="simple">
+      <text-style previewBkgrdColor="255,255,255,255" fontFamily="Arial" forcedBold="0" namedStyle="Standard" fontSizeUnit="Point" textColor="50,50,50,255" fontWordSpacing="0" forcedItalic="0" isExpression="1" multilineHeightUnit="Percentage" fontItalic="0" legendString="Aa" textOpacity="1" fontSize="8" fieldName="CASE &#xd;&#xa;WHEN try(name is not NULL) THEN   '&quot;'+ to_string(&quot;name&quot; )+'&quot;'&#xd;&#xa;ELSE  '&quot;name&quot; nicht erfasst'&#xd;&#xa;END&#xd;&#xa;+&#xd;&#xa;&#xd;&#xa;CASE &#xd;&#xa;WHEN try(nummer is not NULL,'-') THEN   '\n'+ '&quot;'+ to_string(&quot;nummer&quot; )+'&quot;'&#xd;&#xa;ELSE '\n'+'&quot;nummer&quot; nicht erfasst'&#xd;&#xa;END&#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try(&quot;bundesland&quot; is not NULL) then&#xd;&#xa;case&#xd;&#xa;when  &quot;bundesland&quot; = 1000 then '\n' +'Brandenburg'&#xd;&#xa;when  &quot;bundesland&quot; = 1100 then '\n' +'Berlin'&#xd;&#xa;when  &quot;bundesland&quot; = 1200 then '\n' +'Baden-Württemberg'&#xd;&#xa;when  &quot;bundesland&quot; = 1300 then '\n' +'Bayern'&#xd;&#xa;when  &quot;bundesland&quot; = 1400 then '\n' +'Bremen'&#xd;&#xa;when  &quot;bundesland&quot; = 1500 then '\n' +'Hessen'&#xd;&#xa;when  &quot;bundesland&quot; = 1600 then '\n' +'Hamburg'&#xd;&#xa;when  &quot;bundesland&quot; = 1700 then '\n' +'Mecklenburg-Vorpommern'&#xd;&#xa;when  &quot;bundesland&quot; = 1800 then '\n' +'Niedersachsen'&#xd;&#xa;when  &quot;bundesland&quot; = 1900 then '\n' +'Nordrhein-Westfalen'&#xd;&#xa;when  &quot;bundesland&quot; = 2000 then '\n' +'Rheinland-Pfalz'&#xd;&#xa;when  &quot;bundesland&quot; = 2100 then '\n' +'Schleswig-Holstein'&#xd;&#xa;when  &quot;bundesland&quot; = 2200 then '\n' +'Saarland'&#xd;&#xa;when  &quot;bundesland&quot; = 2300 then '\n' +'Sachsen'&#xd;&#xa;when  &quot;bundesland&quot; = 2400 then '\n' +'Sachsen-Anhalt'&#xd;&#xa;when  &quot;bundesland&quot; = 2500 then '\n' +'Thüringen'&#xd;&#xa;when  &quot;bundesland&quot; = 3000 then '\n' +'Der Bund'&#xd;&#xa;else '\n' +'Bundesland nicht erfasst' END &#xd;&#xa;else '\n' +'Bundesland nicht erfasst' END &#xd;&#xa;&#xd;&#xa;+case when try(&quot;planungstraegerGKZ&quot;is not null) then '\nPlanungsträgerGKZ: '+to_string(&quot;planungstraegerGKZ&quot;) ELSE '' END &#xd;&#xa;+case when try(&quot;planungstraeger&quot;is not null) then '\nPlanungsträger: '+to_string(&quot;planungstraeger&quot;) ELSE '' END&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;+case when try(&quot;ags&quot;is not null) then '\nAGS: '+to_string(&quot;ags&quot;) ELSE '' END&#xd;&#xa;+case when try(&quot;rs&quot;is not null) then '\nRS: '+to_string(&quot;rs&quot;) ELSE '' END&#xd;&#xa;+case when try(&quot;gemeindeName&quot;is not null) then '\nGemeindename: '+to_string(&quot;gemeindeName&quot;) ELSE '' END&#xd;&#xa;+case when try(&quot;ortsteilName&quot;is not null) then '\nOrtsteilname: '+to_string(&quot;ortsteilName&quot;) ELSE '' END&#xd;&#xa;/*v5*/ +case when try(&quot;plangeber&quot;is not null) then '\nPlangeber: '+to_string(&quot;plangeber&quot;) ELSE '' END&#xd;&#xa;/*v6 fehlt ein Beispiel ... kommt &quot;name&quot; drin vor */&#xd;&#xa;&#xd;&#xa;+CASE WHEN try(planArt is not NULL,'-') THEN &#x9;CASE &#xd;&#xa;    WHEN &quot;planArt&quot;= 1000  THEN '\n'+'Planart: Landschaftsprogramm' &#xd;&#xa;    WHEN &quot;planArt&quot;= 2000  THEN '\n'+'Planart: Landschaftsrahmenplan' &#xd;&#xa;&#x9;WHEN &quot;planArt&quot;= 3000  THEN '\n'+'Planart: Landschaftsplan' &#xd;&#xa;    WHEN &quot;planArt&quot;= 4000  THEN '\n'+'Planart: Grünordnungsplan' &#xd;&#xa;    WHEN &quot;planArt&quot;= 9999  THEN '\n'+'Planart: sonstiges' &#xd;&#xa;    ELSE '\n'+'&quot;planArt&quot; nicht erfasst'     END &#xd;&#xa;ELSE '\n'+'&quot;planArt&quot; nicht erfasst'  END&#xd;&#xa;&#xd;&#xa;+ CASE &#xd;&#xa;WHEN try(rechtsstand is not NULL,'-') THEN &#xd;&#xa;   CASE &#xd;&#xa;   WHEN &quot;rechtsstand&quot;= 1000  THEN '\n' + 'Rechtsstand: Aufstellungsbeschluss' &#xd;&#xa;   WHEN &quot;rechtsstand&quot;= 2000  THEN '\n' + 'Rechtsstand: Entwurf' &#xd;&#xa;   WHEN &quot;rechtsstand&quot;= 3000  THEN '\n' + 'Rechtsstand: Plan' &#xd;&#xa;   WHEN &quot;rechtsstand&quot;= 4000  THEN '\n' + 'Rechtsstand: Wirksamkeit' &#xd;&#xa;   WHEN &quot;rechtsstand&quot;= 5000  THEN '\n' + 'Rechtsstand: Untergegangen' &#xd;&#xa;   ELSE '\n' + '&quot;rechtsstand&quot; nicht erfasst'    END&#xd;&#xa;ELSE '\n' + '&quot;rechtsstand&quot; nicht erfasst' END&#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try(&quot;rechtlicheAussenwirkung&quot;=1)or try(&quot;rechtlicheAussenwirkung&quot; ='true')  then '\nrechtliche Aussenwirkung: ja'&#xd;&#xa;when try(&quot;rechtlicheAussenwirkung&quot;=0)or try(&quot;rechtlicheAussenwirkung&quot; ='false') then '\nrechtliche Aussenwirkung: nein'&#xd;&#xa;ELSE '\nrechtliche Aussenwirkung:nicht erfasst'&#xd;&#xa;END &#xd;&#xa;&#xd;&#xa;+ '\n'+ '--------------- Version ' + to_string(var( 'xplanversion_' + plan_layer_id() )) +' ---------------'&#xd;&#xa;&#xd;&#xa;+ '\n' + CASE  when try(&quot;kommentar&quot; is not null) then   case &#xd;&#xa;when length(&quot;kommentar&quot;)>25 then 'Kommentar:'+left(&quot;kommentar&quot;,25)+'...'&#xd;&#xa;when length(&quot;kommentar&quot;)&lt;26 then 'Kommentar:'+     &quot;kommentar&quot;  End ELSE 'Kommentar:-' End&#xd;&#xa;&#xd;&#xa;+ '\n' + CASE  when try(&quot;beschreibung&quot; is not null) then   case &#xd;&#xa;when try(array_length(&quot;beschreibung&quot;)>1) then 'Beschreibung:mehrere Einträge'&#xd;&#xa;when length(&quot;beschreibung&quot;)>25 then 'Beschreibung:'+to_string(left(&quot;beschreibung&quot;,25))+'...'&#xd;&#xa;when length(&quot;beschreibung&quot;)&lt;26 then 'Beschreibung:'+     to_string(&quot;beschreibung&quot;)  &#xd;&#xa;End ELSE 'Beschreibung:-' End&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;+ case when try( &quot;plangeber|XP_Plangeber|name&quot;  is not null) then   case &#xd;&#xa;when length(&quot;plangeber|XP_Plangeber|name&quot;)>25 then '\nPlangeber:'+left(&quot;plangeber|XP_Plangeber|name&quot;,25)+'...'&#xd;&#xa;when length(&quot;plangeber|XP_Plangeber|name&quot;)&lt;26 then '\nPlangeber:'+     &quot;plangeber|XP_Plangeber|name&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ '\n' + CASE &#xd;&#xa;WHEN try( &quot;erstellungsMassstab&quot;  is not NULL,'-') THEN 'Erstellungsmaßstab: '+ to_string(&quot;erstellungsMassstab&quot; )&#xd;&#xa;ELSE '&quot;Erstellungsmaßstab&quot; nicht erfasst'&#xd;&#xa;END&#xd;&#xa; &#xd;&#xa;+ '\n'+ '------------erfasste Timeline ------------------'&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try(&quot;technHerstellDatum&quot; is not NULL,'-') THEN '\ntechnHerstellDatum: '+ to_string(&quot;technHerstellDatum&quot; )&#xd;&#xa;ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try( &quot;aufstellungsbeschlussDatum&quot;  is not NULL,'-') THEN '\naufstellungsbeschlussDatum: '+ to_string(&quot;aufstellungsbeschlussDatum&quot; )&#xd;&#xa;ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try( &quot;auslegungsDatum&quot;  is not NULL,'-') THEN '\nauslegungsDatum: '+ to_string(&quot;auslegungsDatum&quot; ) ELSE '' END&#xd;&#xa;+ CASE WHEN try( &quot;auslegungsStartDatum&quot;  is not NULL,'-') THEN '\nauslegungsStartDatum: '+ to_string(&quot;auslegungsStartDatum&quot; ) ELSE '' END&#xd;&#xa;+ CASE WHEN try( &quot;auslegungsEndDatum&quot;  is not NULL,'-') THEN '\nauslegungsEndDatum: '+ to_string(&quot;auslegungsEndDatum&quot; ) ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE  WHEN try( &quot;tOeBbeteiligungsDatum&quot;  is not NULL,'-') THEN '\ntOeBbeteiligungsDatum: '+ to_string(&quot;tOeBbeteiligungsDatum&quot; ) ELSE '' END&#xd;&#xa;+ CASE  WHEN try( &quot;tOeBbeteiligungsStartDatum&quot;  is not NULL,'-') THEN '\ntOeBbeteiligungsStartDatum: '+ to_string(&quot;tOeBbeteiligungsStartDatum&quot; ) ELSE '' END&#xd;&#xa;+ CASE  WHEN try( &quot;tOeBbeteiligungsDatum&quot;  is not NULL,'-') THEN '\ntOeBbeteiligungsDatum: '+ to_string(&quot;tOeBbeteiligungsDatum&quot; ) ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try( &quot;oeffentlichkeitsbeteiligungDatum&quot;  is not NULL,'-') THEN '\noeffentlichkeitsbeteiligungDatum: '+ to_string(&quot;oeffentlichkeitsbeteiligungDatum&quot; ) ELSE '' END&#xd;&#xa;+ CASE WHEN try( &quot;oeffentlichkeitsBetStartDatum&quot;  is not NULL,'-') THEN '\noeffentlichkeitsBetStartDatum: '+ to_string(&quot;oeffentlichkeitsBetStartDatum&quot; ) ELSE '' END&#xd;&#xa;+ CASE WHEN try( &quot;oeffentlichkeitsBetEndDatum&quot;  is not NULL,'-') THEN '\oeffentlichkeitsBetEndDatum: '+ to_string(&quot;oeffentlichkeitsBetEndDatum&quot; ) ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try( &quot;aenderungenBisDatum&quot;  is not NULL,'-') THEN '\naenderungenBisDatum: '+ to_string(&quot;aenderungenBisDatum&quot; ) ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try( &quot;entwurfsbeschlussDatum&quot;  is not NULL,'-') THEN '\nentwurfsbeschlussDatum: '+ to_string(&quot;entwurfsbeschlussDatum&quot; )ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try( &quot;planbeschlussDatum&quot;  is not NULL,'-') THEN '\ninkrafttretenDatum: '+ to_string(&quot;inkrafttretenDatum&quot; )&#xd;&#xa;ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try(&quot;inkrafttretenDatum&quot; is not NULL,'-') THEN '\ninkrafttretenDatum: '+ to_string(&quot;inkrafttretenDatum&quot; )&#xd;&#xa;ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try(&quot;veroeffentlichungsDatum&quot; is not NULL,'-') THEN '\nveroeffentlichungsDatum: '+ to_string(&quot;veroeffentlichungsDatum&quot; ) ELSE '' END&#xd;&#xa;&#xd;&#xa;+ CASE WHEN try(&quot;sonstVerfahrensDatum&quot; is not NULL,'-') THEN '\nsonstVerfahrensDatum: '+ to_string(&quot;sonstVerfahrensDatum&quot; )&#xd;&#xa;ELSE '' END&#xd;&#xa;&#xd;&#xa;+ case &#xd;&#xa;when try(array_length(&quot;typ&quot;)>0) then  '\n'+ '------------ ' + to_string(array_length(&quot;typ&quot;))+ ' Dokumente ------------------'&#xd;&#xa;when try(&quot;typ&quot; is not null)     then  '\n'+ '------------ 1 Dokument ------------------'&#xd;&#xa;when try(&quot;typ&quot;is null)          then  '\n'+ '------------ 0 Dokumente ------------------'&#xd;&#xa;ELSE ''&#xd;&#xa;END &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [0] is not null) and try(&quot;typ&quot;[0] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [0],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [0],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [0],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[0]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [0],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [1] is not null) and try(&quot;typ&quot;[1] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [1],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [1],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [1],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[1]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [1],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [2] is not null) and try(&quot;typ&quot;[2] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [2],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [2],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [2],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[2]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [2],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [3] is not null) and try(&quot;typ&quot;[3] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [3],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [3],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [3],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[3]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [3],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [4] is not null) and try(&quot;typ&quot;[4] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [4],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [4],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [4],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[4]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [4],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [5] is not null) and try(&quot;typ&quot;[5] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [5],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [5],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [5],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[5]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [5],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [6] is not null) and try(&quot;typ&quot;[6] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [6],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [6],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [6],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[6]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [6],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [7] is not null) and try(&quot;typ&quot;[7] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [7],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [7],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [7],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[7]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [7],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [8] is not null) and try(&quot;typ&quot;[8] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [8],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [8],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [8],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[8]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [8],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [9] is not null) and try(&quot;typ&quot;[9] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [9],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [9],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [9],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[9]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [9],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;+case&#xd;&#xa;when try (&quot;referenzURL&quot; [10] is not null) and try(&quot;typ&quot;[10] is not null) then &#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1000 then '\n' +'Beschreibung: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1010 then '\n' +'Begründung: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1020 then '\n' +'Plan-Legende: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1030 then '\n' +'Rechtsplan: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1040 then '\n' +'Plangrundlage: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1050 then '\n' +'Umweltbericht: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1060 then '\n' +'Satzung: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1065 then '\n' +'Verordnung: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1070 then '\n' +'Karte: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1080 then '\n' +'Erläuterung: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=1090 then '\n' +'Zusammenfassende Erklärung: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2000 then '\n' +'Koordinatenliste: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2100 then '\n' +'Grundstücksverzeichnis: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2200 then '\n' +'Pflanzliste: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2300 then '\n' +'Grünordnungsplan: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2400 then '\n' +'Erschließungsvertrag: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2500 then '\n' +'Durchführungsvertrag: .....'+right(&quot;referenzURL&quot; [10],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2600 then '\n' +'Städtebaulicher Vertrag: .....'+right(&quot;referenzURL&quot; [10],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2700 then '\n' +'UmweltbezogeneStellungnahmen: .....'+right(&quot;referenzURL&quot; [10],40)&#x9;&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2800 then '\n' +'Beschluss: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=2900 then '\n' +'Vorhaben+Erschliessungsplan: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=3000 then '\n' +'MetadatenPlan: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=9998 then '\n' +'Sonstiges rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;when &quot;typ&quot;[10]=9999 then '\n' +'Sonstiges nicht-rechtsverbindliches Dokument: .....'+right(&quot;referenzURL&quot; [10],40)&#xd;&#xa;&#x9;ELSE '' &#xd;&#xa;&#x9;END &#xd;&#xa;ELSE ''&#xd;&#xa;End &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;" fontWeight="50" fontKerning="1" textOrientation="horizontal" capitalization="0" useSubstitutions="0" fontUnderline="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontStrikeout="0" blendMode="0" fontLetterSpacing="0" allowHtml="0" multilineHeight="1">
+        <families/>
+        <text-buffer bufferDraw="0" bufferJoinStyle="128" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="250,250,250,255" bufferNoFill="1" bufferSizeUnits="MM" bufferSize="1" bufferOpacity="1" bufferBlendMode="0"/>
+        <text-mask maskType="0" maskedSymbolLayers="" maskOpacity="1" maskEnabled="0" maskSizeUnits="MM" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="0"/>
+        <background shapeDraw="1" shapeRotation="0" shapeSVGFile="" shapeRadiiY="0" shapeBorderColor="128,128,128,255" shapeBlendMode="0" shapeOpacity="1" shapeSizeX="10" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeSizeY="3" shapeRotationType="0" shapeOffsetX="0" shapeType="0" shapeOffsetUnit="Point" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeSizeType="0" shapeBorderWidth="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="Point" shapeSizeUnit="Point" shapeRadiiUnit="Point" shapeOffsetY="0">
+          <symbol alpha="1" is_animated="0" clip_to_extent="1" force_rhr="0" type="marker" name="markerSymbol" frame_rate="10">
             <data_defined_properties>
               <Option type="Map">
-                <Option name="name" type="QString" value=""/>
+                <Option value="" type="QString" name="name"/>
                 <Option name="properties"/>
-                <Option name="type" type="QString" value="collection"/>
+                <Option value="collection" type="QString" name="type"/>
               </Option>
             </data_defined_properties>
-          </layer>
-        </symbol>
-      </axisSymbol>
-    </DiagramCategory>
-  </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings zIndex="0" linePlacementFlags="18" priority="0" showAll="1" placement="1" dist="0" obstacle="0">
-    <properties>
-      <Option type="Map">
-        <Option name="name" type="QString" value=""/>
-        <Option name="properties"/>
-        <Option name="type" type="QString" value="collection"/>
-      </Option>
-    </properties>
-  </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-    <activeChecks/>
-    <checkConfiguration type="Map">
-      <Option name="QgsGeometryGapCheck" type="Map">
-        <Option name="allowedGapsBuffer" type="double" value="0"/>
-        <Option name="allowedGapsEnabled" type="bool" value="false"/>
-        <Option name="allowedGapsLayer" type="QString" value=""/>
-      </Option>
-    </checkConfiguration>
-  </geometryOptions>
-  <legend showLabelLegend="0" type="default-vector"/>
-  <referencedLayers/>
-  <fieldConfiguration>
-    <field name="gml_id" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="name" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nummer" configurationFlags="None">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="beschreibung" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="planName" configurationFlags="None">
-      <editWidget type="List">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="rechtscharakter" configurationFlags="None">
-      <editWidget type="List">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="wurdeGeaendertVon|XP_VerbundenerPlan|nummer" configurationFlags="None">
-      <editWidget type="List">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="erstellungsMassstab" configurationFlags="None">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="ags" configurationFlags="None">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="gemeindeName" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="ortsteilName" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="plangeber|XP_Plangeber|name" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="planArt" configurationFlags="None">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="rechtsstand" configurationFlags="None">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="inkrafttretensDatum" configurationFlags="None">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="veraenderungssperre" configurationFlags="None">
-      <editWidget type="CheckBox">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="staedtebaulicherVertrag" configurationFlags="None">
-      <editWidget type="CheckBox">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="erschliessungsVertrag" configurationFlags="None">
-      <editWidget type="CheckBox">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="durchfuehrungsVertrag" configurationFlags="None">
-      <editWidget type="CheckBox">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="gruenordnungsplan" configurationFlags="None">
-      <editWidget type="CheckBox">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-  </fieldConfiguration>
-  <aliases>
-    <alias name="" index="0" field="gml_id"/>
-    <alias name="" index="1" field="name"/>
-    <alias name="" index="2" field="nummer"/>
-    <alias name="" index="3" field="beschreibung"/>
-    <alias name="" index="4" field="planName"/>
-    <alias name="" index="5" field="rechtscharakter"/>
-    <alias name="" index="6" field="wurdeGeaendertVon|XP_VerbundenerPlan|nummer"/>
-    <alias name="" index="7" field="erstellungsMassstab"/>
-    <alias name="" index="8" field="ags"/>
-    <alias name="" index="9" field="gemeindeName"/>
-    <alias name="" index="10" field="ortsteilName"/>
-    <alias name="" index="11" field="plangeber|XP_Plangeber|name"/>
-    <alias name="" index="12" field="planArt"/>
-    <alias name="" index="13" field="rechtsstand"/>
-    <alias name="" index="14" field="inkrafttretensDatum"/>
-    <alias name="" index="15" field="veraenderungssperre"/>
-    <alias name="" index="16" field="staedtebaulicherVertrag"/>
-    <alias name="" index="17" field="erschliessungsVertrag"/>
-    <alias name="" index="18" field="durchfuehrungsVertrag"/>
-    <alias name="" index="19" field="gruenordnungsplan"/>
-  </aliases>
-  <defaults>
-    <default expression="" applyOnUpdate="0" field="gml_id"/>
-    <default expression="" applyOnUpdate="0" field="name"/>
-    <default expression="" applyOnUpdate="0" field="nummer"/>
-    <default expression="" applyOnUpdate="0" field="beschreibung"/>
-    <default expression="" applyOnUpdate="0" field="planName"/>
-    <default expression="" applyOnUpdate="0" field="rechtscharakter"/>
-    <default expression="" applyOnUpdate="0" field="wurdeGeaendertVon|XP_VerbundenerPlan|nummer"/>
-    <default expression="" applyOnUpdate="0" field="erstellungsMassstab"/>
-    <default expression="" applyOnUpdate="0" field="ags"/>
-    <default expression="" applyOnUpdate="0" field="gemeindeName"/>
-    <default expression="" applyOnUpdate="0" field="ortsteilName"/>
-    <default expression="" applyOnUpdate="0" field="plangeber|XP_Plangeber|name"/>
-    <default expression="" applyOnUpdate="0" field="planArt"/>
-    <default expression="" applyOnUpdate="0" field="rechtsstand"/>
-    <default expression="" applyOnUpdate="0" field="inkrafttretensDatum"/>
-    <default expression="" applyOnUpdate="0" field="veraenderungssperre"/>
-    <default expression="" applyOnUpdate="0" field="staedtebaulicherVertrag"/>
-    <default expression="" applyOnUpdate="0" field="erschliessungsVertrag"/>
-    <default expression="" applyOnUpdate="0" field="durchfuehrungsVertrag"/>
-    <default expression="" applyOnUpdate="0" field="gruenordnungsplan"/>
-  </defaults>
-  <constraints>
-    <constraint unique_strength="0" notnull_strength="1" constraints="1" field="gml_id" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="name" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="nummer" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="beschreibung" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="planName" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="rechtscharakter" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="wurdeGeaendertVon|XP_VerbundenerPlan|nummer" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="erstellungsMassstab" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="ags" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="gemeindeName" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="ortsteilName" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="plangeber|XP_Plangeber|name" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="planArt" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="rechtsstand" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="inkrafttretensDatum" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="veraenderungssperre" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="staedtebaulicherVertrag" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="erschliessungsVertrag" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="durchfuehrungsVertrag" exp_strength="0"/>
-    <constraint unique_strength="0" notnull_strength="0" constraints="0" field="gruenordnungsplan" exp_strength="0"/>
-  </constraints>
-  <constraintExpressions>
-    <constraint exp="" field="gml_id" desc=""/>
-    <constraint exp="" field="name" desc=""/>
-    <constraint exp="" field="nummer" desc=""/>
-    <constraint exp="" field="beschreibung" desc=""/>
-    <constraint exp="" field="planName" desc=""/>
-    <constraint exp="" field="rechtscharakter" desc=""/>
-    <constraint exp="" field="wurdeGeaendertVon|XP_VerbundenerPlan|nummer" desc=""/>
-    <constraint exp="" field="erstellungsMassstab" desc=""/>
-    <constraint exp="" field="ags" desc=""/>
-    <constraint exp="" field="gemeindeName" desc=""/>
-    <constraint exp="" field="ortsteilName" desc=""/>
-    <constraint exp="" field="plangeber|XP_Plangeber|name" desc=""/>
-    <constraint exp="" field="planArt" desc=""/>
-    <constraint exp="" field="rechtsstand" desc=""/>
-    <constraint exp="" field="inkrafttretensDatum" desc=""/>
-    <constraint exp="" field="veraenderungssperre" desc=""/>
-    <constraint exp="" field="staedtebaulicherVertrag" desc=""/>
-    <constraint exp="" field="erschliessungsVertrag" desc=""/>
-    <constraint exp="" field="durchfuehrungsVertrag" desc=""/>
-    <constraint exp="" field="gruenordnungsplan" desc=""/>
-  </constraintExpressions>
-  <expressionfields/>
-  <attributeactions>
-    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
-  </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
-    <columns>
-      <column name="gml_id" hidden="0" type="field" width="-1"/>
-      <column name="name" hidden="0" type="field" width="-1"/>
-      <column name="nummer" hidden="0" type="field" width="-1"/>
-      <column name="beschreibung" hidden="0" type="field" width="-1"/>
-      <column name="planName" hidden="0" type="field" width="-1"/>
-      <column name="rechtscharakter" hidden="0" type="field" width="-1"/>
-      <column name="wurdeGeaendertVon|XP_VerbundenerPlan|nummer" hidden="0" type="field" width="-1"/>
-      <column name="erstellungsMassstab" hidden="0" type="field" width="-1"/>
-      <column name="ags" hidden="0" type="field" width="-1"/>
-      <column name="gemeindeName" hidden="0" type="field" width="-1"/>
-      <column name="ortsteilName" hidden="0" type="field" width="-1"/>
-      <column name="plangeber|XP_Plangeber|name" hidden="0" type="field" width="-1"/>
-      <column name="planArt" hidden="0" type="field" width="-1"/>
-      <column name="rechtsstand" hidden="0" type="field" width="-1"/>
-      <column name="inkrafttretensDatum" hidden="0" type="field" width="-1"/>
-      <column name="veraenderungssperre" hidden="0" type="field" width="-1"/>
-      <column name="staedtebaulicherVertrag" hidden="0" type="field" width="-1"/>
-      <column name="erschliessungsVertrag" hidden="0" type="field" width="-1"/>
-      <column name="durchfuehrungsVertrag" hidden="0" type="field" width="-1"/>
-      <column name="gruenordnungsplan" hidden="0" type="field" width="-1"/>
-      <column hidden="1" type="actions" width="-1"/>
-    </columns>
-  </attributetableconfig>
-  <conditionalstyles>
-    <rowstyles/>
-    <fieldstyles/>
-  </conditionalstyles>
-  <storedexpressions/>
-  <editform tolerant="1"></editform>
-  <editforminit/>
-  <editforminitcodesource>0</editforminitcodesource>
-  <editforminitfilepath></editforminitfilepath>
-  <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
-  <featformsuppress>0</featformsuppress>
-  <editorlayout>generatedlayout</editorlayout>
-  <editable>
-    <field name="ags" editable="1"/>
-    <field name="beschreibung" editable="1"/>
-    <field name="durchfuehrungsVertrag" editable="1"/>
-    <field name="erschliessungsVertrag" editable="1"/>
-    <field name="erstellungsMassstab" editable="1"/>
-    <field name="gemeindeName" editable="1"/>
-    <field name="gml_id" editable="1"/>
-    <field name="gruenordnungsplan" editable="1"/>
-    <field name="inkrafttretensDatum" editable="1"/>
-    <field name="name" editable="1"/>
-    <field name="nummer" editable="1"/>
-    <field name="ortsteilName" editable="1"/>
-    <field name="planArt" editable="1"/>
-    <field name="planName" editable="1"/>
-    <field name="plangeber|XP_Plangeber|name" editable="1"/>
-    <field name="rechtscharakter" editable="1"/>
-    <field name="rechtsstand" editable="1"/>
-    <field name="staedtebaulicherVertrag" editable="1"/>
-    <field name="veraenderungssperre" editable="1"/>
-    <field name="wurdeGeaendertVon|XP_VerbundenerPlan|nummer" editable="1"/>
-  </editable>
-  <labelOnTop>
-    <field labelOnTop="0" name="ags"/>
-    <field labelOnTop="0" name="beschreibung"/>
-    <field labelOnTop="0" name="durchfuehrungsVertrag"/>
-    <field labelOnTop="0" name="erschliessungsVertrag"/>
-    <field labelOnTop="0" name="erstellungsMassstab"/>
-    <field labelOnTop="0" name="gemeindeName"/>
-    <field labelOnTop="0" name="gml_id"/>
-    <field labelOnTop="0" name="gruenordnungsplan"/>
-    <field labelOnTop="0" name="inkrafttretensDatum"/>
-    <field labelOnTop="0" name="name"/>
-    <field labelOnTop="0" name="nummer"/>
-    <field labelOnTop="0" name="ortsteilName"/>
-    <field labelOnTop="0" name="planArt"/>
-    <field labelOnTop="0" name="planName"/>
-    <field labelOnTop="0" name="plangeber|XP_Plangeber|name"/>
-    <field labelOnTop="0" name="rechtscharakter"/>
-    <field labelOnTop="0" name="rechtsstand"/>
-    <field labelOnTop="0" name="staedtebaulicherVertrag"/>
-    <field labelOnTop="0" name="veraenderungssperre"/>
-    <field labelOnTop="0" name="wurdeGeaendertVon|XP_VerbundenerPlan|nummer"/>
-  </labelOnTop>
-  <reuseLastValue>
-    <field name="ags" reuseLastValue="0"/>
-    <field name="beschreibung" reuseLastValue="0"/>
-    <field name="durchfuehrungsVertrag" reuseLastValue="0"/>
-    <field name="erschliessungsVertrag" reuseLastValue="0"/>
-    <field name="erstellungsMassstab" reuseLastValue="0"/>
-    <field name="gemeindeName" reuseLastValue="0"/>
-    <field name="gml_id" reuseLastValue="0"/>
-    <field name="gruenordnungsplan" reuseLastValue="0"/>
-    <field name="inkrafttretensDatum" reuseLastValue="0"/>
-    <field name="name" reuseLastValue="0"/>
-    <field name="nummer" reuseLastValue="0"/>
-    <field name="ortsteilName" reuseLastValue="0"/>
-    <field name="planArt" reuseLastValue="0"/>
-    <field name="planName" reuseLastValue="0"/>
-    <field name="plangeber|XP_Plangeber|name" reuseLastValue="0"/>
-    <field name="rechtscharakter" reuseLastValue="0"/>
-    <field name="rechtsstand" reuseLastValue="0"/>
-    <field name="staedtebaulicherVertrag" reuseLastValue="0"/>
-    <field name="veraenderungssperre" reuseLastValue="0"/>
-    <field name="wurdeGeaendertVon|XP_VerbundenerPlan|nummer" reuseLastValue="0"/>
-  </reuseLastValue>
-  <dataDefinedFieldProperties/>
-  <widgets/>
-  <previewExpression>"name"</previewExpression>
-  <mapTip></mapTip>
+            <layer class="SimpleMarker" locked="0" enabled="1" pass="0" id="">
+              <Option type="Map">
+                <Option value="0" type="QString" name="angle"/>
+                <Option value="square" type="QString" name="cap_style"/>
+                <Option value="133,182,111,255" type="QString" name="color"/>
+                <Option value="1" type="QString" name="horizontal_anchor_point"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="circle" type="QString" name="name"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="35,35,35,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="outline_width_map_unit_scale"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="diameter" type="QString" name="scale_method"/>
+                <Option value="2" type="QString" name="size"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="size_map_unit_scale"/>
+                <Option value="MM" type="QString" name="size_unit"/>
+                <Option value="1" type="QString" name="vertical_anchor_point"/>
+              </Option>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+          <symbol alpha="1" is_animated="0" clip_to_extent="1" force_rhr="0" type="fill" name="fillSymbol" frame_rate="10">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option value="" type="QString" name="name"/>
+                <Option name="properties"/>
+                <Option value="collection" type="QString" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer class="SimpleFill" locked="0" enabled="1" pass="0" id="">
+              <Option type="Map">
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="border_width_map_unit_scale"/>
+                <Option value="224,224,224,255" type="QString" name="color"/>
+                <Option value="bevel" type="QString" name="joinstyle"/>
+                <Option value="0,0" type="QString" name="offset"/>
+                <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_map_unit_scale"/>
+                <Option value="MM" type="QString" name="offset_unit"/>
+                <Option value="0,0,0,255" type="QString" name="outline_color"/>
+                <Option value="solid" type="QString" name="outline_style"/>
+                <Option value="0" type="QString" name="outline_width"/>
+                <Option value="MM" type="QString" name="outline_width_unit"/>
+                <Option value="solid" type="QString" name="style"/>
+              </Option>
+              <effect enabled="0" type="effectStack">
+                <effect type="dropShadow">
+                  <Option type="Map">
+                    <Option value="13" type="QString" name="blend_mode"/>
+                    <Option value="2.645" type="QString" name="blur_level"/>
+                    <Option value="MM" type="QString" name="blur_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="blur_unit_scale"/>
+                    <Option value="0,0,0,255" type="QString" name="color"/>
+                    <Option value="2" type="QString" name="draw_mode"/>
+                    <Option value="0" type="QString" name="enabled"/>
+                    <Option value="135" type="QString" name="offset_angle"/>
+                    <Option value="2" type="QString" name="offset_distance"/>
+                    <Option value="MM" type="QString" name="offset_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_unit_scale"/>
+                    <Option value="1" type="QString" name="opacity"/>
+                  </Option>
+                </effect>
+                <effect type="outerGlow">
+                  <Option type="Map">
+                    <Option value="0" type="QString" name="blend_mode"/>
+                    <Option value="0.7935" type="QString" name="blur_level"/>
+                    <Option value="MM" type="QString" name="blur_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="blur_unit_scale"/>
+                    <Option value="0,0,255,255" type="QString" name="color1"/>
+                    <Option value="0,255,0,255" type="QString" name="color2"/>
+                    <Option value="0" type="QString" name="color_type"/>
+                    <Option value="ccw" type="QString" name="direction"/>
+                    <Option value="0" type="QString" name="discrete"/>
+                    <Option value="2" type="QString" name="draw_mode"/>
+                    <Option value="0" type="QString" name="enabled"/>
+                    <Option value="0.5" type="QString" name="opacity"/>
+                    <Option value="gradient" type="QString" name="rampType"/>
+                    <Option value="255,255,255,255" type="QString" name="single_color"/>
+                    <Option value="rgb" type="QString" name="spec"/>
+                    <Option value="2" type="QString" name="spread"/>
+                    <Option value="MM" type="QString" name="spread_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="spread_unit_scale"/>
+                  </Option>
+                </effect>
+                <effect type="blur">
+                  <Option type="Map">
+                    <Option value="0" type="QString" name="blend_mode"/>
+                    <Option value="2.645" type="QString" name="blur_level"/>
+                    <Option value="0" type="QString" name="blur_method"/>
+                    <Option value="MM" type="QString" name="blur_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="blur_unit_scale"/>
+                    <Option value="2" type="QString" name="draw_mode"/>
+                    <Option value="1" type="QString" name="enabled"/>
+                    <Option value="1" type="QString" name="opacity"/>
+                  </Option>
+                </effect>
+                <effect type="innerShadow">
+                  <Option type="Map">
+                    <Option value="13" type="QString" name="blend_mode"/>
+                    <Option value="2.645" type="QString" name="blur_level"/>
+                    <Option value="MM" type="QString" name="blur_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="blur_unit_scale"/>
+                    <Option value="0,0,0,255" type="QString" name="color"/>
+                    <Option value="2" type="QString" name="draw_mode"/>
+                    <Option value="0" type="QString" name="enabled"/>
+                    <Option value="135" type="QString" name="offset_angle"/>
+                    <Option value="2" type="QString" name="offset_distance"/>
+                    <Option value="MM" type="QString" name="offset_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="offset_unit_scale"/>
+                    <Option value="1" type="QString" name="opacity"/>
+                  </Option>
+                </effect>
+                <effect type="innerGlow">
+                  <Option type="Map">
+                    <Option value="0" type="QString" name="blend_mode"/>
+                    <Option value="0.7935" type="QString" name="blur_level"/>
+                    <Option value="MM" type="QString" name="blur_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="blur_unit_scale"/>
+                    <Option value="0,0,255,255" type="QString" name="color1"/>
+                    <Option value="0,255,0,255" type="QString" name="color2"/>
+                    <Option value="0" type="QString" name="color_type"/>
+                    <Option value="ccw" type="QString" name="direction"/>
+                    <Option value="0" type="QString" name="discrete"/>
+                    <Option value="2" type="QString" name="draw_mode"/>
+                    <Option value="0" type="QString" name="enabled"/>
+                    <Option value="0.5" type="QString" name="opacity"/>
+                    <Option value="gradient" type="QString" name="rampType"/>
+                    <Option value="255,255,255,255" type="QString" name="single_color"/>
+                    <Option value="rgb" type="QString" name="spec"/>
+                    <Option value="2" type="QString" name="spread"/>
+                    <Option value="MM" type="QString" name="spread_unit"/>
+                    <Option value="3x:0,0,0,0,0,0" type="QString" name="spread_unit_scale"/>
+                  </Option>
+                </effect>
+              </effect>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </background>
+        <shadow shadowOpacity="0.69999999999999996" shadowScale="100" shadowOffsetGlobal="1" shadowOffsetAngle="135" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowBlendMode="6" shadowOffsetDist="1" shadowRadiusUnit="MM" shadowRadius="1.5" shadowDraw="0" shadowOffsetUnit="MM" shadowUnder="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0"/>
+        <dd_properties>
+          <Option type="Map">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+        </dd_properties>
+        <substitutions/>
+      </text-style>
+      <text-format formatNumbers="0" placeDirectionSymbol="0" rightDirectionSymbol=">" decimals="3" useMaxLineLengthForAutoWrap="1" plussign="0" reverseDirectionSymbol="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" wrapChar="" autoWrapLength="100" multilineAlign="1"/>
+      <placement layerType="PolygonGeometry" lineAnchorType="0" lineAnchorTextPoint="FollowPlacement" geometryGeneratorEnabled="0" offsetUnits="MM" quadOffset="4" repeatDistance="0" preserveRotation="1" placementFlags="10" repeatDistanceUnits="MM" rotationUnit="AngleDegrees" dist="5" rotationAngle="0" centroidInside="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" priority="5" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" maxCurvedCharAngleIn="25" yOffset="0" xOffset="0" geometryGenerator="" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" lineAnchorPercent="0.5" overrunDistanceUnit="MM" lineAnchorClipping="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" allowDegraded="0" polygonPlacementFlags="2" distMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" overrunDistance="0" overlapHandling="PreventOverlap" offsetType="0" centroidWhole="0" placement="8" geometryGeneratorType="PointGeometry"/>
+      <rendering drawLabels="1" minFeatureSize="0" maxNumLabels="2000" scaleMin="16001" mergeLines="0" limitNumLabels="0" obstacleFactor="1" fontMinPixelSize="3" obstacleType="1" scaleVisibility="1" fontMaxPixelSize="10000" obstacle="1" scaleMax="100000000" upsidedownLabels="0" zIndex="0" labelPerPart="0" unplacedVisibility="0" fontLimitPixelSize="0"/>
+      <dd_properties>
+        <Option type="Map">
+          <Option value="" type="QString" name="name"/>
+          <Option name="properties"/>
+          <Option value="collection" type="QString" name="type"/>
+        </Option>
+      </dd_properties>
+      <callout type="simple">
+        <Option type="Map">
+          <Option value="pole_of_inaccessibility" type="QString" name="anchorPoint"/>
+          <Option value="0" type="int" name="blendMode"/>
+          <Option type="Map" name="ddProperties">
+            <Option value="" type="QString" name="name"/>
+            <Option name="properties"/>
+            <Option value="collection" type="QString" name="type"/>
+          </Option>
+          <Option value="false" type="bool" name="drawToAllParts"/>
+          <Option value="0" type="QString" name="enabled"/>
+          <Option value="point_on_exterior" type="QString" name="labelAnchorPoint"/>
+          <Option value="&lt;symbol alpha=&quot;1&quot; is_animated=&quot;0&quot; clip_to_extent=&quot;1&quot; force_rhr=&quot;0&quot; type=&quot;line&quot; name=&quot;symbol&quot; frame_rate=&quot;10&quot;>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;layer class=&quot;SimpleLine&quot; locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot; id=&quot;{b6dc8b89-909a-4885-b34e-93c466ec47ea}&quot;>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;align_dash_pattern&quot;/>&lt;Option value=&quot;square&quot; type=&quot;QString&quot; name=&quot;capstyle&quot;/>&lt;Option value=&quot;5;2&quot; type=&quot;QString&quot; name=&quot;customdash&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;customdash_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;customdash_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;dash_pattern_offset&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;dash_pattern_offset_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;dash_pattern_offset_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;draw_inside_polygon&quot;/>&lt;Option value=&quot;bevel&quot; type=&quot;QString&quot; name=&quot;joinstyle&quot;/>&lt;Option value=&quot;60,60,60,255&quot; type=&quot;QString&quot; name=&quot;line_color&quot;/>&lt;Option value=&quot;solid&quot; type=&quot;QString&quot; name=&quot;line_style&quot;/>&lt;Option value=&quot;0.3&quot; type=&quot;QString&quot; name=&quot;line_width&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;line_width_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;offset&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;offset_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;offset_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;ring_filter&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;trim_distance_end&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;trim_distance_end_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;trim_distance_end_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;trim_distance_start&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;trim_distance_start_map_unit_scale&quot;/>&lt;Option value=&quot;MM&quot; type=&quot;QString&quot; name=&quot;trim_distance_start_unit&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;tweak_dash_pattern_on_corners&quot;/>&lt;Option value=&quot;0&quot; type=&quot;QString&quot; name=&quot;use_custom_dash&quot;/>&lt;Option value=&quot;3x:0,0,0,0,0,0&quot; type=&quot;QString&quot; name=&quot;width_map_unit_scale&quot;/>&lt;/Option>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
+          <Option value="0" type="double" name="minLength"/>
+          <Option value="3x:0,0,0,0,0,0" type="QString" name="minLengthMapUnitScale"/>
+          <Option value="MM" type="QString" name="minLengthUnit"/>
+          <Option value="0" type="double" name="offsetFromAnchor"/>
+          <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromAnchorMapUnitScale"/>
+          <Option value="MM" type="QString" name="offsetFromAnchorUnit"/>
+          <Option value="0" type="double" name="offsetFromLabel"/>
+          <Option value="3x:0,0,0,0,0,0" type="QString" name="offsetFromLabelMapUnitScale"/>
+          <Option value="MM" type="QString" name="offsetFromLabelUnit"/>
+        </Option>
+      </callout>
+    </settings>
+  </labeling>
+  <blendMode>0</blendMode>
+  <featureBlendMode>0</featureBlendMode>
   <layerGeometryType>2</layerGeometryType>
 </qgis>
