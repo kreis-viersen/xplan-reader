@@ -109,7 +109,7 @@ class XplanReader:
         self.action.triggered.connect(self.importXplanGml)
         self.aboutAction.triggered.connect(self.about)
 
-        self.menu = QMenu("&XPlan-reader")
+        self.menu = QMenu("&XPlan-Reader")
         self.menu.setIcon(QIcon(os.path.join(self.plugin_dir, "xplan_reader_icon.png")))
         self.menu.addActions([self.action, self.aboutAction])
 
@@ -117,13 +117,14 @@ class XplanReader:
         self.iface.addToolBarIcon(self.action)
 
     def unload(self):
-        self.iface.removePluginMenu("&XPlan-reader", self.action)
-        self.iface.removePluginMenu("&XPlan-reader", self.aboutAction)
+        self.iface.removePluginMenu("&XPlan-Reader", self.action)
+        self.iface.removePluginMenu("&XPlan-Reader", self.aboutAction)
         self.iface.removeToolBarIcon(self.action)
 
         QgsExpression.unregisterFunction(plan_layer_id.name())
 
         del self.action
+        del self.aboutAction
 
     def about(self):
         aboutString = (
