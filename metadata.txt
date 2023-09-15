@@ -24,6 +24,7 @@ deprecated=False
 changelog=unreleased:
     - erstelle Ausdrucksvaiable mit ID von *_Textabschnitt
     - verwende GML-Attribute für Layer-Attribute
+    - Reihenfolge der Styles optimiert 
     v0.20.0:
     - neue und optimierte Styles
     v0.19.0:
