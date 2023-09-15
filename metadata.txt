@@ -21,7 +21,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.20.0:
+changelog=unreleased:
+    - verwende GML-Attribute für Layer-Attribute
+    v0.20.0:
     - neue und optimierte Styles
     v0.19.0:
     - Reihenfolge der Styles optimiert 

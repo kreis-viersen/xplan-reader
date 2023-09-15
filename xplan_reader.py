@@ -282,42 +282,49 @@ class XplanReader:
 
             self.group_extent = QgsRectangle()
 
-            driver = ogr.GetDriverByName("GML")
+            ds_one = gdal.OpenEx(
+                my_gml,
+                allowed_drivers=["GML"],
+                open_options=["GML_ATTRIBUTES_TO_OGR_FIELDS=YES", "WRITE_GFS=YES"],
+            )
 
             if self.use_gfs_workaround_one or self.use_gfs_workaround_two:
                 my_gfs = os.path.splitext(my_gml)[0] + ".gfs"
+                write_gfs = False
+                if os.path.isfile(my_gfs):
+                    gfs_tree = etree.parse(my_gfs)
+                    gfs_root = gfs_tree.getroot()
+                    if self.use_gfs_workaround_one:
+                        for geometry_type in gfs_root.iter("GeometryType"):
+                            # if needed, change GeometryType in .gfs to handle false GeometryCollection import
+                            if geometry_type.text == "7":
+                                geometry_type.text = "0"
+                                write_gfs = True
+                    if self.use_gfs_workaround_two:
+                        for geometry_name in gfs_root.iter("GeometryName"):
+                            if geometry_name.text == "boundedBy":
+                                geometry_name.getparent().remove(geometry_name)
+                                write_gfs = True
+                                for geometry_element_path in gfs_root.iter(
+                                    "GeometryElementPath"
+                                ):
+                                    if "boundedBy" in geometry_element_path.text:
+                                        geometry_element_path.getparent().remove(
+                                            geometry_element_path
+                                        )
+                    if write_gfs:
+                        gfs_tree.write(my_gfs, encoding="UTF-8", xml_declaration=False)
 
-                # don't touch existing .gfs
-                if not os.path.isfile(my_gfs):
-                    write_gfs = False
-                    driver.Open(my_gml)
-                    if os.path.isfile(my_gfs):
-                        gfs_tree = etree.parse(my_gfs)
-                        gfs_root = gfs_tree.getroot()
-                        if self.use_gfs_workaround_one:
-                            for geometry_type in gfs_root.iter("GeometryType"):
-                                # if needed, change GeometryType in .gfs to handle false GeometryCollection import
-                                if geometry_type.text == "7":
-                                    geometry_type.text = "0"
-                                    write_gfs = True
-                        if self.use_gfs_workaround_two:
-                            for geometry_name in gfs_root.iter("GeometryName"):
-                                if geometry_name.text == "boundedBy":
-                                    geometry_name.getparent().remove(geometry_name)
-                                    write_gfs = True
-                                    for geometry_element_path in gfs_root.iter(
-                                        "GeometryElementPath"
-                                    ):
-                                        if "boundedBy" in geometry_element_path.text:
-                                            geometry_element_path.getparent().remove(
-                                                geometry_element_path
-                                            )
-                        if write_gfs:
-                            gfs_tree.write(
-                                my_gfs, encoding="UTF-8", xml_declaration=False
-                            )
+            ds_two = gdal.OpenEx(
+                my_gml,
+                allowed_drivers=["GML"],
+                open_options=["GML_ATTRIBUTES_TO_OGR_FIELDS=YES", "WRITE_GFS=NO"],
+            )
 
-            layers = [l.GetName() for l in driver.Open(my_gml)]
+            layers = []
+            for i in range(ds_two.GetLayerCount()):
+                name = ds_two.GetLayer(i).GetName()
+                layers.append(name)
 
             def addXplanLayer(layername, gtype):
                 if layername in layers:
