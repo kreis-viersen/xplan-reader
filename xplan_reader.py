@@ -445,6 +445,18 @@ class XplanReader:
                                             + var_name_rastercount
                                         )
 
+                            if layername.endswith("_TextAbschnitt"):
+                                var_name_textabschnitt = "textabschnitt_" + self.plan_id
+                                QgsExpressionContextUtils.setProjectVariable(
+                                    QgsProject.instance(),
+                                    var_name_textabschnitt,
+                                    vlayer.id(),
+                                )
+                                self.logMessage(
+                                    "Ausdrucksvariable erstellt: "
+                                    + var_name_textabschnitt
+                                )
+
                             QgsProject.instance().addMapLayer(vlayer, False)
 
                             style = os.path.join(

@@ -22,6 +22,7 @@ icon=xplan_reader_icon.png
 server=False
 deprecated=False
 changelog=unreleased:
+    - erstelle Ausdrucksvaiable mit ID von *_Textabschnitt
     - verwende GML-Attribute für Layer-Attribute
     v0.20.0:
     - neue und optimierte Styles
