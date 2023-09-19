@@ -1340,3 +1340,6 @@ class XplanReader:
             canvas.setExtent(self.group_extent)
             canvas.zoomByFactor(1.4)
             canvas.refresh()
+
+            # activate tool "Show Map Tips"
+            self.iface.actionMapTips().setChecked(True)
