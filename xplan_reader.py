@@ -206,7 +206,28 @@ class XplanReader:
                         plan_category = elem
                         self.logMessage("Plankategorie: " + plan_category)
 
-                        break
+                    try:
+                        for plan_element in gml_root.iter(
+                            "{" + xplan_ns_uri + "}" + elem
+                        ):
+                            raeumlicherGeltungsbereich_element = next(
+                                plan_element.iter(
+                                    "{" + xplan_ns_uri + "}raeumlicherGeltungsbereich"
+                                )
+                            )
+                            if len(raeumlicherGeltungsbereich_element.text) > 0:
+                                break
+                    except:
+                        message = (
+                            elem
+                            + " hat keinen räumlichen Geltungsbereich, dies wird nicht unterstützt!"
+                        )
+                        self.iface.messageBar().pushMessage(
+                            "Fehler", message, level=2, duration=10
+                        )
+                        self.logMessage(message, 2)
+
+                        return
 
                 except:
                     continue

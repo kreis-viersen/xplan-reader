@@ -21,7 +21,8 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=unreleased:
+changelog=unreleased:  
+    - Fehlermeldung wenn *_Plan ohne räumlichen Geltungsbereich
     - aktiviere standardmäßig das Werkzeug "Kartenhinweise anzeigen" 
     - erstelle Ausdrucksvaiable mit ID von *_Textabschnitt
     - verwende GML-Attribute für Layer-Attribute
