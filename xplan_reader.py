@@ -303,6 +303,10 @@ class XplanReader:
 
             self.group_extent = QgsRectangle()
 
+            my_gfs = os.path.splitext(my_gml)[0] + ".gfs"
+            if os.path.isfile(my_gfs):
+                os.remove(my_gfs)
+
             ds_one = gdal.OpenEx(
                 my_gml,
                 allowed_drivers=["GML"],
@@ -310,7 +314,6 @@ class XplanReader:
             )
 
             if self.use_gfs_workaround_one or self.use_gfs_workaround_two:
-                my_gfs = os.path.splitext(my_gml)[0] + ".gfs"
                 write_gfs = False
                 if os.path.isfile(my_gfs):
                     gfs_tree = etree.parse(my_gfs)
