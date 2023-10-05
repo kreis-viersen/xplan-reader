@@ -22,6 +22,7 @@ icon=xplan_reader_icon.png
 server=False
 deprecated=False
 changelog=v0.21.0:
+    - Kartenhinweis mit textlichen Festsetzungen von BaugebietsTeilFlaeche 
     - Fehlermeldung wenn *_Plan ohne räumlichen Geltungsbereich
     - aktiviere standardmäßig das Werkzeug "Kartenhinweise anzeigen" 
     - erstelle Ausdrucksvaiable mit ID von *_Textabschnitt
