@@ -25,7 +25,7 @@ changelog=v0.21.0:
     - Kartenhinweis mit textlichen Festsetzungen von BaugebietsTeilFlaeche 
     - Fehlermeldung wenn *_Plan ohne räumlichen Geltungsbereich
     - aktiviere standardmäßig das Werkzeug "Kartenhinweise anzeigen" 
-    - erstelle Ausdrucksvaiable mit ID von *_Textabschnitt
+    - erstelle Ausdrucksvariable mit ID von *_Textabschnitt
     - verwende GML-Attribute für Layer-Attribute
     - neue und optimierte Styles
     - Reihenfolge der Styles optimiert 
