@@ -23,6 +23,18 @@ Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestim
 
 Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, technische Validität lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
 
+### Textliche Festsetzungen für Baugebietsteilfläche anzeigen
+
+Ab XPlan-Reader v0.21.0 lassen sich Textliche Festsetzungen aus BP_TextAbschnitt für Baugebietsteilflächen in einem scrollbaren Infofenster anzeigen:
+
+1. Das Werkzeug _Kartenhinweise anzeigen_ <img src=./kartenhinweis_anzeigen.png> muss aktiviert sein (wird vom XPlan-Reader beim Laden eines Plans sichergestellt).
+
+2. Der Layer _BP_BaugebietsTeilFlaeche_ muss aktiviert werden (z.B. Linkslick auf den Layer im Layerfenster).
+
+3. Den Mauszeiger über die gewünschte Baugebietsteilfläche bewegen.
+
+<img src=./xplan-reader_textliche_festsetzungen.gif>
+
 ## Mitmachen beim XPlan-Reader
 
 Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen. 
