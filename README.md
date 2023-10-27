@@ -1,5 +1,9 @@
 # xplan-reader
 
+
+[![DOI](https://zenodo.org/badge/511378249.svg)](https://zenodo.org/doi/10.5281/zenodo.10046827)
+
+
 ### _QGIS-Plugin zum Import einer XPlanGML-Datei_
 
 - zur Visualisierung
