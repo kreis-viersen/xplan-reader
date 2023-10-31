@@ -12,6 +12,12 @@ Fragen, Anmerkungen, Fehlermeldungen etc. können z.B. über ein Issue oder auch
 
 <img src=./xplan-reader.gif>
 
+## Vortrag zum XPlan-Reader auf der FOSSGIS-Konferenz 2023
+
+https://media.ccc.de/v/fossgis2023-23425-xplan-reader-ein-qgis-plugin
+
+<a href="https://media.ccc.de/v/fossgis2023-23425-xplan-reader-ein-qgis-plugin"><img src="vortrag_xplan-reader_fossgis_2023.png" alt="Vortrag zum XPlan-Reader auf der FOSSGIS-Konferenz 2023"></a>
+
 ## Installation
 
 Es wird **QGIS mindestens in der Version 3.26.0** benötigt.<br><br>
