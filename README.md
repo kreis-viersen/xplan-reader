@@ -53,23 +53,19 @@ Der XPLAN-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. Weiter
 
 ### ...mit eigenen QGIS-Stilen
 
-Das Plugin liefert bei der Installation bereits ein paar [QGIS-Stildateien] mit, aber es gibt noch viel zu tun. :-)
+Das Plugin liefert bei der Installation bereits sehr viele [QGIS-Stildateien] mit, aber es gibt noch viel zu tun. :-)
 
 Es existieren noch nicht für alle Objektarten [QGIS-Stildateien] - auch besteht ggf. Bedarf bestehende Stile zu verbessern.
 
 Eigene QGIS-Stildateien (.qml) können über einen [GitHub-Pull request] oder auch gerne per E-Mail an [open@kreis-viersen.de] eingereicht werden. Diese können dann zukünftig standardmäßig mit dem Plugin ausgeliefert werden.
 
-Als Basis für neue QGIS-Stildateien können die [XPlan-Standard-Stile und SVG-Symbole] der [XPlanBox] verwendet werden. Die SLD-Dateien wurden auf Basis der original SE-Dateien erstellt. Dieses Skript ist ebenfalls als OpenSouce hier verfügbar: [xplan-se-to-sld]
-
-Sowohl die QGIS-Stildateien, welche im Plugin zur Anwendung kommen, als auch die XPlan-Standard-Stile sind in der jeweils aktuell vorliegenden Version im [Download-Zip-Archiv] des Repositories enthalten.
+Die QGIS-Stildateien, welche im Plugin zur Anwendung kommen sind in der jeweils aktuell vorliegenden Version im [Download-Zip-Archiv] des Repositories enthalten.
 Wenn das Plugin in QGIS installiert ist, befinden sich diese im Plugin Verzeichnis:<br>
-_QGIS Hauptmenü_ -> _Einstellungen_ -> _Benutzerprofile_ -> _Aktuelles Profilverzeichnis öffnen_ -> _python_ -> _plugins_ -> _xplan-reader_ -> _styles_ (.qml-Stile für das Plugin) bzw. _xplan_default_styles_ (XPlan-Standard-Stile als SVG und SVG-Symbole)
+_QGIS Hauptmenü_ -> _Einstellungen_ -> _Benutzerprofile_ -> _Aktuelles Profilverzeichnis öffnen_ -> _python_ -> _plugins_ -> _xplan-reader_ -> _styles_ (.qml-Stile für das Plugin)
 
 ## Lizenzen, Copyright und Dank
 
 Das Plugin steht unter der [GPL-3.0-Lizenz] als OpenSouce zur Verfügung.
-
-Alle Dateien im Ordner [xplan_default_styles] stehen unter [AGPL-3.0-Lizenz] und Copyright (c) 2008 - 2022 lat/lon GmbH, info@lat-lon.de, www.lat-lon.de.
 
 Vielen Dank an die [XLeitstelle], für die Erlaubnis, dass [XPlanung-Icon] verwenden zu dürfen. Das Icon ist Copyright (c) Leitstelle XPlanung / XBau.
 
@@ -86,14 +82,9 @@ Umringpolygon eines Bebauungsplans aus QGIS nach XPlanung konvertieren:<br>https
 [XPlanValidator]: <https://www.xplanungsplattform.de/xplan-validator/>
 [QGIS-Stildateien]: <https://github.com/kreis-viersen/xplan-reader/tree/main/styles>
 [GitHub-Pull request]: <https://github.com/kreis-viersen/xplan-reader/pulls>
-[XPlan-Standard-Stile und SVG-Symbole]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
-[XPlanBox]: <https://gitlab.opencode.de/diplanung/ozgxplanung>
-[xplan-se-to-sld]: <https://github.com/kreis-viersen/xplan-se-to-sld>
 [Download-Zip-Archiv]: <https://github.com/kreis-viersen/xplan-reader/archive/refs/heads/main.zip>
 [GPL-3.0-Lizenz]: https://github.com/kreis-viersen/xplan-reader/blob/main/LICENSE
-[xplan_default_styles]: <https://github.com/kreis-viersen/xplan-reader/tree/main/xplan_default_styles>
 [XLeitstelle]: <https://xleitstelle.de/leitstelle>
-[AGPL-3.0-Lizenz]: <https://www.gnu.org/licenses/agpl-3.0.txt>
 [XPlanung-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/xplan_reader_icon.png>
 [Info-Icon]: <https://github.com/kreis-viersen/xplan-reader/blob/main/info_icon.png>
 [Wikipedia]: <https://de.m.wikipedia.org/wiki/Datei:Info_icon-72a7cf.svg>
