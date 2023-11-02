@@ -31,7 +31,7 @@ Das Plugin lädt die Layer einer ausgewählten XPlanGML-Datei in einer vorbestim
 
 Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, technische Validität lässt sich z.B. mit dem [XPlanValidator] der XLeitstelle prüfen.
 
-### Textliche Festsetzungen für Baugebietsteilfläche anzeigen
+### Textliche Festsetzungen anzeigen
 
 Beginnend mit XPlan-Reader v0.21.0 lassen sich Textliche Festsetzungen aus BP_TextAbschnitt für die jeweiligen Objekte der folgenden Layer in einem scrollbaren Infofenster anzeigen:
 
