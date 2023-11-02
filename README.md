@@ -33,11 +33,30 @@ Die Datei muss gemäß der _XPlanung-Spezifikation_ valide sein, technische Vali
 
 ### Textliche Festsetzungen für Baugebietsteilfläche anzeigen
 
-Ab XPlan-Reader v0.21.0 lassen sich Textliche Festsetzungen aus BP_TextAbschnitt für Baugebietsteilflächen in einem scrollbaren Infofenster anzeigen:
+Beginnend mit XPlan-Reader v0.21.0 lassen sich Textliche Festsetzungen aus BP_TextAbschnitt für die jeweiligen Objekte der folgenden Layer in einem scrollbaren Infofenster anzeigen:
+
+|  Objektart | ab XPlan-Reader | Punkt  | Linie  | Fläche  |
+|---|---|---|---|---|
+| BP_AnpflanzungBindungErhaltung | v0.22.0  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:  |
+| BP_BaugebietsTeilFlaeche | v0.21.0  | :x: | :x: | :heavy_check_mark: |
+| BP_BesondererNutzungszweckFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_GemeinbedarfsFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_GruenFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_Landwirtschaft | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_NebenanlagenFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_SchutzPflegeEntwicklungsFlaeche | v0.22.0 | :x: | :x: | :heavy_check_mark: |
+| BP_Sichtflaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_StrassenVerkehrsFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_TextlicheFestsetzungsFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_UeberbaubareGrundstuecksFlaeche | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_VerkehrsflaecheBesondererZweckbestimmung | v0.22.0  | :x: | :x: | :heavy_check_mark: |
+| BP_Wegerecht | v0.22.0  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+<br>
 
 1. Das Werkzeug _Kartenhinweise anzeigen_ <img src=./kartenhinweis_anzeigen.png> muss aktiviert sein (wird vom XPlan-Reader beim Laden eines Plans sichergestellt).
 
-2. Der Layer _BP_BaugebietsTeilFlaeche_ muss aktiviert werden (z.B. Linkslick auf den Layer im Layerfenster).
+2. Der gewünschte Layer (z.B. _BP_BaugebietsTeilFlaeche_) muss aktiviert werden (z.B. Linkslick auf den Layer im Layerfenster).
 
 3. Den Mauszeiger über die gewünschte Baugebietsteilfläche bewegen.
 
