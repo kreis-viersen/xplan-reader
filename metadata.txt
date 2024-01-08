@@ -10,7 +10,7 @@ about=Remark:
       - oder auch zum Erstellen eines QGIS-Server-Projektes, etwa um einen WMS eines Flächennutzungsplans zu veröffentlichen.
 
 tags=xplan,xplanung,bplan,bebauungsplan,fnp,flächennutzungsplan
-version=0.22.1
+version=0.23.0
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
 qgisMinimumVersion=3.26
 author=Kreis Viersen
@@ -21,7 +21,10 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.22.1:
+changelog=v0.23.0:
+    - neue und optimierte Styles
+    - Reihenfolge der Styles optimiert und neue Layer hinzugefügt 
+    v0.22.1:
     - behebe kleinen Fehler bei der Beschriftung von textlichen Festsetzungen
     v0.22.0:
     - Kartenhinweis mit textlichen Festsetzungen für weitere Layer
