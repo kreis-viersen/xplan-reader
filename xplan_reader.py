@@ -681,12 +681,13 @@ class XplanReader:
             addXplanLayer(
                 "FP_Bereich", "Text"
             )  # bei Bedarf wird der Style 'Flaeche' geladen
-            addXplanLayer("FP_Gewaesser", "Flaeche")
             addXplanLayer("FP_WaldFlaeche", "Flaeche")
             addXplanLayer("FP_LandwirtschaftsFlaeche", "Flaeche")
+            addXplanLayer("FP_Landwirtschaft", "Flaeche")
             addXplanLayer("FP_Gruen", "Flaeche")
             addXplanLayer("FP_Strassenverkehr", "Flaeche")
             addXplanLayer("FP_BebauungsFlaeche", "Flaeche")
+            addXplanLayer("FP_Gewaesser", "Flaeche")
             addXplanLayer("FP_VerEntsorgung", "Flaeche")
             addXplanLayer("FP_Gemeinbedarf", "Flaeche")
             addXplanLayer("FP_SpielSportanlage", "Flaeche")
@@ -745,7 +746,6 @@ class XplanReader:
             addXplanLayer("FP_Flaechenschlussobjekt", "Flaeche")
             addXplanLayer("FP_FlaecheOhneDarstellung", "Flaeche")
             addXplanLayer("FP_Geometrieobjekt", "Flaeche")
-            addXplanLayer("FP_Landwirtschaft", "Flaeche")
             addXplanLayer("FP_Linienobjekt", "Flaeche")
             addXplanLayer("FP_Objekt", "Flaeche")
             addXplanLayer("FP_Punktobjekt", "Flaeche")
@@ -835,6 +835,15 @@ class XplanReader:
             addXplanLayer("LP_WasserrechtSonstige", "Flaeche")
             addXplanLayer("LP_WasserrechtWirtschaftAbflussHochwSchutz", "Flaeche")
             addXplanLayer("LP_Zwischennutzung", "Flaeche")
+            # ----------------------------------------------------Start LPLAN Flaechen v6 --------------------------
+            addXplanLayer("LP_ReferenzLPObjekt", "Flaeche")
+            addXplanLayer("LP_VorschlagIntegrationBauleitplanung", "Flaeche")
+            addXplanLayer("LP_VorschlagIntegrationRaumordnung", "Flaeche")
+            addXplanLayer("LP_SchutzBestimmterTeileVonNaturUndLandschaft", "Flaeche")
+            addXplanLayer("LP_BiotopverbundBiotopvernetzung", "Flaeche")
+            addXplanLayer("LP_Eingriffsregelung", "Flaeche")
+            addXplanLayer("LP_ZieleErfordernisseMassnahmen", "Flaeche")
+            addXplanLayer("LP_TextAbschnittObjekt", "Flaeche")
             addXplanLayer("SO_Schienenverkehrsrecht", "Flaeche")
             addXplanLayer("SO_Gewaesser", "Flaeche")
             addXplanLayer("BP_KennzeichnungsFlaeche", "Flaeche")
@@ -1051,6 +1060,15 @@ class XplanReader:
             addXplanLayer("LP_WasserrechtSonstige", "Linie")
             addXplanLayer("LP_WasserrechtWirtschaftAbflussHochwSchutz", "Linie")
             addXplanLayer("LP_Zwischennutzung", "Linie")
+            # ----------------------------------------------------Start LPLAN Linien v6 --------------------------
+            addXplanLayer("LP_ReferenzLPObjekt", "Linie")
+            addXplanLayer("LP_VorschlagIntegrationBauleitplanung", "Linie")
+            addXplanLayer("LP_VorschlagIntegrationRaumordnung", "Linie")
+            addXplanLayer("LP_SchutzBestimmterTeileVonNaturUndLandschaft", "Linie")
+            addXplanLayer("LP_BiotopverbundBiotopvernetzung", "Linie")
+            addXplanLayer("LP_Eingriffsregelung", "Linie")
+            addXplanLayer("LP_ZieleErfordernisseMassnahmen", "Linie")
+            addXplanLayer("LP_TextAbschnittObjekt", "Linie")
             addXplanLayer("RP_ErneuerbareEnergie", "Linie")
             addXplanLayer("SO_Bauverbotszone", "Linie")
             addXplanLayer("SO_Bodenschutzrecht", "Linie")
@@ -1158,6 +1176,15 @@ class XplanReader:
             addXplanLayer("LP_Biotopverbundflaeche", "Punkt")
             addXplanLayer("LP_TextlicheFestsetzungsFlaeche", "Punkt")
             addXplanLayer("LP_ZuBegruenendeGrundstueckflaeche", "Punkt")
+            # ----------------------------------------------------Start LPLAN Punktn v6 --------------------------
+            addXplanLayer("LP_ReferenzLPObjekt", "Punkt")
+            addXplanLayer("LP_VorschlagIntegrationBauleitplanung", "Punkt")
+            addXplanLayer("LP_VorschlagIntegrationRaumordnung", "Punkt")
+            addXplanLayer("LP_SchutzBestimmterTeileVonNaturUndLandschaft", "Punkt")
+            addXplanLayer("LP_BiotopverbundBiotopvernetzung", "Punkt")
+            addXplanLayer("LP_Eingriffsregelung", "Punkt")
+            addXplanLayer("LP_ZieleErfordernisseMassnahmen", "Punkt")
+            addXplanLayer("LP_TextAbschnittObjekt", "Punkt")
             # addXplanLayer("SO_Bereich", "Punkt") -> existiert wahrscheinlich nur als Flaeche
             # addXplanLayer("XP_Bereich", "Punkt") kommt so nicht vor
             # addXplanLayer('BP_AbgrabungsFlaeche', 'Punkt') -> existiert nur als Flaeche
