@@ -32,8 +32,10 @@ from qgis.core import (
     QgsExpression,
     QgsExpressionContextUtils,
     QgsFeatureRequest,
+    QgsLayerTreeLayer,
     QgsMessageLog,
     QgsProject,
+    QgsRasterLayer,
     QgsRectangle,
     QgsVectorLayer,
     QgsWkbTypes,
@@ -146,6 +148,7 @@ class XplanReader:
         self.dlg.show()
         result = self.dlg.exec_()
 
+        self.project_crs = QgsProject.instance().crs().authid()
         self.dest_crs = None
         self.plan_id = None
 
@@ -391,7 +394,7 @@ class XplanReader:
                                     vlayer.crs().authid()
                                 )
                                 self.dest_crs = QgsCoordinateReferenceSystem(
-                                    QgsProject.instance().crs().authid()
+                                    self.project_crs
                                 )
                                 if src_crs != self.dest_crs:
                                     try:
@@ -1415,3 +1418,30 @@ class XplanReader:
 
             # activate tool "Show Map Tips"
             self.iface.actionMapTips().setChecked(True)
+
+            # Add basemap for LP and RP
+            if plan_category in ["LP_Plan", "RP_Plan"]:
+                basemap_crs = "EPSG:25832"
+                if self.project_crs in [
+                    "CRS:84",
+                    "EPSG:3857",
+                    "EPSG:25833",
+                    "EPSG:4326",
+                    "EPSG:4258",
+                    "EPSG:3035",
+                    "EPGS:3034",
+                    "EPGS:3044",
+                    "EPSG:3045",
+                    "EPSG:4647",
+                ]:
+                    basemap_crs = self.project_crs
+
+                url_with_params = f"url=https://sgx.geodatenzentrum.de/wms_basemapde&crs={basemap_crs}&format=image/png&layers=de_basemapde_web_raster_grau&styles"
+                rlayer = QgsRasterLayer(
+                    url_with_params, "basemap.de Web Raster Grau", "wms"
+                )
+                if rlayer.isValid():
+                    QgsProject.instance().addMapLayer(rlayer, False)
+                    root.insertChildNode(-1, QgsLayerTreeLayer(rlayer))
+                    rlayerNode = root.findLayer(rlayer.id())
+                    rlayerNode.setExpanded(False)

@@ -21,7 +21,9 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.23.0:
+changelog=unreleased:
+    - basemap.de für LP_Plan und RP_Plan
+    v0.23.0:
     - neue und optimierte Styles
     - Reihenfolge der Styles optimiert und neue Layer hinzugefügt 
     v0.22.1:
