@@ -6,7 +6,7 @@
     <Searchable>1</Searchable>
     <Private>0</Private>
   </flags>
-  <temporal accumulate="0" mode="0" durationUnit="min" enabled="0" fixedDuration="0" limitMode="0" startField="" durationField="rechtscharakter" endField="" endExpression="" startExpression="">
+  <temporal accumulate="0" mode="0" durationUnit="min" enabled="0" fixedDuration="0" limitMode="0" startField="" durationField="ebene" endField="" endExpression="" startExpression="">
     <fixedRange>
       <start></start>
       <end></end>
@@ -309,7 +309,7 @@
   </selection>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style namedStyle="Standard" useSubstitutions="0" textColor="255,0,0,255,rgb:1,0,0,1" multilineHeightUnit="Percentage" fieldName="'BP textl.Festsetzung:'&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;text&quot; is not null) then   case &#xd;&#xa;when length(&quot;text&quot;)>145 then '\n'+left(replace(&quot;text&quot;,'\n',' '),145)+'...'&#xd;&#xa;when length(&quot;text&quot;)&lt;146 then '\n'+     replace(&quot;text&quot;,'\n',' ')  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung1&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung1&quot;)>145 then '\n'+left(&quot;gliederung1&quot;,145)+'...'&#xd;&#xa;when length(&quot;gliederung1&quot;)&lt;146 then '\n'+     &quot;gliederung1&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung14&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung14&quot;)>145 then '\n'+left(&quot;gliederung14&quot;,145)+'...'&#xd;&#xa;when length(&quot;gliederung14&quot;)&lt;146 then '\n'+     &quot;gliederung14&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;aufschrift&quot; is not null) then   case &#xd;&#xa;when length(&quot;aufschrift&quot;)>145 then '\n'+left(&quot;aufschrift&quot;,145)+'...'&#xd;&#xa;when length(&quot;aufschrift&quot;)&lt;146 then '\n'+     &quot;aufschrift&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;name&quot; is not null) and try(&quot;name&quot;[1]is null) then   case &#xd;&#xa;when length(&quot;name&quot;)>145 then '\n'+left(&quot;name&quot;,145)+'...'&#xd;&#xa;when length(&quot;name&quot;)&lt;146 then '\n'+     &quot;name&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;/* -----------Beginn Textabschnitte -----*/&#xd;&#xa;+case when try(&quot;refTextInhalt_href&quot;)is not null then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when try(array_length(&quot;refTextInhalt_href&quot;)>1) then '\n'+to_string(array_length(&quot;refTextInhalt_href&quot;))+' Textabschnitte:\n' &#xd;&#xa;&#x9;+replace(&#x9;lower(&#x9;array_to_string( &#x9;array_sort(&#x9;array_foreach(&#x9;array_foreach(&quot;refTextInhalt_href&quot;,&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#x9;,left(@element,12))&#x9;)&#x9;,'xyz')),&#xd;&#xa;&#x9;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',&#xd;&#xa;&#x9;'q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;&#x9;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''))&#xd;&#xa;&#x9;&#xd;&#xa;&#x9;when try(array_length(&quot;refTextInhalt_href&quot;)=1) then '\n'+'1 Textabschnitt:'&#xd;&#xa;&#x9;+replace(&#x9;lower(&#x9;array_to_string( &#x9;array_sort(&#x9;array_foreach(&#x9;array_foreach(&quot;refTextInhalt_href&quot;,&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#x9;,left(@element,12))&#x9;)&#x9;,'xyz')),&#xd;&#xa;&#x9;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',&#xd;&#xa;&#x9;'q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;&#x9;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''))&#xd;&#xa;&#x9;&#xd;&#xa;&#x9;when try(&quot;refTextInhalt_href&quot;)is not null then '\n'+'1 Textabschnitt:'&#xd;&#xa;&#x9;+replace(&#x9;lower(&#x9;array_to_string( &#x9;array_sort(&#x9;array_foreach(&#x9;array_foreach(array(&quot;refTextInhalt_href&quot;),&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#x9;,left(@element,12))&#x9;)&#x9;,'xyz')),&#xd;&#xa;&#x9;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',&#xd;&#xa;&#x9;'q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;&#x9;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''))&#xd;&#xa;&#x9;ELSE  ''End &#xd;&#xa;&#x9;&#xd;&#xa;ELSE '\nkeine Textabschnitte' END &#xd;&#xa;&#xd;&#xa;/*&#xd;&#xa;+case&#xd;&#xa;when try(&quot;refTextInhalt_href&quot;)is not null then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when try(array_length(&quot;refTextInhalt_href&quot;)>1) then '\n'+to_string(array_length(&quot;refTextInhalt_href&quot;))+' Textabschnitte: ' &#xd;&#xa;&#x9;ELSE  '\n'+'1 Textabschnitt:\n ' &#xd;&#xa;&#xd;&#xa;&#x9;+ replace(lower(to_string(&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(&quot;refTextInhalt_href&quot;, length(&quot;refTextInhalt_href&quot;)-1))&#xd;&#xa;&#x9;,'schluessel'))),&#xd;&#xa;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')&#x9;&#xd;&#xa;&#x9;)&#xd;&#xa;&#x9;end&#xd;&#xa;ELSE '' &#xd;&#xa;END &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;+ case when try(array_length(&quot;refTextInhalt_href&quot;) >= 0)is not null then&#xd;&#xa;replace(&#xd;&#xa;&#x9;lower(&#xd;&#xa;&#x9;array_to_string( &#xd;&#xa;&#x9;array_sort(&#xd;&#xa;&#x9;array_foreach(&#xd;&#xa;&#x9;array_foreach(&quot;refTextInhalt_href&quot;,&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#xd;&#xa;&#x9;,left(@element,12))&#xd;&#xa;&#x9;)&#xd;&#xa;&#x9;,'xyz')&#xd;&#xa;),&#xd;&#xa;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')&#xd;&#xa;)&#xd;&#xa;ELSE '' END &#xd;&#xa;/* -----------Ende Textabschnitte -----*/&#xd;&#xa;&#xd;&#xa;" blendMode="0" fontLetterSpacing="0" fontStrikeout="0" fontFamily="Arial" fontKerning="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" multilineHeight="1" forcedBold="0" fontSizeUnit="Point" fontItalic="0" textOrientation="horizontal" textOpacity="1" fontWeight="50" fontWordSpacing="0" allowHtml="0" forcedItalic="0" legendString="Aa" capitalization="0" previewBkgrdColor="255,255,255,255,rgb:1,1,1,1" isExpression="1" fontSize="7">
+      <text-style namedStyle="Standard" useSubstitutions="0" textColor="255,0,0,255,rgb:1,0,0,1" multilineHeightUnit="Percentage" fieldName="'FP textl.Festsetzung:'&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;text&quot; is not null) then   case &#xd;&#xa;when length(&quot;text&quot;)>145 then '\n'+left(replace(&quot;text&quot;,'\n',' '),145)+'...'&#xd;&#xa;when length(&quot;text&quot;)&lt;146 then '\n'+     replace(&quot;text&quot;,'\n',' ')  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung1&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung1&quot;)>145 then '\n'+left(&quot;gliederung1&quot;,145)+'...'&#xd;&#xa;when length(&quot;gliederung1&quot;)&lt;146 then '\n'+     &quot;gliederung1&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;gliederung14&quot; is not null) then   case &#xd;&#xa;when length(&quot;gliederung14&quot;)>145 then '\n'+left(&quot;gliederung14&quot;,145)+'...'&#xd;&#xa;when length(&quot;gliederung14&quot;)&lt;146 then '\n'+     &quot;gliederung14&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;aufschrift&quot; is not null) then   case &#xd;&#xa;when length(&quot;aufschrift&quot;)>145 then '\n'+left(&quot;aufschrift&quot;,145)+'...'&#xd;&#xa;when length(&quot;aufschrift&quot;)&lt;146 then '\n'+     &quot;aufschrift&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;+ case when try(&quot;name&quot; is not null) and try(&quot;name&quot;[1]is null) then   case &#xd;&#xa;when length(&quot;name&quot;)>145 then '\n'+left(&quot;name&quot;,145)+'...'&#xd;&#xa;when length(&quot;name&quot;)&lt;146 then '\n'+     &quot;name&quot;  End ELSE '' End&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;/* -----------Beginn Textabschnitte -----*/&#xd;&#xa;+case when try(&quot;refTextInhalt_href&quot;)is not null then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when try(array_length(&quot;refTextInhalt_href&quot;)>1) then '\n'+to_string(array_length(&quot;refTextInhalt_href&quot;))+' Textabschnitte:\n' &#xd;&#xa;&#x9;+replace(&#x9;lower(&#x9;array_to_string( &#x9;array_sort(&#x9;array_foreach(&#x9;array_foreach(&quot;refTextInhalt_href&quot;,&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#x9;,left(@element,12))&#x9;)&#x9;,'xyz')),&#xd;&#xa;&#x9;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',&#xd;&#xa;&#x9;'q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;&#x9;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''))&#xd;&#xa;&#x9;&#xd;&#xa;&#x9;when try(array_length(&quot;refTextInhalt_href&quot;)=1) then '\n'+'1 Textabschnitt:'&#xd;&#xa;&#x9;+replace(&#x9;lower(&#x9;array_to_string( &#x9;array_sort(&#x9;array_foreach(&#x9;array_foreach(&quot;refTextInhalt_href&quot;,&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#x9;,left(@element,12))&#x9;)&#x9;,'xyz')),&#xd;&#xa;&#x9;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',&#xd;&#xa;&#x9;'q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;&#x9;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''))&#xd;&#xa;&#x9;&#xd;&#xa;&#x9;when try(&quot;refTextInhalt_href&quot;)is not null then '\n'+'1 Textabschnitt:'&#xd;&#xa;&#x9;+replace(&#x9;lower(&#x9;array_to_string( &#x9;array_sort(&#x9;array_foreach(&#x9;array_foreach(array(&quot;refTextInhalt_href&quot;),&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#x9;,left(@element,12))&#x9;)&#x9;,'xyz')),&#xd;&#xa;&#x9;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',&#xd;&#xa;&#x9;'q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;&#x9;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''))&#xd;&#xa;&#x9;ELSE  ''End &#xd;&#xa;&#x9;&#xd;&#xa;ELSE '\nkeine Textabschnitte' END &#xd;&#xa;&#xd;&#xa;/*&#xd;&#xa;+case&#xd;&#xa;when try(&quot;refTextInhalt_href&quot;)is not null then&#xd;&#xa;&#x9;case &#xd;&#xa;&#x9;when try(array_length(&quot;refTextInhalt_href&quot;)>1) then '\n'+to_string(array_length(&quot;refTextInhalt_href&quot;))+' Textabschnitte: ' &#xd;&#xa;&#x9;ELSE  '\n'+'1 Textabschnitt:\n ' &#xd;&#xa;&#xd;&#xa;&#x9;+ replace(lower(to_string(&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(&quot;refTextInhalt_href&quot;, length(&quot;refTextInhalt_href&quot;)-1))&#xd;&#xa;&#x9;,'schluessel'))),&#xd;&#xa;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')&#x9;&#xd;&#xa;&#x9;)&#xd;&#xa;&#x9;end&#xd;&#xa;ELSE '' &#xd;&#xa;END &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;+ case when try(array_length(&quot;refTextInhalt_href&quot;) >= 0)is not null then&#xd;&#xa;replace(&#xd;&#xa;&#x9;lower(&#xd;&#xa;&#x9;array_to_string( &#xd;&#xa;&#x9;array_sort(&#xd;&#xa;&#x9;array_foreach(&#xd;&#xa;&#x9;array_foreach(&quot;refTextInhalt_href&quot;,&#xd;&#xa;&#x9;attribute(get_feature(var('textabschnitt_' + plan_layer_id()),'gml_id', right(@element, length(@element)-1)),'schluessel') &#xd;&#xa;&#x9;||', ')&#xd;&#xa;&#x9;,left(@element,12))&#xd;&#xa;&#x9;)&#xd;&#xa;&#x9;,'xyz')&#xd;&#xa;),&#xd;&#xa;array(' nr.','nr.',' ','xyz', 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','ä','ö','ü','ß','#','_','§',',','(',')'), &#xd;&#xa;array('.'   ,''   ,'' ,'  ' , '','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','')&#xd;&#xa;)&#xd;&#xa;ELSE '' END &#xd;&#xa;/* -----------Ende Textabschnitte -----*/&#xd;&#xa;&#xd;&#xa;" blendMode="0" fontLetterSpacing="0" fontStrikeout="0" fontFamily="Arial" fontKerning="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontUnderline="0" multilineHeight="1" forcedBold="0" fontSizeUnit="Point" fontItalic="0" textOrientation="horizontal" textOpacity="1" fontWeight="50" fontWordSpacing="0" allowHtml="0" forcedItalic="0" legendString="Aa" capitalization="0" previewBkgrdColor="255,255,255,255,rgb:1,1,1,1" isExpression="1" fontSize="7">
         <families/>
         <text-buffer bufferDraw="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="25" bufferSizeUnits="Percentage" bufferJoinStyle="128" bufferColor="250,250,250,255,rgb:0.98039215686274506,0.98039215686274506,0.98039215686274506,1" bufferNoFill="1" bufferOpacity="1"/>
         <text-mask maskType="0" maskEnabled="0" maskOpacity="1" maskSizeUnits="MM" maskedSymbolLayers="" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="0"/>
@@ -543,6 +543,7 @@
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
     <DiagramCategory lineSizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" minimumSize="0" spacingUnit="MM" penAlpha="255" rotationOffset="270" width="15" backgroundAlpha="255" lineSizeScale="3x:0,0,0,0,0,0" opacity="1" sizeType="MM" scaleBasedVisibility="0" scaleDependency="Area" enabled="0" sizeScale="3x:0,0,0,0,0,0" showAxis="1" spacing="5" minScaleDenominator="0" height="15" labelPlacementMethod="XHeight" direction="0" barWidth="5" penWidth="0" penColor="#000000" backgroundColor="#ffffff" maxScaleDenominator="0" diagramOrientation="Up">
       <fontProperties strikethrough="0" style="" bold="0" description="MS Shell Dlg 2,8.3,-1,5,50,0,0,0,0,0" underline="0" italic="0"/>
+      <attribute label="" field="" color="#000000" colorOpacity="1"/>
       <axisSymbol>
         <symbol type="line" frame_rate="10" force_rhr="0" name="" alpha="1" clip_to_extent="1" is_animated="0">
           <data_defined_properties>
@@ -644,7 +645,21 @@
         </config>
       </editWidget>
     </field>
-    <field name="text" configurationFlags="NoFlag">
+    <field name="ebene" configurationFlags="NoFlag">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="name" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="wert" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -652,6 +667,13 @@
       </editWidget>
     </field>
     <field name="gehoertZuBereich_href" configurationFlags="NoFlag">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="wirdDargestelltDurch_href" configurationFlags="NoFlag">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -685,19 +707,25 @@
     <alias index="1" field="Envelope_srsName" name=""/>
     <alias index="2" field="lowerCorner" name=""/>
     <alias index="3" field="upperCorner" name=""/>
-    <alias index="4" field="text" name=""/>
-    <alias index="5" field="gehoertZuBereich_href" name=""/>
-    <alias index="6" field="rechtscharakter" name=""/>
-    <alias index="7" field="refTextInhalt_href" name=""/>
-    <alias index="8" field="flaechenschluss" name=""/>
+    <alias index="4" field="ebene" name=""/>
+    <alias index="5" field="name" name=""/>
+    <alias index="6" field="wert" name=""/>
+    <alias index="7" field="gehoertZuBereich_href" name=""/>
+    <alias index="8" field="wirdDargestelltDurch_href" name=""/>
+    <alias index="9" field="rechtscharakter" name=""/>
+    <alias index="10" field="refTextInhalt_href" name=""/>
+    <alias index="11" field="flaechenschluss" name=""/>
   </aliases>
   <splitPolicies>
     <policy policy="Duplicate" field="gml_id"/>
     <policy policy="Duplicate" field="Envelope_srsName"/>
     <policy policy="Duplicate" field="lowerCorner"/>
     <policy policy="Duplicate" field="upperCorner"/>
-    <policy policy="Duplicate" field="text"/>
+    <policy policy="Duplicate" field="ebene"/>
+    <policy policy="Duplicate" field="name"/>
+    <policy policy="Duplicate" field="wert"/>
     <policy policy="Duplicate" field="gehoertZuBereich_href"/>
+    <policy policy="Duplicate" field="wirdDargestelltDurch_href"/>
     <policy policy="Duplicate" field="rechtscharakter"/>
     <policy policy="Duplicate" field="refTextInhalt_href"/>
     <policy policy="Duplicate" field="flaechenschluss"/>
@@ -707,8 +735,11 @@
     <default applyOnUpdate="0" field="Envelope_srsName" expression=""/>
     <default applyOnUpdate="0" field="lowerCorner" expression=""/>
     <default applyOnUpdate="0" field="upperCorner" expression=""/>
-    <default applyOnUpdate="0" field="text" expression=""/>
+    <default applyOnUpdate="0" field="ebene" expression=""/>
+    <default applyOnUpdate="0" field="name" expression=""/>
+    <default applyOnUpdate="0" field="wert" expression=""/>
     <default applyOnUpdate="0" field="gehoertZuBereich_href" expression=""/>
+    <default applyOnUpdate="0" field="wirdDargestelltDurch_href" expression=""/>
     <default applyOnUpdate="0" field="rechtscharakter" expression=""/>
     <default applyOnUpdate="0" field="refTextInhalt_href" expression=""/>
     <default applyOnUpdate="0" field="flaechenschluss" expression=""/>
@@ -718,8 +749,11 @@
     <constraint exp_strength="0" field="Envelope_srsName" constraints="0" notnull_strength="0" unique_strength="0"/>
     <constraint exp_strength="0" field="lowerCorner" constraints="0" notnull_strength="0" unique_strength="0"/>
     <constraint exp_strength="0" field="upperCorner" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="text" constraints="0" notnull_strength="0" unique_strength="0"/>
+    <constraint exp_strength="0" field="ebene" constraints="0" notnull_strength="0" unique_strength="0"/>
+    <constraint exp_strength="0" field="name" constraints="0" notnull_strength="0" unique_strength="0"/>
+    <constraint exp_strength="0" field="wert" constraints="0" notnull_strength="0" unique_strength="0"/>
     <constraint exp_strength="0" field="gehoertZuBereich_href" constraints="0" notnull_strength="0" unique_strength="0"/>
+    <constraint exp_strength="0" field="wirdDargestelltDurch_href" constraints="0" notnull_strength="0" unique_strength="0"/>
     <constraint exp_strength="0" field="rechtscharakter" constraints="0" notnull_strength="0" unique_strength="0"/>
     <constraint exp_strength="0" field="refTextInhalt_href" constraints="0" notnull_strength="0" unique_strength="0"/>
     <constraint exp_strength="0" field="flaechenschluss" constraints="0" notnull_strength="0" unique_strength="0"/>
@@ -729,8 +763,11 @@
     <constraint field="Envelope_srsName" exp="" desc=""/>
     <constraint field="lowerCorner" exp="" desc=""/>
     <constraint field="upperCorner" exp="" desc=""/>
-    <constraint field="text" exp="" desc=""/>
+    <constraint field="ebene" exp="" desc=""/>
+    <constraint field="name" exp="" desc=""/>
+    <constraint field="wert" exp="" desc=""/>
     <constraint field="gehoertZuBereich_href" exp="" desc=""/>
+    <constraint field="wirdDargestelltDurch_href" exp="" desc=""/>
     <constraint field="rechtscharakter" exp="" desc=""/>
     <constraint field="refTextInhalt_href" exp="" desc=""/>
     <constraint field="flaechenschluss" exp="" desc=""/>
@@ -745,11 +782,14 @@
       <column type="field" hidden="0" name="Envelope_srsName" width="-1"/>
       <column type="field" hidden="0" name="lowerCorner" width="-1"/>
       <column type="field" hidden="0" name="upperCorner" width="-1"/>
-      <column type="field" hidden="0" name="text" width="350"/>
       <column type="field" hidden="0" name="gehoertZuBereich_href" width="-1"/>
       <column type="field" hidden="0" name="rechtscharakter" width="-1"/>
       <column type="field" hidden="0" name="refTextInhalt_href" width="-1"/>
       <column type="field" hidden="0" name="flaechenschluss" width="-1"/>
+      <column type="field" hidden="0" name="ebene" width="-1"/>
+      <column type="field" hidden="0" name="name" width="-1"/>
+      <column type="field" hidden="0" name="wert" width="-1"/>
+      <column type="field" hidden="0" name="wirdDargestelltDurch_href" width="-1"/>
       <column type="actions" hidden="1" width="-1"/>
     </columns>
   </attributetableconfig>
@@ -781,36 +821,48 @@ def my_form_open(dialog, layer, feature):
   <editorlayout>generatedlayout</editorlayout>
   <editable>
     <field name="Envelope_srsName" editable="1"/>
+    <field name="ebene" editable="1"/>
     <field name="flaechenschluss" editable="1"/>
     <field name="gehoertZuBereich_href" editable="1"/>
     <field name="gml_id" editable="1"/>
     <field name="lowerCorner" editable="1"/>
+    <field name="name" editable="1"/>
     <field name="rechtscharakter" editable="1"/>
     <field name="refTextInhalt_href" editable="1"/>
     <field name="text" editable="1"/>
     <field name="upperCorner" editable="1"/>
+    <field name="wert" editable="1"/>
+    <field name="wirdDargestelltDurch_href" editable="1"/>
   </editable>
   <labelOnTop>
     <field name="Envelope_srsName" labelOnTop="0"/>
+    <field name="ebene" labelOnTop="0"/>
     <field name="flaechenschluss" labelOnTop="0"/>
     <field name="gehoertZuBereich_href" labelOnTop="0"/>
     <field name="gml_id" labelOnTop="0"/>
     <field name="lowerCorner" labelOnTop="0"/>
+    <field name="name" labelOnTop="0"/>
     <field name="rechtscharakter" labelOnTop="0"/>
     <field name="refTextInhalt_href" labelOnTop="0"/>
     <field name="text" labelOnTop="0"/>
     <field name="upperCorner" labelOnTop="0"/>
+    <field name="wert" labelOnTop="0"/>
+    <field name="wirdDargestelltDurch_href" labelOnTop="0"/>
   </labelOnTop>
   <reuseLastValue>
     <field name="Envelope_srsName" reuseLastValue="0"/>
+    <field name="ebene" reuseLastValue="0"/>
     <field name="flaechenschluss" reuseLastValue="0"/>
     <field name="gehoertZuBereich_href" reuseLastValue="0"/>
     <field name="gml_id" reuseLastValue="0"/>
     <field name="lowerCorner" reuseLastValue="0"/>
+    <field name="name" reuseLastValue="0"/>
     <field name="rechtscharakter" reuseLastValue="0"/>
     <field name="refTextInhalt_href" reuseLastValue="0"/>
     <field name="text" reuseLastValue="0"/>
     <field name="upperCorner" reuseLastValue="0"/>
+    <field name="wert" reuseLastValue="0"/>
+    <field name="wirdDargestelltDurch_href" reuseLastValue="0"/>
   </reuseLastValue>
   <dataDefinedFieldProperties/>
   <widgets/>
