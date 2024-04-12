@@ -715,6 +715,7 @@ class XplanReader:
             addXplanLayer("BP_VerkehrsflaecheBesondererZweckbestimmung", "Flaeche")
             # BP_Bereich_textlicher_Festsetzung im WMS enthalten …. Fehlt ?
             addXplanLayer("BP_AbgrabungsFlaeche", "Flaeche")
+            addXplanLayer("BP_SchutzPflegeEntwicklungsFlaeche", "Flaeche")
             addXplanLayer("BP_AufschuettungsFlaeche", "Flaeche")
             addXplanLayer("BP_AbstandsFlaeche", "Flaeche")
             addXplanLayer("BP_AusgleichsFlaeche", "Flaeche")
@@ -737,7 +738,6 @@ class XplanReader:
             addXplanLayer("BP_PersGruppenBestimmteFlaeche", "Flaeche")
             addXplanLayer("BP_Strassenkoerper", "Flaeche")
             # addXplanLayer('BP_StrassenbegrenzungsLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer("BP_SchutzPflegeEntwicklungsFlaeche", "Flaeche")
             addXplanLayer("BP_TechnischeMassnahmenFlaeche", "Flaeche")
             addXplanLayer("BP_UeberbaubareGrundstuecksFlaeche", "Flaeche")
             addXplanLayer("BP_NichtUeberbaubareGrundstuecksflaeche", "Flaeche")
@@ -760,7 +760,6 @@ class XplanReader:
             addXplanLayer("BP_AusgleichsMassnahme", "Flaeche")
             addXplanLayer("BP_BereichOhneEinAusfahrtLinie", "Flaeche")
             # addXplanLayer('BP_EinfahrtsbereichLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer("BP_EinfahrtsbereichLinie", "Linie")
             addXplanLayer("BP_EinfahrtPunkt", "Flaeche")
             addXplanLayer("BP_EingriffsBereich", "Flaeche")
             addXplanLayer("BP_FestsetzungNachLandesrecht", "Flaeche")
@@ -777,7 +776,6 @@ class XplanReader:
             # addXplanLayer('BP_NutzungsartenGrenze', 'Flaeche') -> existiert nur als Linie
             # addXplanLayer('BP_BauGrenze', 'Flaeche') -> existiert nur als Linie
             # addXplanLayer('BP_BauLinie', 'Flaeche') -> existiert nur als Linie
-            addXplanLayer("BP_BauLinie", "Linie")
             addXplanLayer("BP_AbweichungVonBaugrenze", "Flaeche")
             addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Flaeche")
             addXplanLayer("BP_RichtungssektorGrenze", "Flaeche")
@@ -913,7 +911,9 @@ class XplanReader:
             addXplanLayer("BP_Plan", "Linie")
             addXplanLayer("BP_StrassenbegrenzungsLinie", "Linie")
             addXplanLayer("BP_NutzungsartenGrenze", "Linie")
+            addXplanLayer("BP_EinfahrtsbereichLinie", "Linie")
             addXplanLayer("BP_BauGrenze", "Linie")
+            addXplanLayer("BP_BauLinie", "Linie")
             addXplanLayer("BP_VerEntsorgung", "Linie")
             addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Linie")
             addXplanLayer("BP_AufschuettungsFlaeche", "Linie")
