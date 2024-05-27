@@ -5,17 +5,18 @@ on:
   - delete
 
 jobs:
-  push_to_gitlab:
+  sync:
     runs-on: ubuntu-latest
+    name: Git Repo Sync
     
     steps:
-    - name: Checkout GitHub Repository
-    - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0
-
-   - name: Push to GitLab
-    run: |
-      git config --global user.name ${{ secrets.TARGET_USERNAME }}
-      git remote add gitlab https://oauth2:${{ secrets.TARGET_TOKEN }}@${{ secrets.TARGET_URL }}
-      git push gitlab HEAD:main
+      - name: Checkout GitHub Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+        
+      - name: Configure Git and Sync to GitLab
+        run: |
+          git config --global user.name ${{ secrets.TARGET_USERNAME }}
+          git remote add gitlab https://oauth2:${{ secrets.TARGET_TOKEN }}@${{ secrets.TARGET_URL }}
+          git push gitlab HEAD:main
