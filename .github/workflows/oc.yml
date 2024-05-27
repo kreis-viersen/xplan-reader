@@ -5,8 +5,9 @@ on:
   - delete
 
 jobs:
-  sync:
+  push_to_gitlab:
     runs-on: ubuntu-latest
+    
     steps:
     - name: Checkout GitHub Repository
     - uses: actions/checkout@v3
