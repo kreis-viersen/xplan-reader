@@ -17,7 +17,5 @@ jobs:
         
       - name: Configure Git and Sync to GitLab
         run: |
-          git config --global user.name ${{ secrets.TARGET_USERNAME }}
-          git config --global user.email ${{ secrets.TARGET_EMAIL }}
           git remote add gitlab https://oauth2:${{ secrets.TARGET_TOKEN }}@${{ secrets.TARGET_URL }}
           git push gitlab HEAD:main
