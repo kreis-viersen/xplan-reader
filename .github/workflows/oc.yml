@@ -7,13 +7,14 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    name: Git Repo Sync
     steps:
+    - name: Checkout GitHub Repository
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
-    - uses: repo-sync/github-sync@v2
-      with:
-        source_repo: "https://github.com/${{ github.repository }}"
-        destination_repo: ${{ secrets.TARGET_URL }}
-        destination_tokenn: ${{ secrets.TARGET_TOKEN }}
+
+   - name: Push to GitLab
+    run: |
+      git config --global user.name ${{ secrets.TARGET_USERNAME }}
+      git remote add gitlab https://oauth2:${{ secrets.TARGET_TOKEN }}@${{ secrets.TARGET_URL }}
+      git push gitlab HEAD:main
