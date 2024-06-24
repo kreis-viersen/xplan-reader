@@ -187,7 +187,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -370,7 +370,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -553,7 +553,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -736,7 +736,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -919,7 +919,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -1102,7 +1102,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -1285,7 +1285,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>
@@ -1468,7 +1468,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" value="true" type="bool"/>
-                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
+                  <Option name="expression" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  'true' then 'solid'&#xd;&#xa;else 'no'&#xd;&#xa;end" type="QString"/>
                   <Option name="type" value="3" type="int"/>
                 </Option>
               </Option>

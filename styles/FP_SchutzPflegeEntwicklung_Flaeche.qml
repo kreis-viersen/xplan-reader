@@ -39,7 +39,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option name="active" type="bool" value="true"/>
-                  <Option name="expression" type="QString" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = true then 'dense3'&#xd;&#xa;else 'no'&#xd;&#xa;end"/>
+                  <Option name="expression" type="QString" value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is  true then 'dense3'&#xd;&#xa;else 'no'&#xd;&#xa;end"/>
                   <Option name="type" type="int" value="3"/>
                 </Option>
               </Option>

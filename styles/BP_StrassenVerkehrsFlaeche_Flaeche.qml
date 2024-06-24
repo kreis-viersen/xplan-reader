@@ -34,7 +34,7 @@
               <Option name="properties" type="Map">
                 <Option name="fillStyle" type="Map">
                   <Option value="true" name="active" type="bool"/>
-                  <Option value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; = 'false' then 'dense3'&#xd;&#xa;Else 'solid'&#xd;&#xa;end" name="expression" type="QString"/>
+                  <Option value="case&#xd;&#xa;when  &quot;flaechenschluss&quot; is 'false' then 'dense3'&#xd;&#xa;Else 'solid'&#xd;&#xa;end" name="expression" type="QString"/>
                   <Option value="3" name="type" type="int"/>
                 </Option>
               </Option>
