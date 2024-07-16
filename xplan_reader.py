@@ -777,7 +777,8 @@ class XplanReader:
             # addXplanLayer('BP_BauGrenze', 'Flaeche') -> existiert nur als Linie
             # addXplanLayer('BP_BauLinie', 'Flaeche') -> existiert nur als Linie
             addXplanLayer("BP_AbweichungVonBaugrenze", "Flaeche")
-            addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Flaeche")
+            addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Flaeche") # v5 mit Schreibfehler
+            addXplanLayer("BP_AbweichungVonUeberbaubarerGrundstuecksFlaeche", "Flaeche") # v6
             addXplanLayer("BP_RichtungssektorGrenze", "Flaeche")
             addXplanLayer("BP_ZusatzkontingentLaerm", "Flaeche")
             addXplanLayer("BP_ZusatzkontingentLaermFlaeche", "Flaeche")
