@@ -218,7 +218,7 @@ class XplanReader:
                                     "{" + xplan_ns_uri + "}raeumlicherGeltungsbereich"
                                 )
                             )
-                            if len(raeumlicherGeltungsbereich_element.text) > 0:
+                            if raeumlicherGeltungsbereich_element:
                                 break
                     except:
                         message = (
