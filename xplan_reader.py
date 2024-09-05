@@ -684,6 +684,8 @@ class XplanReader:
             addXplanLayer(
                 "FP_Bereich", "Text"
             )  # bei Bedarf wird der Style 'Flaeche' geladen
+            addXplanLayer("FP_Flaechenschlussobjekt", "Flaeche")
+            addXplanLayer("FP_FlaecheOhneDarstellung", "Flaeche")            
             addXplanLayer("FP_WaldFlaeche", "Flaeche")
             addXplanLayer("FP_LandwirtschaftsFlaeche", "Flaeche")
             addXplanLayer("FP_Landwirtschaft", "Flaeche")
@@ -746,8 +748,6 @@ class XplanReader:
             addXplanLayer("BP_FreiFlaeche", "Flaeche")
             addXplanLayer("FP_DarstellungNachLandesrecht", "Flaeche")
             addXplanLayer("FP_Flaechenobjekt", "Flaeche")
-            addXplanLayer("FP_Flaechenschlussobjekt", "Flaeche")
-            addXplanLayer("FP_FlaecheOhneDarstellung", "Flaeche")
             addXplanLayer("FP_Geometrieobjekt", "Flaeche")
             addXplanLayer("FP_Linienobjekt", "Flaeche")
             addXplanLayer("FP_Objekt", "Flaeche")
