@@ -786,7 +786,8 @@ class XplanReader:
             addXplanLayer("BP_Symbole", "Punkt")  # nur im XPlanBOX WMS enthalten ?
             addXplanLayer("BP_Beschriftung", "Punkt")  # nur im XPlanBOX WMS enthalten ?
             addXplanLayer("BP_RekultivierungsFlaeche", "Flaeche")
-            addXplanLayer("BP_TextlicheFestsetzungsFlaeche", "Flaeche")
+            addXplanLayer("BP_TextlicheFestsetzungsFlaeche", "Flaeche") # bis XPlanung v5.4
+            addXplanLayer("BP_TextAbschnittFlaeche", "Flaeche") # ab XPlanung v6
             addXplanLayer("BP_ZentralerVersorgungsbereich", "Flaeche")
             # ----------------------------------------------------Start LPLAN--------------------------
             addXplanLayer("LP_Plan", "Flaeche")
