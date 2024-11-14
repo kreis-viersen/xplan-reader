@@ -43,7 +43,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'cross'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'cross'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -80,7 +80,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -238,7 +238,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -275,7 +275,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -312,7 +312,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -349,7 +349,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -386,7 +386,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -423,7 +423,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -460,7 +460,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>
@@ -497,7 +497,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option type="bool" value="true" name="active"/>
-                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
+                  <Option type="QString" value="case&#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" name="expression"/>
                   <Option type="int" value="3" name="type"/>
                 </Option>
               </Option>

@@ -180,7 +180,7 @@
               <Option type="Map" name="properties">
                 <Option type="Map" name="fillStyle">
                   <Option value="true" type="bool" name="active"/>
-                  <Option value="case &#xd;&#xa;when flaechenschluss='true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" type="QString" name="expression"/>
+                  <Option value="case &#xd;&#xa;when flaechenschluss is 'true' then 'solid'&#xd;&#xa;else 'dense3'&#xd;&#xa;end" type="QString" name="expression"/>
                   <Option value="3" type="int" name="type"/>
                 </Option>
               </Option>
