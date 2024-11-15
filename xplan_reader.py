@@ -236,6 +236,7 @@ class XplanReader:
                     continue
 
             raster_reference_count = 0
+            raster_reference_files = []
             for elem in (
                 "BP_Bereich",
                 "FP_Bereich",
@@ -258,10 +259,16 @@ class XplanReader:
                             )
                             if len(referenzurl_element.text) > 0:
                                 raster_reference_count = raster_reference_count + 1
+                                raster_reference_files.append(referenzurl_element.text)
 
                         self.logMessage(
                             "Anzahl referenzierter Rasterpläne: "
                             + str(raster_reference_count)
+                        )
+
+                        self.logMessage(
+                            "Referenzierte Rasterpläne: "
+                            + str(raster_reference_files)
                         )
 
                 except:
@@ -470,6 +477,20 @@ class XplanReader:
                                         self.logMessage(
                                             "Ausdrucksvariable erstellt: "
                                             + var_name_rastercount
+                                        )
+
+                                        var_name_rasterfiles = (
+                                            "referenzierte_rasterplaene_" + vlayer.id()
+                                        )
+
+                                        QgsExpressionContextUtils.setProjectVariable(
+                                            QgsProject.instance(),
+                                            var_name_rasterfiles,
+                                            raster_reference_files,
+                                        )
+                                        self.logMessage(
+                                            "Ausdrucksvariable erstellt: "
+                                            + var_name_rasterfiles
                                         )
 
                             if layername.endswith("_TextAbschnitt"):
