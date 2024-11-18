@@ -259,7 +259,8 @@ class XplanReader:
                             )
                             if len(referenzurl_element.text) > 0:
                                 raster_reference_count = raster_reference_count + 1
-                                raster_reference_files.append(referenzurl_element.text)
+                                if not referenzurl_element.text.startswith('http'):
+                                    raster_reference_files.append(referenzurl_element.text)
 
                         self.logMessage(
                             "Anzahl referenzierter Rasterpläne: "
