@@ -221,7 +221,7 @@ class XplanReader:
                                     "{" + xplan_ns_uri + "}raeumlicherGeltungsbereich"
                                 )
                             )
-                            if raeumlicherGeltungsbereich_element:
+                            if raeumlicherGeltungsbereich_element is not None:
                                 break
                     except:
                         message = (
