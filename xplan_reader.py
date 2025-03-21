@@ -152,6 +152,9 @@ class XplanReader:
         self.dest_crs = None
         self.plan_id = None
 
+        self.baugrenze_baulinie = False
+        self.ueberbaubare_grundstuecksflaeche = False
+        self.linie_ohne_flaeche = False
         # check if confirmed with OK / wenn mit OK bestätigt wurde
         if result == 1:
             file_path = self.dlg.qgsFileWidget.filePath()
@@ -259,8 +262,10 @@ class XplanReader:
                             )
                             if len(referenzurl_element.text) > 0:
                                 raster_reference_count = raster_reference_count + 1
-                                if not referenzurl_element.text.startswith('http'):
-                                    raster_reference_files.append(referenzurl_element.text)
+                                if not referenzurl_element.text.startswith("http"):
+                                    raster_reference_files.append(
+                                        referenzurl_element.text
+                                    )
 
                         self.logMessage(
                             "Anzahl referenzierter Rasterpläne: "
@@ -268,8 +273,7 @@ class XplanReader:
                         )
 
                         self.logMessage(
-                            "Referenzierte Rasterpläne: "
-                            + str(raster_reference_files)
+                            "Referenzierte Rasterpläne: " + str(raster_reference_files)
                         )
 
                 except:
@@ -416,6 +420,12 @@ class XplanReader:
                                         pass
 
                                 self.group_extent.combineExtentWith(layer_extent)
+
+                                if layername in ["BP_BauGrenze", "BP_BauLinie"]:
+                                    self.baugrenze_baulinie = True
+
+                                if layername in ["BP_UeberbaubareGrundstuecksFlaeche"]:
+                                    self.ueberbaubare_grundstuecksflaeche = True
 
                                 if layername in [
                                     "BP_Plan",
@@ -707,7 +717,7 @@ class XplanReader:
                 "FP_Bereich", "Text"
             )  # bei Bedarf wird der Style 'Flaeche' geladen
             addXplanLayer("FP_Flaechenschlussobjekt", "Flaeche")
-            addXplanLayer("FP_FlaecheOhneDarstellung", "Flaeche")            
+            addXplanLayer("FP_FlaecheOhneDarstellung", "Flaeche")
             addXplanLayer("FP_WaldFlaeche", "Flaeche")
             addXplanLayer("FP_LandwirtschaftsFlaeche", "Flaeche")
             addXplanLayer("FP_Landwirtschaft", "Flaeche")
@@ -799,8 +809,12 @@ class XplanReader:
             # addXplanLayer('BP_BauGrenze', 'Flaeche') -> existiert nur als Linie
             # addXplanLayer('BP_BauLinie', 'Flaeche') -> existiert nur als Linie
             addXplanLayer("BP_AbweichungVonBaugrenze", "Flaeche")
-            addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Flaeche") # v5 mit Schreibfehler
-            addXplanLayer("BP_AbweichungVonUeberbaubarerGrundstuecksFlaeche", "Flaeche") # v6
+            addXplanLayer(
+                "BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Flaeche"
+            )  # v5 mit Schreibfehler
+            addXplanLayer(
+                "BP_AbweichungVonUeberbaubarerGrundstuecksFlaeche", "Flaeche"
+            )  # v6
             addXplanLayer("BP_RichtungssektorGrenze", "Flaeche")
             addXplanLayer("BP_ZusatzkontingentLaerm", "Flaeche")
             addXplanLayer("BP_ZusatzkontingentLaermFlaeche", "Flaeche")
@@ -808,8 +822,10 @@ class XplanReader:
             addXplanLayer("BP_Symbole", "Punkt")  # nur im XPlanBOX WMS enthalten ?
             addXplanLayer("BP_Beschriftung", "Punkt")  # nur im XPlanBOX WMS enthalten ?
             addXplanLayer("BP_RekultivierungsFlaeche", "Flaeche")
-            addXplanLayer("BP_TextlicheFestsetzungsFlaeche", "Flaeche") # bis XPlanung v5.4
-            addXplanLayer("BP_TextAbschnittFlaeche", "Flaeche") # ab XPlanung v6
+            addXplanLayer(
+                "BP_TextlicheFestsetzungsFlaeche", "Flaeche"
+            )  # bis XPlanung v5.4
+            addXplanLayer("BP_TextAbschnittFlaeche", "Flaeche")  # ab XPlanung v6
             addXplanLayer("BP_ZentralerVersorgungsbereich", "Flaeche")
             # ----------------------------------------------------Start LPLAN--------------------------
             addXplanLayer("LP_Plan", "Flaeche")
@@ -1392,6 +1408,23 @@ class XplanReader:
                 bbox_germany.intersects(self.group_extent),
             )
             self.logMessage("Ausdrucksvariable erstellt: " + var_name_bbox)
+
+            if (
+                self.baugrenze_baulinie is True
+                and self.ueberbaubare_grundstuecksflaeche is False
+            ):
+                self.linie_ohne_flaeche = True
+
+            var_name_linie_ohne_flaeche = "linie_ohne_flaeche_" + self.plan_id
+
+            QgsExpressionContextUtils.setProjectVariable(
+                QgsProject.instance(),
+                var_name_linie_ohne_flaeche,
+                self.linie_ohne_flaeche,
+            )
+            self.logMessage(
+                "Ausdrucksvariable erstellt: " + var_name_linie_ohne_flaeche
+            )
 
             # collapse layers / klappe Layer zusammen
             for group in [child for child in root.children() if child.nodeType() == 0]:
