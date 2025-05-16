@@ -32,6 +32,7 @@ from qgis.core import (
     QgsExpression,
     QgsExpressionContextUtils,
     QgsFeatureRequest,
+    QgsLayerTreeGroup,
     QgsLayerTreeLayer,
     QgsMessageLog,
     QgsProject,
@@ -314,7 +315,8 @@ class XplanReader:
             if suffix != 0:
                 name = name + "_" + str(suffix)
 
-            new_group = root.addGroup(name)
+            new_group = QgsLayerTreeGroup(name)
+            root.insertChildNode(0, new_group)
 
             self.group_extent = QgsRectangle()
 
