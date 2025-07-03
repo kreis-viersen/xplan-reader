@@ -21,8 +21,10 @@ homepage=https://github.com/kreis-viersen/xplan-reader/
 icon=xplan_reader_icon.png
 server=False
 deprecated=False
-changelog=v0.33.0:
-    - Füge neue Gruppe mit Plan immer ganz oben im Layerbaum hinzu
+changelog=v0.34.0:
+    - Ersetze Schriftart "BfN_LP_PlanZ_2"
+    v0.33.0:
+    - füge neue Gruppe mit Plan immer ganz oben im Layerbaum hinzu
     - neue und optimierte Styles
     v0.32.1:
     - neuer Style für BP_Plan
