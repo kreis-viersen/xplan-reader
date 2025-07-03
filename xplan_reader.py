@@ -90,9 +90,9 @@ class XplanReader:
             3.26.0 (LR) oder 3.22.9 (LTR), sonst werden manche Layer womöglich nicht \
             richtig geladen!'
             self.iface.messageBar().pushMessage(
-                "Achtung", message, level=1, duration=30
+                "Achtung", message, Qgis.Warning, duration=30
             )
-            self.logMessage(message, 1)
+            self.logMessage(message, Qgis.Warning)
 
         self.plugin_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -141,13 +141,13 @@ class XplanReader:
             self.iface.mainWindow(), "Über XPlan-Reader", aboutString
         )
 
-    def logMessage(self, message, type=0):
-        QgsMessageLog.logMessage(message, "XPlan-Reader", level=type)
+    def logMessage(self, message, level=Qgis.Info):
+        QgsMessageLog.logMessage(message, "XPlan-Reader", level)
 
     def importXplanGml(self):
         self.dlg = LoadDialog(self)
         self.dlg.show()
-        result = self.dlg.exec_()
+        result = self.dlg.exec()
 
         self.project_crs = QgsProject.instance().crs().authid()
         self.dest_crs = None
@@ -175,9 +175,9 @@ class XplanReader:
                     + '" konnte nicht gelesen werden, bitte Datei überprüfen.'
                 )
                 self.iface.messageBar().pushMessage(
-                    "Fehler", message, level=2, duration=10
+                    "Fehler", message, Qgis.Critical, duration=10
                 )
-                self.logMessage(message, 2)
+                self.logMessage(message, Qgis.Warning)
 
                 return
 
@@ -195,9 +195,9 @@ class XplanReader:
                         + '": XPlanung-Namespace konnte nicht gefunden werden, bitte Datei überprüfen.'
                     )
                     self.iface.messageBar().pushMessage(
-                        "Fehler", message, level=2, duration=10
+                        "Fehler", message, Qgis.Critical, duration=10
                     )
-                    self.logMessage(message, 2)
+                    self.logMessage(message, Qgis.Warning)
 
                     return
 
@@ -230,9 +230,9 @@ class XplanReader:
                             + " hat keinen räumlichen Geltungsbereich, dies wird nicht unterstützt!"
                         )
                         self.iface.messageBar().pushMessage(
-                            "Fehler", message, level=2, duration=10
+                            "Fehler", message, Qgis.Critical, duration=10
                         )
-                        self.logMessage(message, 2)
+                        self.logMessage(message, Qgis.Warning)
 
                         return
 
@@ -398,7 +398,7 @@ class XplanReader:
                                 + " ("
                                 + gtype
                                 + ") konnte nicht geladen werden!",
-                                2,
+                                Qgis.Warning,
                             )
                         else:
                             if vlayer.isSpatial():
@@ -457,7 +457,9 @@ class XplanReader:
                                         geom = feature.geometry()
                                         geom = (
                                             geom.convexHull()
-                                            .convertToType(QgsWkbTypes.LineGeometry)
+                                            .convertToType(
+                                                QgsWkbTypes.GeometryType.LineGeometry
+                                            )
                                             .simplify(5)
                                         )
 
