@@ -368,6 +368,15 @@ class XplanReader:
                 layers.append(name)
 
             def addXplanLayer(layername, gtype):
+
+                layername_legend = layername
+                if layername == "BP_BaugebietsTeilFlaeche-Geometrie":
+                    layername = "BP_BaugebietsTeilFlaeche"
+                    layername_legend = "BP_BaugebietsTeilFlaeche-Geometrie"
+                if layername == "BP_BaugebietsTeilFlaeche-Beschriftung":
+                    layername = "BP_BaugebietsTeilFlaeche"
+                    layername_legend = "BP_BaugebietsTeilFlaeche-Beschriftung"
+
                 if layername in layers:
                     if gtype == "Punkt":
                         geomtype = "MultiPoint"
@@ -384,7 +393,7 @@ class XplanReader:
                         + layername
                         + "|geometrytype="
                         + geomtype,
-                        layername,
+                        layername_legend,
                         "ogr",
                     )
 
@@ -523,7 +532,7 @@ class XplanReader:
                             QgsProject.instance().addMapLayer(vlayer, False)
 
                             style = os.path.join(
-                                self.style_dir, layername + "_" + gtype + ".qml"
+                                self.style_dir, layername_legend + "_" + gtype + ".qml"
                             )
                             if os.path.isfile(style):
                                 vlayer.loadNamedStyle(style)
@@ -745,7 +754,8 @@ class XplanReader:
             addXplanLayer("BP_StrassenVerkehrsFlaeche", "Flaeche")
             addXplanLayer("SO_Strassenverkehr", "Flaeche")
             addXplanLayer("BP_GruenFlaeche", "Flaeche")
-            addXplanLayer("BP_BaugebietsTeilFlaeche", "Flaeche")
+            addXplanLayer("BP_BaugebietsTeilFlaeche-Geometrie", "Flaeche")
+            addXplanLayer("BP_BaugebietsTeilFlaeche-Beschriftung", "Flaeche")
             addXplanLayer("BP_GemeinbedarfsFlaeche", "Flaeche")
             addXplanLayer("BP_KleintierhaltungFlaeche", "Flaeche")
             addXplanLayer("BP_SpielSportanlagenFlaeche", "Flaeche")
