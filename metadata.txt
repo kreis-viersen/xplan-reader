@@ -25,6 +25,7 @@ changelog=v0.34.0:
     - verwende 2 Layer für BP_BaugebietsTeilFlaeche (Geometrie und Beschriftung)
     - ersetze Schriftart "BfN_LP_PlanZ_2"
     - XPlan-Reader ist QGIS 4 ready (Qt 6) 
+    - neue und optimierte Styles
     v0.33.0:
     - füge neue Gruppe mit Plan immer ganz oben im Layerbaum hinzu
     - neue und optimierte Styles
