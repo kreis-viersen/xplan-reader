@@ -13,6 +13,7 @@ tags=xplan,xplanung,bplan,bebauungsplan,fnp,flächennutzungsplan
 version=0.34.0
 # we need at least QGIS Version 3.26.0 (LR) oder 3.22.9 (LTR)
 qgisMinimumVersion=3.26
+supportsQt6=True
 author=Kreis Viersen
 email=open@kreis-viersen.de
 tracker=https://github.com/kreis-viersen/xplan-reader/issues/
