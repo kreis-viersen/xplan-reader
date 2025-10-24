@@ -68,7 +68,8 @@ Der QGIS-XPlan-Reader lebt als OpenSoure-Tool vom Mitmachen.
 
 ### ...mit XPlanGML-Dateien zum Testen
 
-Der XPLAN-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. Weitere Beispiel-Pläne sind uns daher auch gerne willkommen und können per E-Mail an [open@kreis-viersen.de] gesendet werden. Zu eingesandten Plänen gibt es von uns ein Feedback - gerne können Pläne auch per Videokonferenz gemeinsam analysiert werden.
+Der XPLAN-Reader ist nur so gut, wie uns Testdaten zur Verfügung stehen. Aktuell fehlen Beispiel-Pläne der Version 6.0 und 6.1 !
+Ihre Pläne sind uns daher auch gerne willkommen und können per E-Mail an [open@kreis-viersen.de] gesendet werden. Zu eingesandten Plänen gibt es von uns ein Feedback - gerne können Pläne auch per Videokonferenz gemeinsam analysiert werden.
 
 ### ...mit eigenen QGIS-Stilen
 
