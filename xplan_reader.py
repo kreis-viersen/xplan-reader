@@ -968,6 +968,7 @@ class XplanReader:
             addXplanLayer("BP_EinfahrtsbereichLinie", "Linie")
             addXplanLayer("BP_BauGrenze", "Linie")
             addXplanLayer("BP_BauLinie", "Linie")
+            addXplanLayer("BP_GebaeudeStellung", "Linie")
             addXplanLayer("BP_VerEntsorgung", "Linie")
             addXplanLayer("BP_AbweichungVonUeberbaubererGrundstuecksFlaeche", "Linie")
             addXplanLayer("BP_AufschuettungsFlaeche", "Linie")
