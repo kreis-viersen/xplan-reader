@@ -186,20 +186,28 @@ class XplanReader:
             try:
                 xplan_ns_uri = gml_root.nsmap["xplan"]
             except:
-                try:
-                    xplan_ns_uri = gml_root.nsmap[None]
-                except:
-                    message = (
-                        'Datei: "'
-                        + my_gml
-                        + '": XPlanung-Namespace konnte nicht gefunden werden, bitte Datei überprüfen.'
-                    )
-                    self.iface.messageBar().pushMessage(
-                        "Fehler", message, Qgis.Critical, duration=10
-                    )
-                    self.logMessage(message, Qgis.Warning)
+                xplan_ns_uri = None
 
-                    return
+                for elem in gml_root.iter():
+                    if "xplan" in elem.nsmap:
+                        xplan_ns_uri = elem.nsmap["xplan"]
+                        break
+
+                if xplan_ns_uri is None:
+                    try:
+                        xplan_ns_uri = gml_root.nsmap[None]
+                    except:
+                        message = (
+                            'Datei: "'
+                            + my_gml
+                            + '": XPlanung-Namespace konnte nicht gefunden werden, bitte Datei überprüfen.'
+                        )
+                        self.iface.messageBar().pushMessage(
+                            "Fehler", message, Qgis.Critical, duration=10
+                        )
+                        self.logMessage(message, Qgis.Warning)
+
+                        return
 
             xplan_version = xplan_ns_uri.split("http://www.xplanung.de/xplangml/")[
                 1
